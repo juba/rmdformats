@@ -1,0 +1,5 @@
+TODO.org
+README.md
+.projectile
+^.*\.Rproj$
+^\.Rproj\.user$

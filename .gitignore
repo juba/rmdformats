@@ -1,0 +1,11 @@
+*~
+# History files
+.Rhistory
+.RData
+# Example code in package build process
+*-Ex.R
+# Mac OS X annoyance.
+.DS_Store
+.projectile
+.Rproj.user
+*.Rproj

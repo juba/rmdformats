@@ -1,0 +1,110 @@
+---
+title: "Iris dataset example"
+output:
+  rmdclean::html_clean:
+    fig_width: 6
+    fig_height: 6
+    highlight: pygments
+---
+
+
+```{r knitr_init, echo=FALSE, results="asis", cache=FALSE}
+library(knitr)
+
+## Global options
+options(max.print="75")
+opts_chunk$set(fig.path="out/",
+               echo=FALSE,
+	       cache=TRUE,
+               cache.path="cache/",
+               prompt=FALSE,
+               tidy=TRUE,
+#               background=".95,.95,.95",
+               comment=NA,
+               message=FALSE,
+               warning=FALSE)
+opts_knit$set(width=75)
+```
+
+```{r init,  echo=FALSE, results="hide"}
+library(ggplot2)
+library(dplyr)
+
+data(iris)
+```
+
+# Output examples
+
+## Syntax highlighting
+
+Here is a sample code chunk, just to show that syntax highlighting works as expected.
+
+```{r sh, echo=TRUE, eval=FALSE}
+# create an html dependency for jquery-ui
+html_dependency_jquery_ui <- function() {
+  htmlDependency(name = "jquery-ui",
+                 version = "1.10.4",
+                 src = system.file("template/jquery-ui-1.10.4", package="rmdclean"),
+                 script = "jquery-ui-1.10.4.custom.min.js")
+}
+```
+
+
+## Verbatim
+
+Here is the structure of the `iris` dataset.
+
+```{r iris_str, echo=TRUE}
+str(iris)
+```
+
+## Table
+
+Here is a sample table output.
+
+```{r iris_table, results='asis'}
+tab <- iris %>%
+             group_by(Species) %>%
+             summarise(Sepal.Length=mean(Sepal.Length),
+                       Sepal.Width=mean(Sepal.Width),
+                       Petal.Length=mean(Petal.Length),
+                       Petal.Width=mean(Petal.Length))
+kable(tab)
+
+```
+
+Here we display a crosstab displayed in several different ways with a "pills"
+interface. To do this, just pass your `table()` result to the `pilltabs()`
+function.
+
+```{r iris_pilltabs, results='asis'}
+
+iris$seplc <- cut(iris$Sepal.Length,3)
+tab <- table(iris$Species, iris$seplc)
+pilltabs(tab)
+
+```
+
+
+# Figures
+
+Here is an histogram.
+
+```{r iris_hist}
+ggplot(data=iris) +
+    geom_histogram(aes(x=Petal.Width)) +
+    facet_grid(Species~.)
+
+```
+
+And a wonderful scatterplot, with a caption.
+
+```{r iris_scatter1, fig.cap="This is a caption"}
+ggplot(data=iris) + geom_point(aes(x=Petal.Width, y=Petal.Length, color=Species))
+```
+
+# Mathjax
+
+And finally, an incredibly complex equation :
+
+$$ y = \sqrt{\frac{1}{x}} $$

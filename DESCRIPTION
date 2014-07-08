@@ -1,0 +1,22 @@
+Package: rmdformats
+Maintainer: Julien Barnier <julien.barnier@ens-lyon.fr>
+Authors@R: c(person("Julien", "Barnier", email="julien.barnier@ens-lyon.fr",
+    role=c("aut","cre")))
+Version: 0.0.1
+Date: 2014-06-20
+License: GPL (>= 2)
+Encoding: UTF-8
+Title: HTML output formats for RMarkdown documents
+Description: HTML formats and templates for RMarkdown documents, with some extra
+    features such as automatic table of contents and lightboxed figures.
+Imports:
+    questionr,
+    knitr,
+    rmarkdown,
+    htmltools
+URL: https://github.com/juba/rmdclean
+Collate:
+    'create.doc.R'
+    'pilltabs.R'
+    'html_clean.R'
+    'rmdformats-package.R'

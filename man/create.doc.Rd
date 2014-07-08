@@ -1,0 +1,43 @@
+\name{create.doc}
+\alias{create.doc}
+\title{Create a new directory with a clean RMarkdown file}
+\usage{
+  create.doc(dirname = "new-doc", format = "html_clean",
+    report = FALSE, makefile = FALSE)
+}
+\arguments{
+  \item{dirname}{name of the directory to create}
+
+  \item{format}{R Markdown format to use}
+
+  \item{report}{indicates if the new document is living in
+  the \code{report}}
+
+  \item{makefile}{indicates if a `Makefile` for HTML and
+  PDF rendering should be created in the document folder}
+}
+\value{
+  No value is returned.
+}
+\description{
+  This function creates a new subdirectory inside the
+  current directory, which will contain a ready-to-use
+  RMarkdown file to be rendered in the given format.
+}
+\details{
+  If \code{report} is TRUE, then a small snippet of code is
+  added at the beginning of the Rmd file. This code allows
+  to switch to the project root before running
+  \code{load.project} when using the included Makefile.
+}
+\examples{
+library(rmdformats)
+\dontrun{create.doc("MyDocument", format="html_clean")}
+}
+\author{
+  Julien Barnier <julien.barnier@ens-lyon.fr> This function
+  is heavily inspired and copied from the
+  \link[ProjectTemplate]{create.project} function of the
+  \code{ProjectTemplate} package.
+}
+
