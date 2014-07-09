@@ -9,6 +9,8 @@
 #' @param makefile indicates if a `Makefile` for HTML and PDF rendering should
 #' be created in the document folder
 #' @details
+#' For now on, the available formats are "html_clean", "html_docco".
+#' 
 #' If \code{report} is TRUE, then a small snippet of code is added at the
 #' beginning of the Rmd file. This code allows to switch to the project root
 #' before running \code{load.project} when using the included Makefile.
@@ -23,7 +25,7 @@
 #' @export
 
 create.doc <- function(dirname="new-doc", format="html_clean", report=FALSE, makefile=TRUE) {
-    formats <- c("html_clean")
+    formats <- c("html_clean", "html_docco")
     format <- match.arg(format, formats)
     tmp.dir <- paste(dirname, "_tmp", sep = "")
     if (file.exists(dirname) || file.exists(tmp.dir)) {

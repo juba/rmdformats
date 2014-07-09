@@ -25,6 +25,9 @@
   RMarkdown file to be rendered in the given format.
 }
 \details{
+  For now on, the available formats are "html_clean",
+  "html_docco".
+
   If \code{report} is TRUE, then a small snippet of code is
   added at the beginning of the Rmd file. This code allows
   to switch to the project root before running
