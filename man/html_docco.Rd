@@ -85,7 +85,7 @@
 
 library(rmdformats)
 
-render("input.Rmd", html_clean())
+render("input.Rmd", html_docco())
 
 }
 }
