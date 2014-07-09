@@ -166,7 +166,7 @@ html_clean <- function(number_sections = FALSE,
 
 # create an html dependency for jquery-ui
 html_dependency_jquery_ui <- function() {
-  htmltools:::htmlDependency(name = "jquery-ui",
+  htmltools::htmlDependency(name = "jquery-ui",
                  version = "1.10.4",
                  src = system.file("templates/jquery-ui-1.10.4", package="rmdformats"),
                  script = "jquery-ui-1.10.4.custom.min.js")
@@ -174,7 +174,7 @@ html_dependency_jquery_ui <- function() {
 
 # create an html dependency for tocify
 html_dependency_tocify <- function() {
-  htmltools:::htmlDependency(name = "tocify",
+  htmltools::htmlDependency(name = "tocify",
                  version = "1.9.0",
                  src = system.file("templates/tocify-1.9.0", package="rmdformats"),
                  script = "jquery.tocify.min.js")
@@ -182,7 +182,7 @@ html_dependency_tocify <- function() {
 
 # create an html dependency for Maginfic popup
 html_dependency_magnific_popup <- function() {
-  htmltools:::htmlDependency(name = "magnific-popup",
+  htmltools::htmlDependency(name = "magnific-popup",
                  version = "0.9.9",
                  src = system.file("templates/magnific-popup-0.9.9", package="rmdformats"),
                  script = "jquery.magnific-popup.min.js",
@@ -191,7 +191,7 @@ html_dependency_magnific_popup <- function() {
 
 # html_clean js and css
 html_dependency_clean <- function() {
-  htmltools:::htmlDependency(name = "clean",
+  htmltools::htmlDependency(name = "clean",
                  version = "0.1",
                  src = system.file("templates/html_clean", package="rmdformats"),
                  script = "clean.js",
