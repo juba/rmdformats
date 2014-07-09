@@ -22,7 +22,7 @@
 #' \dontrun{create.doc("MyDocument", format="html_clean")}
 #' @export
 
-create.doc <- function(dirname="new-doc", format="html_clean", report=FALSE, makefile=FALSE) {
+create.doc <- function(dirname="new-doc", format="html_clean", report=FALSE, makefile=TRUE) {
     formats <- c("html_clean")
     format <- match.arg(format, formats)
     tmp.dir <- paste(dirname, "_tmp", sep = "")
