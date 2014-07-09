@@ -1,0 +1,27 @@
+---
+title: ""
+output:
+  rmdformats::html_docco:
+    fig_width: 6
+    fig_height: 6
+    highlight: pygments
+---
+
+
+```{r knitr_init, echo=FALSE, results="asis", cache=FALSE}
+library(knitr)
+
+## Global options
+options(max.print="75")
+opts_chunk$set(fig.path="out/",
+               echo=FALSE,
+	       cache=TRUE,
+               cache.path="cache/",
+               prompt=FALSE,
+               tidy=TRUE,
+               comment=NA,
+               message=FALSE,
+               warning=FALSE)
+opts_knit$set(width=75)
+```
+

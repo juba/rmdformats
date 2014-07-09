@@ -1,5 +1,6 @@
 export(create.doc)
 export(html_clean)
+export(html_docco)
 export(pilltabs)
 import(htmltools)
 import(rmarkdown)

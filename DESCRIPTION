@@ -20,3 +20,4 @@ Collate:
     'pilltabs.R'
     'html_clean.R'
     'rmdformats-package.R'
+    'html_docco.R'
