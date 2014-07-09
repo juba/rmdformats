@@ -6,18 +6,23 @@ This R package provides ready-to-use HTML output formats and templates for
 RMarkdown documents. The goal is to produce clean documents "out of the box",
 with or without the RStudio IDE.
 
-## Features
+## Formats and features
 
-For the moment, the package only provides one format, called `html_clean`. It
-is based on the bootstrap framework, with the following features :
+For now, the package provides two HTML output formats :
 
-- Clean and readable CSS styling
-- Automatic and dynamic javascript table of contents
-- Automatic thumbnails for figures with lightbox display
+- the `html_clean` format ([Sample HTML output](https://rawgit.com/juba/rmdformats/master/inst/examples/html_clean/iris.html)) :
 
-Sample outputs :
+![](inst/examples/screenshots/html_clean.png)
 
-- [html_clean HTML output](https://rawgit.com/juba/rmdformats/master/inst/examples/html_clean/iris.html)
+- the `html_docco` format ([Sample HTML output](https://rawgit.com/juba/rmdformats/master/inst/examples/html_docco/iris.html)) :
+ :
+
+![](inst/examples/screenshots/html_docco.png)
+
+
+Some extra features are available depending on the format, such as automatic and dynamic 
+javascript table of contents or automatic thumbnails for figures with lightbox display.
+
 
 The package also provide a `create.doc()` function as well as RStudio document
 templates to easily generate an empty and ready to use RMarkdown file with
@@ -46,7 +51,7 @@ The `create.doc()` function allows you to create a new directory with a clean
 ready-to-use RMarkdown file. `crate.doc()` gets two main arguments :
 
 - `dirname` is the name of the folder and RMarkdown file to be created
-- `format` is the format name (only `"html_clean"` is available for now on)
+- `format` is the format name (only `"html_clean"` and `"html_docco"` are available for now)
 
 By default, a `Makefile` file will be created in the new folder for direct
 rendering from the command line.
@@ -81,6 +86,7 @@ You can also clean out any generated files and cache with `make clean`.
 - [Tocify](http://gregfranko.com/jquery.tocify.js/) for the dynamic javascript table of contents
 - [Magnific popup](http://dimsemenov.com/plugins/magnific-popup/) lightbox plugin
 - The code of `create.doc()` is heavily inspired by the `create.project()` function of the [ProjectTemplate package](http://projecttemplate.net/)
+- The CSS for the `html_docco` format is heavily inspired from the default one of the [docco](https://jashkenas.github.io/docco/) project.
 
 The `html_clean` styling and features are very similar to the ones from the great
 [knitrBootstrap package](https://github.com/jimhester/knitrBootstrap) by Jim
