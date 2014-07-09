@@ -12,8 +12,8 @@ all : html
 html : 
 	Rscript \
 	   -e "library(rmarkdown)"  \
-	   -e "library(rmdclean)"  \
-	   -e "render('$(RMDFILE)', 'rmdclean_document')"
+	   -e "library(rmdformats)"  \
+	   -e "render('$(RMDFILE)', 'html_clean')"
 
 pdf : 
 	Rscript \
