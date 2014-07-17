@@ -68,7 +68,7 @@ You can render your document into HTML directly from within R with the
 `render()` function from the `rmarkdown` package :
 
     library(rmarkdown)
-    render('mydoc.Rmd)
+    render("mydoc.Rmd")
 
 ### Rendering with the Makefile
 
