@@ -44,7 +44,7 @@ Here is a sample code chunk, just to show that syntax highlighting works as expe
 html_dependency_jquery_ui <- function() {
   htmlDependency(name = "jquery-ui",
                  version = "1.10.4",
-                 src = system.file("template/jquery-ui-1.10.4", package="rmdclean"),
+                 src = system.file("template/jquery-ui-1.10.4", package="rmdformats"),
                  script = "jquery-ui-1.10.4.custom.min.js")
 }
 ```

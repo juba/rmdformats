@@ -12,7 +12,7 @@ all : html
 html : 
 	Rscript \
 	   -e "library(rmarkdown)"  \
-	   -e "library(rmdclean)"  \
+	   -e "library(rmdformats)"  \
 	   -e "render('$(RMDFILE)', 'html_docco')"
 
 pdf : 

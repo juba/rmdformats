@@ -14,10 +14,11 @@ Imports:
     knitr,
     rmarkdown,
     htmltools
-URL: https://github.com/juba/rmdclean
+URL: https://github.com/juba/rmdformats
 Collate:
     'create.doc.R'
     'pilltabs.R'
     'html_clean.R'
     'rmdformats-package.R'
     'html_docco.R'
+
