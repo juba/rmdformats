@@ -135,7 +135,7 @@ html_docco <- function(number_sections = FALSE,
             caption <- ""
         }
         out <- "<div class='figure'>"
-        out <- paste0(out, "<a class='image-link' href='",name,"' title='",options$fig.cap,"'>")
+        out <- paste0(out, "<a class='image-link' href='#' title='",options$fig.cap,"'>")
         out <- paste0(out, "<img src='",name,"' class='img-polaroid image-thumb' />")
         out <- paste0(out, "</a>")
         out <- paste0(out, caption)
