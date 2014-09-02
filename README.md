@@ -48,7 +48,7 @@ templates.
 ### Without RStudio
 
 The `create.doc()` function allows you to create a new directory with a clean
-ready-to-use RMarkdown file. `crate.doc()` gets two main arguments :
+ready-to-use RMarkdown file. `create.doc()` gets two main arguments :
 
 - `dirname` is the name of the folder and RMarkdown file to be created
 - `format` is the format name (only `"html_clean"` and `"html_docco"` are available for now)
