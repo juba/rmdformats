@@ -8,15 +8,13 @@ output:
 ---
 
 
-```{r knitr_init, echo=FALSE, results="asis", cache=FALSE}
+```{r knitr_init, echo=FALSE, cache=FALSE}
 library(knitr)
 
 ## Global options
 options(max.print="75")
-opts_chunk$set(fig.path="out/",
-               echo=FALSE,
-	       cache=TRUE,
-               cache.path="cache/",
+opts_chunk$set(echo=FALSE,
+	             cache=TRUE,
                prompt=FALSE,
                tidy=TRUE,
                comment=NA,
