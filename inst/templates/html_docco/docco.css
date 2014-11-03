@@ -109,6 +109,9 @@ img {
 
 img.image-thumb {
     width: 250px;
+    cursor: pointer;
+    border: 1px solid #CCC;
+    padding: 2px;
 }
 
 .figure {
@@ -125,6 +128,12 @@ img.image-thumb {
     font-style: italic;
     font-size: 80%;
     margin: 10px 0px;
+}
+
+img.mfp-img {
+  background-color: #FFFFFF;
+  padding: 0px;
+  margin: 40px 0px;
 }
 
 

@@ -2,24 +2,29 @@ $(function() {
 
     /* Table of contents */
     $("#toc").tocify({
-	selectors: "h1,h2",
-	theme: "none",
-	smoothScrollSpeed: "fast",
-	highlightOffset: 40,
-	showEffectSpeed: "fast",
-	hideEffectSpeed: "fast"
+    	selectors: "h1,h2",
+      ignoreSelector: "h1.title",
+    	theme: "none",
+    	smoothScrollSpeed: "fast",
+    	highlightOffset: 40,
+    	showEffectSpeed: "fast",
+    	hideEffectSpeed: "fast"
     });
 
     /* Magnific popup */
-    $('.image-link').each(function() {
-	$(this).magnificPopup({
-	    type:'image',
-	    closeOnContentClick: true,
-	    items: {
-		src: $(this).find('img').attr('src'),
-	    }
-	});
+    $('.figure img').each(function() {
+      $(this).magnificPopup({
+	      type:'image',
+	      closeOnContentClick: true,
+	      items: {
+		      src: $(this).attr('src'),
+          title: $(this).attr('alt'),
+	      },
+        titleSrc: 'title',
+ 	    });
+      $(this).addClass("image-thumb");
     });
+
 
 });
 
