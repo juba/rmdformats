@@ -2,7 +2,7 @@ Package: rmdformats
 Maintainer: Julien Barnier <julien.barnier@ens-lyon.fr>
 Authors@R: c(person("Julien", "Barnier", email="julien.barnier@ens-lyon.fr",
     role=c("aut","cre")))
-Version: 0.1
+Version: 0.1.1
 Date: 2014-11-03
 License: GPL (>= 2)
 Encoding: UTF-8
