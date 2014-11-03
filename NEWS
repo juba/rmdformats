@@ -1,4 +1,12 @@
 rmdformats 0.1
 --------------
 
+* Add caption to magnific popup
+* HTML formats refactoring : now derived from html_document(), much simpler code
+
+
+
+rmdformats 0.0.1
+--------------
+
 * First version
