@@ -5,6 +5,9 @@ MDFILE  := $(FILE).md
 PDFFILE := $(FILE).pdf
 HTMLFILE := $(FILE).html
 TEXFILE := $(FILE).tex
+CACHEDIR := $(FILE)_cache
+FILESDIR := $(FILE)_files
+
 
 
 all : html
@@ -21,8 +24,8 @@ pdf :
            -e "render('$(RMDFILE)', 'pdf_document')"
 
 clean :
-	if [ -d cache ]; then  rm -rf cache/; fi
-	if [ -d out ]; then  rm -rf out/; fi
+	if [ -d $(CACHEDIR) ]; then  rm -rf $(CACHEDIR); fi
+	if [ -d $(FILESDIR) ]; then  rm -rf $(FILESDIR); fi
 	if [ -e $(MDFILE) ]; then rm $(MDFILE); fi
 	if [ -e $(PDFFILE) ]; then rm $(PDFFILE); fi
 	if [ -e $(HTMLFILE) ]; then rm $(HTMLFILE); fi
