@@ -10,16 +10,14 @@ output:
 
 ```{r knitr_init, echo=FALSE, results="asis", cache=FALSE}
 library(knitr)
+library(rmdformats)
 
 ## Global options
 options(max.print="75")
-opts_chunk$set(fig.path="out/",
-               echo=FALSE,
-	       cache=TRUE,
-               cache.path="cache/",
+opts_chunk$set(echo=FALSE,
+	             cache=TRUE,
                prompt=FALSE,
                tidy=TRUE,
-#               background=".95,.95,.95",
                comment=NA,
                message=FALSE,
                warning=FALSE)
@@ -62,7 +60,7 @@ str(iris)
 
 Here is a sample table output.
 
-```{r iris_table, results='asis'}
+```{r iris_table}
 tab <- iris %>%
              group_by(Species) %>%
              summarise(Sepal.Length=mean(Sepal.Length),
@@ -77,7 +75,7 @@ Here we display a crosstab displayed in several different ways with a "pills"
 interface. To do this, just pass your `table()` result to the `pilltabs()`
 function.
 
-```{r iris_pilltabs, results='asis'}
+```{r iris_pilltabs, results="asis"}
 
 iris$seplc <- cut(iris$Sepal.Length,3)
 tab <- table(iris$Species, iris$seplc)
