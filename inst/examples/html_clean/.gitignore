@@ -1,4 +1,4 @@
-cache/
-out/
+iris_cache/
+iris_files/
 *.md
 .#*
