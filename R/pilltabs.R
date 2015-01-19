@@ -22,16 +22,8 @@
 
 pilltabs <- function(tab, count=TRUE, rows=TRUE, cols=TRUE, chisq=TRUE, resid=TRUE) {
 
-    ## Tab counter for generating unique div ids
-    if (!exists(".dyntabseq", envir=parent.frame())) {
-        .dseq <- 1
-        assign(".dyntabseq", 1, envir=parent.frame())
-    }
-    else {
-        .dseq <- get(".dyntabseq", envir=parent.frame())
-        .dseq <- .dseq + 1
-        assign(".dyntabseq", .dseq, envir=parent.frame())
-    }
+    ## Generating unique div ids
+    .dseq <- runif(1) * 10e7
         
     result <- paste0('<ul class="nav nav-pills">\n',
                     '  <li class="active"><a href="#dyntab-count', .dseq,'" data-toggle="pill">Count</a></li>\n',
