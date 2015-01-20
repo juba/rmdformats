@@ -62,6 +62,24 @@ pilltabs <- function(tab, count=TRUE, rows=TRUE, cols=TRUE, chisq=TRUE, resid=TR
                         ', p = ', format.pval(test$p.value, digits=4),
                         '</p>')
     }
-    asis_output(result)
-    
+    class(result) <- "pilltabs"
+    result
 }
+
+
+#' @export
+print.pilltabs <- function(tab) {
+  cat(tab)
+}
+
+#' @export
+knit_print.pilltabs <- function(tab) {
+  asis_output(tab)  
+}
+
+
+
+
+
+
+
