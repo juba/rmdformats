@@ -6,7 +6,6 @@
 
 <meta charset="utf-8">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="Content-Style-Type" content="text/css" />
 <meta name="generator" content="pandoc" />
 
 $for(author-meta)$
@@ -71,10 +70,18 @@ $if(theme)$
   margin-left: auto;
   margin-right: auto;
 }
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img { 
+  max-width:100%; 
+  height: auto; 
+}
 </style>
 <div class="container-fluid main-container">
-  <div class="row-fluid">
-     <div class="span10">
+  <div class="row">
+     <div class="col-md-10">
 $endif$
 
 
@@ -117,7 +124,7 @@ $endfor$
 
 $if(theme)$
     </div>
-    <div class="span2 visible-desktop">
+    <div class="col-md-2">
       <div id="toc" class="tocify"> 
       	<button type="button" class="close" data-dismiss="alert">×</button>
       </div>
@@ -135,15 +142,17 @@ $$(document).ready(function () {
 </script>
 $endif$
 
-<!-- dynamically load mathjax for compatibility with --self-contained -->
+$if(mathjax-url)$
+<!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    script.src  = "$mathjax-url$";
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>
+$endif$
 
 </body>
 </html>

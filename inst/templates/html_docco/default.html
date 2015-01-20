@@ -6,7 +6,6 @@
 
 <meta charset="utf-8">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="Content-Style-Type" content="text/css" />
 <meta name="generator" content="pandoc" />
 
 $for(author-meta)$
@@ -71,17 +70,23 @@ $if(theme)$
   margin-left: auto;
   margin-right: auto;
 }
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img { 
+  max-width:100%; 
+  height: auto; 
+}
 </style>
 <div class="container-fluid main-container">
-  <div class="row-fluid">
-     <div class="page span10 offset1">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 page">
 $endif$
-
 
 $for(include-before)$
 $include-before$
 $endfor$
-
 
 $if(title)$
 <div id="$idprefix$header">
@@ -109,6 +114,12 @@ $endif$
 </div>
 $endif$
 
+$if(toc)$
+<div id="$idprefix$TOC">
+$toc$
+</div>
+$endif$
+
 $body$
 
 $for(include-after)$
@@ -130,15 +141,17 @@ $$(document).ready(function () {
 </script>
 $endif$
 
-<!-- dynamically load mathjax for compatibility with --self-contained -->
+$if(mathjax-url)$
+<!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    script.src  = "$mathjax-url$";
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>
+$endif$
 
 </body>
 </html>
