@@ -191,6 +191,11 @@ img.mfp-img {
     display: table;
 }
 
+.nav-pills li a {
+    padding: 3px 12px !important;
+    margin: 0px 3px !important;
+}
+
 .nav-pills li.active a,
 .nav-pills li.active a:hover,
 .nav-pills li.active a:focus
@@ -199,7 +204,7 @@ img.mfp-img {
 }
 
 .nav-pills li.active a:hover {
-    color: #000;
+    color: #FFF;
 }
 
 
