@@ -112,6 +112,12 @@ img.mfp-img {
 .nav-pills {
     margin-top: 20px;
     margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.nav-pills > li > a {
+    padding: 3px 12px !important;
+    margin-right: 5px !important;
 }
 
 /* Chi-squared results */
