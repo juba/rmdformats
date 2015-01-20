@@ -11,6 +11,10 @@ $(function() {
     	hideEffectSpeed: "fast"
     });
 
+    $("#toc .close").click(function() {
+      $("#toc").slideUp();
+    })
+
     /* Magnific popup */
     $('.figure img').each(function() {
       $(this).magnificPopup({
