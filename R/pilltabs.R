@@ -17,7 +17,7 @@
 #' @author Julien Barnier <julien.barnier@@ens-lyon.fr>
 #' @export
 #' @importFrom questionr cprop rprop chisq.residuals
-#' @importFrom knitr kable
+#' @importFrom knitr kable asis_output
 
 
 pilltabs <- function(tab, count=TRUE, rows=TRUE, cols=TRUE, chisq=TRUE, resid=TRUE) {
@@ -62,6 +62,6 @@ pilltabs <- function(tab, count=TRUE, rows=TRUE, cols=TRUE, chisq=TRUE, resid=TR
                         ', p = ', format.pval(test$p.value, digits=4),
                         '</p>')
     }
-    cat(result)
+    asis_output(result)
     
 }
