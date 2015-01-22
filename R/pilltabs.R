@@ -70,17 +70,20 @@ knit_print.pilltabs <- function(res, options) {
   if (knitr::opts_knit$get("rmarkdown.pandoc.to")=="html") {
     ## Generating unique div ids
     id <- round(runif(1) * 10e10)
-    result <- paste0(result,
-                     '<ul class="nav nav-pills">\n',
-                     '  <li class="active"><a href="#dyntab-count', id,'" data-toggle="pill">Count</a></li>\n',
-                     '  <li><a href="#dyntab-rows', id,'" data-toggle="pill">Rows %</a></li>\n',
-                     '  <li><a href="#dyntab-columns', id,'" data-toggle="pill">Columns %</a></li>\n ',
-                     '  <li><a href="#dyntab-residuals', id,'" data-toggle="pill">Residuals</a></li>\n',
-                     '</ul>\n',
-                     '<div class="tab-content">\n')
+    result <- paste0(result, '<ul class="nav nav-pills nav-pilltabs">\n')
+    if (!is.null(res[["count"]]))
+      result <- paste0(result, '<li><a href="#dyntab-count', id,'" data-toggle="pill">Count</a></li>\n')
+    if (!is.null(res[["rows"]]))
+      result <- paste0(result, '<li><a href="#dyntab-rows', id,'" data-toggle="pill">Rows %</a></li>\n')
+    if (!is.null(res[["cols"]]))
+      result <- paste0(result, '<li><a href="#dyntab-columns', id,'" data-toggle="pill">Columns %</a></li>\n')
+    if (!is.null(res[["resid"]]))
+      result <- paste0(result, '<li><a href="#dyntab-residuals', id,'" data-toggle="pill">Residuals</a></li>\n')
+    result <- paste0(result, '</ul>\n')
+    result <- paste0(result, '<div class="tab-content">\n')
     if (!is.null(res[["count"]]))
       result <- paste0(result,
-                       '  <div class="tab-pane active" id="dyntab-count', id,'">\n\n\n',
+                       '  <div class="tab-pane" id="dyntab-count', id,'">\n\n\n',
                        paste(res[["count"]], collapse="\n"),
                        '\n\n\n  </div>\n')
     if (!is.null(res[["rows"]]))    
