@@ -165,8 +165,11 @@ img.mfp-img {
     font-size: 90%;
 }
 
-#toc .tocify-focus a {
+#toc .tocify-focus a, #toc a:hover {
     color: #3388E0;
+}
+
+#toc .tocify-focus a {
     border-left: 2px solid #3388E0;
     padding-left: 18px;
 }
