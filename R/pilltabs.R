@@ -21,60 +21,109 @@
 
 
 pilltabs <- function(tab, count=TRUE, rows=TRUE, cols=TRUE, chisq=TRUE, resid=TRUE) {
+  
+    res <- list()
 
-    ## Generating unique div ids
-    .dseq <- paste0("tab", runif(1) * 10e15)
-        
-    result <- paste0('<ul class="nav nav-pills">\n',
-                    '  <li class="active"><a href="#dyntab-count', .dseq,'" data-toggle="pill">Count</a></li>\n',
-                    '  <li><a href="#dyntab-rows', .dseq,'" data-toggle="pill">Rows %</a></li>\n',
-                    '  <li><a href="#dyntab-columns', .dseq,'" data-toggle="pill">Columns %</a></li>\n ',
-                    '  <li><a href="#dyntab-residuals', .dseq,'" data-toggle="pill">Residuals</a></li>\n',
-                    '</ul>\n',
-                    '<div class="tab-content">\n')
-    if (count)
-        result <- paste0(result,
-                        '  <div class="tab-pane active" id="dyntab-count', .dseq,'">\n\n\n',
-                        paste(kable(tab, output=FALSE), collapse="\n"),
-                        '\n\n\n  </div>\n')
-    if (rows)    
-        result <- paste0(result,
-                        '  <div class="tab-pane" id="dyntab-rows', .dseq,'">\n\n\n',
-                        paste(kable(round(questionr::rprop(tab, n=TRUE),1), output=FALSE), collapse="\n"),
-                        '\n\n\n  </div>\n')
-    if (cols)    
-        result <- paste0(result,
-                        '  <div class="tab-pane" id="dyntab-columns', .dseq,'">\n\n\n',
-                        paste(kable(round(questionr::cprop(tab, n=TRUE),1), output=FALSE), collapse="\n"),
-                        '\n\n\n  </div>\n', sep="\n")
-    if (resid)    
-        result <- paste0(result,
-                        '  <div class="tab-pane" id="dyntab-residuals', .dseq,'">\n\n\n',
-                        paste(kable(round(questionr::chisq.residuals(tab),2), output=FALSE), collapse="\n"),
-                        '\n\n\n  </div>\n', sep="\n")
-    result <- paste0(result,
-                    '</div>', sep="\n")
+    if (count) res[["count"]] <- kable(tab, output=FALSE)
+    if (rows)  res[["rows"]] <- kable(round(questionr::rprop(tab, n=TRUE),1), output=FALSE)
+    if (cols)  res[["cols"]] <- kable(round(questionr::cprop(tab, n=TRUE),1), output=FALSE)
+    if (resid) res[["resid"]] <- kable(round(questionr::chisq.residuals(tab),2), output=FALSE)
     if (chisq) {
-        test <- chisq.test(tab)
-        result <- paste0(result,
-                        '<p class="chisq-results">X-squared = ', round(test$statistic, 4),
-                        ', df = ', test$parameter,
-                        ', p = ', format.pval(test$p.value, digits=4),
-                        '</p>')
+      test <- chisq.test(tab)
+      res[["chisq"]] <- paste0('X-squared = ', round(test$statistic, 4), 
+                               ', df = ', test$parameter,
+                               ', p = ', format.pval(test$p.value, digits=4)) 
     }
-    class(result) <- "pilltabs"
-    result
+    class(res) <- "pilltabs"
+    res
 }
 
 
 #' @export
-print.pilltabs <- function(tab) {
-  cat(tab)
+print.pilltabs <- function(res) {
+  if (!is.null(res[["count"]])) {
+    cat("\n--- COUNT ---\n\n")
+    cat(res[["count"]], sep="\n")
+  }
+  if (!is.null(res[["rows"]])) {
+    cat("\n--- ROWS % ---\n\n")
+    cat(res[["rows"]], sep="\n")
+  }
+  if (!is.null(res[["cols"]])) {
+    cat("\n--- COLS % ---\n\n")
+    cat(res[["cols"]], sep="\n")
+  }
+  if (!is.null(res[["resid"]])) {
+    cat("\n--- CHI2 RESIDUALS ---\n\n")
+    cat(res[["resid"]], sep="\n")
+  }
+  if (!is.null(res[["chisq"]])) {
+    cat("\n\n",res[["chisq"]],"\n\n")
+  }
 }
 
 #' @export
-knit_print.pilltabs <- function(tab) {
-  asis_output(tab)  
+#' @importFrom knitr opts_knit
+knit_print.pilltabs <- function(res, options) {
+  result <- ""
+    
+  if (knitr::opts_knit$get("rmarkdown.pandoc.to")=="html") {
+    ## Generating unique div ids
+    id <- round(runif(1) * 10e10)
+    result <- paste0(result,
+                     '<ul class="nav nav-pills">\n',
+                     '  <li class="active"><a href="#dyntab-count', id,'" data-toggle="pill">Count</a></li>\n',
+                     '  <li><a href="#dyntab-rows', id,'" data-toggle="pill">Rows %</a></li>\n',
+                     '  <li><a href="#dyntab-columns', id,'" data-toggle="pill">Columns %</a></li>\n ',
+                     '  <li><a href="#dyntab-residuals', id,'" data-toggle="pill">Residuals</a></li>\n',
+                     '</ul>\n',
+                     '<div class="tab-content">\n')
+    if (!is.null(res[["count"]]))
+      result <- paste0(result,
+                       '  <div class="tab-pane active" id="dyntab-count', id,'">\n\n\n',
+                       paste(res[["count"]], collapse="\n"),
+                       '\n\n\n  </div>\n')
+    if (!is.null(res[["rows"]]))    
+      result <- paste0(result,
+                       '  <div class="tab-pane" id="dyntab-rows', id,'">\n\n\n',
+                       paste(res[["rows"]], collapse="\n"),
+                       '\n\n\n  </div>\n')
+    if (!is.null(res[["cols"]]))    
+      result <- paste0(result,
+                       '  <div class="tab-pane" id="dyntab-columns', id,'">\n\n\n',
+                       paste(res[["cols"]], collapse="\n"),
+                       '\n\n\n  </div>\n', sep="\n")
+    if (!is.null(res[["resid"]]))    
+      result <- paste0(result,
+                       '  <div class="tab-pane" id="dyntab-residuals', id,'">\n\n\n',
+                       paste(res[["resid"]], collapse="\n"),
+                       '\n\n\n  </div>\n', sep="\n")
+    result <- paste0(result,
+                     '</div>', sep="\n")
+    if (!is.null(res[["chisq"]])) {
+      result <- paste0(result,
+                       '<p class="chisq-results">', res[["chisq"]],'</p>')
+    }
+  }
+  else {
+    if (!is.null(res[["count"]])) {
+      result <- paste0(result, "\n\nCount :\n\n", paste(res[["count"]], collapse="\n"))
+    }
+    if (!is.null(res[["rows"]])) {
+      result <- paste0(result, "\n\nRows percentage :\n\n", paste(res[["rows"]], collapse="\n"))
+    }
+    if (!is.null(res[["cols"]])) {
+      result <- paste0(result, "\n\nColumns percentage :\n\n", paste(res[["cols"]], collapse="\n"))
+    }
+    if (!is.null(res[["resid"]])) {
+      result <- paste0(result, "\n\nChi-squared residuals :\n\n", paste(res[["resid"]], collapse="\n"))
+    }
+    if (!is.null(res[["chisq"]])) {
+      result <- paste0(result, "\n\n", res[["chisq"]])
+    }
+  }
+  
+  asis_output(result)
 }
 
 
