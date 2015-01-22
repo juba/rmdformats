@@ -18,6 +18,12 @@ default :
 	   -e "library(rmdformats)"  \
 	   -e "render('$(RMDFILE)')"
 
+html : 
+	Rscript \
+	   -e "library(rmarkdown)"  \
+	   -e "library(rmdformats)"  \
+	   -e "render('$(RMDFILE)', 'html_clean')"
+
 pdf : 
 	Rscript \
 	   -e "library(rmarkdown)" \
