@@ -20,14 +20,14 @@
 #' @importFrom knitr kable asis_output
 
 
-pilltabs <- function(tab, count=TRUE, rows=TRUE, cols=TRUE, chisq=TRUE, resid=TRUE) {
+pilltabs <- function(tab, count=TRUE, rows=TRUE, cols=TRUE, chisq=TRUE, resid=TRUE, row.names=TRUE) {
   
     res <- list()
 
-    if (count) res[["count"]] <- kable(tab, output=FALSE)
-    if (rows)  res[["rows"]] <- kable(round(questionr::rprop(tab, n=TRUE),1), output=FALSE)
-    if (cols)  res[["cols"]] <- kable(round(questionr::cprop(tab, n=TRUE),1), output=FALSE)
-    if (resid) res[["resid"]] <- kable(round(questionr::chisq.residuals(tab),2), output=FALSE)
+    if (count) res[["count"]] <- kable(tab, output=FALSE, row.names=row.names)
+    if (rows)  res[["rows"]] <- kable(round(questionr::rprop(tab, n=TRUE),1), output=FALSE, row.names=row.names)
+    if (cols)  res[["cols"]] <- kable(round(questionr::cprop(tab, n=TRUE),1), output=FALSE, row.names=row.names)
+    if (resid) res[["resid"]] <- kable(round(questionr::chisq.residuals(tab),2), output=FALSE, row.names=row.names)
     if (chisq) {
       test <- chisq.test(tab)
       res[["chisq"]] <- paste0('X-squared = ', round(test$statistic, 4), 
