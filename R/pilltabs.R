@@ -83,22 +83,22 @@ knit_print.pilltabs <- function(res, options) {
     result <- paste0(result, '<div class="tab-content">\n')
     if (!is.null(res[["count"]]))
       result <- paste0(result,
-                       '  <div class="tab-pane" id="dyntab-count', id,'">\n\n\n',
+                       '  <div class="tab-pane dyntab" id="dyntab-count', id,'">\n\n\n',
                        paste(res[["count"]], collapse="\n"),
                        '\n\n\n  </div>\n')
     if (!is.null(res[["rows"]]))    
       result <- paste0(result,
-                       '  <div class="tab-pane" id="dyntab-rows', id,'">\n\n\n',
+                       '  <div class="tab-pane dyntab" id="dyntab-rows', id,'">\n\n\n',
                        paste(res[["rows"]], collapse="\n"),
                        '\n\n\n  </div>\n')
     if (!is.null(res[["cols"]]))    
       result <- paste0(result,
-                       '  <div class="tab-pane" id="dyntab-columns', id,'">\n\n\n',
+                       '  <div class="tab-pane dyntab" id="dyntab-columns', id,'">\n\n\n',
                        paste(res[["cols"]], collapse="\n"),
                        '\n\n\n  </div>\n', sep="\n")
     if (!is.null(res[["resid"]]))    
       result <- paste0(result,
-                       '  <div class="tab-pane" id="dyntab-residuals', id,'">\n\n\n',
+                       '  <div class="tab-pane dyntab-residuals" id="dyntab-residuals', id,'">\n\n\n',
                        paste(res[["resid"]], collapse="\n"),
                        '\n\n\n  </div>\n', sep="\n")
     result <- paste0(result,
