@@ -30,6 +30,7 @@ html_docco <- function(fig_width = 6,
                        fig_height = 6,
                        fig_caption = TRUE,
                        highlight = "pygments",
+                       pandoc_args = NULL,
                        ...) {
   
   ## js and css dependencies
@@ -38,6 +39,11 @@ html_docco <- function(fig_width = 6,
                              html_dependency_magnific_popup(),
                              html_dependency_docco())
   
+  ## Force mathjax arguments
+  pandoc_args <- c(pandoc_args, 
+                   "--mathjax", 
+                   "--variable", paste0("mathjax-url:", rmarkdown:::default_mathjax()))
+  
   rmarkdown::html_document(
     template=system.file("templates/html_docco/default.html", package="rmdformats"),
     extra_dependencies = extra_dependencies,
@@ -45,6 +51,7 @@ html_docco <- function(fig_width = 6,
     fig_height = fig_height,
     fig_caption = fig_caption,
     highlight = highlight,
+    pandoc_args = pandoc_args,
     ...
   )
   
