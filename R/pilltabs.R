@@ -15,12 +15,16 @@
 #' @return
 #' No value is returned.
 #' @author Julien Barnier <julien.barnier@@ens-lyon.fr>
-#' @export
-#' @importFrom questionr cprop rprop chisq.residuals
 #' @importFrom knitr kable asis_output
+#' @importFrom questionr cprop rprop chisq.residuals
+#' @export
 
 
 pilltabs <- function(tab, count=TRUE, rows=TRUE, cols=TRUE, chisq=TRUE, resid=TRUE, row.names=TRUE) {
+  
+  if (!requireNamespace("questionr", quietly = TRUE))
+    stop("the questionr package is needed for the pilltabs() function to work. Please install it.",
+         call. = FALSE)  
   
     res <- list()
 

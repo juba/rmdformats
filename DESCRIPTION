@@ -2,16 +2,19 @@ Package: rmdformats
 Maintainer: Julien Barnier <julien.barnier@ens-lyon.fr>
 Authors@R: c(person("Julien", "Barnier", email="julien.barnier@ens-lyon.fr",
     role=c("aut","cre")))
-Version: 0.1.1
-Date: 2014-11-03
+Version: 0.1
+Date: 2015-12-04
 License: GPL (>= 2)
 Encoding: UTF-8
-Title: HTML output formats for RMarkdown documents
+Title: HTML Output Formats and Templates for RMarkdown Documents
 Description: HTML formats and templates for RMarkdown documents, with some extra
-    features such as automatic table of contents and lightboxed figures.
+    features such as automatic table of contents, lightboxed figures, dynamic
+    crosstab helper.
 Imports:
-    questionr,
     knitr,
     rmarkdown,
     htmltools
+Suggests:
+    questionr
 URL: https://github.com/juba/rmdformats
+RoxygenNote: 5.0.1

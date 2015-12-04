@@ -10,9 +10,7 @@
 #'   "zenburn", "haddock", and "textmate". Pass \code{NULL} to prevent syntax
 #'   highlighting.
 #' @param ... Additional function arguments passed to R Markdown \code{\link{html_document}}
-#'
 #' @return R Markdown output format to pass to \code{\link{render}}
-#'
 #' @examples
 #' \dontrun{
 #'
@@ -21,10 +19,9 @@
 #' render("input.Rmd", html_clean())
 #' 
 #' }
-#'
-#' @export
 #' @import rmarkdown
-#' @import htmltools
+#' @importFrom htmltools htmlDependency
+#' @export
 
 
 html_clean <- function(fig_width = 6,
@@ -48,7 +45,7 @@ html_clean <- function(fig_width = 6,
                    "--variable", paste0("mathjax-url:", rmarkdown:::default_mathjax()))
   
   rmarkdown::html_document(
-      template=system.file("templates/html_clean/default.html", package="rmdformats"),
+      template = system.file("templates/html_clean/default.html", package = "rmdformats"),
       extra_dependencies = extra_dependencies,
       fig_width = fig_width,
       fig_height = fig_height,
@@ -64,7 +61,7 @@ html_clean <- function(fig_width = 6,
 html_dependency_jquery_ui <- function() {
   htmltools::htmlDependency(name = "jquery-ui",
                  version = "1.10.4",
-                 src = system.file("templates/jquery-ui-1.10.4", package="rmdformats"),
+                 src = system.file("templates/jquery-ui-1.10.4", package = "rmdformats"),
                  script = "jquery-ui-1.10.4.custom.min.js")
 }
 
@@ -72,7 +69,7 @@ html_dependency_jquery_ui <- function() {
 html_dependency_tocify <- function() {
   htmltools::htmlDependency(name = "tocify",
                  version = "1.9.0",
-                 src = system.file("templates/tocify-1.9.0", package="rmdformats"),
+                 src = system.file("templates/tocify-1.9.0", package = "rmdformats"),
                  script = "jquery.tocify.min.js")
 }
 
@@ -80,7 +77,7 @@ html_dependency_tocify <- function() {
 html_dependency_magnific_popup <- function() {
   htmltools::htmlDependency(name = "magnific-popup",
                  version = "0.9.9",
-                 src = system.file("templates/magnific-popup-0.9.9", package="rmdformats"),
+                 src = system.file("templates/magnific-popup-0.9.9", package = "rmdformats"),
                  script = "jquery.magnific-popup.min.js",
                  stylesheet = "magnific-popup.css")
 }
@@ -89,7 +86,7 @@ html_dependency_magnific_popup <- function() {
 html_dependency_clean <- function() {
   htmltools::htmlDependency(name = "clean",
                  version = "0.1",
-                 src = system.file("templates/html_clean", package="rmdformats"),
+                 src = system.file("templates/html_clean", package = "rmdformats"),
                  script = "clean.js",
                  stylesheet = "clean.css")
 }
