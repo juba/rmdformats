@@ -1,7 +1,7 @@
 # rmdformats
 
 [![Travis-CI Build Status](https://travis-ci.org/juba/rmdformats.svg?branch=master)](https://travis-ci.org/juba/rmdformats)
-[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/rmdformats)](http://cran.r-project.org/package=rmdformats)
+<!-- [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/rmdformats)](http://cran.r-project.org/package=rmdformats) -->
 
 
 This R package provides ready-to-use HTML output formats and templates for
@@ -14,13 +14,13 @@ The package provides two HTML output formats. You can click on an image to see a
 
 ### `html_clean` format 
 
-[![](resources/screenshots/html_clean.png)](https://rawgit.com/juba/rmdformats/master/resources/examples/html_clean/html_clean_sample.html)
+[![](resources/screenshots/html_clean.png)](https://cdn.rawgit.com/juba/rmdformats/master/resources/examples/html_clean/html_clean_sample.html)
 
 
 
 ### `html_docco` format 
 
-[![](resources/screenshots/html_docco.png)](https://rawgit.com/juba/rmdformats/master/resources/examples/html_docco/html_docco_sample.html)
+[![](resources/screenshots/html_docco.png)](https://cdn.rawgit.com/juba/rmdformats/master/resources/examples/html_docco/html_docco_sample.html)
 
 
 
@@ -35,7 +35,7 @@ The package also provides a `create.doc()` function as well as RStudio document
 templates to easily generate an empty and ready to use rmarkdown file with
 several configuration directives.
 
-Finally, it also provides the `pilltabs()` helper function, which allows to display a crosstab dynamically. See [one of the output samples](https://rawgit.com/juba/rmdformats/master/resources/examples/html_clean/html_clean_sample.html#Table) for a live example.
+Finally, it also provides the `pilltabs()` helper function, which allows to display a crosstab dynamically. See [one of the output samples](https://cdn.rawgit.com/juba/rmdformats/master/resources/examples/html_clean/html_clean_sample.html#Table) for a live example.
 
 
 ## Installation
