@@ -1,7 +1,3 @@
-TODO.org
-README.md
-.projectile
 ^.*\.Rproj$
 ^\.Rproj\.user$
-^.*/iris_cache$
-^.*/iris_files$
+resources/
