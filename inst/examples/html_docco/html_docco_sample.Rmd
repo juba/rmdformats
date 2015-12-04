@@ -4,7 +4,7 @@ output:
   rmdformats::html_docco:
     fig_width: 6
     fig_height: 6
-    highlight: tango
+    highlight: kate
 ---
 
 
@@ -34,6 +34,10 @@ Here is a sample code chunk, just to show that syntax highlighting works as expe
 library(ggplot2)
 library(dplyr)
 
+not_null <- function (v) {
+  if (!is.null(v)) return(paste(v, "not null"))
+}
+
 data(iris)
 tab <- iris %>%
   group_by(Species) %>%
@@ -41,6 +45,7 @@ tab <- iris %>%
             Sepal.Width  = mean(Sepal.Width),
             Petal.Length = mean(Petal.Length),
             Petal.Width  = mean(Petal.Length))
+
 ```
 
 

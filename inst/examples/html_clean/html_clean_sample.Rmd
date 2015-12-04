@@ -4,7 +4,7 @@ output:
   rmdformats::html_clean:
     fig_width: 6
     fig_height: 6
-    highlight: tango
+    highlight: kate
 ---
 
 
@@ -33,6 +33,10 @@ Here is a sample code chunk, just to show that syntax highlighting works as expe
 ```{r sh, echo=TRUE, eval=TRUE}
 library(ggplot2)
 library(dplyr)
+
+not_null <- function (v) {
+  if (!is.null(v)) return(paste(v, "not null"))
+}
 
 data(iris)
 tab <- iris %>%

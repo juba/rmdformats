@@ -30,22 +30,20 @@
 <style type="text/css">
 table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
   margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; background-color: #f8f8f8; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; background-color: #dddddd; }
 td.sourceCode { padding-left: 5px; }
-pre, code { background-color: #f8f8f8; }
-code > span.kw { color: #204a87; font-weight: bold; }
-code > span.dt { color: #204a87; }
-code > span.dv { color: #0000cf; }
-code > span.bn { color: #0000cf; }
-code > span.fl { color: #0000cf; }
-code > span.ch { color: #4e9a06; }
-code > span.st { color: #4e9a06; }
-code > span.co { color: #8f5902; font-style: italic; }
-code > span.ot { color: #8f5902; }
-code > span.al { color: #ef2929; }
-code > span.fu { color: #000000; }
-code > span.er { font-weight: bold; }
+code > span.kw { font-weight: bold; }
+code > span.dt { color: #800000; }
+code > span.dv { color: #0000ff; }
+code > span.bn { color: #0000ff; }
+code > span.fl { color: #800080; }
+code > span.ch { color: #ff00ff; }
+code > span.st { color: #dd0000; }
+code > span.co { color: #808080; font-style: italic; }
+code > span.al { color: #00ff00; font-weight: bold; }
+code > span.fu { color: #000080; }
+code > span.er { color: #ff0000; font-weight: bold; }
 </style>
 <style type="text/css">
   pre:not([class]) {
@@ -92,6 +90,10 @@ img {
 <p>Here is a sample code chunk, just to show that syntax highlighting works as expected.</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(ggplot2)
 <span class="kw">library</span>(dplyr)
+
+not_null &lt;-<span class="st"> </span>function (v) {
+  if (!<span class="kw">is.null</span>(v)) <span class="kw">return</span>(<span class="kw">paste</span>(v, <span class="st">&quot;not null&quot;</span>))
+}
 
 <span class="kw">data</span>(iris)
 tab &lt;-<span class="st"> </span>iris %&gt;%
@@ -152,20 +154,20 @@ tab &lt;-<span class="st"> </span>iris %&gt;%
 <p>Here we display a crosstab displayed in several different ways with a “pills” interface. To do this, just pass your <code>table()</code> result to the <code>pilltabs()</code> function.</p>
 <ul class="nav nav-pills nav-pilltabs">
 <li>
-<a href="#dyntab-count52598879091" data-toggle="pill">Count</a>
+<a href="#dyntab-count77993253618" data-toggle="pill">Count</a>
 </li>
 <li>
-<a href="#dyntab-rows52598879091" data-toggle="pill">Rows %</a>
+<a href="#dyntab-rows77993253618" data-toggle="pill">Rows %</a>
 </li>
 <li>
-<a href="#dyntab-columns52598879091" data-toggle="pill">Columns %</a>
+<a href="#dyntab-columns77993253618" data-toggle="pill">Columns %</a>
 </li>
 <li>
-<a href="#dyntab-residuals52598879091" data-toggle="pill">Residuals</a>
+<a href="#dyntab-residuals77993253618" data-toggle="pill">Residuals</a>
 </li>
 </ul>
 <div class="tab-content">
-<div id="dyntab-count52598879091" class="tab-pane dyntab">
+<div id="dyntab-count77993253618" class="tab-pane dyntab">
 <table>
 <thead>
 <tr class="header">
@@ -197,7 +199,7 @@ tab &lt;-<span class="st"> </span>iris %&gt;%
 </tbody>
 </table>
 </div>
-<div id="dyntab-rows52598879091" class="tab-pane dyntab">
+<div id="dyntab-rows77993253618" class="tab-pane dyntab">
 <table>
 <thead>
 <tr class="header">
@@ -245,7 +247,7 @@ tab &lt;-<span class="st"> </span>iris %&gt;%
 </tbody>
 </table>
 </div>
-<div id="dyntab-columns52598879091" class="tab-pane dyntab">
+<div id="dyntab-columns77993253618" class="tab-pane dyntab">
 <table>
 <thead>
 <tr class="header">
@@ -295,7 +297,7 @@ tab &lt;-<span class="st"> </span>iris %&gt;%
 </tbody>
 </table>
 </div>
-<div id="dyntab-residuals52598879091" class="tab-pane dyntab-residuals">
+<div id="dyntab-residuals77993253618" class="tab-pane dyntab-residuals">
 <table>
 <thead>
 <tr class="header">
