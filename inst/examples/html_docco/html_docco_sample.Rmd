@@ -1,10 +1,10 @@
 ---
-title: "Iris dataset example"
+title: "html_docco template example"
 output:
-  rmdformats::html_clean:
+  rmdformats::html_docco:
     fig_width: 6
     fig_height: 6
-    highlight: pygments
+    highlight: tango
 ---
 
 
@@ -13,38 +13,34 @@ library(knitr)
 library(rmdformats)
 
 ## Global options
-options(max.print="75")
-opts_chunk$set(echo=FALSE,
-	             cache=TRUE,
-               prompt=FALSE,
-               tidy=TRUE,
-               comment=NA,
-               message=FALSE,
-               warning=FALSE)
-opts_knit$set(width=75)
+options(max.print = "75")
+opts_chunk$set(echo = FALSE,
+	             cache = FALSE,
+               prompt = FALSE,
+               tidy = FALSE,
+               comment = NA,
+               message = FALSE,
+               warning = FALSE)
+opts_knit$set(width = 75)
 ```
 
-```{r init,  echo=FALSE, results="hide"}
-library(ggplot2)
-library(dplyr)
-
-data(iris)
-```
-
-# Output examples
+# Code and tables
 
 ## Syntax highlighting
 
 Here is a sample code chunk, just to show that syntax highlighting works as expected.
 
-```{r sh, echo=TRUE, eval=FALSE}
-# create an html dependency for jquery-ui
-html_dependency_jquery_ui <- function() {
-  htmlDependency(name = "jquery-ui",
-                 version = "1.10.4",
-                 src = system.file("template/jquery-ui-1.10.4", package="rmdformats"),
-                 script = "jquery-ui-1.10.4.custom.min.js")
-}
+```{r sh, echo=TRUE, eval=TRUE}
+library(ggplot2)
+library(dplyr)
+
+data(iris)
+tab <- iris %>%
+  group_by(Species) %>%
+  summarise(Sepal.Length = mean(Sepal.Length),
+            Sepal.Width  = mean(Sepal.Width),
+            Petal.Length = mean(Petal.Length),
+            Petal.Width  = mean(Petal.Length))
 ```
 
 
@@ -61,12 +57,7 @@ str(iris)
 Here is a sample table output.
 
 ```{r iris_table}
-tab <- iris %>%
-             group_by(Species) %>%
-             summarise(Sepal.Length=mean(Sepal.Length),
-                       Sepal.Width=mean(Sepal.Width),
-                       Petal.Length=mean(Petal.Length),
-                       Petal.Width=mean(Petal.Length))
+
 kable(tab)
 
 ```
