@@ -1,9 +1,10 @@
 rmdformats 0.1
 --------------
 
+* Cleanup and document package for CRAN submission
+* Copy html_dependency_* and default_mathjax from rmarkdown to fix check notes
 * Add caption to magnific popup
 * HTML formats refactoring : now derived from html_document(), much simpler code
-
 
 
 rmdformats 0.0.1
