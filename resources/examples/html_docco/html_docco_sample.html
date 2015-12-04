@@ -76,7 +76,7 @@ img {
 
 
 <div id="header">
-<h1 class="title"><code>html_docco</code> template example</h1>
+<h1 class="title">html_docco template example</h1>
 </div>
 
 
@@ -149,7 +149,22 @@ tab &lt;-<span class="st"> </span>iris %&gt;%
 </tbody>
 </table>
 <p>Here we display a crosstab displayed in several different ways with a “pills” interface. To do this, just pass your <code>table()</code> result to the <code>pilltabs()</code> function.</p>
-<p>$count</p>
+<ul class="nav nav-pills nav-pilltabs">
+<li>
+<a href="#dyntab-count75441035209" data-toggle="pill">Count</a>
+</li>
+<li>
+<a href="#dyntab-rows75441035209" data-toggle="pill">Rows %</a>
+</li>
+<li>
+<a href="#dyntab-columns75441035209" data-toggle="pill">Columns %</a>
+</li>
+<li>
+<a href="#dyntab-residuals75441035209" data-toggle="pill">Residuals</a>
+</li>
+</ul>
+<div class="tab-content">
+<div id="dyntab-count75441035209" class="tab-pane dyntab">
 <table>
 <thead>
 <tr class="header">
@@ -180,7 +195,8 @@ tab &lt;-<span class="st"> </span>iris %&gt;%
 </tr>
 </tbody>
 </table>
-<p>$rows</p>
+</div>
+<div id="dyntab-rows75441035209" class="tab-pane dyntab">
 <table>
 <thead>
 <tr class="header">
@@ -227,7 +243,8 @@ tab &lt;-<span class="st"> </span>iris %&gt;%
 </tr>
 </tbody>
 </table>
-<p>$cols</p>
+</div>
+<div id="dyntab-columns75441035209" class="tab-pane dyntab">
 <table>
 <thead>
 <tr class="header">
@@ -276,7 +293,8 @@ tab &lt;-<span class="st"> </span>iris %&gt;%
 </tr>
 </tbody>
 </table>
-<p>$resid</p>
+</div>
+<div id="dyntab-residuals75441035209" class="tab-pane dyntab-residuals">
 <table>
 <thead>
 <tr class="header">
@@ -307,8 +325,11 @@ tab &lt;-<span class="st"> </span>iris %&gt;%
 </tr>
 </tbody>
 </table>
-<p>$chisq [1] “X-squared = 111.6339, df = 4, p = &lt; 2.2e-16”</p>
-<p>attr(,“class”) [1] “pilltabs”</p>
+</div>
+</div>
+<p class="chisq-results">
+X-squared = 111.6339, df = 4, p = &lt; 2.2e-16
+</p>
 </div>
 </div>
 <div id="figures" class="section level1">

@@ -43,7 +43,7 @@ pilltabs <- function(tab, count = TRUE, rows = TRUE, cols = TRUE, chisq = TRUE, 
     res
 }
 
-
+#' @export
 print.pilltabs <- function(x) {
   if (!is.null(x[["count"]])) {
     cat("\n--- COUNT ---\n\n")
@@ -66,7 +66,9 @@ print.pilltabs <- function(x) {
   }
 }
 
+
 #' @importFrom knitr opts_knit
+#' @export
 knit_print.pilltabs <- function(res, options) {
   result <- ""
     
