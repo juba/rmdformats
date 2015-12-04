@@ -1,5 +1,5 @@
 ---
-title: "`html_docco` template example"
+title: "html_docco template example"
 output:
   rmdformats::html_docco:
     fig_width: 6

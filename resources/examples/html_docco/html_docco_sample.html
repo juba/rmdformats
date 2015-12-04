@@ -149,22 +149,7 @@ tab &lt;-<span class="st"> </span>iris %&gt;%
 </tbody>
 </table>
 <p>Here we display a crosstab displayed in several different ways with a “pills” interface. To do this, just pass your <code>table()</code> result to the <code>pilltabs()</code> function.</p>
-<ul class="nav nav-pills nav-pilltabs">
-<li>
-<a href="#dyntab-count36452609068" data-toggle="pill">Count</a>
-</li>
-<li>
-<a href="#dyntab-rows36452609068" data-toggle="pill">Rows %</a>
-</li>
-<li>
-<a href="#dyntab-columns36452609068" data-toggle="pill">Columns %</a>
-</li>
-<li>
-<a href="#dyntab-residuals36452609068" data-toggle="pill">Residuals</a>
-</li>
-</ul>
-<div class="tab-content">
-<div id="dyntab-count36452609068" class="tab-pane dyntab">
+<p>$count</p>
 <table>
 <thead>
 <tr class="header">
@@ -195,8 +180,7 @@ tab &lt;-<span class="st"> </span>iris %&gt;%
 </tr>
 </tbody>
 </table>
-</div>
-<div id="dyntab-rows36452609068" class="tab-pane dyntab">
+<p>$rows</p>
 <table>
 <thead>
 <tr class="header">
@@ -243,8 +227,7 @@ tab &lt;-<span class="st"> </span>iris %&gt;%
 </tr>
 </tbody>
 </table>
-</div>
-<div id="dyntab-columns36452609068" class="tab-pane dyntab">
+<p>$cols</p>
 <table>
 <thead>
 <tr class="header">
@@ -293,8 +276,7 @@ tab &lt;-<span class="st"> </span>iris %&gt;%
 </tr>
 </tbody>
 </table>
-</div>
-<div id="dyntab-residuals36452609068" class="tab-pane dyntab-residuals">
+<p>$resid</p>
 <table>
 <thead>
 <tr class="header">
@@ -325,11 +307,8 @@ tab &lt;-<span class="st"> </span>iris %&gt;%
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-<p class="chisq-results">
-X-squared = 111.6339, df = 4, p = &lt; 2.2e-16
-</p>
+<p>$chisq [1] “X-squared = 111.6339, df = 4, p = &lt; 2.2e-16”</p>
+<p>attr(,“class”) [1] “pilltabs”</p>
 </div>
 </div>
 <div id="figures" class="section level1">
