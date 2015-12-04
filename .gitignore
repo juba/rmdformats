@@ -9,3 +9,4 @@
 .projectile
 .Rproj.user
 *.Rproj
+inst/doc

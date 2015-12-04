@@ -10,10 +10,11 @@ Title: HTML Output Formats and Templates for RMarkdown Documents
 Description: HTML formats and templates for RMarkdown documents, with some extra
     features such as automatic table of contents, lightboxed figures, dynamic
     crosstab helper.
-Imports:
+Imports: 
     knitr,
     rmarkdown,
     htmltools,
     questionr
 URL: https://github.com/juba/rmdformats
 RoxygenNote: 5.0.1
+VignetteBuilder: knitr
