@@ -1,12 +1,12 @@
-FILE    := `basename *.Rmd .Rmd`
+FILE    = `basename *.Rmd .Rmd`
 
-RMDFILE := $(FILE).Rmd
-MDFILE  := $(FILE).md
-PDFFILE := $(FILE).pdf
-HTMLFILE := $(FILE).html
-TEXFILE := $(FILE).tex
-CACHEDIR := $(FILE)_cache
-FILESDIR := $(FILE)_files
+RMDFILE = $(FILE).Rmd
+MDFILE  = $(FILE).md
+PDFFILE = $(FILE).pdf
+HTMLFILE = $(FILE).html
+TEXFILE = $(FILE).tex
+CACHEDIR = $(FILE)_cache
+FILESDIR = $(FILE)_files
 
 
 
