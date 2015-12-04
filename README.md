@@ -1,5 +1,7 @@
-rmdformats
-===============
+# rmdformats
+
+[![Travis-CI Build Status](https://travis-ci.org/juba/rmdformats.svg?branch=master)](https://travis-ci.org/juba/rmdformats)
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/rmdformats)](http://cran.r-project.org/package=rmdformats)
 
 
 This R package provides ready-to-use HTML output formats and templates for
