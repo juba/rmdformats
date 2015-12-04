@@ -13,8 +13,7 @@ Description: HTML formats and templates for RMarkdown documents, with some extra
 Imports:
     knitr,
     rmarkdown,
-    htmltools
-Suggests:
+    htmltools,
     questionr
 URL: https://github.com/juba/rmdformats
 RoxygenNote: 5.0.1
