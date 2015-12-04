@@ -9,6 +9,7 @@
 #'   "default", "tango", "pygments", "kate", "monochrome", "espresso",
 #'   "zenburn", "haddock", and "textmate". Pass \code{NULL} to prevent syntax
 #'   highlighting.
+#' @param pandoc_args arguments passed to the pandoc_args argument of rmarkdown \code{\link{html_document}}
 #' @param ... Additional function arguments passed to R Markdown \code{\link{html_document}}
 #' @return R Markdown output format to pass to \code{\link{render}}
 #' @examples
@@ -32,8 +33,8 @@ html_clean <- function(fig_width = 6,
                        ...) {
  
   ## js and css dependencies
-  extra_dependencies <- list(rmarkdown:::html_dependency_jquery(),
-                             rmarkdown:::html_dependency_bootstrap("bootstrap"),
+  extra_dependencies <- list(html_dependency_jquery(),
+                             html_dependency_bootstrap("bootstrap"),
                              html_dependency_jquery_ui(),
                              html_dependency_tocify(),
                              html_dependency_magnific_popup(),
@@ -42,7 +43,7 @@ html_clean <- function(fig_width = 6,
   ## Force mathjax arguments
   pandoc_args <- c(pandoc_args, 
                    "--mathjax", 
-                   "--variable", paste0("mathjax-url:", rmarkdown:::default_mathjax()))
+                   "--variable", paste0("mathjax-url:", default_mathjax()))
   
   rmarkdown::html_document(
       template = system.file("templates/html_clean/default.html", package = "rmdformats"),
@@ -55,31 +56,6 @@ html_clean <- function(fig_width = 6,
       ...
     )
       
-}
-
-# create an html dependency for jquery-ui
-html_dependency_jquery_ui <- function() {
-  htmltools::htmlDependency(name = "jquery-ui",
-                 version = "1.10.4",
-                 src = system.file("templates/jquery-ui-1.10.4", package = "rmdformats"),
-                 script = "jquery-ui-1.10.4.custom.min.js")
-}
-
-# create an html dependency for tocify
-html_dependency_tocify <- function() {
-  htmltools::htmlDependency(name = "tocify",
-                 version = "1.9.0",
-                 src = system.file("templates/tocify-1.9.0", package = "rmdformats"),
-                 script = "jquery.tocify.min.js")
-}
-
-# create an html dependency for Maginfic popup
-html_dependency_magnific_popup <- function() {
-  htmltools::htmlDependency(name = "magnific-popup",
-                 version = "0.9.9",
-                 src = system.file("templates/magnific-popup-0.9.9", package = "rmdformats"),
-                 script = "jquery.magnific-popup.min.js",
-                 stylesheet = "magnific-popup.css")
 }
 
 # html_clean js and css
