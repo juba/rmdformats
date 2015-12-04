@@ -53,13 +53,11 @@ blockquote {
 
 pre, tt, code {
     font-family: Menlo, Consolas, Monaco, monospace;
-    font-size: 12px;
     display: inline-block;
     border: 1px solid #EAEAEA;
     background: #f8f8f8;
     color: #555;
     padding: 0 5px;
-    line-height: 20px;
 }
 .page pre {
     margin: 0;
