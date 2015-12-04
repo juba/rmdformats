@@ -10,15 +10,17 @@ pilltabs(tab, count = TRUE, rows = TRUE, cols = TRUE, chisq = TRUE,
 \arguments{
 \item{tab}{a two dimensions table object}
 
-\item{count}{wether or not to the displya the count table}
+\item{count}{wether or not to the display the count table}
 
-\item{rows}{wether or not to the displya the row percentages table}
+\item{rows}{wether or not to the display the row percentages table}
 
-\item{cols}{wether or not to the displya the column percentages table}
+\item{cols}{wether or not to the display the column percentages table}
 
-\item{chisq}{wether or not to the displya the table chi-squared test results}
+\item{chisq}{wether or not to the display the table chi-squared test results}
 
-\item{resid}{wether or not to the displya the chi-squared residuals table}
+\item{resid}{wether or not to the display the chi-squared residuals table}
+
+\item{row.names}{wether or not to display the table row names}
 }
 \value{
 No value is returned.

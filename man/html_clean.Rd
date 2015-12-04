@@ -19,6 +19,8 @@ html_clean(fig_width = 6, fig_height = 6, fig_caption = TRUE,
 "zenburn", "haddock", and "textmate". Pass \code{NULL} to prevent syntax
 highlighting.}
 
+\item{pandoc_args}{arguments passed to the pandoc_args argument of rmarkdown \code{\link{html_document}}}
+
 \item{...}{Additional function arguments passed to R Markdown \code{\link{html_document}}}
 }
 \value{
