@@ -6,8 +6,8 @@ Version: 0.1
 Date: 2015-12-04
 License: GPL (>= 2)
 Encoding: UTF-8
-Title: HTML Output Formats and Templates for RMarkdown Documents
-Description: HTML formats and templates for RMarkdown documents, with some extra
+Title: HTML Output Formats and Templates for 'rmarkdown' Documents
+Description: HTML formats and templates for 'rmarkdown' documents, with some extra
     features such as automatic table of contents, lightboxed figures, dynamic
     crosstab helper.
 Imports: 
