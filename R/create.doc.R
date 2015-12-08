@@ -22,7 +22,6 @@
 #' @examples
 #' \dontrun{
 #' 
-#' library(rmdformats)
 #' create.doc("MyDocument", format="html_clean")
 #' 
 #' }

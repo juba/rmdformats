@@ -30,12 +30,17 @@ R Markdown output format to pass to \code{\link{render}}
 Format for converting from R Markdown to an HTML document.
 }
 \examples{
+
 \dontrun{
-
-library(rmdformats)
-
+# Simplest example
 render("input.Rmd", html_clean())
-
 }
+
+# Runnable example
+library(rmdformats)
+library(rmarkdown)
+rmd_file <- system.file("sample_file/example.Rmd", package="rmdformats")
+render(rmd_file, html_clean(), output_dir = tempdir())
+
 }
 

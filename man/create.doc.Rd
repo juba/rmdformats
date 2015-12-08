@@ -32,8 +32,11 @@ beginning of the Rmd file. This code allows to switch to the project root
 before running \code{load.project} when using the included Makefile.
 }
 \examples{
-library(rmdformats)
-\dontrun{create.doc("MyDocument", format="html_clean")}
+\dontrun{
+
+create.doc("MyDocument", format="html_clean")
+
+}
 }
 \author{
 Julien Barnier <julien.barnier@ens-lyon.fr>
