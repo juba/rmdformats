@@ -14,8 +14,10 @@
 #' @return R Markdown output format to pass to \code{\link{render}}
 #' @examples
 #' \dontrun{
+#' 
 #' library(rmdformats)
 #' render("input.Rmd", html_docco())
+#' 
 #' }
 #' @import rmarkdown
 #' @importFrom htmltools htmlDependency

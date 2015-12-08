@@ -20,8 +20,12 @@
 #' This function is heavily inspired and copied from the \link[ProjectTemplate]{create.project} function
 #' of the \code{ProjectTemplate} package.
 #' @examples
+#' \dontrun{
+#' 
 #' library(rmdformats)
-#' \dontrun{create.doc("MyDocument", format="html_clean")}
+#' create.doc("MyDocument", format="html_clean")
+#' 
+#' }
 #' @export
 
 create.doc <- function(dirname="new-doc", format="html_clean", report=FALSE, makefile=TRUE) {

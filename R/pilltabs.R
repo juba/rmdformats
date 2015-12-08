@@ -4,13 +4,13 @@
 #' within a dynamic tabbed interface, the count, line row percentages, column percentages and
 #' chi-squared residuals tables.
 #'
-##' @param tab a two dimensions table object
-##' @param count wether or not to the display the count table
-##' @param rows wether or not to the display the row percentages table
-##' @param cols wether or not to the display the column percentages table
-##' @param chisq wether or not to the display the table chi-squared test results
-##' @param resid wether or not to the display the chi-squared residuals table
-##' @param row.names wether or not to display the table row names
+#' @param tab a two dimensions table object
+#' @param count wether or not to the display the count table
+#' @param rows wether or not to the display the row percentages table
+#' @param cols wether or not to the display the column percentages table
+#' @param chisq wether or not to the display the table chi-squared test results
+#' @param resid wether or not to the display the chi-squared residuals table
+#' @param row.names wether or not to display the table row names
 #' @details
 #' The function is intended to be called inside an rmarkdown document.
 #' @return

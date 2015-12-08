@@ -16,7 +16,6 @@
 #' \dontrun{
 #'
 #' library(rmdformats)
-#'
 #' render("input.Rmd", html_clean())
 #' 
 #' }
