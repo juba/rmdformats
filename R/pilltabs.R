@@ -16,6 +16,12 @@
 #' @return
 #' No value is returned.
 #' @author Julien Barnier <julien.barnier@@ens-lyon.fr>
+#' @examples
+#' 
+#' data(airquality)
+#' tab <- table(airquality$Month, airquality$Ozone > 25)
+#' pilltabs(tab)
+#' 
 #' @import knitr
 #' @importFrom questionr cprop rprop chisq.residuals
 #' @importFrom stats chisq.test
