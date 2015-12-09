@@ -33,9 +33,7 @@ before running \code{load.project} when using the included Makefile.
 }
 \examples{
 \dontrun{
-
 create.doc("MyDocument", format="html_clean")
-
 }
 }
 \author{

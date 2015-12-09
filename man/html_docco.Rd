@@ -29,18 +29,4 @@ R Markdown output format to pass to \code{\link{render}}
 \description{
 Format for converting from R Markdown to an HTML document.
 }
-\examples{
-
-\dontrun{
-# Simplest example
-render("input.Rmd", html_docco())
-}
-
-# Runnable example
-library(rmdformats)
-library(rmarkdown)
-rmd_file <- system.file("sample_file/example.Rmd", package="rmdformats")
-render(rmd_file, html_docco(), output_dir = tempdir())
-
-}
 

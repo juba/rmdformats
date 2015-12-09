@@ -21,9 +21,7 @@
 #' of the \code{ProjectTemplate} package.
 #' @examples
 #' \dontrun{
-#' 
 #' create.doc("MyDocument", format="html_clean")
-#' 
 #' }
 #' @export
 

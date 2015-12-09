@@ -33,6 +33,13 @@ chi-squared residuals tables.
 \details{
 The function is intended to be called inside an rmarkdown document.
 }
+\examples{
+
+data(airquality)
+tab <- table(airquality$Month, airquality$Ozone > 25)
+pilltabs(tab)
+
+}
 \author{
 Julien Barnier <julien.barnier@ens-lyon.fr>
 }
