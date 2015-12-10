@@ -41,7 +41,13 @@ Finally, it also provides the `pilltabs()` helper function, which allows to disp
 
 ## Installation
 
-The package is not available on CRAN yet, but it is installable from Github :
+You can install the latest stable release from CRAN :
+
+```r
+install.packages("rmdformats")
+```
+
+Or the latest development snapshot from GitHub :
 
 ```r
 install.packages(devtools)  # if necessary
