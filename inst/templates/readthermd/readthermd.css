@@ -99,6 +99,13 @@ img.mfp-img {
     margin-right: 5px !important;
 }
 
+ul.nav-pills > li.active > a,
+ul.nav-pills > li.active > a:hover,
+ul.nav-pills > li.active > a:focus {
+  background-color: #9F2042;
+  color: #FFFFFF !important;
+}
+
 /* Chi-squared results */
 
 .chisq-results {
