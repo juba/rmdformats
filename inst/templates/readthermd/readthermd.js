@@ -52,7 +52,7 @@ $( document ).ready(function() {
     var $postamble = $('#postamble');
     var $tableOfContents = $('#table-of-contents');
     // set the height of tableOfContents
-    $tableOfContents.height($tableOfContents.height() - $postamble.outerHeight());
+    //$tableOfContents.height($tableOfContents.height() - $postamble.outerHeight());
 
 });
 
