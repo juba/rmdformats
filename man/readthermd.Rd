@@ -4,8 +4,8 @@
 \alias{readthermd}
 \title{Convert to an HTML document}
 \usage{
-readthermd(fig_width = 6, fig_height = 6, fig_caption = TRUE,
-  highlight = "pygments", pandoc_args = NULL, ...)
+readthermd(fig_width = 6, fig_height = 4, fig_caption = TRUE,
+  highlight = "kate", pandoc_args = NULL, ...)
 }
 \arguments{
 \item{fig_width}{Default width (in inches) for figures}
