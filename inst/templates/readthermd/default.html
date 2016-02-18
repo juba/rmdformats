@@ -61,7 +61,11 @@ $for(include-before)$
 $include-before$
 $endfor$
 
-<div id="content">
+<div id="content" data-toggle="wy-nav-shift">
+
+<nav id="nav-top" role="navigation" aria-label="top navigation">
+    <a role="button" href="#" data-toggle="wy-nav-top"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+</nav>
 
 $if(title)$
 <div id="$idprefix$header">
@@ -69,6 +73,7 @@ $if(title)$
 $if(subtitle)$
 <h1 class="subtitle">$subtitle$</h1>
 $endif$
+</div>
 $endif$
 
 

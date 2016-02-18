@@ -1,7 +1,39 @@
 /* Palette : https://coolors.co/211103-3d1308-7b0d1e-9f2042-f8e5ee */
 
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700);
-@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/Lato.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url(fonts/LatoBold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: url(fonts/LatoItalic.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/RobotoSlab-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  src: url(fonts/RobotoSlab-Bold.ttf) format('truetype');
+}
+
+
+/*@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);*/
 
 /* Images */
 
@@ -114,6 +146,15 @@ ul.nav-pills > li.active > a:focus {
     font-style: italic;
 }
 
+.figure img {
+    margin-bottom: 5px;
+}
+
+.figure p.caption {
+    text-align: center;
+    font-style: italic;
+    font-size: 90%;
+}
 
 h1,h2,h3,h4,h5,h6,legend{
     font-family:"Roboto Slab","ff-tisa-web-pro","Georgia",Arial,sans-serif;
@@ -122,9 +163,9 @@ h1,h2,h3,h4,h5,h6,legend{
 }
 
 h1{
-    font-size:175%;
+    font-size:200%;
     margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 1.2em;
 }
 
 h1.title{
@@ -139,7 +180,7 @@ h1.title{
 h2{
   margin-top: 1em;
   margin-bottom: 1.2em;
-  font-size:150%;
+  font-size:160%;
 }
 
 h3{
@@ -345,23 +386,15 @@ dl dd{
 }
 
 
-@media only screen and (max-width: 480px){
-}
-
-@media screen and (max-width: 768px){
-    .tablet-hide{
-        display:none}
-}
-
 @media screen and (max-width: 480px){
     .mobile-hide{
         display:none}
 }
 
-@media screen and (max-width: 480px){
-}
-
 @media screen and (max-width: 768px){
+    .tablet-hide{
+        display:none}
+
     #content{
         margin-left:0}
 
@@ -376,7 +409,32 @@ dl dd{
         height:100%;
         overflow:hidden}
     #table-of-contents {
-      margin-left: -1000px;
+        left: -300px;
+    }
+    #content.shift #table-of-contents {
+        left: 0;
+        width: 85%;
+    }
+    #nav-top {
+      display: inline-block;
+    }
+    #postamble {
+      width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    #postamble {
+      position:fixed;
+      bottom:0;
+      left:0;
+      width:300px;
+    }
+    #nav-top {
+      display: none;
+    }
+    #table-of-contents {
+        left: 0;
     }
 }
 
@@ -406,11 +464,29 @@ dl dd{
         width:100%}
 }
 
+
+#nav-top {
+    margin-top: -1em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    font-family:"Roboto Slab","ff-tisa-web-pro","Georgia",Arial,sans-serif;
+    font-weight:700;
+}
+
+#nav-top span.glyphicon {
+  color: #9F2042;
+  font-size: 28px;
+}
+
+
+pre, code {
+    font-family:Monaco,Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L","Courier New",Courier,monospace;
+}
+
 code{
     background:#fff;
     border:solid 1px #e1e4e5;
     /* color:#000;  for clickable code */
-    font-family:Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
     font-size:85%;
     max-width:100%;
     overflow-x:auto;
@@ -424,40 +500,11 @@ pre code{
     font-size: 100%;
 }
 
-.codeblock-example{
-    border:1px solid #e1e4e5;
-    border-bottom:none;
-    padding:24px;
-    padding-top:48px;
-    font-weight:500;
-    background:#fff;
-    position:relative}
-
-.codeblock-example:after{
-    content:"Example";
-    position:absolute;
-    top:0px;
-    left:0px;
-    background:#9B59B6;
-    color:#fff;
-    padding:6px 12px}
-
-.codeblock-example.prettyprint-example-only{
-    border:1px solid #e1e4e5;
-    margin-bottom:24px}
-
-.codeblock,pre.sourceCode,#content .literal-block{
-    border:1px solid #e1e4e5;
-    padding:12px;
-    overflow-x:auto;
-    background:#fff;
-    margin:1px 0 24px 0}
 
 pre.sourceCode{
     /* color:#404040; */
     display:block;
-    font-family:Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
-    font-size:12px;
+    background-color: #FFF;
     line-height:1.5;
     margin:1px 0px 24px 0px;
     overflow:auto;
@@ -512,12 +559,6 @@ table tr:nth-child(2n-1) td{
 
 table tr:nth-child(2n) td{
     background-color:white;
-}
-
-.figure p{
-    color:#000;
-    font:italic 85%/1 arial,sans-serif;
-    padding:1em 0;
 }
 
 .rotate-90{
@@ -591,66 +632,6 @@ legend{
     padding:0;
     white-space:normal}
 
-.fa:before,#content .admonition-title:before,#content h1 .headerlink:before,#content h2 .headerlink:before,#content h3 .headerlink:before,#content h4 .headerlink:before,#content h5 .headerlink:before,#content h6 .headerlink:before,#content dl dt .headerlink:before,.icon:before,.wy-dropdown .caret:before,.wy-inline-validate.wy-inline-validate-success .wy-input-context:before,.wy-inline-validate.wy-inline-validate-danger .wy-input-context:before,.wy-inline-validate.wy-inline-validate-warning .wy-input-context:before,.wy-inline-validate.wy-inline-validate-info .wy-input-context:before,.wy-alert,#content .note,#content .attention,#content .caution,#content .danger,#content .error,#content .hint,#content .important,#content .tip,#content .warning,#content .seealso,#content .admonitiontodo,.btn,input[type="text"],input[type="password"],input[type="email"],input[type="url"],input[type="date"],input[type="month"],input[type="time"],input[type="datetime"],input[type="datetime-local"],input[type="week"],input[type="number"],input[type="search"],input[type="tel"],input[type="color"],select,textarea,#table-of-contents li.on a,#table-of-contents li.current>a,.wy-side-nav-search>a,.wy-side-nav-search .wy-dropdown>a,.wy-nav-top a{
-    -webkit-font-smoothing:antialiased}
-
-/*!
- *  Font Awesome 4.1.0 by @davegandy - http://fontawesome.io - @fontawesome
- *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
- */@font-face{
-    font-family:'FontAwesome';
-    src:url("../fonts/fontawesome-webfont.eot?v=4.1.0");
-    src:url("../fonts/fontawesome-webfont.eot?#iefix&v=4.1.0") format("embedded-opentype"),url("../fonts/fontawesome-webfont.woff?v=4.1.0") format("woff"),url("../fonts/fontawesome-webfont.ttf?v=4.1.0") format("truetype"),url("../fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular") format("svg");
-    font-weight:normal;
-    font-style:normal}
-
-.fa,#content .admonition-title,.icon{
-    display:inline-block;
-    font-family:FontAwesome;
-    font-style:normal;
-    font-weight:normal;
-    line-height:1;
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale}
-
-.fa-ul{
-    padding-left:0;
-    margin-left:2.14286em;
-    list-style-type:none}
-
-.fa-ul>li{
-    position:relative}
-
-.fa-li{
-    position:absolute;
-    left:-2.14286em;
-    width:2.14286em;
-    top:0.14286em;
-    text-align:center}
-
-.fa-li.fa-lg{
-    left:-1.85714em}
-
-.fa-border{
-    padding:.2em .25em .15em;
-    border:solid 0.08em #eee;
-    border-radius:.1em}
-
-.fa,#content .admonition-title{
-    font-family:inherit}
-
-.fa:before,#content .admonition-title:before{
-    font-family:"FontAwesome";
-    display:inline-block;
-    font-style:normal;
-    font-weight:normal;
-    line-height:1;
-    text-decoration:inherit}
-
-a .fa,a #content .admonition-title,#content a .admonition-title{
-    display:inline-block;
-    text-decoration:inherit}
-
 .nav #content .admonition-title,#content .nav .admonition-title,.nav .icon{
     display:inline}
 
@@ -677,14 +658,6 @@ a .fa,a #content .admonition-title,#content a .admonition-title{
 .wy-alert.wy-alert-warning,#content .wy-alert-warning.note,#content .attention,#content .caution,#content .wy-alert-warning.danger,#content .wy-alert-warning.error,#content .wy-alert-warning.hint,#content .wy-alert-warning.important,#content .wy-alert-warning.tip,#content .warning,#content .wy-alert-warning.seealso,#content .admonitiontodo{
     background:#ffedcc}
 
-#content .admonition-title.note:before, #content .admonition-title.seealso:before,
-#content .admonition-title.warning:before, #content .admonition-title.caution:before,
-#content .admonition-title.attention:before,
-#content .admonition-title.tip:before, #content .admonition-title.hint:before,
-#content .admonition-title.important:before,
-#content .admonition-title.error:before, #content .admonition-title.danger:before{
-    font-family:FontAwesome;
-    content: "";}
 
 #content .note,#content .seealso{
     background:#e7f2fa}
@@ -855,17 +828,12 @@ hr{
 #table-of-contents{
     position:fixed;
     top:0;
-    left:0;
     width:300px;
     overflow-x: hidden;
     overflow-y: auto;
     height:100%;
     background:#211103;
     z-index:200;
-    /*scrollbar-base-color: #1F1D1D;
-    scrollbar-arrow-color: #b3b3b3;
-    scrollbar-shadow-color: #1F1D1D;
-    scrollbar-track-color : #211103;*/
     font-size: 16px;
 }
 
@@ -957,10 +925,6 @@ footer p{
     margin-bottom:12px}
 
 #copyright, #postamble{
-    position:fixed;
-    bottom:0;
-    left:0;
-    width:300px;
     color:#fcfcfc;
     background:#1f1d1d;
     border-top:solid 10px #211103;
@@ -1033,19 +997,6 @@ footer p{
 #content .section ol p,#content .section ul p{
     margin-bottom:12px}
 
-#content h1 .headerlink,#content h2 .headerlink,#content h3 .headerlink,#content h4 .headerlink,#content h5 .headerlink,#content h6 .headerlink,#content dl dt .headerlink{
-    display:none;
-    visibility:hidden;
-    font-size:14px}
-
-#content h1 .headerlink:after,#content h2 .headerlink:after,#content h3 .headerlink:after,#content h4 .headerlink:after,#content h5 .headerlink:after,#content h6 .headerlink:after,#content dl dt .headerlink:after{
-    visibility:visible;
-    content:"";
-    font-family:FontAwesome;
-    display:inline-block}
-
-#content h1:hover .headerlink,#content h2:hover .headerlink,#content h3:hover .headerlink,#content h4:hover .headerlink,#content h5:hover .headerlink,#content h6:hover .headerlink,#content dl dt:hover .headerlink{
-    display:inline-block}
 
 #content .sidebar{
     float:right;

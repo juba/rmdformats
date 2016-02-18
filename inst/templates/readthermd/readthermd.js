@@ -6,7 +6,7 @@ $( document ).ready(function() {
       $("[data-toggle='rst-versions']").toggleClass("shift");
     });
     // Close menu when you click a link.
-    $(document).on('click', ".wy-menu-vertical .current ul li a", function() {
+    $(document).on('click', "#table-of-contents ul li a", function() {
       $("[data-toggle='wy-nav-shift']").removeClass("shift");
       $("[data-toggle='rst-versions']").toggleClass("shift");
     });
@@ -16,20 +16,6 @@ $( document ).ready(function() {
     // Make tables responsive
     $("table.docutils:not(.field-list)").wrap("<div class='wy-table-responsive'></div>");
     
-    /* Magnific popup */
-    $('.figure img').each(function() {
-      $(this).magnificPopup({
-	      type:'image',
-	      closeOnContentClick: true,
-	      items: {
-		      src: $(this).attr('src'),
-          title: $(this).attr('alt'),
-	      },
-        titleSrc: 'title',
- 	    });
-      $(this).addClass("image-thumb");
-    });
-
     /* Pilltabs */
     /* Automatically add active class to first elements */
     $(".nav-pilltabs").each(function() {
@@ -48,11 +34,6 @@ $( document ).ready(function() {
 
     // add sticky table headers
     $('table').stickyTableHeaders();
-
-    var $postamble = $('#postamble');
-    var $tableOfContents = $('#table-of-contents');
-    // set the height of tableOfContents
-    //$tableOfContents.height($tableOfContents.height() - $postamble.outerHeight());
 
 });
 
