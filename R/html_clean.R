@@ -20,7 +20,7 @@
 html_clean <- function(fig_width = 6,
                        fig_height = 6,
                        fig_caption = TRUE,
-                       highlight = "pygments",
+                       highlight = "kate",
                        pandoc_args = NULL,
                        ...) {
  

@@ -5,7 +5,7 @@
 \title{Convert to an HTML document}
 \usage{
 html_clean(fig_width = 6, fig_height = 6, fig_caption = TRUE,
-  highlight = "pygments", pandoc_args = NULL, ...)
+  highlight = "kate", pandoc_args = NULL, ...)
 }
 \arguments{
 \item{fig_width}{Default width (in inches) for figures}
