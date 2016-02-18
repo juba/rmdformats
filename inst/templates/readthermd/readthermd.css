@@ -344,8 +344,6 @@ dl dd{
         margin: 0px;}
 }
 
-@media screen and (max-width: 768px){
-}
 
 @media only screen and (max-width: 480px){
 }
@@ -377,6 +375,9 @@ dl dd{
         top:0;
         height:100%;
         overflow:hidden}
+    #table-of-contents {
+      margin-left: -1000px;
+    }
 }
 
 @media screen and (min-width: 1400px){
@@ -847,24 +848,24 @@ hr{
     background-color:#4e4a4a;
     cursor:pointer}
 
-/* #text-table-of-contents { */
-/*     overflow:scroll; */
-/* } */
+#text-table-of-contents {
+     overflow:auto;
+}
 
 #table-of-contents{
     position:fixed;
     top:0;
     left:0;
     width:300px;
-    overflow-x:hidden;
-    overflow-y:scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
     height:100%;
     background:#211103;
     z-index:200;
-    scrollbar-base-color: #1F1D1D;
+    /*scrollbar-base-color: #1F1D1D;
     scrollbar-arrow-color: #b3b3b3;
     scrollbar-shadow-color: #1F1D1D;
-    scrollbar-track-color : #211103;
+    scrollbar-track-color : #211103;*/
     font-size: 16px;
 }
 
@@ -975,9 +976,14 @@ footer p{
 }
 
 #postamble .date {
-    font-size: 90%;
+    font-size: 100%;
     margin-bottom: 0px;
     color: #f8e5ee;
+}
+
+#postamble .author span, 
+#postamble .date span {
+    padding-right: 0.7em;  
 }
 
 #postamble .creator,#postamble .validation {
