@@ -10,19 +10,13 @@ FILESDIR = $(FILE)_files
 
 
 
-all : default
-
-default : 
-	Rscript \
-	   -e "library(rmarkdown)"  \
-	   -e "library(rmdformats)"  \
-	   -e "render('$(RMDFILE)')"
+all : html
 
 html : 
 	Rscript \
 	   -e "library(rmarkdown)"  \
 	   -e "library(rmdformats)"  \
-	   -e "render('$(RMDFILE)', 'html_clean')"
+	   -e "render('$(RMDFILE)', 'readthedown')"
 
 pdf : 
 	Rscript \

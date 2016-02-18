@@ -17,7 +17,7 @@
 #' @export
 
 
-readthermd <- function(fig_width = 8,
+readthedown <- function(fig_width = 8,
                        fig_height = 5,
                        fig_caption = TRUE,
                        highlight = "kate",
@@ -28,7 +28,7 @@ readthermd <- function(fig_width = 8,
   extra_dependencies <- list(html_dependency_jquery(),
                              html_dependency_bootstrap(),
                              html_dependency_jquery_stickytableheaders(),
-                             html_dependency_readthermd())
+                             html_dependency_readthedown())
   
   ## Force mathjax arguments
   pandoc_args <- c(pandoc_args, 
@@ -36,7 +36,7 @@ readthermd <- function(fig_width = 8,
                    "--variable", paste0("mathjax-url:", default_mathjax()))
   
   rmarkdown::html_document(
-      template = system.file("templates/readthermd/default.html", package = "rmdformats"),
+      template = system.file("templates/readthedown/default.html", package = "rmdformats"),
       extra_dependencies = extra_dependencies,
       fig_width = fig_width,
       fig_height = fig_height,
@@ -50,13 +50,13 @@ readthermd <- function(fig_width = 8,
       
 }
 
-# readthermd js and css
-html_dependency_readthermd <- function() {
-  htmltools::htmlDependency(name = "readthermd",
+# readthedown js and css
+html_dependency_readthedown <- function() {
+  htmltools::htmlDependency(name = "readthedown",
                  version = "0.1",
-                 src = system.file("templates/readthermd", package = "rmdformats"),
-                 script = "readthermd.js",
-                 stylesheet = c("readthermd.css"))
+                 src = system.file("templates/readthedown", package = "rmdformats"),
+                 script = "readthedown.js",
+                 stylesheet = c("readthedown.css"))
 }
 
 

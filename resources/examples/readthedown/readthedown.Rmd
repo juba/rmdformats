@@ -1,9 +1,9 @@
 ---
-title: "`readthermd` template example"
+title: "`readthedown` template example"
 date: "`r Sys.Date()`"
 author: juba
 output:
-  rmdformats::readthermd:
+  rmdformats::readthedown:
     self_contained: true
 ---
 
@@ -56,6 +56,11 @@ Here is the structure of the `iris` dataset.
 str(iris)
 ```
 
+And blockquote :
+
+> Oh ! What a nice blockquote you have here. Much more wonderful than a classical Lorem Ipsum, really.
+
+And we could also [include links](https://github.com/juba/rmdformats) or simply URLs like this : https://github.com/juba/rmdformats
 
 ## Table
 
