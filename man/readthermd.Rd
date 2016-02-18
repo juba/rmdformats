@@ -4,7 +4,7 @@
 \alias{readthermd}
 \title{Convert to an HTML document}
 \usage{
-readthermd(fig_width = 6, fig_height = 4, fig_caption = TRUE,
+readthermd(fig_width = 8, fig_height = 5, fig_caption = TRUE,
   highlight = "kate", pandoc_args = NULL, ...)
 }
 \arguments{
