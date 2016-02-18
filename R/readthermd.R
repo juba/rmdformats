@@ -17,8 +17,8 @@
 #' @export
 
 
-readthermd <- function(fig_width = 6,
-                       fig_height = 4,
+readthermd <- function(fig_width = 8,
+                       fig_height = 5,
                        fig_caption = TRUE,
                        highlight = "kate",
                        pandoc_args = NULL,
@@ -28,7 +28,6 @@ readthermd <- function(fig_width = 6,
   extra_dependencies <- list(html_dependency_jquery(),
                              html_dependency_bootstrap(),
                              html_dependency_jquery_stickytableheaders(),
-                             html_dependency_magnific_popup(),
                              html_dependency_readthermd())
   
   ## Force mathjax arguments
