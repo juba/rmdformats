@@ -71,11 +71,12 @@ $if(subtitle)$
 $endif$
 $endif$
 
+
 <div id="table-of-contents">
-  <h2>$title$</h2>
-  <div id="text-table-of-contents">
-    $toc$  
-  </div>
+    <h2>$title$</h2>
+    <div id="text-table-of-contents">
+      $toc$  
+    </div>
 </div>
 
 
@@ -86,7 +87,7 @@ $body$
 <div id="postamble" class="status">
 $for(author)$
 $if(author.name)$
-<p class="author">$author.name$
+<p class="author"><span class="glyphicon glyphicon-user"></span> $author.name$
 $if(author.affiliation)$
 <br /><span class="author_affil">$author.affiliation$</span>$endif$
 $if(author.email)$
@@ -94,11 +95,11 @@ $if(author.email)$
 $endif$
 </p>
 $else$
-<p class="author">Author : $author$</p>
+<p class="author"><span class="glyphicon glyphicon-user"></span> $author$</p>
 $endif$
 $endfor$
 $if(date)$
-<p class="date">Date : $date$</p>
+<p class="date"><span class="glyphicon glyphicon-calendar"></span> $date$</p>
 $endif$
 </div>
 
