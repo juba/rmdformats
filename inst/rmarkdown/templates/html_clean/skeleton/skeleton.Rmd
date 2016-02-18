@@ -1,10 +1,9 @@
 ---
 title: ""
+date: "`r Sys.Date()`"
 output:
   rmdformats::html_clean:
-    fig_width: 6
-    fig_height: 6
-    highlight: pygments
+    highlight: kate
 ---
 
 
