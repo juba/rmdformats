@@ -9,8 +9,7 @@ $( document ).ready(function() {
       $("[data-toggle='wy-nav-shift']").removeClass("shift");
     });
     // Make tables responsive
-    $(".section table").wrap("<div class='wy-table-responsive'></div>");
-    
+    $(".section table").wrap("<div class='table-wrapper'></div>");
     /* Pilltabs */
     /* Automatically add active class to first elements */
     $(".nav-pilltabs").each(function() {
