@@ -8,6 +8,11 @@ $( document ).ready(function() {
     $(document).on('click', "#table-of-contents ul li a", function() {
       $("[data-toggle='wy-nav-shift']").removeClass("shift");
     });
+    // Close menu when you click on main content
+    $(document).on('click', "#main, #header", function() {
+      $("[data-toggle='wy-nav-shift']").removeClass("shift");
+    });
+
     // Make tables responsive
     $(".section table").wrap("<div class='table-wrapper'></div>");
     /* Pilltabs */
