@@ -3,15 +3,13 @@ $( document ).ready(function() {
     // Shift nav in mobile when clicking the menu.
     $(document).on('click', "[data-toggle='wy-nav-top']", function() {
       $("[data-toggle='wy-nav-shift']").toggleClass("shift");
-      $("[data-toggle='rst-versions']").toggleClass("shift");
     });
     // Close menu when you click a link.
     $(document).on('click', "#table-of-contents ul li a", function() {
       $("[data-toggle='wy-nav-shift']").removeClass("shift");
-      $("[data-toggle='rst-versions']").toggleClass("shift");
     });
     // Make tables responsive
-    $("table.docutils:not(.field-list)").wrap("<div class='wy-table-responsive'></div>");
+    $(".section table").wrap("<div class='wy-table-responsive'></div>");
     
     /* Pilltabs */
     /* Automatically add active class to first elements */

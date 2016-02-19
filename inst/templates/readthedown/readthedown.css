@@ -78,6 +78,8 @@
     font-size: 90%;
 }
 
+/* General styling */
+
 h1,h2,h3,h4,h5,h6,legend{
     font-family:"Roboto Slab","ff-tisa-web-pro","Georgia",Arial,sans-serif;
     font-weight:700;
@@ -154,7 +156,6 @@ body{
     /* margin:auto; */
     max-width:800px;
     min-height:100%;
-    padding:1.618em 3.236em;
 }
 
 p{
@@ -319,45 +320,56 @@ dl dd{
         display:none}
 
     #content{
-        margin-left:0}
-
-    #content #content{
-        padding:1.618em}
-
+        margin-left: 0;
+        padding: 1em;
+    }
     #content.shift{
         position:fixed;
         min-width:100%;
-        left:85%;
+        left:75%;
         top:0;
         height:100%;
         overflow:hidden}
     #table-of-contents {
+        font-size: 150%;
         left: -300px;
+        width: 300px;
     }
     #content.shift #table-of-contents {
+        font-size: 150%;
         left: 0;
-        width: 85%;
+        width: 75%;
     }
     #nav-top {
       display: inline-block;
     }
     #postamble {
-      width: 100%;
+      left:-300px;
     }
+    #postamble.shift {
+      font-size: 110%;
+      left: 0;
+      width: 75%;
+    }
+    img{
+        width:100%;
+        height:auto}
 }
 
 @media screen and (min-width: 768px){
+    #content {
+      padding:1.618em 3.236em;
+    }
     #postamble {
-      position:fixed;
-      bottom:0;
       left:0;
-      width:300px;
+      width: 300px;
     }
     #nav-top {
       display: none;
     }
     #table-of-contents {
         left: 0;
+        width: 300px;
     }
 }
 
@@ -369,18 +381,6 @@ dl dd{
         background:#fcfcfc}
 }
 
-@media screen and (max-width: 768px){
-    #copyright{
-        width:85%;
-        display:none}
-
-    #copyright.shift{
-        display:block}
-
-    img{
-        width:100%;
-        height:auto}
-}
 
 @media screen and (max-width: 480px){
     #content .sidebar{
@@ -768,7 +768,6 @@ hr{
 #table-of-contents{
     position:fixed;
     top:0;
-    width:300px;
     overflow-x: hidden;
     overflow-y: auto;
     height:100%;
@@ -878,7 +877,9 @@ footer{
 footer p{
     margin-bottom:12px}
 
-#copyright, #postamble{
+#postamble{
+    position:fixed;
+    bottom:0;
     color:#fcfcfc;
     background:#1f1d1d;
     border-top:solid 10px #211103;
@@ -907,20 +908,6 @@ footer p{
 #postamble .creator,#postamble .validation {
     display:none;
 }
-
-#copyright a{
-    color:#2980B9;
-    text-decoration:none}
-
-#copyright .rst-current-version{
-    padding:12px;
-    background-color:#272525;
-    display:block;
-    text-align:right;
-    font-size:90%;
-    cursor:pointer;
-    color:#27AE60;
-    *zoom:1}
 
 #content img{
     max-width:100%;
