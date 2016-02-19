@@ -326,12 +326,12 @@ dl dd{
         height:100%;
         overflow:hidden}
     #table-of-contents {
-        font-size: 150%;
+        font-size: 120%;
         left: -300px;
         width: 300px;
     }
     #content.shift #table-of-contents {
-        font-size: 150%;
+        font-size: 120%;
         left: 0;
         width: 75%;
     }
