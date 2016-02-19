@@ -34,16 +34,13 @@
 
 /* Nav pills */
 
-.nav-pills {
+#content .section .nav-pills {
     margin-top: 20px;
-    margin-left: 20px;
     margin-bottom: 10px;
 }
 
 #content .section .nav-pills > li > a {
-    padding: 3px 12px !important;
-    margin-right: 5px !important;
-    background-color: #FFFFFF;
+    background-color: #EEEEEE;
     background-image: none;
     background-position: 0 0;
 }
@@ -348,7 +345,18 @@ dl dd{
     }
     img{
         width:100%;
-        height:auto}
+        height:auto;
+    }
+    #content .section .nav-pills {
+        margin-left: 0px;
+    }
+    #content .section .nav-pills li {
+        margin-left: 10px !important;
+    }
+    #content .section .nav-pills > li > a {
+        padding: 2px 8px !important;
+        margin-right: 0px !important;
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -365,6 +373,13 @@ dl dd{
     #table-of-contents {
         left: 0;
         width: 300px;
+    }
+    #content .section .nav-pills {
+        margin-left: 10px;
+    }
+    #content .section .nav-pills > li > a {
+        padding: 3px 12px !important;
+        margin-right: 5px !important;
     }
 }
 
