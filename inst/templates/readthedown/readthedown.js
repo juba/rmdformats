@@ -29,6 +29,6 @@ $( document ).ready(function() {
     $('body').scrollspy({target: '#text-table-of-contents'});
 
     // add sticky table headers
-    $('table').stickyTableHeaders();
+    //$('table').stickyTableHeaders();
 
 });
