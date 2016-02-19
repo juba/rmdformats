@@ -154,7 +154,7 @@ body{
     height:100%;
     margin-left:300px;
     /* margin:auto; */
-    max-width:800px;
+    max-width:900px;
     min-height:100%;
 }
 
@@ -402,10 +402,6 @@ dl dd{
 }
 
 
-pre, code {
-    font-family:Monaco,Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L","Courier New",Courier,monospace;
-}
-
 code{
     background:#fff;
     border:solid 1px #e1e4e5;
@@ -414,35 +410,36 @@ code{
     max-width:100%;
     overflow-x:auto;
     padding:0 5px;
-    white-space:nowrap;
+    white-space: pre;
 }
 
-pre code{
+#content pre code {
+    font-family:Monaco,Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L","Courier New",Courier,monospace;
     border: none;
     background: none;
     font-size: 100%;
+    white-space: pre;
 }
 
 
-pre.sourceCode{
-    /* color:#404040; */
-    display:block;
-    background-color: #FFF;
-    line-height:1.5;
-    margin:1px 0px 24px 0px;
-    overflow:auto;
-    padding:12px;
-    white-space:pre;
-}
-
-pre {
+#content pre {
     background:#f3f6f6;
     border:1px solid #e1e4e5;
     color:#404040;
     line-height: 1.5;
     margin-bottom:24px;
+    overflow:auto;
     padding:12px;
+    white-space: pre;
+    word-wrap: normal;
+    word-break: normal;
 }
+
+#content pre.sourceCode{
+    background-color: #FFF;
+    margin:1px 0px 24px 0px;
+}
+
 
 table{
     border-collapse:collapse;
