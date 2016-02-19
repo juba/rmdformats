@@ -11,6 +11,7 @@ output:
 ```{r knitr_init, echo=FALSE, results="asis", cache=FALSE}
 library(knitr)
 library(rmdformats)
+library(DT)
 
 ## Global options
 options(max.print = "75")
@@ -69,6 +70,14 @@ Here is a sample table output.
 ```{r iris_table}
 kable(tab)
 ```
+
+Here is a sample `DT:datatable` output.
+
+```{r iris_dt}
+DT::datatable(tab)
+```
+
+
 
 Here we display a crosstab displayed in several different ways with a "pills"
 interface. To do this, just pass your `table()` result to the `pilltabs()`
