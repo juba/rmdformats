@@ -91,6 +91,12 @@ pilltabs(tab)
 
 ```
 
+# Mathjax
+
+An incredibly complex equation :
+
+$$ y = \sqrt{\frac{1}{x}} $$
+
 
 # Figures
 
@@ -109,8 +115,4 @@ And a wonderful scatterplot, with a caption.
 ggplot(data=iris) + geom_point(aes(x=Petal.Width, y=Petal.Length, color=Species))
 ```
 
-# Mathjax
 
-And finally, an incredibly complex equation :
-
-$$ y = \sqrt{\frac{1}{x}} $$

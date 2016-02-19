@@ -92,8 +92,8 @@ code > span.in { color: #808080; font-weight: bold; font-style: italic; } /* Inf
       <li><a href="#verbatim">Verbatim</a></li>
       <li><a href="#table">Table</a></li>
       </ul></li>
-      <li><a href="#figures">Figures</a></li>
       <li><a href="#mathjax">Mathjax</a></li>
+      <li><a href="#figures">Figures</a></li>
       </ul>  
     </div>
 </div>
@@ -173,25 +173,25 @@ tab &lt;-<span class="st"> </span>iris %&gt;%
 </tbody>
 </table>
 <p>Here is a sample <code>DT:datatable</code> output.</p>
-<p><div id="htmlwidget-8331" style="width:100%;height:auto;" class="datatables"></div>
-<script type="application/json" data-for="htmlwidget-8331">{"x":{"data":[["1","2","3"],["setosa","versicolor","virginica"],[5.006,5.936,6.588],[3.428,2.77,2.974],[1.462,4.26,5.552],[1.462,4.26,5.552]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> </th>\n      <th>Species</th>\n      <th>Sepal.Length</th>\n      <th>Sepal.Width</th>\n      <th>Petal.Length</th>\n      <th>Petal.Width</th>\n    </tr>\n  </thead>\n</table>","options":{"columnDefs":[{"className":"dt-right","targets":[2,3,4,5]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false},"callback":null,"filter":"none","selection":"multiple"},"evals":[]}</script></p>
+<p><div id="htmlwidget-8995" style="width:100%;height:auto;" class="datatables"></div>
+<script type="application/json" data-for="htmlwidget-8995">{"x":{"data":[["1","2","3"],["setosa","versicolor","virginica"],[5.006,5.936,6.588],[3.428,2.77,2.974],[1.462,4.26,5.552],[1.462,4.26,5.552]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> </th>\n      <th>Species</th>\n      <th>Sepal.Length</th>\n      <th>Sepal.Width</th>\n      <th>Petal.Length</th>\n      <th>Petal.Width</th>\n    </tr>\n  </thead>\n</table>","options":{"columnDefs":[{"className":"dt-right","targets":[2,3,4,5]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false},"callback":null,"filter":"none","selection":"multiple"},"evals":[]}</script></p>
 <p>Here we display a crosstab displayed in several different ways with a “pills” interface. To do this, just pass your <code>table()</code> result to the <code>pilltabs()</code> function.</p>
 <ul class="nav nav-pills nav-pilltabs">
 <li>
-<a href="#dyntab-count45375255588" data-toggle="pill">Count</a>
+<a href="#dyntab-count43505752948" data-toggle="pill">Count</a>
 </li>
 <li>
-<a href="#dyntab-rows45375255588" data-toggle="pill">Rows %</a>
+<a href="#dyntab-rows43505752948" data-toggle="pill">Rows %</a>
 </li>
 <li>
-<a href="#dyntab-columns45375255588" data-toggle="pill">Columns %</a>
+<a href="#dyntab-columns43505752948" data-toggle="pill">Columns %</a>
 </li>
 <li>
-<a href="#dyntab-residuals45375255588" data-toggle="pill">Residuals</a>
+<a href="#dyntab-residuals43505752948" data-toggle="pill">Residuals</a>
 </li>
 </ul>
 <div class="tab-content">
-<div id="dyntab-count45375255588" class="tab-pane dyntab">
+<div id="dyntab-count43505752948" class="tab-pane dyntab">
 <table>
 <thead>
 <tr class="header">
@@ -223,7 +223,7 @@ tab &lt;-<span class="st"> </span>iris %&gt;%
 </tbody>
 </table>
 </div>
-<div id="dyntab-rows45375255588" class="tab-pane dyntab">
+<div id="dyntab-rows43505752948" class="tab-pane dyntab">
 <table>
 <thead>
 <tr class="header">
@@ -271,7 +271,7 @@ tab &lt;-<span class="st"> </span>iris %&gt;%
 </tbody>
 </table>
 </div>
-<div id="dyntab-columns45375255588" class="tab-pane dyntab">
+<div id="dyntab-columns43505752948" class="tab-pane dyntab">
 <table>
 <thead>
 <tr class="header">
@@ -321,7 +321,7 @@ tab &lt;-<span class="st"> </span>iris %&gt;%
 </tbody>
 </table>
 </div>
-<div id="dyntab-residuals45375255588" class="tab-pane dyntab-residuals">
+<div id="dyntab-residuals43505752948" class="tab-pane dyntab-residuals">
 <table>
 <thead>
 <tr class="header">
@@ -359,6 +359,11 @@ X-squared = 111.6339, df = 4, p = &lt; 2.2e-16
 </p>
 </div>
 </div>
+<div id="mathjax" class="section level1">
+<h1>Mathjax</h1>
+<p>An incredibly complex equation :</p>
+<p><span class="math display">\[ y = \sqrt{\frac{1}{x}} \]</span></p>
+</div>
 <div id="figures" class="section level1">
 <h1>Figures</h1>
 <p>Here is an histogram.</p>
@@ -370,11 +375,6 @@ X-squared = 111.6339, df = 4, p = &lt; 2.2e-16
 This is a caption
 </p>
 </div>
-</div>
-<div id="mathjax" class="section level1">
-<h1>Mathjax</h1>
-<p>And finally, an incredibly complex equation :</p>
-<p><span class="math display">\[ y = \sqrt{\frac{1}{x}} \]</span></p>
 </div>
 </div>
 
