@@ -648,11 +648,11 @@ a {
     background-image: linear-gradient(180deg,#d64a70,#d64a70);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-position: 0 1.3em;
-    color:#000;
-    font-weight: 400;
+    background-position: 0 2em;
+    color:#c7254e;
+    font-weight: 300;
     padding: .125em 1px 0 1px;
-    transition: background-position .15s;
+    transition: background-position .15s, color .15s;
 }
 
 #content .section a:hover {
