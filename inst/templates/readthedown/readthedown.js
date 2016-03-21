@@ -14,7 +14,7 @@ $( document ).ready(function() {
     });
 
     // Make tables responsive
-    $(".section table").wrap("<div class='table-wrapper'></div>");
+    $("#main table").wrap("<div class='table-wrapper'></div>");
     /* Pilltabs */
     /* Automatically add active class to first elements */
     $(".nav-pilltabs").each(function() {

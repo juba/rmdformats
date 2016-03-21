@@ -34,25 +34,25 @@
 
 /* Nav pills */
 
-#content .section .nav-pills {
+#main .nav-pills {
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
-#content .section .nav-pills > li > a {
+#main .nav-pills > li > a {
     background-color: #EEEEEE;
     background-image: none;
     background-position: 0 0;
 }
 
-#content .section .nav-pills > li > a:hover {
+#main .nav-pills > li > a:hover {
   color: #FFFFFF !important;
   background-color: #9F2042;
 }
 
-#content .section .nav-pills > li.active > a,
-#content .section .nav-pills > li.active > a:hover,
-#content .section .nav-pills > li.active > a:focus {
+#main .nav-pills > li.active > a,
+#main .nav-pills > li.active > a:hover,
+#main .nav-pills > li.active > a:focus {
   color: #FFFFFF !important;
   background-color: #9F2042;
 }
@@ -190,46 +190,46 @@ dd{
     margin:0;
 }
 
-#content .section ul,#content .toctree-wrapper ul,article ul{
+#main ul,#content .toctree-wrapper ul,article ul{
     list-style:disc;
     line-height:24px;
     margin-bottom:24px}
 
-#content .section ul li,#content .toctree-wrapper ul li,article ul li{
+#main ul li,#content .toctree-wrapper ul li,article ul li{
     list-style:disc;
     margin-left:24px}
 
-#content .section ul li p:last-child,#content .toctree-wrapper ul li p:last-child,article ul li p:last-child{
+#main ul li p:last-child,#content .toctree-wrapper ul li p:last-child,article ul li p:last-child{
                                                                                                                                   margin-bottom:0}
 
-#content .section ul li ul,#content .toctree-wrapper ul li ul,article ul li ul{
+#main ul li ul,#content .toctree-wrapper ul li ul,article ul li ul{
     margin-bottom:0}
 
-#content .section ul li li,#content .toctree-wrapper ul li li,article ul li li{
+#main ul li li,#content .toctree-wrapper ul li li,article ul li li{
     list-style:circle}
 
-#content .section ul li li li,#content .toctree-wrapper ul li li li,article ul li li li{
+#main ul li li li,#content .toctree-wrapper ul li li li,article ul li li li{
     list-style:square}
 
-#content .section ul li ol li,#content .toctree-wrapper ul li ol li,article ul li ol li{
+#main ul li ol li,#content .toctree-wrapper ul li ol li,article ul li ol li{
     list-style:decimal}
 
-#content .section ol,#content ol,article ol{
+#main ol,#content ol,article ol{
     list-style:decimal;
     line-height:24px;
     margin-bottom:24px}
 
-#content .section ol li,#content ol li,article ol li{
+#main ol li,#content ol li,article ol li{
     list-style:decimal;
     margin-left:24px}
 
-#content .section ol li p:last-child,#content ol li p:last-child,article ol li p:last-child{
+#main ol li p:last-child,#content ol li p:last-child,article ol li p:last-child{
                                                                                                                            margin-bottom:0}
 
-#content .section ol li ul,#content ol li ul,article ol li ul{
+#main ol li ul,#content ol li ul,article ol li ul{
     margin-bottom:0}
 
-#content .section ol li ul li,#content ol li ul li,article ol li ul li{
+#main ol li ul li,#content ol li ul li,article ol li ul li{
     list-style:disc}
 
 dl dt{
@@ -347,13 +347,13 @@ dl dd{
         width:100%;
         height:auto;
     }
-    #content .section .nav-pills {
+    #main .nav-pills {
         margin-left: 0px;
     }
-    #content .section .nav-pills li {
+    #main .nav-pills li {
         margin-left: 10px !important;
     }
-    #content .section .nav-pills > li > a {
+    #main .nav-pills > li > a {
         padding: 2px 8px !important;
         margin-right: 0px !important;
     }
@@ -374,10 +374,10 @@ dl dd{
         left: 0;
         width: 300px;
     }
-    #content .section .nav-pills {
+    #main .nav-pills {
         margin-left: 10px;
     }
-    #content .section .nav-pills > li > a {
+    #main .nav-pills > li > a {
         padding: 3px 12px !important;
         margin-right: 5px !important;
     }
@@ -493,7 +493,7 @@ table tr:nth-child(2n) td{
   overflow-x: auto;
 }
 
-#content .section .dataTables_wrapper a {
+#main .dataTables_wrapper a {
   background-image: none;
   padding: .2em;
 }
@@ -644,7 +644,7 @@ a {
     cursor:pointer;
 }
 
-#content .section a {
+#main a {
     background-image: linear-gradient(180deg,#d64a70,#d64a70);
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -655,7 +655,7 @@ a {
     transition: background-position .15s, color .15s;
 }
 
-#content .section a:hover {
+#main a:hover {
     text-decoration: none;
     background-position: 0 0.3em;
     color: #ffffff;
@@ -934,7 +934,7 @@ footer p{
 #content div.figure.align-center{
     text-align:center}
 
-#content .section>img,#content .section>a>img{
+#main>img,#main>a>img{
     margin-bottom:24px}
 
 .verse{
@@ -950,7 +950,7 @@ footer p{
 #content .admonition-title:before{
     margin-right:4px}
 
-#content .section ol p,#content .section ul p{
+#main ol p,#main ul p{
     margin-bottom:12px}
 
 
