@@ -5,7 +5,8 @@
 \title{Convert to an HTML document}
 \usage{
 readthedown(fig_width = 8, fig_height = 5, fig_caption = TRUE,
-  highlight = "kate", pandoc_args = NULL, ...)
+  highlight = "kate", lightbox = FALSE, gallery = FALSE,
+  pandoc_args = NULL, ...)
 }
 \arguments{
 \item{fig_width}{Default width (in inches) for figures}
@@ -18,6 +19,10 @@ readthedown(fig_width = 8, fig_height = 5, fig_caption = TRUE,
 "default", "tango", "pygments", "kate", "monochrome", "espresso",
 "zenburn", "haddock", and "textmate". Pass \code{NULL} to prevent syntax
 highlighting.}
+
+\item{lightbox}{if TRUE, display content images as thumbnails with lightbox effect}
+
+\item{gallery}{if TRUE and popup is TRUE, add a gallery navigation between images in lightbox display}
 
 \item{pandoc_args}{arguments passed to the pandoc_args argument of rmarkdown \code{\link{html_document}}}
 

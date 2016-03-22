@@ -65,6 +65,21 @@
     font-style: italic;
 }
 
+
+/* Images */
+
+img.image-thumb {
+    width: 250px;
+    cursor: pointer;
+    border: 1px solid #CCC;
+    padding: 2px;
+}
+
+.figure {
+    margin: 5px 10px 30px 0px;
+    display: table;
+}
+
 .figure img {
     margin-bottom: 5px;
 }
@@ -73,6 +88,12 @@
     text-align: center;
     font-style: italic;
     font-size: 90%;
+}
+
+img.mfp-img {
+  background-color: #FFFFFF;
+  padding: 0px;
+  margin: 40px 0px;
 }
 
 /* General styling */
