@@ -1,8 +1,8 @@
 rmdformats 0.2.1
 ----------------
 
-* New features : `lightbox` and `gallery` options for images display
-* Bugfix : wrong styling when no headings
+* New features : `lightbox`, `thumbnails` and `gallery` options for images display (thanks @noamross)
+* Bugfix : wrong styling when no headings (thanks @dmenne)
 
 
 rmdformats 0.2
