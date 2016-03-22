@@ -116,7 +116,9 @@ $endif$
 </div>
 $endif$
 
+<div id="content">
 $body$
+</div>
 
 $for(include-after)$
 $include-after$
@@ -133,14 +135,34 @@ $if(theme)$
 </div>
 
 <script>
-
-// add bootstrap table styles to pandoc tables
 $$(document).ready(function () {
+  
+  // add bootstrap table styles to pandoc tables
   $$('tr.header').parent('thead').parent('table').addClass('table table-condensed');
-});
 
+});
 </script>
 $endif$
+
+$if(lightbox)$
+<script>
+$$(document).ready(function () {
+ 	$$('#content img')
+ 	  .addClass("image-thumb");
+  $$('#content').magnificPopup({
+	      type:'image',
+	      closeOnContentClick: false,
+	      delegate: 'img',
+	      gallery: {enabled: $gallery$ },
+	      image: {
+	        verticalFit: true,
+          titleSrc: 'alt'
+	      }
+ 	    });
+});
+</script>
+$endif$
+
 
 $if(mathjax-url)$
 <!-- dynamically load mathjax for compatibility with self-contained -->

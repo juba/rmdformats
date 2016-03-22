@@ -9,6 +9,8 @@
 #'   "default", "tango", "pygments", "kate", "monochrome", "espresso",
 #'   "zenburn", "haddock", and "textmate". Pass \code{NULL} to prevent syntax
 #'   highlighting.
+#' @param lightbox if TRUE, display content images as thumbnails with lightbox effect
+#' @param gallery if TRUE and popup is TRUE, add a gallery navigation between images in lightbox display
 #' @param pandoc_args arguments passed to the pandoc_args argument of rmarkdown \code{\link{html_document}}
 #' @param ... Additional function arguments passed to R Markdown \code{\link{html_document}}
 #' @return R Markdown output format to pass to \code{\link{render}}
@@ -21,6 +23,8 @@ html_clean <- function(fig_width = 6,
                        fig_height = 6,
                        fig_caption = TRUE,
                        highlight = "kate",
+                       lightbox = TRUE,
+                       gallery = FALSE,
                        pandoc_args = NULL,
                        ...) {
  
@@ -36,9 +40,15 @@ html_clean <- function(fig_width = 6,
   pandoc_args <- c(pandoc_args, 
                    "--mathjax", 
                    "--variable", paste0("mathjax-url:", default_mathjax()))
-  
+  if (lightbox) { pandoc_args <- c(pandoc_args, "--variable", "lightbox:true") }
+  if (gallery) {
+    pandoc_args <- c(pandoc_args, "--variable", "gallery:true")
+  } else {
+    pandoc_args <- c(pandoc_args, "--variable", "gallery:false")
+  }
+
   rmarkdown::html_document(
-      template = system.file("templates/html_clean/default.html", package = "rmdformats"),
+      template = system.file("templates/html_clean/html_clean.html", package = "rmdformats"),
       extra_dependencies = extra_dependencies,
       fig_width = fig_width,
       fig_height = fig_height,
