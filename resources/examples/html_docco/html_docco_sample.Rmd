@@ -5,6 +5,7 @@ output:
     fig_width: 6
     fig_height: 6
     highlight: kate
+    thumbnails: true
     lightbox: true
     gallery: true
 ---

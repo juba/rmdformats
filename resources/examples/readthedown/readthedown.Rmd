@@ -5,6 +5,8 @@ author: juba
 output:
   rmdformats::readthedown:
     self_contained: true
+    thumbnails: false
+    lightbox: false
 ---
 
 
