@@ -110,6 +110,7 @@ img.image-thumb {
     cursor: pointer;
     border: 1px solid #CCC;
     padding: 2px;
+    display: table;
 }
 
 .figure {

@@ -120,7 +120,9 @@ $toc$
 </div>
 $endif$
 
+<div id="content">
 $body$
+</div>
 
 $for(include-after)$
 $include-after$
@@ -140,6 +142,26 @@ $$(document).ready(function () {
 
 </script>
 $endif$
+
+$if(lightbox)$
+<script>
+$$(document).ready(function () {
+ 	$$('#content img')
+ 	  .addClass("image-thumb");
+  $$('#content').magnificPopup({
+	      type:'image',
+	      closeOnContentClick: false,
+	      delegate: 'img',
+	      gallery: {enabled: $gallery$ },
+	      image: {
+	        verticalFit: true,
+          titleSrc: 'alt'
+	      }
+ 	    });
+});
+</script>
+$endif$
+
 
 $if(mathjax-url)$
 <!-- dynamically load mathjax for compatibility with self-contained -->
