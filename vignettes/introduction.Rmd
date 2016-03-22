@@ -15,13 +15,38 @@ with or without the RStudio IDE.
 
 ## Formats
 
-The package provides two HTML output formats :
+The package provides several HTML output formats :
 
-- the `readthedown` format
-- the `html_clean` format 
-- the `html_docco` format 
+- `readthedown`
+- `html_clean`
+- `html_docco`
 
+## Options
 
+You can add the following options to your YAML preamble :
+
+- `fig_width` : figures width, in inches
+- `fig_height` : figures height, in inches
+- `fig_caption` : toggle figure caption rendering
+- `highlight` : syntax highlighting style
+- `lightbox` : if TRUE, display images as thumbnails with lightbox effect
+- `gallery` : if TRUE, add navigation between images when displayed in lightbox
+
+Example preamble :
+
+```{r eval=FALSE}
+---
+title: "My document"
+date: "`r Sys.Date()`"
+author: John Doe
+output:
+  rmdformats::readthedown:
+    self_contained: true
+    lightbox: true
+    gallery: true
+    highlight: tango
+---
+```
 
 ## Creating a new document
 
@@ -80,7 +105,7 @@ Some extra features are available depending on the format :
 
 - `readthedown` is fully responsive, with collapsible navigation
 - `html_clean` and `readthedown` provide an automatic and dynamic table of contents
-- `html_clean` and `html_docco` provide automatic thumbnails for figures with lightbox display
+- all formats provide automatic thumbnails for figures with lightbox display
 
 The package also provides a `create.doc()` function as well as RStudio document
 templates to easily generate an empty and ready to use rmarkdown file with
