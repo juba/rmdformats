@@ -2,8 +2,8 @@
 # create an html dependency for Magnific popup
 html_dependency_magnific_popup <- function() {
   htmltools::htmlDependency(name = "magnific-popup",
-                            version = "0.9.9",
-                            src = system.file("templates/magnific-popup-0.9.9", package = "rmdformats"),
+                            version = "1.1.0",
+                            src = system.file("templates/magnific-popup-1.1.0", package = "rmdformats"),
                             script = "jquery.magnific-popup.min.js",
                             stylesheet = "magnific-popup.css")
 }
