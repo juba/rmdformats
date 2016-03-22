@@ -28,8 +28,9 @@ You can add the following options to your YAML preamble :
 - `fig_width` : figures width, in inches
 - `fig_height` : figures height, in inches
 - `fig_caption` : toggle figure caption rendering
-- `highlight` : syntax highlighting style
-- `lightbox` : if TRUE, display images as thumbnails with lightbox effect
+- `highlight` : syntax highlighting 
+- `thumbnails` : if TRUE, display content images as thumbnails
+- `lightbox` : if TRUE, add lightbox effect to content images
 - `gallery` : if TRUE, add navigation between images when displayed in lightbox
 
 Example preamble :
@@ -42,8 +43,9 @@ author: John Doe
 output:
   rmdformats::readthedown:
     self_contained: true
+    thumbnails: true
     lightbox: true
-    gallery: true
+    gallery: false
     highlight: tango
 ---
 ```
