@@ -9,8 +9,9 @@
 #'   "default", "tango", "pygments", "kate", "monochrome", "espresso",
 #'   "zenburn", "haddock", and "textmate". Pass \code{NULL} to prevent syntax
 #'   highlighting.
-#' @param lightbox if TRUE, display content images as thumbnails with lightbox effect
-#' @param gallery if TRUE and popup is TRUE, add a gallery navigation between images in lightbox display
+#' @param lightbox if TRUE, add lightbox effect to content images
+#' @param thumbnails if TRUE display content images as thumbnails
+#' @param gallery if TRUE and lightbox is TRUE, add a gallery navigation between images in lightbox display
 #' @param pandoc_args arguments passed to the pandoc_args argument of rmarkdown \code{\link{html_document}}
 #' @param ... Additional function arguments passed to rmarkdown \code{\link{html_document}}
 #' @return R Markdown output format to pass to \code{\link{render}}
@@ -23,6 +24,7 @@ html_docco <- function(fig_width = 6,
                        fig_caption = TRUE,
                        highlight = "pygments",
                        lightbox = TRUE,
+                       thumbnails = TRUE,
                        gallery = FALSE,
                        pandoc_args = NULL,
                        ...) {
@@ -38,6 +40,7 @@ html_docco <- function(fig_width = 6,
                    "--mathjax", 
                    "--variable", paste0("mathjax-url:", default_mathjax()))
   if (lightbox) { pandoc_args <- c(pandoc_args, "--variable", "lightbox:true") }
+  if (thumbnails) { pandoc_args <- c(pandoc_args, "--variable", "thumbnails:true") }  
   if (gallery) {
     pandoc_args <- c(pandoc_args, "--variable", "gallery:true")
   } else {

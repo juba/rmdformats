@@ -143,11 +143,15 @@ $$(document).ready(function () {
 </script>
 $endif$
 
-$if(lightbox)$
 <script>
 $$(document).ready(function () {
+ 	$if(thumbnails)$
  	$$('#content img')
  	  .addClass("image-thumb");
+  $endif$
+  $if(lightbox)$
+  $$('#content img')
+ 	  .addClass("image-lb");
   $$('#content').magnificPopup({
 	      type:'image',
 	      closeOnContentClick: false,
@@ -158,9 +162,9 @@ $$(document).ready(function () {
           titleSrc: 'alt'
 	      }
  	    });
+ 	$endif$
 });
 </script>
-$endif$
 
 
 $if(mathjax-url)$

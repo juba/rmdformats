@@ -107,10 +107,13 @@ img {
 
 img.image-thumb {
     width: 250px;
-    cursor: pointer;
     border: 1px solid #CCC;
     padding: 2px;
     display: table;
+}
+
+img.image-lb {
+  cursor: pointer;
 }
 
 .figure {
