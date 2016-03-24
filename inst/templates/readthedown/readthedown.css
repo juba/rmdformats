@@ -693,7 +693,7 @@ a:hover{
     color:#3d1308}
 
 a:visited{
-    color:#3d1308}
+    color:#ffffff}
 
 .left{
     text-align:left}
@@ -839,75 +839,71 @@ hr{
     text-decoration: none;
 }
 
-
-ul.nav li ul li {
-    display: none;
-}
-
-ul.nav li ul li ul li {
-    display: none;
-}
-
-ul.nav li.active ul li {
-    display: inline;
-}
-
-ul.nav li.active ul li ul li {
-    display: inline;
-}
-
-ul.nav li.active ul li a {
-    background-color: #E3E3E3;
-    color: #8099B0;
-    border-right:solid 1px #c9c9c9 !important;
-}
-
-ul.nav li.active ul li.active a {
-    background-color: #C9C9C9;
-    color: black !important;
-    font-weight: bold !important;
-}
-
-ul.nav li.active ul li.active ul li.active a {
-    color: black !important;
-    font-weight: bold !important;
-    display: block !important;
-}
-
-ul.nav li.active ul li.active ul li a {
-    color: #808080 !important;
-    font-weight: normal !important;
-    display: block !important;
-}
-
-ul.nav li.active ul li ul li a {
-    display: none !important;
-}
-
-/* ul.nav li ul li ul li { */
-/*     display: none !important; /\* as long as nav is on multiple levels of ul *\/ */
-/*     /\* display: none; /\* as long as nav is on multiple levels of ul *\\/ *\/ */
-/* } */
-
-ul.nav li ul li ul li ul li {
-    display: none !important; /* as long as nav is on multiple levels of ul */
-    /* display: none; /* as long as nav is on multiple levels of ul *\/ */
-}
-
-ul.nav li.active > a {
-    border-bottom:solid 1px #c9c9c9 !important; /* XXX Restrict it to 2nd level */
-    border-right:solid 1px #c9c9c9 !important;
-}
-
-ul.nav li.active a {
+#table-of-contents li.active a {    
     color: gray !important;
     font-weight:bold;
     background-color: white;
     border-right:solid 0px white !important;
 }
 
-ul.nav > li.active > a {
+#table-of-contents li.active > a {
+    border-bottom:solid 1px #c9c9c9 !important; /* XXX Restrict it to 2nd level */
+    border-right:solid 1px #c9c9c9 !important;
+}
+
+
+#table-of-contents li ul li {
+    display: none;
+}
+
+#table-of-contents li ul li ul li {
+    display: none;
+}
+
+#table-of-contents li.active ul li {
+    display: inline;
+}
+
+#table-of-contents li.active ul li ul li {
+    display: inline;
+}
+
+#table-of-contents li.active ul li a {
+    background-color: #E3E3E3;
+    color: #8099B0;
+    border-right:solid 1px #c9c9c9 !important;
+}
+
+#table-of-contents li.active ul li.active a {
+    background-color: #C9C9C9;
     color: black !important;
+    font-weight: bold !important;
+}
+
+#table-of-contents li.active ul li.active ul li.active a {
+    color: black !important;
+    font-weight: bold !important;
+    display: block !important;
+}
+
+#table-of-contents li.active ul li.active ul li a {
+    color: #808080 !important;
+    font-weight: normal !important;
+    display: block !important;
+}
+
+#table-of-contents li.active ul li ul li a {
+    display: none !important;
+}
+
+/* #table-of-contents li ul li ul li { */
+/*     display: none !important; /\* as long as nav is on multiple levels of ul *\/ */
+/*     /\* display: none; /\* as long as nav is on multiple levels of ul *\\/ *\/ */
+/* } */
+
+#table-of-contents li ul li ul li ul li {
+    display: none !important; /* as long as nav is on multiple levels of ul */
+    /* display: none; /* as long as nav is on multiple levels of ul *\/ */
 }
 
 footer{
@@ -1052,4 +1048,43 @@ h2.footnotes{
     padding-top: 8px;
     line-height: 1.25em;
     /* display: inline; */
+}
+
+.navbar-default {
+    background-color: #211103;
+    border-color: #ffffff;
+}
+
+.navbar-default .navbar-brand {
+    color: #ffffff;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #ffffff;
+}
+
+.navbar-default a.navbar-brand:hover,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > li > a:hover {
+    color: #ffffff;
+    background-color: #9F2042;
+}
+
+
+.dropdown-menu li {
+    margin-left: 0;    
+}
+
+.dropdown-menu>li>a:hover {
+    background-color: #9F2042;
+    color: #ffffff;
+}
+
+.dropdown-menu>.active>a,
+.dropdown-menu>.active>a:hover {
+    background-color: #9F2042;
+    color: #ffffff;
 }

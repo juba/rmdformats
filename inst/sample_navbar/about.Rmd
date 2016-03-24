@@ -1,0 +1,6 @@
+---
+title: "About"
+output: rmdformats::readthedown
+---
+
+This is just an example page to show the navbar in action.
