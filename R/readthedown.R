@@ -29,7 +29,7 @@ readthedown <- function(fig_width = 8,
                        thumbnails = FALSE,
                        gallery = FALSE,
                        pandoc_args = NULL,
-                       toc_depth = 3,
+                       toc_depth = 2,
                        ...) {
  
   ## js and css dependencies
