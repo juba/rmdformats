@@ -13,6 +13,7 @@
 #' @param thumbnails if TRUE display content images as thumbnails
 #' @param gallery if TRUE and lightbox is TRUE, add a gallery navigation between images in lightbox display
 #' @param pandoc_args arguments passed to the pandoc_args argument of rmarkdown \code{\link{html_document}}
+#' @param toc_depth adjust topic depth for banner
 #' @param ... Additional function arguments passed to R Markdown \code{\link{html_document}}
 #' @return R Markdown output format to pass to \code{\link{render}}
 #' @import rmarkdown
@@ -28,6 +29,7 @@ readthedown <- function(fig_width = 8,
                        thumbnails = FALSE,
                        gallery = FALSE,
                        pandoc_args = NULL,
+                       toc_depth = 2,
                        ...) {
  
   ## js and css dependencies
@@ -57,7 +59,7 @@ readthedown <- function(fig_width = 8,
       highlight = highlight,
       pandoc_args = pandoc_args,
       toc = TRUE,
-      toc_depth = 2,
+      toc_depth = toc_depth,
       ...
     )
       

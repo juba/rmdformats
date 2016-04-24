@@ -6,7 +6,7 @@
 \usage{
 readthedown(fig_width = 8, fig_height = 5, fig_caption = TRUE,
   highlight = "kate", lightbox = FALSE, thumbnails = FALSE,
-  gallery = FALSE, pandoc_args = NULL, ...)
+  gallery = FALSE, pandoc_args = NULL, toc_depth = 2, ...)
 }
 \arguments{
 \item{fig_width}{Default width (in inches) for figures}
@@ -27,6 +27,8 @@ highlighting.}
 \item{gallery}{if TRUE and lightbox is TRUE, add a gallery navigation between images in lightbox display}
 
 \item{pandoc_args}{arguments passed to the pandoc_args argument of rmarkdown \code{\link{html_document}}}
+
+\item{toc_depth}{adjust topic depth for banner}
 
 \item{...}{Additional function arguments passed to R Markdown \code{\link{html_document}}}
 }
