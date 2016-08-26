@@ -50,19 +50,30 @@ readthedown <- function(fig_width = 8,
     pandoc_args <- c(pandoc_args, "--variable", "gallery:false")
   }
   
-  rmarkdown::html_document(
-      template = system.file("templates/readthedown/readthedown.html", package = "rmdformats"),
-      extra_dependencies = extra_dependencies,
-      fig_width = fig_width,
-      fig_height = fig_height,
-      fig_caption = fig_caption,
-      highlight = highlight,
-      pandoc_args = pandoc_args,
-      toc = TRUE,
-      toc_depth = toc_depth,
-      ...
-    )
-      
+  ## Merge "extra_dependencies"
+  extra_args <- list(...)
+  if ("extra_dependencies" %in% names(extra_args)) {
+    extra_dependencies <- append(extra_dependencies, extra_args[["extra_dependencies"]])
+    extra_args[["extra_dependencies"]] <- NULL
+    extra_args[["mathjax"]] <- NULL
+  }
+  
+  ## Call rmarkdown::html_document  
+  html_document_args <- list(
+    template = system.file("templates/readthedown/readthedown.html", package = "rmdformats"),
+    extra_dependencies = extra_dependencies,
+    fig_width = fig_width,
+    fig_height = fig_height,
+    fig_caption = fig_caption,
+    highlight = highlight,
+    pandoc_args = pandoc_args,
+    toc = TRUE,
+    toc_depth = toc_depth
+  )
+  html_document_args <- append(html_document_args, extra_args)
+  html_document_func <- rmarkdown::html_document
+  do.call(html_document_func, html_document_args)
+  
 }
 
 # readthedown js and css
