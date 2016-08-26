@@ -68,32 +68,32 @@ img.mfp-img {
 
 /* Tables */
 
-.table { 
+.table {
     margin: 25px 0px 35px 20px;
     width: auto !important;
     border-collapse: collapse;
     border-spacing: 0;
     border: 1px solid #CCC;
-    box-shadow: 0 0 0.5em #ddd; 
+    box-shadow: 0 0 0.5em #ddd;
 }
 
 
 .table thead>tr {
     background: #eaeaea;
-    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;       
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
 }
 
-.table thead>tr>th { 
+.table thead>tr>th {
     padding: 3px 15px !important;
 }
 
-.table tbody>tr>td { 
+.table tbody>tr>td {
     padding: 3px 15px !important;
 }
 
 .table tbody tr.even {
-    background: #f5f5f5;  
-    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;        
+    background: #f5f5f5;
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
 }
 
 .table tr.odd {
@@ -102,7 +102,7 @@ img.mfp-img {
 
 .table tbody tr:hover {
     background: #e9f0fb;
-    transition: all 0.1s ease-in-out;     
+    transition: all 0.1s ease-in-out;
 }
 
 
@@ -137,8 +137,8 @@ img.mfp-img {
 
 #toc {
     height: auto;
-    width: 12%; 
-    position: fixed; 
+    width: 12%;
+    position: fixed;
     background: #FFF;
     padding: 20px 5px 20px 5px;
     color: #777;
@@ -168,16 +168,31 @@ img.mfp-img {
     font-size: 90%;
 }
 
-#toc .tocify-focus a, #toc a:hover {
+#toc .active > a, #toc a:hover {
     color: #3388E0;
-}
-
-#toc .tocify-focus a {
     border-left: 2px solid #3388E0;
-    padding-left: 18px;
+    margin-left: -2px;
+    background-color: #FFF;
 }
 
-#toc ul ul .tocify-focus a {
-    padding-left: 38px;
+#toc ul.nav li ul li {
+    display: none;
 }
 
+#toc ul.nav li ul li ul li {
+    display: none;
+}
+
+#toc ul.nav li.active ul li {
+    display: inline;
+}
+
+#toc ul.nav li.active ul li ul li {
+    display: inline;
+}
+
+#toc .close {
+    margin-right: -20px;
+    display: block;
+    z-index: 1000;
+}

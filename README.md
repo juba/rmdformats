@@ -2,7 +2,7 @@
 
 [![Travis-CI Build Status](https://travis-ci.org/juba/rmdformats.svg?branch=master)](https://travis-ci.org/juba/rmdformats)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/rmdformats)](http://cran.r-project.org/package=rmdformats)
-![CRAN Downloads](http://cranlogs.r-pkg.org/badges/last-month/rmdformats) 
+![CRAN Downloads](http://cranlogs.r-pkg.org/badges/last-month/rmdformats)
 
 
 This R package provides ready-to-use HTML output formats and templates for
@@ -13,17 +13,17 @@ with or without the RStudio IDE.
 
 The package provides several HTML output formats. You can click on an image to see a real HTML output sample.
 
-### `readthedown` format 
+### `readthedown` format
 
 [![](resources/screenshots/readthedown.png)](https://rawgit.com/juba/rmdformats/master/resources/examples/readthedown/readthedown.html)
 
-### `html_clean` format 
+### `html_clean` format
 
 [![](resources/screenshots/html_clean.png)](https://rawgit.com/juba/rmdformats/master/resources/examples/html_clean/html_clean_sample.html)
 
 
 
-### `html_docco` format 
+### `html_docco` format
 
 [![](resources/screenshots/html_docco.png)](https://rawgit.com/juba/rmdformats/master/resources/examples/html_docco/html_docco_sample.html)
 
@@ -112,7 +112,6 @@ make clean
 
 ## Credits
 
-- [Tocify](http://gregfranko.com/jquery.tocify.js/) for the dynamic javascript table of contents
 - [Magnific popup](http://dimsemenov.com/plugins/magnific-popup/) lightbox plugin
 - The code of `create.doc()` is heavily inspired by the `create.project()` function of the [ProjectTemplate package](http://projecttemplate.net/)
 - The CSS for the `html_docco` format is heavily inspired from the default one of the [docco](https://jashkenas.github.io/docco/) project.

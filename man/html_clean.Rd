@@ -6,7 +6,7 @@
 \usage{
 html_clean(fig_width = 6, fig_height = 6, fig_caption = TRUE,
   highlight = "kate", lightbox = TRUE, thumbnails = TRUE,
-  gallery = FALSE, pandoc_args = NULL, ...)
+  gallery = FALSE, pandoc_args = NULL, toc_depth = 2, ...)
 }
 \arguments{
 \item{fig_width}{Default width (in inches) for figures}
@@ -27,6 +27,8 @@ highlighting.}
 \item{gallery}{if TRUE and lightbox is TRUE, add a gallery navigation between images in lightbox display}
 
 \item{pandoc_args}{arguments passed to the pandoc_args argument of rmarkdown \code{\link{html_document}}}
+
+\item{toc_depth}{adjust table of contents depth}
 
 \item{...}{Additional function arguments passed to R Markdown \code{\link{html_document}}}
 }

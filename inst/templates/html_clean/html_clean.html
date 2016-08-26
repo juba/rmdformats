@@ -74,9 +74,9 @@ code {
   color: inherit;
   background-color: rgba(0, 0, 0, 0.04);
 }
-img { 
-  max-width:100%; 
-  height: auto; 
+img {
+  max-width:100%;
+  height: auto;
 }
 </style>
 <div class="container-fluid main-container">
@@ -127,8 +127,9 @@ $endfor$
 $if(theme)$
     </div>
     <div class="col-md-2">
-      <div id="toc" class="tocify"> 
+      <div id="toc">
       	<button type="button" class="close">×</button>
+        $toc$
       </div>
     </div>
   </div>
@@ -136,7 +137,7 @@ $if(theme)$
 
 <script>
 $$(document).ready(function () {
-  
+
   // add bootstrap table styles to pandoc tables
   $$('tr.header').parent('thead').parent('table').addClass('table table-condensed');
 

@@ -17,14 +17,6 @@ html_dependency_jquery_ui <- function() {
                             script = "jquery-ui-1.10.4.custom.min.js")
 }
 
-# create an html dependency for tocify
-html_dependency_tocify <- function() {
-  htmltools::htmlDependency(name = "tocify",
-                            version = "1.9.0",
-                            src = system.file("templates/tocify-1.9.0", package = "rmdformats"),
-                            script = "jquery.tocify.min.js")
-}
-
 # create an html dependency for embedded jquery (function copied from rmarkdown)
 html_dependency_jquery <- function()  {
   htmltools::htmlDependency(name = "jquery",
@@ -72,4 +64,3 @@ html_dependency_bootstrap_js <- function() {
 default_mathjax <- function() {
   "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
 }
-

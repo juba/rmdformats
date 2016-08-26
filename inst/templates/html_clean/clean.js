@@ -1,15 +1,8 @@
 $(function() {
 
-    /* Table of contents */
-    $("#toc").tocify({
-    	selectors: "h1,h2",
-      ignoreSelector: "h1.title",
-    	theme: "none",
-    	smoothScrollSpeed: "fast",
-    	highlightOffset: 40,
-    	showEffectSpeed: "fast",
-    	hideEffectSpeed: "fast"
-    });
+    // ScrollSpy also requires that we use a Bootstrap nav component.
+    $('#toc ul').first().addClass('nav');
+    $('body').scrollspy({target: '#toc'});
 
     $("#toc .close").click(function() {
       $("#toc").slideUp();
@@ -25,5 +18,3 @@ $(function() {
     })
 
 });
-
-
