@@ -12,7 +12,8 @@ create.doc(dirname = "new-doc", format = "html_clean", report = FALSE,
 
 \item{format}{R Markdown format to use}
 
-\item{report}{indicates if the new document is living in the \code{report}}
+\item{report}{indicates if the new document is living in the \code{report} directory 
+(for ProjectTemplate projects)}
 
 \item{makefile}{indicates if a `Makefile` for HTML and PDF rendering should
 be created in the document folder}
@@ -28,8 +29,8 @@ contain a ready-to-use RMarkdown file to be rendered in the given format.
 For now on, the available formats are "html_clean", "html_docco".
 
 If \code{report} is TRUE, then a small snippet of code is added at the
-beginning of the Rmd file. This code allows to switch to the project root
-before running \code{load.project} when using the included Makefile.
+beginning of the Rmd file. This code allows to switch to the ProjectTemplate 
+project root before running \code{load.project} when using the included Makefile.
 }
 \examples{
 \dontrun{

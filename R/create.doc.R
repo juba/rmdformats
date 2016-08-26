@@ -5,15 +5,16 @@
 #'
 #' @param dirname name of the directory to create
 #' @param format R Markdown format to use
-#' @param report indicates if the new document is living in the \code{report}
+#' @param report indicates if the new document is living in the \code{report} directory 
+#' (for ProjectTemplate projects)
 #' @param makefile indicates if a `Makefile` for HTML and PDF rendering should
 #' be created in the document folder
 #' @details
 #' For now on, the available formats are "html_clean", "html_docco".
 #' 
 #' If \code{report} is TRUE, then a small snippet of code is added at the
-#' beginning of the Rmd file. This code allows to switch to the project root
-#' before running \code{load.project} when using the included Makefile.
+#' beginning of the Rmd file. This code allows to switch to the ProjectTemplate 
+#' project root before running \code{load.project} when using the included Makefile.
 #' @return
 #' No value is returned.
 #' @author Julien Barnier <julien.barnier@@ens-lyon.fr>
