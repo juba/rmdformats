@@ -33,8 +33,7 @@ readthedown <- function(fig_width = 8,
                        ...) {
 
   ## js and css dependencies
-  extra_dependencies <- list(html_dependency_jquery(),
-                             html_dependency_bootstrap(),
+  extra_dependencies <- list(html_dependency_bootstrap(),
                              html_dependency_magnific_popup(),
                              html_dependency_readthedown())
 

@@ -8,23 +8,6 @@ html_dependency_magnific_popup <- function() {
                             stylesheet = "magnific-popup.css")
 }
 
-
-# create an html dependency for jquery-ui
-html_dependency_jquery_ui <- function() {
-  htmltools::htmlDependency(name = "jquery-ui",
-                            version = "1.10.4",
-                            src = system.file("templates/jquery-ui-1.10.4", package = "rmdformats"),
-                            script = "jquery-ui-1.10.4.custom.min.js")
-}
-
-# create an html dependency for embedded jquery (function copied from rmarkdown)
-html_dependency_jquery <- function()  {
-  htmltools::htmlDependency(name = "jquery",
-                 version = "1.11.0",
-                 src = system.file("templates/jquery-1.11.0", package = "rmdformats"),
-                 script = "jquery.min.js")
-}
-
 # create an html dependency for jquery-stickytableheaders
 html_dependency_jquery_stickytableheaders <- function()  {
   htmltools::htmlDependency(name = "jquery-stickytableheaders",

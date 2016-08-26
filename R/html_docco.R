@@ -28,25 +28,24 @@ html_docco <- function(fig_width = 6,
                        gallery = FALSE,
                        pandoc_args = NULL,
                        ...) {
-  
+
   ## js and css dependencies
-  extra_dependencies <- list(html_dependency_jquery(),
-                             html_dependency_bootstrap("bootstrap"),
+  extra_dependencies <- list(html_dependency_bootstrap("bootstrap"),
                              html_dependency_magnific_popup(),
                              html_dependency_docco())
-  
+
   ## Force mathjax arguments
-  pandoc_args <- c(pandoc_args, 
-                   "--mathjax", 
+  pandoc_args <- c(pandoc_args,
+                   "--mathjax",
                    "--variable", paste0("mathjax-url:", default_mathjax()))
   if (lightbox) { pandoc_args <- c(pandoc_args, "--variable", "lightbox:true") }
-  if (thumbnails) { pandoc_args <- c(pandoc_args, "--variable", "thumbnails:true") }  
+  if (thumbnails) { pandoc_args <- c(pandoc_args, "--variable", "thumbnails:true") }
   if (gallery) {
     pandoc_args <- c(pandoc_args, "--variable", "gallery:true")
   } else {
     pandoc_args <- c(pandoc_args, "--variable", "gallery:false")
   }
-  
+
   ## Merge "extra_dependencies"
   extra_args <- list(...)
   if ("extra_dependencies" %in% names(extra_args)) {
@@ -54,8 +53,8 @@ html_docco <- function(fig_width = 6,
     extra_args[["extra_dependencies"]] <- NULL
     extra_args[["mathjax"]] <- NULL
   }
-  
-  ## Call rmarkdown::html_document  
+
+  ## Call rmarkdown::html_document
   html_document_args <- list(
     template = system.file("templates/html_docco/html_docco.html", package = "rmdformats"),
     extra_dependencies = extra_dependencies,
@@ -67,7 +66,7 @@ html_docco <- function(fig_width = 6,
   )
   html_document_args <- append(html_document_args, extra_args)
   html_document_func <- rmarkdown::html_document
-  do.call(html_document_func, html_document_args)  
+  do.call(html_document_func, html_document_args)
 
 }
 
