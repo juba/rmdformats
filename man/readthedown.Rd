@@ -28,7 +28,7 @@ highlighting.}
 
 \item{pandoc_args}{arguments passed to the pandoc_args argument of rmarkdown \code{\link{html_document}}}
 
-\item{toc_depth}{adjust topic depth for banner}
+\item{toc_depth}{adjust table of contents depth}
 
 \item{...}{Additional function arguments passed to R Markdown \code{\link{html_document}}}
 }
