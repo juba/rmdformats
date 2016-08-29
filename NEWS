@@ -1,6 +1,9 @@
-rmdformats 0.2.1
-----------------
+rmdformats 0.3
+--------------
 
+* All templates now support code folding and tabsets (thanks @RCura)
+* html_clean table of contents now uses rmarkdown instead of tocify
+* Bugfix : embedded shiny apps should now work (thanks @mike-powell)
 * New features : `lightbox`, `thumbnails` and `gallery` options for images display (thanks @noamross)
 * Bugfix : wrong styling when no headings (thanks @dmenne)
 
