@@ -206,10 +206,6 @@ ul,ol,dl{
     padding:0;
 }
 
-li{
-    margin-left: 24px;
-}
-
 dd{
     margin:0;
 }
@@ -465,7 +461,7 @@ code{
 
 #content pre.sourceCode{
     background-color: #FFF;
-    margin:1px 0px 24px 0px;
+    margin:1px 0px 12px 0px;
 }
 
 .table-wrapper {
@@ -939,9 +935,9 @@ footer p{
     color: #f8e5ee;
 }
 
-#postamble .author span, 
+#postamble .author span,
 #postamble .date span {
-    padding-right: 0.7em;  
+    padding-right: 0.7em;
 }
 
 #postamble .creator,#postamble .validation {
@@ -1052,4 +1048,13 @@ h2.footnotes{
     padding-top: 8px;
     line-height: 1.25em;
     /* display: inline; */
+}
+
+/* Code folding buttons */
+
+div.sourceCode .row,
+div.sourceCode .row div {
+    padding: 0;
+    margin: 0;
+    overflow-y: visible;
 }
