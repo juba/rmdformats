@@ -35,6 +35,7 @@ Some extra features are available depending on the format :
 - `readthedown` is fully responsive, with collapsible navigation
 - `html_clean` and `readthedown` provide an automatic and dynamic table of contents
 - `html_clean` and `html_docco` provide automatic thumbnails for figures with lightbox display
+- code folding and tabsets are supported like in RStudio's HTML template
 
 The package also provides a `create.doc()` function as well as RStudio document
 templates to easily generate an empty and ready to use rmarkdown file with
