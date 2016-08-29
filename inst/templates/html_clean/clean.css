@@ -202,3 +202,16 @@ img.mfp-img {
 .tab-content {
     margin-top: 1em;
 }
+
+/* Code folding buttons */
+
+div.sourceCode .row,
+div.sourceCode .row div {
+    padding: 0;
+    margin: 0;
+    overflow-y: visible;
+}
+
+.btn-group {
+    margin-top: 0.5em;
+}
