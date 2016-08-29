@@ -196,3 +196,9 @@ img.mfp-img {
     display: block;
     z-index: 1000;
 }
+
+/* Tabset */
+
+.tab-content {
+    margin-top: 1em;
+}
