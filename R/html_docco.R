@@ -30,7 +30,9 @@ html_docco <- function(fig_width = 6,
                        ...) {
 
   ## js and css dependencies
-  extra_dependencies <- list(html_dependency_bootstrap("bootstrap"),
+  extra_dependencies <- list(rmarkdown::html_dependency_jquery(),
+                             rmarkdown::html_dependency_jqueryui(),
+                             html_dependency_bootstrap("bootstrap"),
                              html_dependency_magnific_popup(),
                              html_dependency_docco())
 
