@@ -13,17 +13,30 @@ with or without the RStudio IDE.
 
 The package provides several HTML output formats. You can click on an image to see a real HTML output sample.
 
+### `material` format
+
+Format taken from the [Material design theme for Bootstrap 3](https://github.com/FezVrasta/bootstrap-material-design). Document is split into pages at each `<h1>` header, and the table of contents allows an animated navigation between these pages.
+
+[![](resources/screenshots/material.png)](https://rawgit.com/juba/rmdformats/master/resources/examples/material/material.html)
+
+
 ### `readthedown` format
+
+Adapted from the corresponding `readtheorg` theme of the [org-html-themes](https://github.com/fniessen/org-html-themes) project, fully responsive with dynamic table of contents and collapsible navigation.
 
 [![](resources/screenshots/readthedown.png)](https://rawgit.com/juba/rmdformats/master/resources/examples/readthedown/readthedown.html)
 
 ### `html_clean` format
 
+Simple and clean template with dynamic table of contents, very similar to the one from the great [knitrBootstrap package](https://github.com/jimhester/knitrBootstrap) by Jim
+Hester.
+
 [![](resources/screenshots/html_clean.png)](https://rawgit.com/juba/rmdformats/master/resources/examples/html_clean/html_clean_sample.html)
 
 
-
 ### `html_docco` format
+
+Simple template, no table of contents. CSS heavily inspired from the default one of the [docco](https://jashkenas.github.io/docco/) project.
 
 [![](resources/screenshots/html_docco.png)](https://rawgit.com/juba/rmdformats/master/resources/examples/html_docco/html_docco_sample.html)
 
@@ -117,6 +130,7 @@ make clean
 - The code of `create.doc()` is heavily inspired by the `create.project()` function of the [ProjectTemplate package](http://projecttemplate.net/)
 - The CSS for the `html_docco` format is heavily inspired from the default one of the [docco](https://jashkenas.github.io/docco/) project.
 - The CSS and JavaScript for `readthedown` is adapted from the corresponding `readtheorg` theme of the [org-html-themes](https://github.com/fniessen/org-html-themes) project, which is itself inspired by the [Read the docs](https://readthedocs.org/) [Sphinx](http://sphinx-doc.org/) theme.
+- The CSS and JavaScript for `material` has been taken from the [Material design theme for Bootstrap 3](https://github.com/FezVrasta/bootstrap-material-design) project and its [presentation page](https://fezvrasta.github.io/bootstrap-material-design/)
 - JavaScript and HTML code for code folding and tabbed sections are taken from the RStudio's default `rmarkdown` HTML template
 
 The `html_clean` styling and features are very similar to the ones from the great

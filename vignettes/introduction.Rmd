@@ -17,6 +17,7 @@ with or without the RStudio IDE.
 
 The package provides several HTML output formats :
 
+- `material`
 - `readthedown`
 - `html_clean`
 - `html_docco`
@@ -64,7 +65,7 @@ The `create.doc()` function allows you to create a new directory with a clean
 ready-to-use RMarkdown file. `create.doc()` gets two main arguments :
 
 - `dirname` is the name of the folder and RMarkdown file to be created
-- `format` is the format name (`"readthedown"`, `"html_clean"` or `"html_docco"`)
+- `format` is the format name (`"material"`, `"readthedown"`, `"html_clean"` or `"html_docco"`)
 
 By default, a `Makefile` file will be created in the new folder for direct
 rendering from the command line.
@@ -105,6 +106,7 @@ make clean
 
 Some extra features are available depending on the format :
 
+- the `material` template split the document in pages at each `<h1>` header, and provides an animated navigation between these pages
 - `readthedown` is fully responsive, with collapsible navigation
 - `html_clean` and `readthedown` provide an automatic and dynamic table of contents
 - all formats provide automatic thumbnails for figures with lightbox display
