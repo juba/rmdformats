@@ -2,3 +2,4 @@
 ^\.Rproj\.user$
 resources
 ^\.travis\.yml$
+inst/sample_file
