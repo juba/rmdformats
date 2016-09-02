@@ -33,6 +33,7 @@ You can add the following options to your YAML preamble :
 - `thumbnails` : if TRUE, display content images as thumbnails
 - `lightbox` : if TRUE, add lightbox effect to content images
 - `gallery` : if TRUE, add navigation between images when displayed in lightbox
+- `use_bookdown` : if TRUE, will use `bookdown` instead of `rmarkdown` for HTML rendering, thus providing section numbering and [cross references](https://bookdown.org/yihui/bookdown/cross-references.html).
 
 Example preamble :
 
