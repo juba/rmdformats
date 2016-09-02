@@ -3,7 +3,7 @@ rmdformats 0.3
 
 * New `material` HTML template
 * New feature : All templates now support code folding and tabsets (thanks @RCura)
-* New features : `lightbox`, `thumbnails` and `gallery` options for images display (thanks @noamross)
+* New feature : `lightbox`, `thumbnails` and `gallery` options for images display (thanks @noamross)
 * New feature : `use_bookdown` argument for section numbering and cross references (thanks @rdiaz02)
 * html_clean table of contents now uses rmarkdown instead of tocify
 * Bugfix : embedded shiny apps should now work (thanks @mike-powell)
