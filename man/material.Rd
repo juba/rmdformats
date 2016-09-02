@@ -38,4 +38,8 @@ R Markdown output format to pass to \code{\link[rmarkdown]{render}}
 \description{
 Format for converting from R Markdown to an HTML document with a material design theme.
 }
+\details{
+JavaScript and CSS taken and adapted from the Material design theme
+for Bootstrap 3 project : \url{https://github.com/FezVrasta/bootstrap-material-design}.
+}
 

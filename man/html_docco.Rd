@@ -38,4 +38,8 @@ R Markdown output format to pass to \code{\link[rmarkdown]{render}}
 \description{
 Format for converting from R Markdown to an HTML document.
 }
+\details{
+The CSS is heavily inspired from the default one of the docco project :
+\url{https://jashkenas.github.io/docco/}.
+}
 

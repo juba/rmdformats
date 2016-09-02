@@ -2,6 +2,11 @@
 #'
 #' Format for converting from R Markdown to an HTML document.
 #'
+#' @details
+#' Styling and features are very similar to the ones from the great
+#' knitrBootstrap package by Jim Hester :
+#' \url{https://github.com/jimhester/knitrBootstrap}
+#'
 #' @param fig_width Default width (in inches) for figures
 #' @param fig_height Default width (in inches) for figures
 #' @param fig_caption \code{TRUE} to render figures with captions

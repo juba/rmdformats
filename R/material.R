@@ -2,6 +2,10 @@
 #'
 #' Format for converting from R Markdown to an HTML document with a material design theme.
 #'
+#' @details
+#' JavaScript and CSS taken and adapted from the Material design theme
+#' for Bootstrap 3 project : \url{https://github.com/FezVrasta/bootstrap-material-design}.
+#'
 #' @param fig_width Default width (in inches) for figures
 #' @param fig_height Default width (in inches) for figures
 #' @param fig_caption \code{TRUE} to render figures with captions

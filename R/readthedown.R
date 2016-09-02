@@ -2,6 +2,11 @@
 #'
 #' Format for converting from R Markdown to an HTML document.
 #'
+#' @details
+#' CSS adapted from the readtheorg theme of the org-html-themes project :
+#' \url{https://github.com/fniessen/org-html-themes}, which is itself inspired by
+#' the Read the docs theme : \url{https://readthedocs.org/}.
+#'
 #' @param fig_width Default width (in inches) for figures
 #' @param fig_height Default width (in inches) for figures
 #' @param fig_caption \code{TRUE} to render figures with captions

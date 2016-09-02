@@ -2,6 +2,10 @@
 #'
 #' Format for converting from R Markdown to an HTML document.
 #'
+#' @details
+#' The CSS is heavily inspired from the default one of the docco project :
+#' \url{https://jashkenas.github.io/docco/}.
+#'
 #' @param fig_width Default width (in inches) for figures
 #' @param fig_height Default width (in inches) for figures
 #' @param fig_caption \code{TRUE} to render figures with captions

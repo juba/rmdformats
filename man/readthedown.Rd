@@ -41,4 +41,9 @@ R Markdown output format to pass to \code{\link[rmarkdown]{render}}
 \description{
 Format for converting from R Markdown to an HTML document.
 }
+\details{
+CSS adapted from the readtheorg theme of the org-html-themes project :
+\url{https://github.com/fniessen/org-html-themes}, which is itself inspired by
+the Read the docs theme : \url{https://readthedocs.org/}.
+}
 
