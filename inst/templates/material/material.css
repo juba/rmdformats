@@ -1,0 +1,324 @@
+/* Source : https://fezvrasta.github.io/bootstrap-material-design/index.css */
+
+* {
+    box-sizing: border-box;
+}
+
+.header-panel {
+    background-color: #009587;
+    height: 144px;
+    position: relative;
+    z-index: 3;
+}
+
+.header-panel div {
+    position: relative;
+    height: 100%;
+}
+
+.header-panel h1 {
+    color: #FFF;
+    /*font-size: 20px;*/
+    /*font-weight: 400;*/
+    position: absolute;
+    bottom: 10px;
+    padding-left: 35px;
+}
+
+.menu {
+    overflow: auto;
+    padding: 0;
+}
+
+.menu, .menu * {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.menu ul {
+    padding: 0;
+    margin: 7px 0;
+}
+
+.menu ul li {
+    list-style: none;
+    padding: 20px 0 20px 50px;
+    font-size: 15px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.menu ul li.active {
+    background-color: #dedede;
+    position: relative;
+}
+
+.menu ul li a {
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+}
+
+.pages {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 4;
+    padding: 0;
+    overflow: auto;
+    height: 100%;
+}
+
+.pages > div {
+    padding: 0 5px;
+    padding-top: 64px;
+    margin: 0;
+}
+
+.pages h1 {
+    color: rgb(82, 101, 162);
+    /*font-size: 24px;*/
+    /*font-weight: normal;*/
+    /*margin-top: 5px;*/
+    /*margin-bottom: 60px;*/
+    /*letter-spacing: 1.20000004768372px;*/
+}
+
+.page {
+    transform: translateY(1080px);
+    transition: transform 0 linear;
+    display: none;
+    opacity: 0;
+    font-size: 16px;
+    margin-left: 1em;
+}
+
+.page.active {
+    transform: translateY(0px);
+    transition: all 0.3s ease-out;
+    display: block;
+    opacity: 1;
+}
+
+.opensource {
+    color: rgba(0, 0, 0, 0.62);
+    position: fixed;
+    margin-top: 50px;
+    margin-left: 50px;
+    z-index: 100;
+}
+
+#source-modal h4 {
+    color: black;
+}
+
+#paypal .btn {
+    padding: 5px 30px 6px 30px;
+}
+
+#paypal input {
+    background: transparent;
+    border: 0;
+}
+
+.cbwrapper div {
+    display: none;
+}
+
+.cbwrapper div:nth-child(2) {
+    display: block;
+}
+
+#carbonads, #fakecb {
+    border: 1px solid #d5d5d5;
+    font-size: 11px;
+    line-height: 15px;
+    overflow: hidden;
+    width: 340px;
+    padding: 20px;
+    margin: auto;
+    height: 142px;
+    border-radius: 2px;
+}
+
+#carbonads .carbon-img {
+    float: left;
+    display: block;
+}
+
+#carbonads .carbon-text, #carbonads .carbon-poweredby {
+    float: left;
+    width: 150px;
+    padding: 0 10px 10px 10px;
+}
+
+#carbonads .carbon-text:hover, #carbonads .carbon-poweredby:hover {
+    text-decoration: none;
+}
+
+#carbonads .carbon-poweredby {
+    color: #9D9D9D;
+}
+
+
+#shadow .sample {
+    width: 100px;
+    height: 100px;
+    margin: 16px;
+    padding: 16px;
+    display: inline-block;
+}
+
+#shadow-sample2 {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 16px;
+    padding: 16px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+
+}
+
+#shadow-sample3 {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 100px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Source code */
+
+div.sourceCode {
+    overflow-x: hidden !important;
+}
+
+pre.sourceCode {
+    overflow-x: auto !important;
+}
+
+pre > code {
+    white-space: pre !important;
+}
+
+/* menu */
+
+#toc .nav>li.active>a:focus,
+#toc .nav>li.active>a:hover {
+    background-color: #dedede;
+}
+
+/* pilltabs */
+
+.pages ul.nav {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.chisq-results {
+    font-size: 85%;
+    font-style: italic;
+    margin-top: -1em;
+    margin-bottom: 1em;
+}
+
+/* tabs */
+
+.pages .nav-tabs>li {
+    margin-bottom: 0px !important;
+}
+
+.pages .nav-tabs>li>a {
+    font-weight: 400 !important;
+}
+
+.pages .nav-tabs>li.active>a {
+    background-color: #00A698 !important;
+}
+
+
+/* Espacements */
+
+table {
+    margin: 2em 0 2em 0;
+}
+
+
+h2, h3, h4 {
+    margin: 1em 0 0.5em 0;
+}
+
+/* Images */
+
+.pages img.image-lb {
+  cursor: pointer;
+}
+
+.figure {
+    margin: 1em 0 2em 0;
+    display: table;
+}
+
+img.image-thumb {
+    width: 250px;
+}
+
+.figure .panel-footer {
+    padding: 5px 8px;
+}
+
+.figure p.caption {
+    margin: 0px;
+    padding: 0px;
+    font-size: 80%;
+    font-style: italic;
+}
+
+.pages img.mfp-img {
+  background-color: #FFFFFF;
+  padding: 0px;
+  margin: 40px 0px;
+}
+
+/* Move from top effect */
+/* Source : https://codepen.io/dimsemenov/pen/GAIkt */
+
+.mfp-move-from-top {
+  /* start state */
+  /* animate in */
+  /* animate out */
+}
+.mfp-move-from-top .mfp-content {
+  vertical-align: top;
+}
+.mfp-move-from-top .mfp-with-anim {
+  opacity: 0;
+  transition: all 0.2s;
+  transform: translateY(-100px);
+}
+.mfp-move-from-top.mfp-bg {
+  opacity: 0;
+  transition: all 0.2s;
+}
+.mfp-move-from-top.mfp-ready .mfp-with-anim {
+  opacity: 1;
+  transform: translateY(50px);
+}
+.mfp-move-from-top.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+.mfp-move-from-top.mfp-removing .mfp-with-anim {
+  transform: translateY(-50px);
+  opacity: 0;
+}
+.mfp-move-from-top.mfp-removing.mfp-bg {
+  opacity: 0;
+}
