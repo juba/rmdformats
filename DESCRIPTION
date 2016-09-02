@@ -13,6 +13,7 @@ Description: HTML formats and templates for 'rmarkdown' documents, with some ext
 Imports: 
     knitr,
     rmarkdown,
+    bookdown,
     htmltools,
     questionr
 URL: https://github.com/juba/rmdformats

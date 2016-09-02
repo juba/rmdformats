@@ -12,10 +12,12 @@
 #' @param lightbox if TRUE, add lightbox effect to content images
 #' @param thumbnails if TRUE display content images as thumbnails
 #' @param gallery if TRUE and lightbox is TRUE, add a gallery navigation between images in lightbox display
-#' @param pandoc_args arguments passed to the pandoc_args argument of rmarkdown \code{\link{html_document}}
-#' @param ... Additional function arguments passed to R Markdown \code{\link{html_document}}
-#' @return R Markdown output format to pass to \code{\link{render}}
+#' @param pandoc_args arguments passed to the pandoc_args argument of rmarkdown \code{\link[rmarkdown]{html_document}}
+#' @param use_bookdown if TRUE, uses \code{\link[bookdown]{html_document2}} instead of \code{\link[rmarkdown]{html_document}}, thus providing numbered sections and cross references
+#' @param ... Additional function arguments passed to R Markdown \code{\link[rmarkdown]{html_document}}
+#' @return R Markdown output format to pass to \code{\link[rmarkdown]{render}}
 #' @import rmarkdown
+#' @import bookdown
 #' @importFrom htmltools htmlDependency
 #' @export
 
@@ -28,6 +30,7 @@ material <- function(fig_width = 6,
                        thumbnails = TRUE,
                        gallery = FALSE,
                        pandoc_args = NULL,
+                       use_bookdown = FALSE,
                        ...) {
 
   ## js and css dependencies
@@ -71,7 +74,12 @@ material <- function(fig_width = 6,
     toc_depth = 1
   )
   html_document_args <- append(html_document_args, extra_args)
-  html_document_func <- rmarkdown::html_document
+  if (use_bookdown) {
+      html_document_func <- bookdown::html_document2
+  } else {
+      html_document_func <- rmarkdown::html_document
+  }
+
   do.call(html_document_func, html_document_args)
 
 }
