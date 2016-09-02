@@ -9,6 +9,7 @@ output:
     gallery: true
     fig_width: 4
     fig_height: 4
+    use_bookdown: true
 ---
 
 
@@ -31,6 +32,11 @@ opts_knit$set(width = 75)
 
 # Code and verbatim
 
+Test reference to section \@ref(verb).
+
+Test reference to figure \@ref(fig:gghist).
+
+
 ## Syntax highlighting
 
 Here is a sample code chunk, just to show that syntax highlighting works as expected.
@@ -42,7 +48,7 @@ not_null <- function (v) {
 ```
 
 
-## Verbatim
+## Verbatim {#verb}
 
 Here is the structure of the `iris` dataset.
 
@@ -89,7 +95,7 @@ hist(rnorm(100))
 
 Same with `ggplot2` :
 
-```{r, fig.cap="Beautiful ggplot2 histogram, really"}
+```{r gghist, fig.cap="Beautiful ggplot2 histogram, really"}
 library(ggplot2)
 d <- data.frame(x=rnorm(100))
 ggplot(data=d) + geom_histogram(aes(x=x), bins = 30)
