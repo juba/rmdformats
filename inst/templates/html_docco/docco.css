@@ -93,7 +93,8 @@ pre, tt, code {
 }
 .page {
     padding: 30px;
-    margin: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     background: #fff;
     font-size: 17px;
     line-height: 26px;
