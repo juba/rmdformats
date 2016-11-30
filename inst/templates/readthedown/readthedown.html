@@ -64,7 +64,6 @@ $endfor$
 <div id="content" data-toggle="wy-nav-shift">
 
 <!-- tabsets -->
-<script src="$navigationjs$/tabsets.js"></script>
 <script>
 $$(document).ready(function () {
   window.buildTabsets("$idprefix$TOC");
@@ -73,7 +72,6 @@ $$(document).ready(function () {
 
 <!-- code folding -->
 $if(code_folding)$
-<script src="$navigationjs$/codefolding.js"></script>
 <script>
 $$(document).ready(function () {
   window.initializeCodeFolding("$code_folding$" === "show");

@@ -47,3 +47,17 @@ html_dependency_bootstrap_js <- function() {
 default_mathjax <- function() {
   "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
 }
+
+# Navigation.js (copied and adapted from rmarkdown)
+html_dependency_navigation <- function(code_menu = TRUE, source_embed = FALSE) {
+  # dynamically build script list
+  script <- c("tabsets.js")
+  if (code_menu)
+    script <- c(script, "codefolding.js")
+  if (source_embed)
+    script <- c(script, "FileSaver.min.js", "sourceembed.js")
+    htmltools::htmlDependency(name = "navigation",
+                              version = "1.1",
+                              src = system.file("templates/navigation-1.1", package = "rmdformats"),
+                              script = script)
+}
