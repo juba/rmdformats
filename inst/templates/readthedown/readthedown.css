@@ -447,9 +447,9 @@ code{
 
 
 #content pre {
-    background:#f3f6f6;
+    /* background:#f3f6f6; */
     border:1px solid #e1e4e5;
-    color:#404040;
+    /* color:#404040; */
     line-height: 1.5;
     margin-bottom:24px;
     overflow:auto;
@@ -460,7 +460,7 @@ code{
 }
 
 #content pre.sourceCode{
-    background-color: #FFF;
+    /* background-color: #FFF; */
     margin:1px 0px 12px 0px;
 }
 
