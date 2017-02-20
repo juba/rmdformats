@@ -1,3 +1,11 @@
+rmdformats 0.3.1
+----------------
+
+* Bugfix : Pandoc can't fid tabsets.js (thanks @m-stanley)
+* Bugfix : Incompatibility between dark zenburn and readthedown (thanks Andrey Kostenko)
+* Bugfix : Internal links not working in material (thanks Andrey Kostenko) 
+
+
 rmdformats 0.3
 --------------
 
