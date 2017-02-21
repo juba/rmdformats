@@ -2,8 +2,8 @@ Package: rmdformats
 Maintainer: Julien Barnier <julien.barnier@ens-lyon.fr>
 Authors@R: c(person("Julien", "Barnier", email="julien.barnier@ens-lyon.fr",
     role=c("aut","cre")))
-Version: 0.3.1
-Date: 2017-02-21
+Version: 0.3.2
+Date: 2017-02-22
 License: GPL (>= 2)
 Encoding: UTF-8
 Title: HTML Output Formats and Templates for 'rmarkdown' Documents
