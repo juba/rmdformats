@@ -268,7 +268,7 @@ h2, h3, h4 {
 }
 
 img.image-thumb {
-    width: 250px;
+    max-width: 250px;
 }
 
 .figure .panel-footer {
@@ -280,6 +280,14 @@ img.image-thumb {
     padding: 0px;
     font-size: 80%;
     font-style: italic;
+}
+
+table .figure {
+  margin: 3px;
+}
+
+table .panel-body {
+  padding: 3px;
 }
 
 .pages img.mfp-img {

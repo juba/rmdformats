@@ -35,8 +35,12 @@ img {
     margin: 5px 10px 50px 10px;
 }
 
+table img {
+    margin: 3px;
+}
+
 img.image-thumb {
-    width: 250px;
+    max-width: 250px;
     border: 1px solid #CCC;
     padding: 2px;
 }

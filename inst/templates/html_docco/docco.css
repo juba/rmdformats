@@ -114,8 +114,12 @@ img {
     margin: 5px auto 50px auto;
 }
 
+table img {
+  margin: 3px;
+}
+
 img.image-thumb {
-    width: 250px;
+    max-width: 250px;
     border: 1px solid #CCC;
     padding: 2px;
     display: table;
