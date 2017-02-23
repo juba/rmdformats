@@ -1,6 +1,8 @@
 rmdformats 0.3.2
 ----------------
 
+* Bugfix : tab not activated in pilltabs with default HTML template (thanks @dmenne)
+
 
 rmdformats 0.3.1
 ----------------
