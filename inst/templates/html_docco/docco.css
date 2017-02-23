@@ -115,7 +115,7 @@ img {
 }
 
 img.image-thumb {
-    width: 250px;
+    max-width: 250px;
     border: 1px solid #CCC;
     padding: 2px;
     display: table;
