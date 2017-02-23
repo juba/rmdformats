@@ -15,14 +15,6 @@ $( document ).ready(function() {
 
     // Make tables responsive
     $("#main table").wrap("<div class='table-wrapper'></div>");
-    /* Pilltabs */
-    /* Automatically add active class to first elements */
-    $(".nav-pilltabs").each(function() {
-      $(this).find("li").first().addClass("active")
-    })
-    $(".tab-content").each(function() {
-      $(this).find(".tab-pane").first().addClass("active")
-    })
 
     // ScrollSpy also requires that we use a Bootstrap nav component.
     $('#text-table-of-contents ul').first().addClass('nav');

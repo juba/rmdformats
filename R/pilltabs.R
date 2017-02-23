@@ -96,7 +96,7 @@ knit_print.pilltabs <- function(res, ...) {
     id <- round(stats::runif(1) * 10e10)
     result <- paste0(result, '<ul class="nav nav-pills nav-pilltabs">\n')
     if (!is.null(res[["count"]]))
-      result <- paste0(result, '<li><a href="#dyntab-count', id,'" data-toggle="pill">Count</a></li>\n')
+      result <- paste0(result, '<li class="active"><a href="#dyntab-count', id,'" data-toggle="pill">Count</a></li>\n')
     if (!is.null(res[["rows"]]))
       result <- paste0(result, '<li><a href="#dyntab-rows', id,'" data-toggle="pill">Rows %</a></li>\n')
     if (!is.null(res[["cols"]]))
@@ -107,7 +107,7 @@ knit_print.pilltabs <- function(res, ...) {
     result <- paste0(result, '<div class="tab-content">\n')
     if (!is.null(res[["count"]]))
       result <- paste0(result,
-                       '  <div class="tab-pane dyntab" id="dyntab-count', id,'">\n\n\n',
+                       '  <div class="tab-pane dyntab active" id="dyntab-count', id,'">\n\n\n',
                        paste(res[["count"]], collapse = "\n"),
                        '\n\n\n  </div>\n')
     if (!is.null(res[["rows"]]))    
