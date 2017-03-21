@@ -17,28 +17,28 @@ The package provides several HTML output formats. You can click on an image to s
 
 Format taken from the [Material design theme for Bootstrap 3](https://github.com/FezVrasta/bootstrap-material-design). Document is split into pages at each `<h1>` header, and the table of contents allows an animated navigation between these pages.
 
-[![](tools/screenshots/material.png)](https://rawgit.com/juba/rmdformats/master/resources/examples/material/material.html)
+[![](tools/screenshots/material.png)](https://cdn.rawgit.com/juba/rmdformats/master/resources/examples/material/material.html)
 
 
 ### `readthedown` format
 
 Adapted from the corresponding `readtheorg` theme of the [org-html-themes](https://github.com/fniessen/org-html-themes) project, fully responsive with dynamic table of contents and collapsible navigation.
 
-[![](tools/screenshots/readthedown.png)](https://rawgit.com/juba/rmdformats/master/resources/examples/readthedown/readthedown.html)
+[![](tools/screenshots/readthedown.png)](https://cdn.rawgit.com/juba/rmdformats/master/resources/examples/readthedown/readthedown.html)
 
 ### `html_clean` format
 
 Simple and clean template with dynamic table of contents, very similar to the one from the great [knitrBootstrap package](https://github.com/jimhester/knitrBootstrap) by Jim
 Hester.
 
-[![](tools/screenshots/html_clean.png)](https://rawgit.com/juba/rmdformats/master/resources/examples/html_clean/html_clean_sample.html)
+[![](tools/screenshots/html_clean.png)](https://cdn.rawgit.com/juba/rmdformats/master/resources/examples/html_clean/html_clean_sample.html)
 
 
 ### `html_docco` format
 
 Simple template, no table of contents. CSS heavily inspired from the default one of the [docco](https://jashkenas.github.io/docco/) project.
 
-[![](tools/screenshots/html_docco.png)](https://rawgit.com/juba/rmdformats/master/resources/examples/html_docco/html_docco_sample.html)
+[![](tools/screenshots/html_docco.png)](https://cdn.rawgit.com/juba/rmdformats/master/resources/examples/html_docco/html_docco_sample.html)
 
 
 ## Features and helpers
