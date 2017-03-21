@@ -3,6 +3,7 @@ rmdformats 0.3.2
 
 * Bugfix : thumbnails should not upscale images (thanks @dmenne)
 * Bugfix : tab not activated in pilltabs with default HTML template (thanks @dmenne)
+* Bugfix : follow new CRAN policy regarding images in README file
 
 
 rmdformats 0.3.1
