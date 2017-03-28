@@ -1,6 +1,7 @@
 rmdformats 0.3.3
 ----------------
 
+* Bugfix : HTML widgets not displayed in `material`
 * Better DT::datatable styling
 
 rmdformats 0.3.2
