@@ -251,6 +251,9 @@ table {
     margin: 2em 0 2em 0;
 }
 
+.page h1 {
+    margin-bottom: 1em;
+}
 
 h2, h3, h4 {
     margin: 1em 0 0.5em 0;
@@ -333,4 +336,23 @@ table .panel-body {
 }
 .mfp-move-from-top.mfp-removing.mfp-bg {
   opacity: 0;
+}
+
+/* Data tables */
+
+.datatables {
+  margin: 2em 0em;
+}
+
+.datatables label {
+  color: #333;
+  font-size: 90%;
+  font-weight: 300;
+}
+
+.dataTables_length,
+.dataTables_filter,
+.dataTables_info,
+.dataTables_paginate {
+  font-size: 80%;
 }

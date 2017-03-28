@@ -202,6 +202,19 @@ img.mfp-img {
     margin-top: 0px;
 }
 
+/* Data tables */
+
+.datatables {
+  margin: 2em 0em;
+}
+
+.dataTables_length,
+.dataTables_filter,
+.dataTables_info,
+.dataTables_paginate {
+  font-size: 80%;
+}
+
 /* Nav pills */
 
 .nav-pills {

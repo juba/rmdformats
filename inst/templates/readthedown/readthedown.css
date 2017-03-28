@@ -99,6 +99,19 @@ img.mfp-img {
   margin: 40px 0px;
 }
 
+/* Data tables */
+
+.datatables {
+  margin: 2em 0em;
+}
+
+.dataTables_length,
+.dataTables_filter,
+.dataTables_info,
+.dataTables_paginate {
+  font-size: 90%;
+}
+
 /* General styling */
 
 h1,h2,h3,h4,h5,h6,legend{
