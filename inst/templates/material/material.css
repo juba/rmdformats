@@ -356,3 +356,14 @@ table .panel-body {
 .dataTables_paginate {
   font-size: 80%;
 }
+
+/* Tables */
+.table {
+    width: auto !important;
+    overflow-x: auto;
+}
+
+.table th,
+.table td {
+  padding: 8px 15px;
+}
