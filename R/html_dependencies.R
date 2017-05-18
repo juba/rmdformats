@@ -45,7 +45,7 @@ html_dependency_bootstrap_js <- function() {
 
 # Mathjax (function copied from rmarkdown)
 default_mathjax <- function() {
-  "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
 }
 
 # Navigation.js (copied and adapted from rmarkdown)
