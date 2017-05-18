@@ -41,6 +41,7 @@ $(function() {
     $('a[href*="#"]').click(function() {
 
       var id = $(this).attr("href");
+      if (id === "#") return;
       if (id.substring(0, 8) === "#dyntab-") return;
       toggle_page(id);
 
