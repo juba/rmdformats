@@ -88,6 +88,10 @@ pilltabs(tab)
 head(iris)
 ```
 
+```{r my_table1, echo=FALSE}
+library(xtable)
+kable(xtable(head(iris)))
+```
 
 # Figures
 
