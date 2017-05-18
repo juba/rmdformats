@@ -46,4 +46,3 @@ CSS adapted from the readtheorg theme of the org-html-themes project :
 \url{https://github.com/fniessen/org-html-themes}, which is itself inspired by
 the Read the docs theme : \url{https://readthedocs.org/}.
 }
-

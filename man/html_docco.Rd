@@ -42,4 +42,3 @@ Format for converting from R Markdown to an HTML document.
 The CSS is heavily inspired from the default one of the docco project :
 \url{https://jashkenas.github.io/docco/}.
 }
-

@@ -46,4 +46,3 @@ Styling and features are very similar to the ones from the great
 knitrBootstrap package by Jim Hester :
 \url{https://github.com/jimhester/knitrBootstrap}
 }
-

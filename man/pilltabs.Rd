@@ -43,4 +43,3 @@ pilltabs(tab)
 \author{
 Julien Barnier <julien.barnier@ens-lyon.fr>
 }
-
