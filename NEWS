@@ -3,6 +3,9 @@ rmdformats 0.3.3
 
 * Bugfix : HTML widgets not displayed in `material`
 * Better DT::datatable styling
+* Switch Mathjax CDN to cdnjs
+* Bugfix : "Code" hiding/showing dropdown not working anymore in material
+
 
 rmdformats 0.3.2
 ----------------
