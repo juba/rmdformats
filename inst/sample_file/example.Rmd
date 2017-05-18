@@ -56,6 +56,12 @@ Here is the structure of the `iris` dataset.
 str(iris)
 ```
 
+## Mathjax
+
+And a little math formula :
+
+$$x = \sum_{i=1}^{n} \sqrt{\frac{y}{i}} $$
+
 # Tables
 
 Here is a sample table output.
