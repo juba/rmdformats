@@ -1,6 +1,7 @@
 rmdformats 0.3.4
 ----------------
 
+* Bugfix : load Rambla Google Webfont vie https in docco (thanks @jflycn)
 
 
 rmdformats 0.3.3
