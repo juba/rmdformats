@@ -2,7 +2,7 @@ rmdformats 0.3.4
 ----------------
 
 * Bugfix : Add max-width for full images in material (thanks @tyokota)
-* Bugfix : load Rambla Google Webfont vie https in docco (thanks @jflycn)
+* Bugfix : load Rambla Google Webfont via https in docco (thanks @jflycn)
 
 
 rmdformats 0.3.3
