@@ -7,7 +7,7 @@
 html_clean(fig_width = 6, fig_height = 6, fig_caption = TRUE,
   highlight = "kate", lightbox = TRUE, thumbnails = TRUE,
   gallery = FALSE, pandoc_args = NULL, toc_depth = 2,
-  use_bookdown = FALSE, ...)
+  mathjax = "rmdformats", use_bookdown = FALSE, ...)
 }
 \arguments{
 \item{fig_width}{Default width (in inches) for figures}
@@ -30,6 +30,8 @@ highlighting.}
 \item{pandoc_args}{arguments passed to the pandoc_args argument of rmarkdown \code{\link[rmarkdown]{html_document}}}
 
 \item{toc_depth}{adjust table of contents depth}
+
+\item{mathjax}{set to NULL to disable Mathjax insertion}
 
 \item{use_bookdown}{if TRUE, uses \code{\link[bookdown]{html_document2}} instead of \code{\link[rmarkdown]{html_document}}, thus providing numbered sections and cross references}
 

@@ -18,6 +18,7 @@
 #' @param gallery if TRUE and lightbox is TRUE, add a gallery navigation between images in lightbox display
 #' @param pandoc_args arguments passed to the pandoc_args argument of rmarkdown \code{\link[rmarkdown]{html_document}}
 #' @param use_bookdown if TRUE, uses \code{\link[bookdown]{html_document2}} instead of \code{\link[rmarkdown]{html_document}}, thus providing numbered sections and cross references
+#' @param mathjax set to NULL to disable Mathjax insertion
 #' @param ... Additional function arguments passed to rmarkdown \code{\link[rmarkdown]{html_document}}
 #' @return R Markdown output format to pass to \code{\link[rmarkdown]{render}}
 #' @import rmarkdown
@@ -33,6 +34,7 @@ html_docco <- function(fig_width = 6,
                        thumbnails = TRUE,
                        gallery = FALSE,
                        pandoc_args = NULL,
+                       mathjax = "rmdformats",
                        use_bookdown = FALSE,
                        ...) {
 
@@ -45,9 +47,11 @@ html_docco <- function(fig_width = 6,
                              html_dependency_docco())
 
   ## Force mathjax arguments
-  pandoc_args <- c(pandoc_args,
-                   "--mathjax",
-                   "--variable", paste0("mathjax-url:", default_mathjax()))
+  if (!is.null(mathjax)) {
+    pandoc_args <- c(pandoc_args,
+                     "--mathjax",
+                     "--variable", paste0("mathjax-url:", default_mathjax()))
+  }
   if (lightbox) { pandoc_args <- c(pandoc_args, "--variable", "lightbox:true") }
   if (thumbnails) { pandoc_args <- c(pandoc_args, "--variable", "thumbnails:true") }
   if (gallery) {
@@ -64,6 +68,7 @@ html_docco <- function(fig_width = 6,
     extra_args[["mathjax"]] <- NULL
   }
 
+  
   ## Call rmarkdown::html_document
   html_document_args <- list(
     template = system.file("templates/html_docco/html_docco.html", package = "rmdformats"),
