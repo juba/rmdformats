@@ -152,10 +152,12 @@ $endfor$
 $if(theme)$
     </div>
     <div class="col-md-2">
+      $if(toc)$
       <div id="toc">
       	<button type="button" class="close">×</button>
         $toc$
       </div>
+      $endif$
     </div>
   </div>
 </div>
