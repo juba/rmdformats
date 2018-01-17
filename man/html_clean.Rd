@@ -6,7 +6,7 @@
 \usage{
 html_clean(fig_width = 6, fig_height = 6, fig_caption = TRUE,
   highlight = "kate", lightbox = TRUE, thumbnails = TRUE,
-  gallery = FALSE, pandoc_args = NULL, toc_depth = 2,
+  gallery = FALSE, pandoc_args = NULL, toc_depth = 2, toc = TRUE,
   mathjax = "rmdformats", use_bookdown = FALSE, ...)
 }
 \arguments{
@@ -30,6 +30,8 @@ highlighting.}
 \item{pandoc_args}{arguments passed to the pandoc_args argument of rmarkdown \code{\link[rmarkdown]{html_document}}}
 
 \item{toc_depth}{adjust table of contents depth}
+
+\item{toc}{if TRUE, display a table of contents}
 
 \item{mathjax}{set to NULL to disable Mathjax insertion}
 
