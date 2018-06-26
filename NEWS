@@ -1,6 +1,7 @@
 rmdformats 0.3.4
 ----------------
 
+* Bugfix : lghtbox images do not always fit vertically (thanks @paullemmens)
 * Bugfix : handle toc: false in html_clean (thanks @8steen)
 * Bugfix : add max-width for full images in material (thanks @tyokota)
 * Bugfix : load Rambla Google Webfont via https in docco (thanks @jflycn)
