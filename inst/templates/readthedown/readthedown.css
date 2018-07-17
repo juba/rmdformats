@@ -472,6 +472,10 @@ code{
     margin:1px 0px 12px 0px;
 }
 
+#content div.sourceCode {
+  background: #fcfcfc;
+}
+
 .table-wrapper {
   overflow-x: auto;
   margin-bottom: 1.8em;
