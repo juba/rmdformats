@@ -15,7 +15,7 @@ The package provides several HTML output formats. You can click on an image to s
 
 ### `material` format
 
-Format taken from the [Material design theme for Bootstrap 3](https://github.com/FezVrasta/bootstrap-material-design). Document is split into pages at each `<h1>` header, and the table of contents allows an animated navigation between these pages.
+Format taken from the [Material design theme for Bootstrap 3](https://github.com/FezVrasta/bootstrap-material-design). Document is split into pages at each `<h1>` header, and the table of contents allows an animated navigation between these pages (you can use the `cards: false` preamble parameter to disable the splitting and display all the cards at once).
 
 [![](tools/screenshots/material.png)](https://cdn.rawgit.com/juba/rmdformats/master/resources/examples/material/material.html)
 

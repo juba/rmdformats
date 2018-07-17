@@ -6,8 +6,8 @@
 \usage{
 material(fig_width = 6, fig_height = 6, fig_caption = TRUE,
   highlight = "kate", lightbox = TRUE, thumbnails = TRUE,
-  gallery = FALSE, mathjax = "rmdformats", pandoc_args = NULL,
-  use_bookdown = FALSE, ...)
+  gallery = FALSE, cards = TRUE, mathjax = "rmdformats",
+  pandoc_args = NULL, use_bookdown = FALSE, ...)
 }
 \arguments{
 \item{fig_width}{Default width (in inches) for figures}
@@ -26,6 +26,8 @@ highlighting.}
 \item{thumbnails}{if TRUE display content images as thumbnails}
 
 \item{gallery}{if TRUE and lightbox is TRUE, add a gallery navigation between images in lightbox display}
+
+\item{cards}{if TRUE, sections will be presented as distinct and animated cards}
 
 \item{mathjax}{set to NULL to disable Mathjax insertion}
 

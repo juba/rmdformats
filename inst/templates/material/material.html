@@ -193,6 +193,74 @@ $$(document).ready(function () {
  	    });
  	$endif$
 
+  $if(cards)$
+  
+    $$('#toc ul li').first().addClass("active");
+    $$('#toc ul li').attr("data-target", function() {
+        return($$(this).children("a").attr("href"));
+    })
+    $$('body .section.level1').first().addClass("active");
+    
+        $$('a[href*="#"]').click(function() {
+
+      var id = $$(this).attr("href");
+      if (id === "#") return;
+      if (id.substring(0, 8) === "#dyntab-") return;
+      toggle_page(id);
+
+      // Menu
+      var menu_entry = $$(".menu li[data-target='"+id+"']");
+      menu_entry.addClass("active");
+      $$(".menu li").not(menu_entry).removeClass("active"); 
+      
+
+    });
+
+    function toggle_page(id) {
+      $$(".page").not(page).removeClass("active").hide();
+      window.page = id;
+      var page = $$(window.page);
+      window.location.hash = window.page;
+      //$$(this).addClass("active");
+
+      page.show();
+
+      var totop = setInterval(function () {
+        $$(".pages").animate({scrollTop: 0}, 0);
+      }, 10);
+
+      setTimeout(function () {
+        page.addClass("active");
+        setTimeout(function () {
+          clearInterval(totop);
+        }, 1000);
+      }, 100);
+
+      window.dispatchEvent(new Event('resize'));
+
+    }
+
+
+    $$(".menu li").click(function () {
+
+      toggle_page($$(this).data("target"));
+
+      // Menu
+      if (!$$(this).data("target")) return;
+      if ($$(this).is(".active")) return;
+      $$(".menu li").not($$(this)).removeClass("active");
+      $$(this).addClass("active");
+
+    });
+  
+  $else$
+  
+    $$(".page").addClass("active");
+
+  $endif$
+  
+
+
     window.page = window.location.hash;
     if (window.page != "") {
       $$(".menu").find("li[data-target=" + window.page + "]").trigger("click");
