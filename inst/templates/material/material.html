@@ -112,8 +112,10 @@ $endif$
 
 <div class="container-fluid main-container">
     <div class="row">
-      <nav class="col-xs-3 menu" id="toc">
+      <nav class="col-xs-3 menu">
+        <div id="toc">
         $toc$
+        </div>
       </nav>
      <div class="pages col-xs-9">
      <div class="row">
@@ -201,7 +203,7 @@ $$(document).ready(function () {
     })
     $$('body .section.level1').first().addClass("active");
     
-        $$('a[href*="#"]').click(function() {
+    $$('#toc a[href*="#"]').click(function() {
 
       var id = $$(this).attr("href");
       if (id === "#") return;
@@ -256,6 +258,7 @@ $$(document).ready(function () {
   $else$
   
     $$(".page").addClass("active");
+    $$('.pages').scrollspy({target: '#toc'});
 
   $endif$
   
