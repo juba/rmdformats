@@ -2,11 +2,13 @@ rmdformats 0.3.4
 ----------------
 
 * Add a `cards` argument to the material `template` (thanks @Maiae)
+* Remove deprecated ProjectTemplate templates.
 * Bugfix : lghtbox images do not always fit vertically (thanks @paullemmens)
 * Bugfix : handle toc: false in html_clean (thanks @8steen)
 * Bugfix : add max-width for full images in material (thanks @tyokota)
 * Bugfix : load Rambla Google Webfont via https in docco (thanks @jflycn)
 * Bugfix : do not insert mathjax if `mathjax: null` in preamble (thanks @jflycn) 
+* Bugfix : add description field to template.yml (thanks @mjfrigaard)
 
 
 rmdformats 0.3.3
