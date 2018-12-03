@@ -20,6 +20,7 @@
 #' @param pandoc_args arguments passed to the pandoc_args argument of rmarkdown \code{\link[rmarkdown]{html_document}}
 #' @param use_bookdown if TRUE, uses \code{\link[bookdown]{html_document2}} instead of \code{\link[rmarkdown]{html_document}}, thus providing numbered sections and cross references
 #' @param mathjax set to NULL to disable Mathjax insertion
+#' @param toc_depth adjust TOC depth
 #' @param ... Additional function arguments passed to R Markdown \code{\link[rmarkdown]{html_document}}
 #' @return R Markdown output format to pass to \code{\link[rmarkdown]{render}}
 #' @import rmarkdown
@@ -39,6 +40,7 @@ material <- function(fig_width = 6,
                      mathjax = "rmdformats",
                      pandoc_args = NULL,
                      use_bookdown = FALSE,
+                     toc_depth = 1,
                      ...) {
 
   ## js and css dependencies
@@ -83,7 +85,7 @@ material <- function(fig_width = 6,
     highlight = highlight,
     pandoc_args = pandoc_args,
     toc = TRUE,
-    toc_depth = 1
+    toc_depth = toc_depth,
   )
   html_document_args <- append(html_document_args, extra_args)
   if (use_bookdown) {
