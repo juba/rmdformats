@@ -85,7 +85,7 @@ material <- function(fig_width = 6,
     highlight = highlight,
     pandoc_args = pandoc_args,
     toc = TRUE,
-    toc_depth = toc_depth,
+    toc_depth = toc_depth
   )
   html_document_args <- append(html_document_args, extra_args)
   if (use_bookdown) {
