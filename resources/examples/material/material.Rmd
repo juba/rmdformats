@@ -7,7 +7,6 @@ output:
     code_folding: show
     thumbnails: true
     gallery: true
-    cards: false
     fig_width: 4
     fig_height: 4
     df_print: kable
