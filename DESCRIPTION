@@ -3,7 +3,7 @@ Maintainer: Julien Barnier <julien.barnier@ens-lyon.fr>
 Authors@R: c(person("Julien", "Barnier", email="julien.barnier@ens-lyon.fr",
     role=c("aut","cre")))
 Version: 0.3.5
-Date: 2019-01-12
+Date: 2019-01-16
 License: GPL (>= 2)
 Encoding: UTF-8
 Title: HTML Output Formats and Templates for 'rmarkdown' Documents
