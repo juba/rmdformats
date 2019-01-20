@@ -87,7 +87,7 @@ $endif$
     $endif$
     $for(author)$
     $if(author.name)$
-    <h4 class="author"><em>$author.name$</em></h4>
+    <h4 class="author">$author.name$</h4>
     $if(author.affiliation)$
     <address class="author_afil">
     $author.affiliation$<br>$endif$
@@ -96,11 +96,11 @@ $endif$
     </address>
     $endif$
     $else$
-    <h4 class="author"><em>$author$</em></h4>
+    <h4 class="author">$author$</h4>
     $endif$
     $endfor$
     $if(date)$
-    <h4 class="date"><em>$date$</em></h4>
+    <h4 class="date">$date$</h4>
     $endif$
     </div>
     $endif$
@@ -116,6 +116,9 @@ $endif$
         <div id="toc">
         $toc$
         </div>
+        
+        
+        
       </nav>
      <div class="pages col-xs-9">
      <div class="row">

@@ -6,23 +6,29 @@
 
 .header-panel {
     background-color: #009587;
-    height: 144px;
+    min-height: 144px;
     position: relative;
     z-index: 3;
 }
 
-.header-panel div {
-    position: relative;
-    height: 100%;
+.header-panel #header {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    min-height: 144px;
+    margin-bottom: 10px;
 }
 
 .header-panel h1 {
     color: #FFF;
-    /*font-size: 20px;*/
-    /*font-weight: 400;*/
-    position: absolute;
-    bottom: 10px;
     padding-left: 35px;
+}
+
+.header-panel h4 {
+    font-size: 16px;
+    color: #FFF;
+    padding-left: 35px;
+    margin: 5px 0px;
 }
 
 .menu {
