@@ -68,8 +68,8 @@ install.packages("rmdformats")
 Or the latest development snapshot from GitHub :
 
 ```r
-install.packages(devtools)  # if necessary
-devtools::install_github("juba/rmdformats")
+install.packages(remotes)  # if necessary
+remotes::install_github("juba/rmdformats")
 ```
 
 ## Creating a new document
