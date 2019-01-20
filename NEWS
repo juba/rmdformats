@@ -2,7 +2,7 @@ rmdformats 0.3.5
 ----------------
 
 * Fix missing blank line at the end of `template.yaml` files (thanks @thomaselove)
-
+* Fix long titles, author and date display in `material` (thanks @antuki)
 
 rmdformats 0.3.4
 ----------------
