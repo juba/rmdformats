@@ -21,6 +21,7 @@
 
 .header-panel h1 {
     color: #FFF;
+    font-size: 28px;
     padding-left: 35px;
 }
 
@@ -29,6 +30,15 @@
     color: #FFF;
     padding-left: 35px;
     margin: 5px 0px;
+}
+
+.header-panel h4.author {
+    font-size: 18px;
+}
+
+.header-panel h4.date {
+  font-size: 14px;
+  font-style: italic;
 }
 
 .menu {
