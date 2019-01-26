@@ -22,7 +22,7 @@ html :
 	Rscript \
 	   -e "library(rmarkdown)"  \
 	   -e "library(rmdformats)"  \
-	   -e "render('$(RMDFILE)', 'readthedown')"
+	   -e "render('$(RMDFILE)', 'rmdformats::readthedown')"
 
 pdf : 
 	Rscript \
