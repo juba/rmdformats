@@ -1,6 +1,8 @@
 rmdformats 0.3.6
 ----------------
 
+* Fix material toc links not working when dot in level 1 title (thanks @PriyaShaji)
+
 
 rmdformats 0.3.5
 ----------------
