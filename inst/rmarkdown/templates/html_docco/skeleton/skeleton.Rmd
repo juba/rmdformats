@@ -7,7 +7,7 @@ output:
 ---
 
 
-```{r knitr_init, echo=FALSE, cache=FALSE}
+```{r setup, echo=FALSE, cache=FALSE}
 library(knitr)
 library(rmdformats)
 
