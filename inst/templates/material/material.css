@@ -103,7 +103,7 @@
 .page {
     transform: translateY(1080px);
     transition: transform 0 linear;
-    display: none;
+    visibility: hidden;
     opacity: 0;
     font-size: 16px;
     margin-left: 1em;
@@ -112,7 +112,7 @@
 .page.active {
     transform: translateY(0px);
     transition: all 0.3s ease-out;
-    display: block;
+    visibility: visible;
     opacity: 1;
 }
 

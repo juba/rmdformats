@@ -12,18 +12,21 @@ $(function () {
 
     /* Menu */
     $('#toc ul').first().addClass('nav');
-    $('#toc ul li').addClass('withripple');
+    $('#toc ul li').addClass('withripple').ripples();
     $('#toc ul li').attr("data-target", function () {
-      return ($(this).children("a").attr("href"));
+       return ($(this).children("a").attr("href"));
     });
     $('body .section.level1').addClass("well page");
 
   };
 
+  // Run setup at startup for non shiny documents
+  setup();
+
   // Wait for page elements to be present, in case of runtime: shiny
   var wait_ready = function() {
-    if ($('.pages').length == 0) {
-      var timeout = window.setTimeout(wait_ready, 100);
+    if ($('.section.active').length == 0 || $('#toc ul li').length == 0) {
+      var timeout = window.setTimeout(wait_ready, 150);
     } else {
       window.clearTimeout(timeout);
       setup();
