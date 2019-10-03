@@ -193,6 +193,14 @@ p{
     margin:0px 0px 24px 0px;
 }
 
+#content ul {
+  font-size: 16px;
+}
+
+#content p {
+  margin-bottom: 16px;
+}
+
 b,strong{
     font-weight:bold}
 

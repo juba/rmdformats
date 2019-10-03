@@ -3,6 +3,7 @@ rmdformats 0.3.6
 
 * Fix material toc links not working when dot in level 1 title (thanks @PriyaShaji)
 * Fix problems with runtime:shiny in material (thanks @MiWebR)
+* Fix smaller font size in lists in readthedown
 
 
 rmdformats 0.3.5
