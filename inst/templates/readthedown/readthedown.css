@@ -505,7 +505,6 @@ table td,table th{
     margin:0;
     overflow:visible;
     padding:8px 16px;
-    background-color:white;
     border:1px solid #e1e4e5;
 }
 
@@ -521,11 +520,11 @@ table caption{
     padding:1em 0;
 }
 
-table tr:nth-child(2n-1) td{
+table tr:nth-child(2n-1) {
     background-color:#f3f6f6;
 }
 
-table tr:nth-child(2n) td{
+table tr:nth-child(2n) {
     background-color:white;
 }
 
