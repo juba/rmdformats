@@ -1,6 +1,7 @@
 rmdformats 0.3.6
 ----------------
 
+* Fix td background-color incompatibility with DT in readthedown (thanks @davidvilanova)
 * Fix material toc links not working when dot in level 1 title (thanks @PriyaShaji)
 * Fix problems with runtime:shiny in material (thanks @MiWebR)
 * Fix smaller font size in lists in readthedown
