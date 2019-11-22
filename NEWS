@@ -1,6 +1,7 @@
 rmdformats 0.3.6
 ----------------
 
+* Fix tabset headings not hidden in toc (thanks @poonv)
 * Add support for `md_extensions` YAML header option
 * Fix td background-color incompatibility with DT in readthedown (thanks @davidvilanova)
 * Fix material toc links not working when dot in level 1 title (thanks @PriyaShaji)
