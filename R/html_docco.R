@@ -17,6 +17,7 @@
 #' @param thumbnails if TRUE display content images as thumbnails
 #' @param gallery if TRUE and lightbox is TRUE, add a gallery navigation between images in lightbox display
 #' @param pandoc_args arguments passed to the pandoc_args argument of rmarkdown \code{\link[rmarkdown]{html_document}}
+#' @param md_extensions arguments passed to the md_extensions argument of rmarkdown \code{\link[rmarkdown]{html_document}}
 #' @param use_bookdown if TRUE, uses \code{\link[bookdown]{html_document2}} instead of \code{\link[rmarkdown]{html_document}}, thus providing numbered sections and cross references
 #' @param mathjax set to NULL to disable Mathjax insertion
 #' @param ... Additional function arguments passed to rmarkdown \code{\link[rmarkdown]{html_document}}
@@ -34,6 +35,7 @@ html_docco <- function(fig_width = 6,
                        thumbnails = TRUE,
                        gallery = FALSE,
                        pandoc_args = NULL,
+                       md_extensions = NULL,
                        mathjax = "rmdformats",
                        use_bookdown = FALSE,
                        ...) {
@@ -77,7 +79,8 @@ html_docco <- function(fig_width = 6,
     fig_height = fig_height,
     fig_caption = fig_caption,
     highlight = highlight,
-    pandoc_args = pandoc_args
+    pandoc_args = pandoc_args,
+    md_extensions = md_extensions
   )
   html_document_args <- append(html_document_args, extra_args)
   if (use_bookdown) {

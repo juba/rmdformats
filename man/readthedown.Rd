@@ -6,8 +6,8 @@
 \usage{
 readthedown(fig_width = 8, fig_height = 5, fig_caption = TRUE,
   highlight = "kate", lightbox = FALSE, thumbnails = FALSE,
-  gallery = FALSE, pandoc_args = NULL, toc_depth = 2,
-  mathjax = "rmdformats", use_bookdown = FALSE, ...)
+  gallery = FALSE, pandoc_args = NULL, md_extensions = NULL,
+  toc_depth = 2, mathjax = "rmdformats", use_bookdown = FALSE, ...)
 }
 \arguments{
 \item{fig_width}{Default width (in inches) for figures}
@@ -28,6 +28,8 @@ highlighting.}
 \item{gallery}{if TRUE and lightbox is TRUE, add a gallery navigation between images in lightbox display}
 
 \item{pandoc_args}{arguments passed to the pandoc_args argument of rmarkdown \code{\link[rmarkdown]{html_document}}}
+
+\item{md_extensions}{arguments passed to the md_extensions argument of rmarkdown \code{\link[rmarkdown]{html_document}}}
 
 \item{toc_depth}{adjust table of contents depth}
 

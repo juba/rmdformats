@@ -18,6 +18,7 @@
 #' @param thumbnails if TRUE display content images as thumbnails
 #' @param gallery if TRUE and lightbox is TRUE, add a gallery navigation between images in lightbox display
 #' @param pandoc_args arguments passed to the pandoc_args argument of rmarkdown \code{\link[rmarkdown]{html_document}}
+#' @param md_extensions arguments passed to the md_extensions argument of rmarkdown \code{\link[rmarkdown]{html_document}}
 #' @param toc if TRUE, display a table of contents
 #' @param toc_depth adjust table of contents depth
 #' @param use_bookdown if TRUE, uses \code{\link[bookdown]{html_document2}} instead of \code{\link[rmarkdown]{html_document}}, thus providing numbered sections and cross references
@@ -38,6 +39,7 @@ html_clean <- function(fig_width = 6,
                        thumbnails = TRUE,
                        gallery = FALSE,
                        pandoc_args = NULL,
+                       md_extensions = NULL,
                        toc_depth = 2,
                        toc = TRUE,
                        mathjax = "rmdformats",
@@ -83,6 +85,7 @@ html_clean <- function(fig_width = 6,
     fig_caption = fig_caption,
     highlight = highlight,
     pandoc_args = pandoc_args,
+    md_extensions = md_extensions,
     toc = toc,
     toc_depth = toc_depth
   )
