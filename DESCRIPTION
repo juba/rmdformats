@@ -14,7 +14,8 @@ Imports:
     knitr,
     rmarkdown,
     bookdown,
-    htmltools,
+    htmltools
+Suugests:
     questionr
 URL: https://github.com/juba/rmdformats
 RoxygenNote: 6.1.1
