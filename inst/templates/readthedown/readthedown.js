@@ -1,5 +1,16 @@
 $( document ).ready(function() {
 
+    // Fix for dots in level 1 and level 2 titles
+    $('body .section.level1').each(function () {
+      $(this).attr("id", $(this).attr("id").replace(/\./g, "-"));
+    });
+    $('body .section.level2').each(function () {
+      $(this).attr("id", $(this).attr("id").replace(/\./g, "-"));
+    });
+    $('#table-of-contents ul li a').each(function () {
+      $(this).attr("href", $(this).attr("href").replace(/\./g, "-"));
+    });
+
     // Shift nav in mobile when clicking the menu.
     $(document).on('click', "[data-toggle='wy-nav-top']", function() {
       $("[data-toggle='wy-nav-shift']").toggleClass("shift");
