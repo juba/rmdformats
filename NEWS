@@ -1,6 +1,8 @@
 rmdformats 0.3.6
 ----------------
 
+* Upgrade navigation.js (thanks @vkoul)
+* Fix improper page height for first `material` paged section
 * Move `questionr` from Imports to Suggests (thanks @rCarto)
 * Fix tabset headings not hidden in toc (thanks @poonv)
 * Add support for `md_extensions` YAML header option
