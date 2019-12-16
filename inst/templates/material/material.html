@@ -205,6 +205,7 @@ $$(document).ready(function () {
         return($$(this).children("a").attr("href"));
     })
     $$('body .section.level1').first().addClass("active");
+    $$('body .section.level1').not('.active').hide();
     
     $$('#toc a[href*="#"]').click(function() {
 
