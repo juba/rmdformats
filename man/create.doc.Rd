@@ -39,6 +39,6 @@ create.doc("MyDocument", format="html_clean")
 }
 \author{
 Julien Barnier <julien.barnier@ens-lyon.fr>
-This function is heavily inspired and copied from the \link[ProjectTemplate]{create.project} function
+This function is heavily inspired and copied from the create.project() function
 of the \code{ProjectTemplate} package.
 }
