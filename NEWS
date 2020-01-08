@@ -1,3 +1,9 @@
+rmdformats 0.3.7
+----------------
+
+* Fix TOC overflow hidden by postamble in readthedown (thanks @derekmichaelwright)
+
+
 rmdformats 0.3.6
 ----------------
 
