@@ -331,7 +331,7 @@ dl dd{
 }
 
 @media print{
-    #table-of-contents{
+    #sidebar{
         display:none}
 
     @page{
@@ -358,12 +358,12 @@ dl dd{
         top:0;
         height:100%;
         overflow:hidden}
-    #table-of-contents {
+    #sidebar {
         font-size: 120%;
         left: -300px;
         width: 300px;
     }
-    #content.shift #table-of-contents {
+    #content.shift #sidebar {
         font-size: 120%;
         left: 0;
         width: 75%;
@@ -406,7 +406,7 @@ dl dd{
     #nav-top {
       display: none;
     }
-    #table-of-contents {
+    #sidebar {
         left: 0;
         width: 300px;
     }
@@ -732,7 +732,7 @@ hr{
     margin-left: 0px;
 }
 
-#table-of-contents header{
+#sidebar header{
     height:32px;
     display:inline-block;
     line-height:32px;
@@ -787,10 +787,6 @@ hr{
 #table-of-contents li.current ul{
     display:block}
 
-/* #table-of-contents li ul{ */
-/*     margin-bottom:0; */
-/*     display:none} */
-
 #table-of-contents .local-toc li ul{
     display:block}
 
@@ -799,7 +795,7 @@ hr{
     color:#b3b3b3;
     font-weight:normal}
 
-#table-of-contents a{
+#sidebar a{
     display:inline-block;
     line-height:18px;
     padding:0.4045em 1.618em;
@@ -811,26 +807,29 @@ hr{
     text-decoration: none;
 }
 
-#table-of-contents a:hover{
+#sidebar a:hover{
     background-color:#4e4a4a;
     cursor:pointer}
 
-#text-table-of-contents {
-     overflow:auto;
-}
-
-#table-of-contents{
-    position:fixed;
-    top:0;
+#table-of-contents {
     overflow-x: hidden;
     overflow-y: auto;
+    flex-grow: 200;
+}
+
+#sidebar {
+    position:fixed;
+    top:0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
     height:100%;
     background:#211103;
     z-index:200;
     font-size: 16px;
 }
 
-#table-of-contents h2{
+#sidebar h2{
     z-index:200;
     background-color:#9F2042;
     text-align:center;
@@ -842,14 +841,14 @@ hr{
     margin-bottom:0.809em;
 }
 
-#table-of-contents h2 a {
+#sidebar h2 a {
     color:#ffffff;
     text-decoration: none;
 }
 
-#table-of-contents h2 a:hover,
-#table-of-contents h2 a:active,
-#table-of-contents h2 a:focus {
+#sidebar h2 a:hover,
+#sidebar h2 a:active,
+#sidebar h2 a:focus {
     background-color: transparent;
     text-decoration: none;
 }
@@ -932,8 +931,6 @@ footer p{
     margin-bottom:12px}
 
 #postamble{
-    position:fixed;
-    bottom:0;
     color:#fcfcfc;
     background:#1f1d1d;
     border-top:solid 10px #211103;

@@ -28,8 +28,8 @@ $( document ).ready(function() {
     $("#main table").wrap("<div class='table-wrapper'></div>");
 
     // ScrollSpy also requires that we use a Bootstrap nav component.
-    $('#text-table-of-contents ul').first().addClass('nav');
-    $('body').scrollspy({target: '#text-table-of-contents'});
+    $('#table-of-contents ul').first().addClass('nav');
+    $('body').scrollspy({target: '#table-of-contents'});
 
     // add sticky table headers
     //$('table').stickyTableHeaders();

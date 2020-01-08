@@ -103,10 +103,29 @@ $endif$
 $endif$
 
 
-<div id="table-of-contents">
+<div id="sidebar">
     <h2><a href="#content">$title$</a></h2>
-    <div id="text-table-of-contents">
+    <div id="table-of-contents">
       $toc$
+    </div>
+    
+    <div id="postamble" data-toggle="wy-nav-shift" class="status">
+    $for(author)$
+    $if(author.name)$
+      <p class="author"><span class="glyphicon glyphicon-user"></span> $author.name$
+      $if(author.affiliation)$
+      <br /><span class="author_affil">$author.affiliation$</span>$endif$
+      $if(author.email)$
+      <br /><a class="author_email" href="mailto:#">$author.email$</a>
+      $endif$
+      </p>
+    $else$
+      <p class="author"><span class="glyphicon glyphicon-user"></span> $author$</p>
+    $endif$
+    $endfor$
+    $if(date)$
+      <p class="date"><span class="glyphicon glyphicon-calendar"></span> $date$</p>
+    $endif$
     </div>
 </div>
 
@@ -117,24 +136,7 @@ $body$
 
 </div>
 
-<div id="postamble" data-toggle="wy-nav-shift" class="status">
-$for(author)$
-$if(author.name)$
-<p class="author"><span class="glyphicon glyphicon-user"></span> $author.name$
-$if(author.affiliation)$
-<br /><span class="author_affil">$author.affiliation$</span>$endif$
-$if(author.email)$
-<br /><a class="author_email" href="mailto:#">$author.email$</a>
-$endif$
-</p>
-$else$
-<p class="author"><span class="glyphicon glyphicon-user"></span> $author$</p>
-$endif$
-$endfor$
-$if(date)$
-<p class="date"><span class="glyphicon glyphicon-calendar"></span> $date$</p>
-$endif$
-</div>
+
 
 $for(include-after)$
 $include-after$
