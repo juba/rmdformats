@@ -4,11 +4,21 @@
 \alias{material}
 \title{Material design - bootstrap HTML output format}
 \usage{
-material(fig_width = 6, fig_height = 6, fig_caption = TRUE,
-  highlight = "kate", lightbox = TRUE, thumbnails = TRUE,
-  gallery = FALSE, cards = TRUE, mathjax = "rmdformats",
-  pandoc_args = NULL, md_extensions = NULL, use_bookdown = FALSE,
-  ...)
+material(
+  fig_width = 6,
+  fig_height = 6,
+  fig_caption = TRUE,
+  highlight = "kate",
+  lightbox = TRUE,
+  thumbnails = TRUE,
+  gallery = FALSE,
+  cards = TRUE,
+  mathjax = "rmdformats",
+  pandoc_args = NULL,
+  md_extensions = NULL,
+  use_bookdown = FALSE,
+  ...
+)
 }
 \arguments{
 \item{fig_width}{Default width (in inches) for figures}

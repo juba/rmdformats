@@ -4,10 +4,21 @@
 \alias{readthedown}
 \title{Convert to an HTML document}
 \usage{
-readthedown(fig_width = 8, fig_height = 5, fig_caption = TRUE,
-  highlight = "kate", lightbox = FALSE, thumbnails = FALSE,
-  gallery = FALSE, pandoc_args = NULL, md_extensions = NULL,
-  toc_depth = 2, mathjax = "rmdformats", use_bookdown = FALSE, ...)
+readthedown(
+  fig_width = 8,
+  fig_height = 5,
+  fig_caption = TRUE,
+  highlight = "kate",
+  lightbox = FALSE,
+  thumbnails = FALSE,
+  gallery = FALSE,
+  pandoc_args = NULL,
+  md_extensions = NULL,
+  toc_depth = 2,
+  mathjax = "rmdformats",
+  use_bookdown = FALSE,
+  ...
+)
 }
 \arguments{
 \item{fig_width}{Default width (in inches) for figures}

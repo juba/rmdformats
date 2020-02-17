@@ -4,8 +4,15 @@
 \alias{pilltabs}
 \title{Given a cross-table, outputs HTML code to display several views of with a tabbed interface}
 \usage{
-pilltabs(tab, count = TRUE, rows = TRUE, cols = TRUE, chisq = TRUE,
-  resid = TRUE, row.names = TRUE)
+pilltabs(
+  tab,
+  count = TRUE,
+  rows = TRUE,
+  cols = TRUE,
+  chisq = TRUE,
+  resid = TRUE,
+  row.names = TRUE
+)
 }
 \arguments{
 \item{tab}{a two dimensions table object}

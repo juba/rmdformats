@@ -4,8 +4,12 @@
 \alias{create.doc}
 \title{Create a new directory with a clean RMarkdown file}
 \usage{
-create.doc(dirname = "new-doc", format = "html_clean",
-  report = FALSE, makefile = TRUE)
+create.doc(
+  dirname = "new-doc",
+  format = "html_clean",
+  report = FALSE,
+  makefile = TRUE
+)
 }
 \arguments{
 \item{dirname}{name of the directory to create}

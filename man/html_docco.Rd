@@ -4,10 +4,20 @@
 \alias{html_docco}
 \title{Convert to an HTML document}
 \usage{
-html_docco(fig_width = 6, fig_height = 6, fig_caption = TRUE,
-  highlight = "pygments", lightbox = TRUE, thumbnails = TRUE,
-  gallery = FALSE, pandoc_args = NULL, md_extensions = NULL,
-  mathjax = "rmdformats", use_bookdown = FALSE, ...)
+html_docco(
+  fig_width = 6,
+  fig_height = 6,
+  fig_caption = TRUE,
+  highlight = "pygments",
+  lightbox = TRUE,
+  thumbnails = TRUE,
+  gallery = FALSE,
+  pandoc_args = NULL,
+  md_extensions = NULL,
+  mathjax = "rmdformats",
+  use_bookdown = FALSE,
+  ...
+)
 }
 \arguments{
 \item{fig_width}{Default width (in inches) for figures}
