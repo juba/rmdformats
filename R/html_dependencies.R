@@ -20,8 +20,8 @@ html_dependency_jquery_stickytableheaders <- function()  {
 # create an html dependency for bootstrap (function copied from rmarkdown)
 html_dependency_bootstrap <- function(theme = "bootstrap") {
   htmltools::htmlDependency(name = "bootstrap",
-                 version = "3.3.6",
-                 src = system.file("templates/bootstrap-3.3.6", package = "rmdformats"),
+                 version = "3.3.7",
+                 src = system.file("templates/bootstrap-3.3.7", package = "rmdformats"),
                  meta = list(viewport = "width=device-width, initial-scale=1"),
                  script = c(
                    "js/bootstrap.min.js"
@@ -35,8 +35,8 @@ html_dependency_bootstrap <- function(theme = "bootstrap") {
 # create an html dependency for bootstrap js only (function copied from rmarkdown)
 html_dependency_bootstrap_js <- function() {
   htmltools::htmlDependency(name = "bootstrap_js",
-                            version = "3.3.6",
-                            src = system.file("templates/bootstrap-3.3.6", package = "rmdformats"),
+                            version = "3.3.7",
+                            src = system.file("templates/bootstrap-3.3.7", package = "rmdformats"),
                             meta = list(viewport = "width=device-width, initial-scale=1"),
                             script = c(
                               "js/bootstrap.min.js"

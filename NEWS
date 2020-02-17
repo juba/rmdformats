@@ -2,6 +2,7 @@ rmdformats 0.3.7
 ----------------
 
 * Fix TOC overflow hidden by postamble in readthedown (thanks @derekmichaelwright)
+* Upgrade to Bootstrap 3.3.7 to fix compatibility with jQuery 3/shiny (thanks @ FlavioLeccese92)
 
 
 rmdformats 0.3.6
