@@ -1,8 +1,8 @@
 # rmdformats
 
-[![Travis-CI Build Status](https://travis-ci.org/juba/rmdformats.svg?branch=master)](https://travis-ci.org/juba/rmdformats)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version-ago/rmdformats)](https://cran.r-project.org/package=rmdformats)
 ![CRAN Downloads](http://cranlogs.r-pkg.org/badges/last-month/rmdformats)
+[![R build status](https://github.com/juba/rmdformats/workflows/R-CMD-check/badge.svg)](https://github.com/juba/rmdformats/actions?query=workflow%3AR-CMD-check)
 
 
 This R package provides ready-to-use HTML output formats and templates for
