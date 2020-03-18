@@ -45,7 +45,8 @@ readthedown <- function(fig_width = 8,
                        ...) {
 
     html_template(
-        template_path = "templates/readthedown/readthedown.html",
+        template_name = "readthedown",
+        template_path = "templates/template.html",
         template_dependencies = list(
             html_dependency_readthedown()
         ),
