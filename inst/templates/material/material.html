@@ -58,6 +58,11 @@
       $$(document).ready(function () {
 	  window.buildTabsets("toc");
       });
+      $$(document).ready(function () {
+	  $$('.tabset-dropdown > .nav-tabs > li').click(function () {
+	      $$(this).parent().toggleClass('nav-tabs-open')
+	  });
+      });
     </script>
 
     <!-- code folding -->
@@ -83,6 +88,71 @@
     </style>
     $endif$
 
+
+    <!-- tabsets dropdown -->
+
+    <style type="text/css">
+      .tabset-dropdown > .nav-tabs {
+	  display: inline-table;
+	  max-height: 500px;
+	  min-height: 44px;
+	  overflow-y: auto;
+	  background: white;
+	  border: 1px solid #ddd;
+	  border-radius: 4px;
+      }
+      
+      .tabset-dropdown > .nav-tabs > li.active:before {
+	  content: "";
+	  font-family: 'Glyphicons Halflings';
+	  display: inline-block;
+	  padding: 10px;
+	  border-right: 1px solid #ddd;
+      }
+      
+      .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+	  content: "&#xe258;";
+	  border: none;
+      }
+      
+      .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+	  content: "";
+	  font-family: 'Glyphicons Halflings';
+	  display: inline-block;
+	  padding: 10px;
+	  border-right: 1px solid #ddd;
+      }
+      
+      .pages .tabset-dropdown > .nav-tabs > li.active {
+	  display: block;
+      }
+
+      .pages .tabset-dropdown > .nav-tabs > li.active > a {
+	  background-color: transparent !important;
+	  color: #000000 !important;
+      }
+      
+      .tabset-dropdown > .nav-tabs > li > a,
+      .tabset-dropdown > .nav-tabs > li > a:focus,
+      .tabset-dropdown > .nav-tabs > li > a:hover {
+	  border: none;
+	  display: inline-block;
+	  border-radius: 4px;
+	  background-color: transparent;
+	  color: #00A698 !important;
+	  font-weight: 300 !important;
+	  font-size: 14px;
+      }
+      
+      .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+	  display: block;
+	  float: none;
+      }
+      
+      .tabset-dropdown > .nav-tabs > li {
+	  display: none;
+      }
+    </style>
     
 </head>
 
