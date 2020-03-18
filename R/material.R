@@ -43,6 +43,7 @@ material <- function(fig_width = 6,
                      mathjax = "rmdformats",
                      ...) {
     html_template(
+        template_name = "material",
         template_path = "templates/material/material.html",
         template_dependencies = list(
             html_dependency_bootstrap_material(),
