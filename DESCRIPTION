@@ -2,7 +2,7 @@ Package: rmdformats
 Maintainer: Julien Barnier <julien.barnier@cnrs.fr>
 Authors@R: c(person("Julien", "Barnier", email="julien.barnier@cnrs.fr",
     role=c("aut","cre")))
-Version: 0.3.8
+Version: 0.4.0
 Date: 2020-03-12
 License: GPL (>= 2)
 Encoding: UTF-8
@@ -18,5 +18,5 @@ Imports:
 Suggests:
     questionr
 URL: https://github.com/juba/rmdformats
-RoxygenNote: 7.0.2
+RoxygenNote: 7.1.0
 VignetteBuilder: knitr
