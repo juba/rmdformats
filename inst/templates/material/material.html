@@ -61,14 +61,29 @@
     </script>
 
     <!-- code folding -->
-    $if(code_folding)$
+    $if(code_menu)$
     <script>
       $$(document).ready(function () {
+	  $if(source_embed)$
+	  window.initializeSourceEmbed("$source_embed$");
+	  $endif$
+	  $if(code_folding)$
 	  window.initializeCodeFolding("$code_folding$" === "show");
+	  $endif$
       });
     </script>
     $endif$
 
+    <!-- code download -->
+    $if(source_embed)$
+    <style>
+      #rmd-source-code {
+	  display: none;
+      }
+    </style>
+    $endif$
+
+    
 </head>
 
 <body>
@@ -128,17 +143,26 @@
 	  </div>
 
 	  <div class="col-xs-2">
-	    $if(code_folding)$
-	    <div class="btn-toolbar">
-	      <div class="btn-group">
-		<a href="#" class="btn btn-raised btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="text-muted">Code</span> <span class="text-muted caret"></span></a>
-		<ul class="dropdown-menu" style="min-width: 50px;">
-		  <li><a id="rmd-show-all-code" href="#">Show All</a></li>
-		  <li><a id="rmd-hide-all-code" href="#">Hide All</a></li>
-		</ul>
-	      </div>
+
+	    $if(code_menu)$
+	    <div class = "btn-toolbar">
+	    <div class="btn-group">
+	      <a class="btn btn-raised btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"><span>Code</span> <span class="caret"></span></a>
+	      <ul class="dropdown-menu" style="min-width: 50px;">
+		$if(code_folding)$
+		<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
+		<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
+		$if(source_embed)$
+		<li role="separator" class="divider"></li>
+		$endif$
+		$endif$
+		$if(source_embed)$
+		<li><a id="rmd-download-source" href="#">Download Rmd</a></li>
+		$endif$
+	      </ul>
 	    </div>
 	    $endif$
+
 	  </div>
 	</div>
       </div>
