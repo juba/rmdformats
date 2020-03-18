@@ -7,7 +7,7 @@ $( document ).ready(function() {
     $('body .section.level2').each(function () {
       $(this).attr("id", $(this).attr("id").replace(/\./g, "-"));
     });
-    $('#table-of-contents ul li a').each(function () {
+    $('#toc ul li a').each(function () {
       $(this).attr("href", $(this).attr("href").replace(/\./g, "-"));
     });
 
@@ -16,7 +16,7 @@ $( document ).ready(function() {
       $("[data-toggle='wy-nav-shift']").toggleClass("shift");
     });
     // Close menu when you click a link.
-    $(document).on('click', "#table-of-contents ul li a", function() {
+    $(document).on('click', "#toc ul li a", function() {
       $("[data-toggle='wy-nav-shift']").removeClass("shift");
     });
     // Close menu when you click on main content
@@ -28,8 +28,8 @@ $( document ).ready(function() {
     $("#main table").wrap("<div class='table-wrapper'></div>");
 
     // ScrollSpy also requires that we use a Bootstrap nav component.
-    $('#table-of-contents ul').first().addClass('nav');
-    $('body').scrollspy({target: '#table-of-contents'});
+    $('#toc ul').first().addClass('nav');
+    $('body').scrollspy({target: '#toc'});
 
     // add sticky table headers
     //$('table').stickyTableHeaders();

@@ -41,7 +41,8 @@ html_docco <- function(fig_width = 6,
                        ...) {
 
     html_template(
-        template_path = "templates/html_docco/html_docco.html",
+        template_name = "html_docco",
+        template_path = "templates/template.html",
         template_dependencies = list(
             html_dependency_docco()
         ),

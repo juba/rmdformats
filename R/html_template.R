@@ -1,4 +1,9 @@
-html_template <- function(template_path, template_dependencies, pandoc_args, ...) {
+html_template <- function(
+  template_name,
+  template_path, 
+  template_dependencies, 
+  pandoc_args, 
+  ...) {
 
     args <- list(...)
     code_folding <- args[["code_folding"]]
@@ -35,6 +40,8 @@ html_template <- function(template_path, template_dependencies, pandoc_args, ...
                      "--variable", paste0("mathjax-url:", default_mathjax()))
   }
   ## Other arguments  
+    pandoc_args <- c(pandoc_args, 
+      "--variable", paste0(template_name, ":true"))
     if (args[["lightbox"]]) {
         pandoc_args <- c(pandoc_args, "--variable", "lightbox:true")
     }

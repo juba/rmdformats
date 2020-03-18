@@ -46,7 +46,8 @@ html_clean <- function(fig_width = 6,
                        mathjax = "rmdformats",
                        ...) {
     html_template(
-        template_path = "templates/html_clean/html_clean.html",
+        template_name = "html_clean",
+        template_path = "templates/template.html",
         template_dependencies = list(
             html_dependency_clean()
         ),

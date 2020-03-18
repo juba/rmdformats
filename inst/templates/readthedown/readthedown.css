@@ -512,6 +512,7 @@ table thead th{
     font-weight:bold;
     border-top:3px solid #e1e4e5;
     border-bottom:1px solid #e1e4e5;
+    background-color:white;
 }
 
 table caption{
@@ -727,7 +728,7 @@ hr{
     margin:24px 0;
     padding:0}
 
-#table-of-contents li{
+#toc li{
     list-style:none;
     margin-left: 0px;
 }
@@ -744,27 +745,27 @@ hr{
     color:#9F2042;
     white-space:nowrap}
 
-#table-of-contents ul{
+#toc ul{
     margin-bottom:0}
 
-#table-of-contents li.divide-top{
+#toc li.divide-top{
     border-top:solid 1px #404040}
 
-#table-of-contents li.divide-bottom{
+#toc li.divide-bottom{
     border-bottom:solid 1px #404040}
 
-#table-of-contents li.current{
+#toc li.current{
     background:#e3e3e3}
 
-#table-of-contents li.current a{
+#toc li.current a{
     color:gray;
     border-right:solid 1px #c9c9c9;
     padding:0.4045em 2.427em}
 
-#table-of-contents li.current a:hover{
+#toc li.current a:hover{
     background:#d6d6d6}
 
-#table-of-contents li a{
+#toc li a{
     /* color:#404040; */
     padding:0.4045em 1.618em;
     position:relative;
@@ -774,23 +775,23 @@ hr{
     /* border-top:solid 1px #c9c9c9; */
     padding-left:1.618em -4px}
 
-#table-of-contents li.on a:hover,#table-of-contents li.current>a:hover{
+#toc li.on a:hover,#toc li.current>a:hover{
     background:#fcfcfc}
 
-#table-of-contents li ul li a{
+#toc li ul li a{
     /* background:#c9c9c9; */
     padding:0.4045em 2.427em}
 
-#table-of-contents li ul li ul li a{
+#toc li ul li ul li a{
     padding:0.4045em 3.236em}
 
-#table-of-contents li.current ul{
+#toc li.current ul{
     display:block}
 
-#table-of-contents .local-toc li ul{
+#toc .local-toc li ul{
     display:block}
 
-#table-of-contents li ul li a{
+#toc li ul li a{
     margin-bottom:0;
     color:#b3b3b3;
     font-weight:normal}
@@ -811,7 +812,7 @@ hr{
     background-color:#4e4a4a;
     cursor:pointer}
 
-#table-of-contents {
+#toc {
     overflow-x: hidden;
     overflow-y: auto;
     flex-grow: 200;
@@ -854,47 +855,47 @@ hr{
 }
 
 
-#table-of-contents ul.nav li ul li {
+#toc ul.nav li ul li {
     display: none;
 }
 
-#table-of-contents ul.nav li ul li ul li {
+#toc ul.nav li ul li ul li {
     display: none;
 }
 
-#table-of-contents ul.nav li.active ul li {
+#toc ul.nav li.active ul li {
     display: inline;
 }
 
-#table-of-contents ul.nav li.active ul li ul li {
+#toc ul.nav li.active ul li ul li {
     display: inline;
 }
 
-#table-of-contents ul.nav li.active ul li a {
+#toc ul.nav li.active ul li a {
     background-color: #E3E3E3;
     color: #8099B0;
     border-right:solid 1px #c9c9c9 !important;
 }
 
-#table-of-contents ul.nav li.active ul li.active a {
+#toc ul.nav li.active ul li.active a {
     background-color: #C9C9C9;
     color: black !important;
     font-weight: bold !important;
 }
 
-#table-of-contents ul.nav li.active ul li.active ul li.active a {
+#toc ul.nav li.active ul li.active ul li.active a {
     color: black !important;
     font-weight: bold !important;
     display: block !important;
 }
 
-#table-of-contents ul.nav li.active ul li.active ul li a {
+#toc ul.nav li.active ul li.active ul li a {
     color: #808080 !important;
     font-weight: normal !important;
     display: block !important;
 }
 
-#table-of-contents ul.nav li.active ul li ul li a {
+#toc ul.nav li.active ul li ul li a {
     display: none !important;
 }
 
@@ -903,24 +904,24 @@ hr{
 /*     /\* display: none; /\* as long as nav is on multiple levels of ul *\\/ *\/ */
 /* } */
 
-#table-of-contents ul.nav li ul li ul li ul li {
+#toc ul.nav li ul li ul li ul li {
     display: none !important; /* as long as nav is on multiple levels of ul */
     /* display: none; /* as long as nav is on multiple levels of ul *\/ */
 }
 
-#table-of-contents ul.nav li.active > a {
+#toc ul.nav li.active > a {
     border-bottom:solid 1px #c9c9c9 !important; /* XXX Restrict it to 2nd level */
     border-right:solid 1px #c9c9c9 !important;
 }
 
-#table-of-contents ul.nav li.active a {
+#toc ul.nav li.active a {
     color: gray !important;
     font-weight:bold;
     background-color: white;
     border-right:solid 0px white !important;
 }
 
-#table-of-contents ul.nav > li.active > a {
+#toc ul.nav > li.active > a {
     color: black !important;
 }
 
