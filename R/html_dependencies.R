@@ -48,7 +48,8 @@ default_mathjax <- function() {
   "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
 }
 
-# Navigation.js (copied and adapted from rmarkdown)
+# Navigation.js (copied and adapted from rmarkdown
+# because it is not exported)
 html_dependency_navigation <- function(code_menu = TRUE, source_embed = FALSE) {
   # dynamically build script list
   script <- c("tabsets.js")
