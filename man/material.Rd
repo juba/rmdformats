@@ -13,10 +13,10 @@ material(
   thumbnails = TRUE,
   gallery = FALSE,
   cards = TRUE,
-  mathjax = "rmdformats",
+  use_bookdown = FALSE,
   pandoc_args = NULL,
   md_extensions = NULL,
-  use_bookdown = FALSE,
+  mathjax = "rmdformats",
   ...
 )
 }
@@ -40,13 +40,13 @@ highlighting.}
 
 \item{cards}{if TRUE, sections will be presented as distinct and animated cards}
 
-\item{mathjax}{set to NULL to disable Mathjax insertion}
+\item{use_bookdown}{if TRUE, uses \code{\link[bookdown]{html_document2}} instead of \code{\link[rmarkdown]{html_document}}, thus providing numbered sections and cross references}
 
 \item{pandoc_args}{arguments passed to the pandoc_args argument of rmarkdown \code{\link[rmarkdown]{html_document}}}
 
 \item{md_extensions}{arguments passed to the md_extensions argument of rmarkdown \code{\link[rmarkdown]{html_document}}}
 
-\item{use_bookdown}{if TRUE, uses \code{\link[bookdown]{html_document2}} instead of \code{\link[rmarkdown]{html_document}}, thus providing numbered sections and cross references}
+\item{mathjax}{set to NULL to disable Mathjax insertion}
 
 \item{...}{Additional function arguments passed to R Markdown \code{\link[rmarkdown]{html_document}}}
 }

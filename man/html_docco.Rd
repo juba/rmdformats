@@ -12,10 +12,10 @@ html_docco(
   lightbox = TRUE,
   thumbnails = TRUE,
   gallery = FALSE,
+  use_bookdown = FALSE,
   pandoc_args = NULL,
   md_extensions = NULL,
   mathjax = "rmdformats",
-  use_bookdown = FALSE,
   ...
 )
 }
@@ -37,13 +37,13 @@ highlighting.}
 
 \item{gallery}{if TRUE and lightbox is TRUE, add a gallery navigation between images in lightbox display}
 
+\item{use_bookdown}{if TRUE, uses \code{\link[bookdown]{html_document2}} instead of \code{\link[rmarkdown]{html_document}}, thus providing numbered sections and cross references}
+
 \item{pandoc_args}{arguments passed to the pandoc_args argument of rmarkdown \code{\link[rmarkdown]{html_document}}}
 
 \item{md_extensions}{arguments passed to the md_extensions argument of rmarkdown \code{\link[rmarkdown]{html_document}}}
 
 \item{mathjax}{set to NULL to disable Mathjax insertion}
-
-\item{use_bookdown}{if TRUE, uses \code{\link[bookdown]{html_document2}} instead of \code{\link[rmarkdown]{html_document}}, thus providing numbered sections and cross references}
 
 \item{...}{Additional function arguments passed to rmarkdown \code{\link[rmarkdown]{html_document}}}
 }
