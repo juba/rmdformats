@@ -782,12 +782,79 @@ margin-top: 0.5em;
       $(document).ready(function () {
 	  window.buildTabsets("toc");
       });
+      $(document).ready(function () {
+	  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+	      $(this).parent().toggleClass('nav-tabs-open')
+	  });
+      });
     </script>
 
     <!-- code folding -->
     
     <!-- code download -->
-        
+    
+    <!-- tabsets dropdown -->
+
+    <style type="text/css">
+      .tabset-dropdown > .nav-tabs {
+	  display: inline-table;
+	  max-height: 500px;
+	  min-height: 44px;
+	  overflow-y: auto;
+	  background: white;
+	  border: 1px solid #ddd;
+	  border-radius: 4px;
+      }
+      
+      .tabset-dropdown > .nav-tabs > li.active:before {
+	  content: "";
+	  font-family: 'Glyphicons Halflings';
+	  display: inline-block;
+	  padding: 10px;
+	  border-right: 1px solid #ddd;
+      }
+      
+      .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+	  content: "";
+	  border: none;
+      }
+      
+      .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+	  content: "";
+	  font-family: 'Glyphicons Halflings';
+	  display: inline-block;
+	  padding: 10px;
+	  border-right: 1px solid #ddd;
+      }
+      
+      .tabset-dropdown > .nav-tabs > li.active {
+	  display: block;
+      }
+
+      .tabset-dropdown > .nav-tabs > li.active a {
+  	  padding: 0 15px !important;
+      }
+
+      .tabset-dropdown > .nav-tabs > li > a,
+      .tabset-dropdown > .nav-tabs > li > a:focus,
+      .tabset-dropdown > .nav-tabs > li > a:hover {
+	  border: none;
+	  display: inline-block;
+	  border-radius: 4px;
+	  background-color: transparent;
+      }
+      
+      .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+	  display: block;
+	  float: none;
+      }
+      
+      .tabset-dropdown > .nav-tabs > li {
+	  display: none;
+	  margin-left: 0 !important;
+      }
+    </style>
+    
 </head>
 
 <body>
@@ -879,20 +946,20 @@ margin-top: 0.5em;
      <p>Here we display a crosstab displayed in several different ways with a “pills” interface. To do this, just pass your <code>table()</code> result to the <code>pilltabs()</code> function.</p>
      <ul class="nav nav-pills nav-pilltabs">
      <li class="active">
-     <a href="#dyntab-count64411848388" data-toggle="pill">Count</a>
+     <a href="#dyntab-count72249012091" data-toggle="pill">Count</a>
      </li>
      <li>
-     <a href="#dyntab-rows64411848388" data-toggle="pill">Rows %</a>
+     <a href="#dyntab-rows72249012091" data-toggle="pill">Rows %</a>
      </li>
      <li>
-     <a href="#dyntab-columns64411848388" data-toggle="pill">Columns %</a>
+     <a href="#dyntab-columns72249012091" data-toggle="pill">Columns %</a>
      </li>
      <li>
-     <a href="#dyntab-residuals64411848388" data-toggle="pill">Residuals</a>
+     <a href="#dyntab-residuals72249012091" data-toggle="pill">Residuals</a>
      </li>
      </ul>
      <div class="tab-content">
-     <div id="dyntab-count64411848388" class="tab-pane dyntab active">
+     <div id="dyntab-count72249012091" class="tab-pane dyntab active">
      <table>
      <thead>
      <tr class="header">
@@ -924,7 +991,7 @@ margin-top: 0.5em;
      </tbody>
      </table>
      </div>
-     <div id="dyntab-rows64411848388" class="tab-pane dyntab">
+     <div id="dyntab-rows72249012091" class="tab-pane dyntab">
      <table>
      <thead>
      <tr class="header">
@@ -972,7 +1039,7 @@ margin-top: 0.5em;
      </tbody>
      </table>
      </div>
-     <div id="dyntab-columns64411848388" class="tab-pane dyntab">
+     <div id="dyntab-columns72249012091" class="tab-pane dyntab">
      <table>
      <thead>
      <tr class="header">
@@ -1022,7 +1089,7 @@ margin-top: 0.5em;
      </tbody>
      </table>
      </div>
-     <div id="dyntab-residuals64411848388" class="tab-pane dyntab-residuals">
+     <div id="dyntab-residuals72249012091" class="tab-pane dyntab-residuals">
      <table>
      <thead>
      <tr class="header">

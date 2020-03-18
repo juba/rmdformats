@@ -4008,6 +4008,11 @@ padding-right: inherit;
       $(document).ready(function () {
 	  window.buildTabsets("toc");
       });
+      $(document).ready(function () {
+	  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+	      $(this).parent().toggleClass('nav-tabs-open')
+	  });
+      });
     </script>
 
     <!-- code folding -->
@@ -4018,7 +4023,69 @@ padding-right: inherit;
     </script>
     
     <!-- code download -->
-        
+    
+    <!-- tabsets dropdown -->
+
+    <style type="text/css">
+      .tabset-dropdown > .nav-tabs {
+	  display: inline-table;
+	  max-height: 500px;
+	  min-height: 44px;
+	  overflow-y: auto;
+	  background: white;
+	  border: 1px solid #ddd;
+	  border-radius: 4px;
+      }
+      
+      .tabset-dropdown > .nav-tabs > li.active:before {
+	  content: "";
+	  font-family: 'Glyphicons Halflings';
+	  display: inline-block;
+	  padding: 10px;
+	  border-right: 1px solid #ddd;
+      }
+      
+      .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+	  content: "";
+	  border: none;
+      }
+      
+      .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+	  content: "";
+	  font-family: 'Glyphicons Halflings';
+	  display: inline-block;
+	  padding: 10px;
+	  border-right: 1px solid #ddd;
+      }
+      
+      .tabset-dropdown > .nav-tabs > li.active {
+	  display: block;
+      }
+
+      .tabset-dropdown > .nav-tabs > li.active a {
+  	  padding: 0 15px !important;
+      }
+
+      .tabset-dropdown > .nav-tabs > li > a,
+      .tabset-dropdown > .nav-tabs > li > a:focus,
+      .tabset-dropdown > .nav-tabs > li > a:hover {
+	  border: none;
+	  display: inline-block;
+	  border-radius: 4px;
+	  background-color: transparent;
+      }
+      
+      .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+	  display: block;
+	  float: none;
+      }
+      
+      .tabset-dropdown > .nav-tabs > li {
+	  display: none;
+	  margin-left: 0 !important;
+      }
+    </style>
+    
 </head>
 
 <body>
@@ -4139,25 +4206,25 @@ padding-right: inherit;
      </tbody>
      </table>
      <p>Here is a sample <code>DT:datatable</code> output.</p>
-     <div id="htmlwidget-48a728803cb12259b325" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-48a728803cb12259b325">{"x":{"filter":"none","data":[["1","2","3"],["setosa","versicolor","virginica"],[5.006,5.936,6.588],[3.428,2.77,2.974],[1.462,4.26,5.552],[1.462,4.26,5.552]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Species<\/th>\n      <th>Sepal.Length<\/th>\n      <th>Sepal.Width<\/th>\n      <th>Petal.Length<\/th>\n      <th>Petal.Width<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[2,3,4,5]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+     <div id="htmlwidget-bb53d45f6f0a06116ffa" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-bb53d45f6f0a06116ffa">{"x":{"filter":"none","data":[["1","2","3"],["setosa","versicolor","virginica"],[5.006,5.936,6.588],[3.428,2.77,2.974],[1.462,4.26,5.552],[1.462,4.26,5.552]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Species<\/th>\n      <th>Sepal.Length<\/th>\n      <th>Sepal.Width<\/th>\n      <th>Petal.Length<\/th>\n      <th>Petal.Width<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[2,3,4,5]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
      <p>Here we display a crosstab displayed in several different ways with a “pills” interface. To do this, just pass your <code>table()</code> result to the <code>pilltabs()</code> function.</p>
      <ul class="nav nav-pills nav-pilltabs">
      <li class="active">
-     <a href="#dyntab-count94251055433" data-toggle="pill">Count</a>
+     <a href="#dyntab-count2629681537" data-toggle="pill">Count</a>
      </li>
      <li>
-     <a href="#dyntab-rows94251055433" data-toggle="pill">Rows %</a>
+     <a href="#dyntab-rows2629681537" data-toggle="pill">Rows %</a>
      </li>
      <li>
-     <a href="#dyntab-columns94251055433" data-toggle="pill">Columns %</a>
+     <a href="#dyntab-columns2629681537" data-toggle="pill">Columns %</a>
      </li>
      <li>
-     <a href="#dyntab-residuals94251055433" data-toggle="pill">Residuals</a>
+     <a href="#dyntab-residuals2629681537" data-toggle="pill">Residuals</a>
      </li>
      </ul>
      <div class="tab-content">
-     <div id="dyntab-count94251055433" class="tab-pane dyntab active">
+     <div id="dyntab-count2629681537" class="tab-pane dyntab active">
      <table>
      <thead>
      <tr class="header">
@@ -4189,7 +4256,7 @@ padding-right: inherit;
      </tbody>
      </table>
      </div>
-     <div id="dyntab-rows94251055433" class="tab-pane dyntab">
+     <div id="dyntab-rows2629681537" class="tab-pane dyntab">
      <table>
      <thead>
      <tr class="header">
@@ -4237,7 +4304,7 @@ padding-right: inherit;
      </tbody>
      </table>
      </div>
-     <div id="dyntab-columns94251055433" class="tab-pane dyntab">
+     <div id="dyntab-columns2629681537" class="tab-pane dyntab">
      <table>
      <thead>
      <tr class="header">
@@ -4287,7 +4354,7 @@ padding-right: inherit;
      </tbody>
      </table>
      </div>
-     <div id="dyntab-residuals94251055433" class="tab-pane dyntab-residuals">
+     <div id="dyntab-residuals2629681537" class="tab-pane dyntab-residuals">
      <table>
      <thead>
      <tr class="header">
