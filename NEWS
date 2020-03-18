@@ -1,7 +1,10 @@
 rmdformats 0.4.0
 ----------------
 
+* Add support for code_download (thanks @ltrainstg)
+* Add support for dropdown tabsets (thanks @dktanwar)
 * Improve handling of internal links between pages
+* Code refactoring
 
 
 rmdformats 0.3.7
