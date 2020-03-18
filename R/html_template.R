@@ -35,14 +35,23 @@ html_template <- function(template_path, template_dependencies, pandoc_args, ...
                      "--variable", paste0("mathjax-url:", default_mathjax()))
   }
   ## Other arguments  
-  if (args[["lightbox"]]) { pandoc_args <- c(pandoc_args, "--variable", "lightbox:true") }
-  if (args[["thumbnails"]]) { pandoc_args <- c(pandoc_args, "--variable", "thumbnails:true") }
+    if (args[["lightbox"]]) {
+        pandoc_args <- c(pandoc_args, "--variable", "lightbox:true")
+    }
+    if (args[["thumbnails"]]) {
+        pandoc_args <- c(pandoc_args, "--variable", "thumbnails:true")
+    }
   if (args[["gallery"]]) {
     pandoc_args <- c(pandoc_args, "--variable", "gallery:true")
   } else {
     pandoc_args <- c(pandoc_args, "--variable", "gallery:false")
   }
-  if (args[["cards"]]) { pandoc_args <- c(pandoc_args, "--variable", "cards:true") }
+  if (!is.null(args[["cards"]])) {    
+      if (args[["cards"]]) {
+          pandoc_args <- c(pandoc_args, "--variable", "cards:true")
+      }
+  }
+    
 
   ## Call rmarkdown::html_document
   html_document_args <- list(
