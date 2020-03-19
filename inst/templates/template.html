@@ -146,10 +146,6 @@
 
 <body>
 
-   $for(include-before)$
-   $include-before$
-   $endfor$
-  
    $if(html_clean)$
    <!-- html_clean start -->
    <div class="container-fluid main-container">
@@ -187,6 +183,10 @@
        </ul>
      </div>
      $endif$
+
+   $for(include-before)$
+   $include-before$
+   $endfor$
      
    $if(title)$
    <h1 class="title">$title$</h1>
@@ -287,8 +287,6 @@
    $for(include-after)$
    $include-after$
    $endfor$
-
-
 
    $if(html_clean)$
    </div>

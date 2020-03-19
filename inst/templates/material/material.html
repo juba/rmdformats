@@ -158,10 +158,6 @@
 
 <body>
 
-  $for(include-before)$
-  $include-before$
-  $endfor$
-  
   <div class="header-panel shadow z-2">
     <div class="container-fluid">
       <div class="row">
@@ -209,7 +205,16 @@
 	<div class="row">
 
 	  <div class="col-xs-10">
+
+	    $for(include-before)$
+	    $include-before$
+	    $endfor$
+	    
 	    $body$
+
+	    $for(include-after)$
+	    $include-after$
+	    $endfor$
 	  </div>
 
 	  <div class="col-xs-2">
@@ -238,10 +243,6 @@
       </div>
     </div>
   </div>
-
-$for(include-after)$
-$include-after$
-$endfor$
 
  <script>
     $$(document).ready(function () {
