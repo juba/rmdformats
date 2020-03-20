@@ -202,19 +202,19 @@
       </nav>
       
       <div class="pages col-xs-9">
-	<div class="row">
 
-	  <div class="col-xs-10">
-
+    $if(include-before)$        
+    <div class="row">
 	    $for(include-before)$
 	    $include-before$
 	    $endfor$
-	    
-	    $body$
+    </div>
+    $endif$
+    
+	<div class="row">
 
-	    $for(include-after)$
-	    $include-after$
-	    $endfor$
+	  <div class="col-xs-10">
+	    $body$
 	  </div>
 
 	  <div class="col-xs-2">
@@ -236,11 +236,20 @@
 		$endif$
 	      </ul>
 	    </div>
+	    </div>
 	    $endif$
 
-	  </div>
-	</div>
-      </div>
+	    </div>
+    </div>
+	
+    $if(include-after)$        
+    <div class="row">
+	    $for(include-after)$
+	    $include-after$
+	    $endfor$
+    </div>
+    $endif$
+
     </div>
   </div>
 
