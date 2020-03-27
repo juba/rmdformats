@@ -711,6 +711,10 @@ a:hover{
 a:visited{
     color:#3d1308}
 
+#main a.sourceLine {
+  color: inherit;
+}
+
 .left{
     text-align:left}
 
