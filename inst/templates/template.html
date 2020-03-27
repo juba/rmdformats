@@ -274,15 +274,15 @@
    </div>
    $endif$
 
-   $if(readthedown)$
-   <div id="main">
-     $body$
-   </div>
-   $else$
-   <div id="content">
-     $body$
-   </div>
-   $endif$
+$if(readthedown)$
+<div id="main">
+$body$
+</div>
+$else$
+<div id="content">
+$body$
+</div>
+$endif$
    
    $for(include-after)$
    $include-after$
