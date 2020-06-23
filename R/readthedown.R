@@ -20,6 +20,7 @@
 #' @param pandoc_args arguments passed to the pandoc_args argument of rmarkdown \code{\link[rmarkdown]{html_document}}
 #' @param md_extensions arguments passed to the md_extensions argument of rmarkdown \code{\link[rmarkdown]{html_document}}
 #' @param toc_depth adjust table of contents depth
+#' @param embed_fonts if TRUE, use local files for Lato and Roboto Slab fonts used in the template. This leads to bigger files but ensures that these fonts are available.
 #' @param use_bookdown if TRUE, uses \code{\link[bookdown]{html_document2}} instead of \code{\link[rmarkdown]{html_document}}, thus providing numbered sections and cross references
 #' @param mathjax set to NULL to disable Mathjax insertion
 #' @param ... Additional function arguments passed to R Markdown \code{\link[rmarkdown]{html_document}}
@@ -38,6 +39,7 @@ readthedown <- function(fig_width = 8,
                        thumbnails = FALSE,
                        gallery = FALSE,
                        toc_depth = 2,
+                       embed_fonts = TRUE,
                        use_bookdown = FALSE,
                        pandoc_args = NULL,
                        md_extensions = NULL,
@@ -48,7 +50,7 @@ readthedown <- function(fig_width = 8,
         template_name = "readthedown",
         template_path = "templates/template.html",
         template_dependencies = list(
-            html_dependency_readthedown()
+            html_dependency_readthedown(embed_fonts)
         ),
         pandoc_args = pandoc_args,
         fig_width = fig_width,
@@ -69,10 +71,19 @@ readthedown <- function(fig_width = 8,
 }
 
 # readthedown js and css
-html_dependency_readthedown <- function() {
+html_dependency_readthedown <- function(embed_fonts = TRUE) {
+  stylesheets <- "readthedown.css"
+  if (embed_fonts) stylesheets <- c(stylesheets, "readthedown_fonts.css")
   htmltools::htmlDependency(name = "readthedown",
                  version = "0.1",
                  src = system.file("templates/readthedown", package = "rmdformats"),
                  script = "readthedown.js",
-                 stylesheet = c("readthedown.css"))
+                 stylesheet = stylesheets)
 }
+
+
+
+
+
+
+

@@ -1,36 +1,3 @@
-/* Palette : https://coolors.co/211103-3d1308-7b0d1e-9f2042-f8e5ee */
-
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: url(fonts/Lato.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: url(fonts/LatoBold.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 400;
-  src: url(fonts/LatoItalic.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 400;
-  src: url(fonts/RobotoSlab-Regular.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 700;
-  src: url(fonts/RobotoSlab-Bold.ttf) format('truetype');
-}
-
 
 /* Nav pills */
 
