@@ -1,6 +1,7 @@
 rmdformats 0.4.0
 ----------------
 
+* Add embed_fonts argument to readthedown (thanks @harrelfe)
 * Set mathjax URL to mathjax.rstudio.com
 * Add support for code_download (thanks @ltrainstg)
 * Add support for dropdown tabsets (thanks @dktanwar)
