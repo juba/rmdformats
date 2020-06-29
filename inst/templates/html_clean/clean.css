@@ -249,3 +249,7 @@ div.sourceCode .row div {
 .btn-group {
     margin-top: 0.5em;
 }
+
+.pagedtable-index-current {
+  font-weight: bold;
+}

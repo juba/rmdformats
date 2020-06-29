@@ -295,3 +295,8 @@ table .panel-body {
 .table td {
   padding: 8px 15px;
 }
+
+.pagedtable-index-current {
+  font-weight: bold;
+}
+

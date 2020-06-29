@@ -246,3 +246,8 @@ img.image-lb {
     font-style: italic;
     display: table;
 }
+
+.pagedtable-index-current {
+  font-weight: bold;
+}
+
