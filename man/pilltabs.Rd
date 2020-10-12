@@ -47,6 +47,3 @@ tab <- table(airquality$Month, airquality$Ozone > 25)
 pilltabs(tab)
 
 }
-\author{
-Julien Barnier <julien.barnier@ens-lyon.fr>
-}
