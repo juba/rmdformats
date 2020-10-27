@@ -4,8 +4,12 @@
 \alias{create.doc}
 \title{Create a new directory with a clean RMarkdown file}
 \usage{
-create.doc(dirname = "new-doc", format = "html_clean",
-  report = FALSE, makefile = TRUE)
+create.doc(
+  dirname = "new-doc",
+  format = "html_clean",
+  report = FALSE,
+  makefile = TRUE
+)
 }
 \arguments{
 \item{dirname}{name of the directory to create}
@@ -38,7 +42,6 @@ create.doc("MyDocument", format="html_clean")
 }
 }
 \author{
-Julien Barnier <julien.barnier@ens-lyon.fr>
-This function is heavily inspired and copied from the \link[ProjectTemplate]{create.project} function
+This function is heavily inspired and copied from the create.project() function
 of the \code{ProjectTemplate} package.
 }

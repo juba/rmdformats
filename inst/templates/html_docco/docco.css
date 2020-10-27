@@ -84,12 +84,14 @@ pre, tt, code {
 }
 
 
+
 /* Layout */
 
 .main-container {
-  margin: 0 auto;
-  background: #f0f0f0;
-  overflow: hidden;
+    max-width: 940px;
+    margin: 0 auto;
+    background: #f0f0f0;
+    overflow: hidden;
 }
 .page {
     padding: 30px;
@@ -111,6 +113,8 @@ pre, tt, code {
 /* Images */
 
 img {
+    max-width:100%;
+    height: auto;
     margin: 5px auto 50px auto;
 }
 
@@ -242,3 +246,8 @@ img.image-lb {
     font-style: italic;
     display: table;
 }
+
+.pagedtable-index-current {
+  font-weight: bold;
+}
+

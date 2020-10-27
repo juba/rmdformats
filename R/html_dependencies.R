@@ -20,8 +20,8 @@ html_dependency_jquery_stickytableheaders <- function()  {
 # create an html dependency for bootstrap (function copied from rmarkdown)
 html_dependency_bootstrap <- function(theme = "bootstrap") {
   htmltools::htmlDependency(name = "bootstrap",
-                 version = "3.3.6",
-                 src = system.file("templates/bootstrap-3.3.6", package = "rmdformats"),
+                 version = "3.3.7",
+                 src = system.file("templates/bootstrap-3.3.7", package = "rmdformats"),
                  meta = list(viewport = "width=device-width, initial-scale=1"),
                  script = c(
                    "js/bootstrap.min.js"
@@ -35,20 +35,24 @@ html_dependency_bootstrap <- function(theme = "bootstrap") {
 # create an html dependency for bootstrap js only (function copied from rmarkdown)
 html_dependency_bootstrap_js <- function() {
   htmltools::htmlDependency(name = "bootstrap_js",
-                            version = "3.3.6",
-                            src = system.file("templates/bootstrap-3.3.6", package = "rmdformats"),
+                            version = "3.3.7",
+                            src = system.file("templates/bootstrap-3.3.7", package = "rmdformats"),
                             meta = list(viewport = "width=device-width, initial-scale=1"),
                             script = c(
                               "js/bootstrap.min.js"
                             ))
 }
 
-# Mathjax (function copied from rmarkdown)
+# Mathjax (functions copied from rmarkdown)
 default_mathjax <- function() {
-  "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+  paste0("https://mathjax.rstudio.com/latest/", mathjax_config())
+}
+mathjax_config <- function() {
+  "MathJax.js?config=TeX-AMS-MML_HTMLorMML"
 }
 
-# Navigation.js (copied and adapted from rmarkdown)
+# Navigation.js (copied and adapted from rmarkdown
+# because it is not exported)
 html_dependency_navigation <- function(code_menu = TRUE, source_embed = FALSE) {
   # dynamically build script list
   script <- c("tabsets.js")

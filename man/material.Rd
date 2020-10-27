@@ -4,10 +4,21 @@
 \alias{material}
 \title{Material design - bootstrap HTML output format}
 \usage{
-material(fig_width = 6, fig_height = 6, fig_caption = TRUE,
-  highlight = "kate", lightbox = TRUE, thumbnails = TRUE,
-  gallery = FALSE, cards = TRUE, mathjax = "rmdformats",
-  pandoc_args = NULL, use_bookdown = FALSE, ...)
+material(
+  fig_width = 6,
+  fig_height = 6,
+  fig_caption = TRUE,
+  highlight = "kate",
+  lightbox = TRUE,
+  thumbnails = TRUE,
+  gallery = FALSE,
+  cards = TRUE,
+  use_bookdown = FALSE,
+  pandoc_args = NULL,
+  md_extensions = NULL,
+  mathjax = "rmdformats",
+  ...
+)
 }
 \arguments{
 \item{fig_width}{Default width (in inches) for figures}
@@ -29,11 +40,13 @@ highlighting.}
 
 \item{cards}{if TRUE, sections will be presented as distinct and animated cards}
 
-\item{mathjax}{set to NULL to disable Mathjax insertion}
+\item{use_bookdown}{if TRUE, uses \code{\link[bookdown]{html_document2}} instead of \code{\link[rmarkdown]{html_document}}, thus providing numbered sections and cross references}
 
 \item{pandoc_args}{arguments passed to the pandoc_args argument of rmarkdown \code{\link[rmarkdown]{html_document}}}
 
-\item{use_bookdown}{if TRUE, uses \code{\link[bookdown]{html_document2}} instead of \code{\link[rmarkdown]{html_document}}, thus providing numbered sections and cross references}
+\item{md_extensions}{arguments passed to the md_extensions argument of rmarkdown \code{\link[rmarkdown]{html_document}}}
+
+\item{mathjax}{set to NULL to disable Mathjax insertion}
 
 \item{...}{Additional function arguments passed to R Markdown \code{\link[rmarkdown]{html_document}}}
 }

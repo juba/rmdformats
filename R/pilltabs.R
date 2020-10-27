@@ -15,7 +15,6 @@
 #' The function is intended to be called inside an rmarkdown document.
 #' @return
 #' No value is returned.
-#' @author Julien Barnier <julien.barnier@@ens-lyon.fr>
 #' @examples
 #' 
 #' data(airquality)
@@ -23,7 +22,6 @@
 #' pilltabs(tab)
 #' 
 #' @import knitr
-#' @importFrom questionr cprop rprop chisq.residuals
 #' @importFrom stats chisq.test
 #' @export
 

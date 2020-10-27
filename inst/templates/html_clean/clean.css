@@ -4,6 +4,21 @@ body {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+.main-container {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+code {
+    color: inherit;
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+pre:not([class]) {
+    background-color: white;
+}
+
 /* Titles */
 
 h1.title {
@@ -33,6 +48,8 @@ h2 {
 
 img {
     margin: 5px 10px 50px 10px;
+    max-width:100%;
+    height: auto;
 }
 
 table img {
@@ -231,4 +248,8 @@ div.sourceCode .row div {
 
 .btn-group {
     margin-top: 0.5em;
+}
+
+.pagedtable-index-current {
+  font-weight: bold;
 }

@@ -18,7 +18,9 @@
 #' @param thumbnails if TRUE display content images as thumbnails
 #' @param gallery if TRUE and lightbox is TRUE, add a gallery navigation between images in lightbox display
 #' @param pandoc_args arguments passed to the pandoc_args argument of rmarkdown \code{\link[rmarkdown]{html_document}}
+#' @param md_extensions arguments passed to the md_extensions argument of rmarkdown \code{\link[rmarkdown]{html_document}}
 #' @param toc_depth adjust table of contents depth
+#' @param embed_fonts if TRUE, use local files for Lato and Roboto Slab fonts used in the template. This leads to bigger files but ensures that these fonts are available.
 #' @param use_bookdown if TRUE, uses \code{\link[bookdown]{html_document2}} instead of \code{\link[rmarkdown]{html_document}}, thus providing numbered sections and cross references
 #' @param mathjax set to NULL to disable Mathjax insertion
 #' @param ... Additional function arguments passed to R Markdown \code{\link[rmarkdown]{html_document}}
@@ -36,70 +38,52 @@ readthedown <- function(fig_width = 8,
                        lightbox = FALSE,
                        thumbnails = FALSE,
                        gallery = FALSE,
-                       pandoc_args = NULL,
                        toc_depth = 2,
-                       mathjax = "rmdformats",
+                       embed_fonts = TRUE,
                        use_bookdown = FALSE,
+                       pandoc_args = NULL,
+                       md_extensions = NULL,
+                       mathjax = "rmdformats",
                        ...) {
 
-  ## js and css dependencies
-  extra_dependencies <- list(rmarkdown::html_dependency_jquery(),
-                             rmarkdown::html_dependency_jqueryui(),
-                             html_dependency_navigation(),                             
-                             html_dependency_bootstrap(),
-                             html_dependency_magnific_popup(),
-                             html_dependency_readthedown())
-
-  ## Force mathjax arguments
-  if (!is.null(mathjax)) {
-    pandoc_args <- c(pandoc_args,
-                     "--mathjax",
-                     "--variable", paste0("mathjax-url:", default_mathjax()))
-  }
-  if (lightbox) { pandoc_args <- c(pandoc_args, "--variable", "lightbox:true") }
-  if (thumbnails) { pandoc_args <- c(pandoc_args, "--variable", "thumbnails:true") }
-  if (gallery) {
-    pandoc_args <- c(pandoc_args, "--variable", "gallery:true")
-  } else {
-    pandoc_args <- c(pandoc_args, "--variable", "gallery:false")
-  }
-
-  ## Merge "extra_dependencies"
-  extra_args <- list(...)
-  if ("extra_dependencies" %in% names(extra_args)) {
-    extra_dependencies <- append(extra_dependencies, extra_args[["extra_dependencies"]])
-    extra_args[["extra_dependencies"]] <- NULL
-    extra_args[["mathjax"]] <- NULL
-  }
-
-  ## Call rmarkdown::html_document
-  html_document_args <- list(
-    template = system.file("templates/readthedown/readthedown.html", package = "rmdformats"),
-    extra_dependencies = extra_dependencies,
-    fig_width = fig_width,
-    fig_height = fig_height,
-    fig_caption = fig_caption,
-    highlight = highlight,
-    pandoc_args = pandoc_args,
-    toc = TRUE,
-    toc_depth = toc_depth
-  )
-  html_document_args <- append(html_document_args, extra_args)
-  if (use_bookdown) {
-      html_document_func <- bookdown::html_document2
-  } else {
-      html_document_func <- rmarkdown::html_document
-  }
-
-  do.call(html_document_func, html_document_args)
+    html_template(
+        template_name = "readthedown",
+        template_path = "templates/template.html",
+        template_dependencies = list(
+            html_dependency_readthedown(embed_fonts)
+        ),
+        pandoc_args = pandoc_args,
+        fig_width = fig_width,
+        fig_height = fig_height,
+        fig_caption = fig_caption,
+        highlight = highlight,
+        lightbox = lightbox,
+        thumbnails = thumbnails,
+        gallery = gallery,
+        toc = TRUE,
+        toc_depth = toc_depth,
+        use_bookdown = use_bookdown,
+        md_extensions = md_extensions,
+        mathjax = mathjax,
+        ...
+    )
 
 }
 
 # readthedown js and css
-html_dependency_readthedown <- function() {
+html_dependency_readthedown <- function(embed_fonts = TRUE) {
+  stylesheets <- "readthedown.css"
+  if (embed_fonts) stylesheets <- c(stylesheets, "readthedown_fonts.css")
   htmltools::htmlDependency(name = "readthedown",
                  version = "0.1",
                  src = system.file("templates/readthedown", package = "rmdformats"),
                  script = "readthedown.js",
-                 stylesheet = c("readthedown.css"))
+                 stylesheet = stylesheets)
 }
+
+
+
+
+
+
+

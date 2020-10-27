@@ -17,8 +17,8 @@
 #' project root before running \code{load.project} when using the included Makefile.
 #' @return
 #' No value is returned.
-#' @author Julien Barnier <julien.barnier@@ens-lyon.fr>
-#' This function is heavily inspired and copied from the \link[ProjectTemplate]{create.project} function
+#' @author 
+#' This function is heavily inspired and copied from the create.project() function
 #' of the \code{ProjectTemplate} package.
 #' @examples
 #' \dontrun{

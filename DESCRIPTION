@@ -1,9 +1,9 @@
 Package: rmdformats
-Maintainer: Julien Barnier <julien.barnier@ens-lyon.fr>
-Authors@R: c(person("Julien", "Barnier", email="julien.barnier@ens-lyon.fr",
+Maintainer: Julien Barnier <julien.barnier@cnrs.fr>
+Authors@R: c(person("Julien", "Barnier", email="julien.barnier@cnrs.fr",
     role=c("aut","cre")))
-Version: 0.3.4
-Date: 2018-07-17
+Version: 0.4.0
+Date: 2020-03-12
 License: GPL (>= 2)
 Encoding: UTF-8
 Title: HTML Output Formats and Templates for 'rmarkdown' Documents
@@ -14,8 +14,9 @@ Imports:
     knitr,
     rmarkdown,
     bookdown,
-    htmltools,
+    htmltools
+Suggests:
     questionr
 URL: https://github.com/juba/rmdformats
-RoxygenNote: 6.1.0
+RoxygenNote: 7.1.1
 VignetteBuilder: knitr
