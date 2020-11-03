@@ -13,6 +13,13 @@ with or without the RStudio IDE.
 
 The package provides several HTML output formats. You can click on an image to see a real HTML output sample.
 
+### `robobook` format
+
+Adapted from the [bookdown](https://bookdown.org/) theme, with Roboto family fonts. Fully responsive with dynamic table of contents and collapsible navigation.
+
+[![](tools/screenshots/robobook.png)](https://cdn.rawgit.com/juba/rmdformats/master/resources/examples/robobook/robobook.html)
+
+
 ### `material` format
 
 Format taken from the [Material design theme for Bootstrap 3](https://github.com/FezVrasta/bootstrap-material-design). Document is split into pages at each `<h1>` header, and the table of contents allows an animated navigation between these pages (you can use the `cards: false` preamble parameter to disable the splitting and display all the cards at once).
@@ -45,9 +52,9 @@ Simple template, no table of contents. CSS heavily inspired from the default one
 
 Some extra features are available depending on the format :
 
-- `readthedown` is fully responsive, with collapsible navigation
-- `html_clean` and `readthedown` provide an automatic and dynamic table of contents
-- `html_clean` and `html_docco` provide automatic thumbnails for figures with lightbox display
+- `robobook` and `readthedown` are fully responsive, with collapsible navigation
+- `robobook`, `html_clean` and `readthedown` provide an automatic and dynamic table of contents
+- `robobook`, `html_clean` and `html_docco` provide automatic thumbnails for figures with lightbox display
 - code folding and tabsets are supported like in RStudio's HTML template
 
 The package also provides a `create.doc()` function as well as RStudio document
@@ -131,6 +138,7 @@ make clean
 - The CSS for the `html_docco` format is heavily inspired from the default one of the [docco](https://jashkenas.github.io/docco/) project.
 - The CSS and JavaScript for `readthedown` is adapted from the corresponding `readtheorg` theme of the [org-html-themes](https://github.com/fniessen/org-html-themes) project, which is itself inspired by the [Read the docs](https://readthedocs.org/) [Sphinx](http://sphinx-doc.org/) theme.
 - The CSS and JavaScript for `material` has been taken from the [Material design theme for Bootstrap 3](https://github.com/FezVrasta/bootstrap-material-design) project and its [presentation page](https://fezvrasta.github.io/bootstrap-material-design/)
+- The CSS for `robobook` is directly derived from the [bookdown](https://bookdown.org/) project template
 - JavaScript and HTML code for code folding and tabbed sections are taken from the RStudio's default `rmarkdown` HTML template
 
 The `html_clean` styling and features are very similar to the ones from the great
