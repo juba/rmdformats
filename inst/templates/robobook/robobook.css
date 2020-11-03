@@ -545,7 +545,6 @@ table {
 }
 
 .book .book-summary ul li span {
-    cursor: not-allowed;
     opacity: .3;
     filter: alpha(opacity=30)
 }
