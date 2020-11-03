@@ -78,6 +78,10 @@ img.image-lb {
   font-weight: bold;
 }
 
+#main a.anchor-section {
+    color: #BBB;
+}
+
 /* General styling */
 
 h1,h2,h3,h4,h5,h6,legend{
