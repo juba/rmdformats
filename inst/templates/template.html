@@ -316,25 +316,25 @@
    </div>
    $endif$
 
-   $if(readthedown)$
-    <div id="main">
-   $body$
-   </div>
-   $endif$
-   $if(html_clean)$
-   <div id="content">
-   $body$
-   </div>
-   $endif$
-   $if(html_docco)$
-   <div id="content">
-   $body$
-   </div>
-   $endif$
-
-   $if(robobook)$
-        $body$
-   $endif$
+<!-- Don't indent these lines or it will mess pre blocks --> 
+$if(readthedown)$
+<div id="main">
+$body$
+</div>
+$endif$
+$if(html_clean)$
+<div id="content">
+$body$
+</div>
+$endif$
+$if(html_docco)$
+<div id="content">
+$body$
+</div>
+$endif$
+$if(robobook)$
+$body$
+$endif$
 
    
    $for(include-after)$
