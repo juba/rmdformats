@@ -756,6 +756,11 @@ table {
     page-break-inside: avoid
 }
 
+.book .book-body .page-wrapper .page-inner section.normal .table th,
+.book .book-body .page-wrapper .page-inner section.normal .table td {
+    padding: 5px 10px;
+}
+
 .book .book-body .page-wrapper .page-inner section.normal  ,
 .book .book-body .page-wrapper .page-inner section.normal h3,
 .book .book-body .page-wrapper .page-inner section.normal h4,
@@ -1106,7 +1111,7 @@ body {
 }
 
 
-.book .book-body .page-wrapper .page-inner section.normal table,
+.book .book-body .page-wrapper .page-inner section.normal .table,
 .book .book-body .page-wrapper .page-inner section.normal .pagedtable-wrapper,
 .book .book-body .page-wrapper .page-inner section.normal .dataTables_wrapper {
   font-size: 0.9em;
