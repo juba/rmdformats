@@ -184,6 +184,10 @@ blockquote{
     /* margin-left:24px; */
     padding: 6px 20px;
 }
+#content blockquote > p,
+#content blockquote > ul {
+    margin-bottom: 0;
+}
 
 ul,ol,dl{
     line-height:24px;
