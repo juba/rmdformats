@@ -165,24 +165,67 @@
        <a role="button" href="#" data-toggle="wy-nav-top"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
      </nav>
    $endif$
+   $if(robobook)$
+   <!-- robobook start -->   
+   <div class="book with-summary">
+      <div class="book-summary">
+        <ul>
+          <li class="title">$title$</li>
+          <li class="divider"></li>
+        </ul>
+        <nav role="navigation" id="toc">
+          $toc$
+        </nav>
+        <ul class="authors">
+          <li class="divider"></li>
+          $for(author)$
+          $if(author.name)$
+            <li><span><i class="glyphicon glyphicon-user"></i> $author.name$
+	          $if(author.affiliation)$
+              <br />$author.affiliation$
+            $endif$
+	          $if(author.email)$
+	            <br />$author.email$<
+	          $endif$
+            </span></li>
+          $else$
+            <li><span><i class="glyphicon glyphicon-user"></i> $author$</span></li>
+          $endif$
+          $endfor$
+          $if(date)$
+           <li><span><i class="glyphicon glyphicon-calendar"></i> $date$</span></li>
+          $endif$
+        </ul>     
+      </div>
+      <div class="book-body fixed">
+        <div class="body-inner">
+          <div class="book-header fixed">
+            <a class="btn pull-left js-toolbar-action toggle-sidebar" aria-label="Toggle Sidebar" title="Toggle Sidebar" href="#">
+              <span class="glyphicon glyphicon-menu-hamburger"></span>
+            </a>
+          </div>
+          <div class="page-wrapper">
+            <div class="page-inner">
+              <section id="content" class="normal">
+   $endif$
 
-     $if(code_menu)$
-     <div class="btn-group pull-right">
-       <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
-       <ul class="dropdown-menu" style="min-width: 50px;">
-	 $if(code_folding)$
-	 <li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
-	 <li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
-	 $if(source_embed)$
-	 <li role="separator" class="divider"></li>
-	 $endif$
-	 $endif$
-	 $if(source_embed)$
-	 <li><a id="rmd-download-source" href="#">Download Rmd</a></li>
-	 $endif$
-       </ul>
-     </div>
-     $endif$
+   $if(code_menu)$
+   <div class="btn-group pull-right">
+     <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
+     <ul class="dropdown-menu" style="min-width: 50px;">
+	    $if(code_folding)$
+	    <li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
+	    <li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
+	    $if(source_embed)$
+	    <li role="separator" class="divider"></li>
+	    $endif$
+	    $endif$
+	    $if(source_embed)$
+	    <li><a id="rmd-download-source" href="#">Download Rmd</a></li>
+	    $endif$
+     </ul>
+   </div>
+   $endif$
 
    $for(include-before)$
    $include-before$
@@ -266,7 +309,6 @@
    <h4 class="date"><em>$date$</em></h4>
    $endif$
    $endif$
-
    
    $if(html_docco)$
    <div id="toc">
@@ -274,15 +316,26 @@
    </div>
    $endif$
 
-$if(readthedown)$
-<div id="main">
-$body$
-</div>
-$else$
-<div id="content">
-$body$
-</div>
-$endif$
+   $if(readthedown)$
+    <div id="main">
+   $body$
+   </div>
+   $endif$
+   $if(html_clean)$
+   <div id="content">
+   $body$
+   </div>
+   $endif$
+   $if(html_docco)$
+   <div id="content">
+   $body$
+   </div>
+   $endif$
+
+   $if(robobook)$
+        $body$
+   $endif$
+
    
    $for(include-after)$
    $include-after$
@@ -305,6 +358,14 @@ $endif$
    </div>
    </div>
    </div>
+   $endif$
+   $if(robobook)$
+  </section>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
    $endif$
 
       

@@ -1,15 +1,14 @@
 ---
-title: "`robobook` template example"
+title: "robobook template example"
+subtitle: "With a subtitle"
 date: "`r Sys.Date()`"
-author: juba
+author: "juba"
 output:
-  pdf_document:
-    number_headings: true
   rmdformats::robobook:
-    code_folding: hide
+    code_folding: show
     self_contained: true
     thumbnails: false
-    lightbox: false
+    lightbox: true
 ---
 
 
