@@ -7,7 +7,7 @@
 
         <meta name="author" content="juba" />
     
-        <meta name="date" content="2020-11-03" />
+        <meta name="date" content="2020-11-05" />
     
     <title>robobook template example</title>
 
@@ -1722,10 +1722,14 @@ font-weight: bold;
 }
 
 #toc ul.nav li ul li {
-display: none;
+list-style: none;
+max-height: 0px;
+transition: max-height .5s ease-in;
+overflow: hidden;
 }
 #toc ul.nav li.active ul li {
-display: inline;
+max-height: 40px;
+transition: max-height .5s ease-out;
 }
 .page-wrapper {
 height: 100%;
@@ -4073,7 +4077,7 @@ HTMLWidgets.widget({
       if (this.className === '') e.stopPropagation();
     });
 
-    methods.addRow = function(data, rowname) {
+    methods.addRow = function(data, rowname, resetPaging) {
       var data0 = table.row(0).data(), n = data0.length, d = n - data.length;
       if (d === 1) {
         data = rowname.concat(data)
@@ -4082,7 +4086,7 @@ HTMLWidgets.widget({
         console.log(data0);
         throw 'New data must be of the same length as current data (' + n + ')';
       };
-      table.row.add(data).draw();
+      table.row.add(data).draw(resetPaging);
     }
 
     methods.updateSearch = function(keywords) {
@@ -4592,7 +4596,7 @@ padding-right: inherit;
         <ul class="authors">
           <li class="divider"></li>
                                 <li><span><i class="glyphicon glyphicon-user"></i> juba</span></li>
-                                         <li><span><i class="glyphicon glyphicon-calendar"></i> 2020-11-03</span></li>
+                                         <li><span><i class="glyphicon glyphicon-calendar"></i> 2020-11-05</span></li>
                   </ul>     
       </div>
       <div class="book-body fixed">
@@ -4697,25 +4701,25 @@ padding-right: inherit;
 </tbody>
 </table>
 <p>Here is a sample <code>DT:datatable</code> output.</p>
-<div id="htmlwidget-32d2749a3ab70acaa588" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-32d2749a3ab70acaa588">{"x":{"filter":"none","data":[["1","2","3"],["setosa","versicolor","virginica"],[5.006,5.936,6.588],[3.428,2.77,2.974],[1.462,4.26,5.552],[1.462,4.26,5.552]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Species<\/th>\n      <th>Sepal.Length<\/th>\n      <th>Sepal.Width<\/th>\n      <th>Petal.Length<\/th>\n      <th>Petal.Width<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[2,3,4,5]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-9e59c58961b837995afe" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-9e59c58961b837995afe">{"x":{"filter":"none","data":[["1","2","3"],["setosa","versicolor","virginica"],[5.006,5.936,6.588],[3.428,2.77,2.974],[1.462,4.26,5.552],[1.462,4.26,5.552]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Species<\/th>\n      <th>Sepal.Length<\/th>\n      <th>Sepal.Width<\/th>\n      <th>Petal.Length<\/th>\n      <th>Petal.Width<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[2,3,4,5]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 <p>Here we display a crosstab displayed in several different ways with a “pills” interface. To do this, just pass your <code>table()</code> result to the <code>pilltabs()</code> function.</p>
 <ul class="nav nav-pills nav-pilltabs">
 <li class="active">
-<a href="#dyntab-count54800476111" data-toggle="pill">Count</a>
+<a href="#dyntab-count23997505079" data-toggle="pill">Count</a>
 </li>
 <li>
-<a href="#dyntab-rows54800476111" data-toggle="pill">Rows %</a>
+<a href="#dyntab-rows23997505079" data-toggle="pill">Rows %</a>
 </li>
 <li>
-<a href="#dyntab-columns54800476111" data-toggle="pill">Columns %</a>
+<a href="#dyntab-columns23997505079" data-toggle="pill">Columns %</a>
 </li>
 <li>
-<a href="#dyntab-residuals54800476111" data-toggle="pill">Residuals</a>
+<a href="#dyntab-residuals23997505079" data-toggle="pill">Residuals</a>
 </li>
 </ul>
 <div class="tab-content">
-<div id="dyntab-count54800476111" class="tab-pane dyntab active">
+<div id="dyntab-count23997505079" class="tab-pane dyntab active">
 <table>
 <thead>
 <tr class="header">
@@ -4747,7 +4751,7 @@ padding-right: inherit;
 </tbody>
 </table>
 </div>
-<div id="dyntab-rows54800476111" class="tab-pane dyntab">
+<div id="dyntab-rows23997505079" class="tab-pane dyntab">
 <table>
 <thead>
 <tr class="header">
@@ -4795,7 +4799,7 @@ padding-right: inherit;
 </tbody>
 </table>
 </div>
-<div id="dyntab-columns54800476111" class="tab-pane dyntab">
+<div id="dyntab-columns23997505079" class="tab-pane dyntab">
 <table>
 <thead>
 <tr class="header">
@@ -4845,7 +4849,7 @@ padding-right: inherit;
 </tbody>
 </table>
 </div>
-<div id="dyntab-residuals54800476111" class="tab-pane dyntab-residuals">
+<div id="dyntab-residuals23997505079" class="tab-pane dyntab-residuals">
 <table>
 <thead>
 <tr class="header">

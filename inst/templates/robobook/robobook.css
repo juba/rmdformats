@@ -1423,11 +1423,15 @@ button.code-folding-btn {
 /* TOC and scrollspy */
 
 #toc ul.nav li ul li {
-    display: none;
+    list-style: none;
+    max-height: 0px;
+    transition: max-height .5s ease-in;
+    overflow: hidden;
 }
 
 #toc ul.nav li.active ul li {
-    display: inline;
+    max-height: 40px;
+    transition: max-height .5s ease-out;
 }
 
 .page-wrapper {
