@@ -3,7 +3,7 @@
 #' Format for converting from R Markdown to an HTML document.
 #'
 #' @details
-#' CSS adapted from the bookdown project, with Roboto family fonts.
+#' CSS taken from the docute project and adaptations made by John Coene.
 #'
 #' @param fig_width Default width (in inches) for figures
 #' @param fig_height Default width (in inches) for figures

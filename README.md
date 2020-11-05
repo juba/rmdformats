@@ -13,6 +13,14 @@ with or without the RStudio IDE.
 
 The package provides several HTML output formats. You can click on an image to see a real HTML output sample.
 
+### `downcute` format
+
+Taken from the [docute](https://docute.org) project theme and its adaptation by [John Coene](https://twitter.com/jdatap). Responsive, with a dynamic table of contents and a dark theme switcher.
+
+[![](tools/screenshots/downcute.png)](https://cdn.rawgit.com/juba/rmdformats/master/resources/examples/downcute/downcute.html)
+
+
+
 ### `robobook` format
 
 Adapted from the [bookdown](https://bookdown.org/) theme, with Roboto family fonts. Fully responsive with dynamic table of contents and collapsible navigation.
@@ -138,7 +146,8 @@ make clean
 - The CSS for the `html_docco` format is heavily inspired from the default one of the [docco](https://jashkenas.github.io/docco/) project.
 - The CSS and JavaScript for `readthedown` is adapted from the corresponding `readtheorg` theme of the [org-html-themes](https://github.com/fniessen/org-html-themes) project, which is itself inspired by the [Read the docs](https://readthedocs.org/) [Sphinx](http://sphinx-doc.org/) theme.
 - The CSS and JavaScript for `material` has been taken from the [Material design theme for Bootstrap 3](https://github.com/FezVrasta/bootstrap-material-design) project and its [presentation page](https://fezvrasta.github.io/bootstrap-material-design/)
-- The CSS for `robobook` is directly derived from the [bookdown](https://bookdown.org/) project template
+- The CSS for `robobook` is directly derived from the [bookdown](https://bookdown.org/) project template.
+- The CSS for `downcute` is directly derived from the default theme of the [docute](https://docute.org) project and its adaptation by [John Coene](https://twitter.com/jdatap) for some of its [projects documentation](https://packer.john-coene.com/).
 - JavaScript and HTML code for code folding and tabbed sections are taken from the RStudio's default `rmarkdown` HTML template
 
 The `html_clean` styling and features are very similar to the ones from the great
