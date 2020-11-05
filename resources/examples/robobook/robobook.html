@@ -1191,6 +1191,10 @@ margin-bottom: 0 !important
 .book .book-body .page-wrapper .page-inner section.normal tr {
 page-break-inside: avoid
 }
+.book .book-body .page-wrapper .page-inner section.normal .table th,
+.book .book-body .page-wrapper .page-inner section.normal .table td {
+padding: 5px 10px;
+}
 .book .book-body .page-wrapper .page-inner section.normal ,
 .book .book-body .page-wrapper .page-inner section.normal h3,
 .book .book-body .page-wrapper .page-inner section.normal h4,
@@ -1481,7 +1485,7 @@ font-style: italic;
 font-size: 0.9em;
 margin-top: 5px;
 }
-.book .book-body .page-wrapper .page-inner section.normal table,
+.book .book-body .page-wrapper .page-inner section.normal .table,
 .book .book-body .page-wrapper .page-inner section.normal .pagedtable-wrapper,
 .book .book-body .page-wrapper .page-inner section.normal .dataTables_wrapper {
 font-size: 0.9em;
@@ -4601,7 +4605,7 @@ padding-right: inherit;
           <div class="page-wrapper">
             <div class="page-inner">
               <section id="content" class="normal">
-   
+      
       <div class="btn-group pull-right">
      <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
      <ul class="dropdown-menu" style="min-width: 50px;">
@@ -4618,7 +4622,7 @@ padding-right: inherit;
    
       
    
-<!-- Don't indent these lines or it will mess pre blocks --> 
+<!-- Don't indent these lines or it will mess pre blocks indentation --> 
 <div id="code-and-tables" class="section level1">
 <h1>Code and tables</h1>
 <div id="syntax-highlighting" class="section level2">
@@ -4693,25 +4697,25 @@ padding-right: inherit;
 </tbody>
 </table>
 <p>Here is a sample <code>DT:datatable</code> output.</p>
-<div id="htmlwidget-3b1578d84df17cc7b9ee" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-3b1578d84df17cc7b9ee">{"x":{"filter":"none","data":[["1","2","3"],["setosa","versicolor","virginica"],[5.006,5.936,6.588],[3.428,2.77,2.974],[1.462,4.26,5.552],[1.462,4.26,5.552]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Species<\/th>\n      <th>Sepal.Length<\/th>\n      <th>Sepal.Width<\/th>\n      <th>Petal.Length<\/th>\n      <th>Petal.Width<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[2,3,4,5]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-32d2749a3ab70acaa588" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-32d2749a3ab70acaa588">{"x":{"filter":"none","data":[["1","2","3"],["setosa","versicolor","virginica"],[5.006,5.936,6.588],[3.428,2.77,2.974],[1.462,4.26,5.552],[1.462,4.26,5.552]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Species<\/th>\n      <th>Sepal.Length<\/th>\n      <th>Sepal.Width<\/th>\n      <th>Petal.Length<\/th>\n      <th>Petal.Width<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[2,3,4,5]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 <p>Here we display a crosstab displayed in several different ways with a “pills” interface. To do this, just pass your <code>table()</code> result to the <code>pilltabs()</code> function.</p>
 <ul class="nav nav-pills nav-pilltabs">
 <li class="active">
-<a href="#dyntab-count30051892879" data-toggle="pill">Count</a>
+<a href="#dyntab-count54800476111" data-toggle="pill">Count</a>
 </li>
 <li>
-<a href="#dyntab-rows30051892879" data-toggle="pill">Rows %</a>
+<a href="#dyntab-rows54800476111" data-toggle="pill">Rows %</a>
 </li>
 <li>
-<a href="#dyntab-columns30051892879" data-toggle="pill">Columns %</a>
+<a href="#dyntab-columns54800476111" data-toggle="pill">Columns %</a>
 </li>
 <li>
-<a href="#dyntab-residuals30051892879" data-toggle="pill">Residuals</a>
+<a href="#dyntab-residuals54800476111" data-toggle="pill">Residuals</a>
 </li>
 </ul>
 <div class="tab-content">
-<div id="dyntab-count30051892879" class="tab-pane dyntab active">
+<div id="dyntab-count54800476111" class="tab-pane dyntab active">
 <table>
 <thead>
 <tr class="header">
@@ -4743,7 +4747,7 @@ padding-right: inherit;
 </tbody>
 </table>
 </div>
-<div id="dyntab-rows30051892879" class="tab-pane dyntab">
+<div id="dyntab-rows54800476111" class="tab-pane dyntab">
 <table>
 <thead>
 <tr class="header">
@@ -4791,7 +4795,7 @@ padding-right: inherit;
 </tbody>
 </table>
 </div>
-<div id="dyntab-columns30051892879" class="tab-pane dyntab">
+<div id="dyntab-columns54800476111" class="tab-pane dyntab">
 <table>
 <thead>
 <tr class="header">
@@ -4841,7 +4845,7 @@ padding-right: inherit;
 </tbody>
 </table>
 </div>
-<div id="dyntab-residuals30051892879" class="tab-pane dyntab-residuals">
+<div id="dyntab-residuals54800476111" class="tab-pane dyntab-residuals">
 <table>
 <thead>
 <tr class="header">
@@ -4905,7 +4909,7 @@ This is a caption
   </div>
   </div>
   </div>
-   
+      
       
 
   <script>
