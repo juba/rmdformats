@@ -1032,7 +1032,7 @@ button.code-folding-btn {
 .page-content img.image-thumb {
     width: 250px;
     border: 1px solid #CCC;
-    padding: 2px;
+    padding: 0;
 }
 
 .page-content img.image-lb {
