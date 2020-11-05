@@ -1367,7 +1367,7 @@ button.code-folding-btn {
 /* Chi-squared results */
 
 .book .book-body .page-wrapper .page-inner section.normal .chisq-results {
-    margin: -20px 0 35px 0;
+    margin: -5px 0 35px 0;
     text-align: center;
     font-size: 90%;
     font-style: italic;
