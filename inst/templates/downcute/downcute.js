@@ -32,7 +32,7 @@ const downcute_variables_default = `
     --loader-primary-color: #f3f3f3;
     --loader-secondary-color: #ecebeb;
     --table-header-background: #fafafa;
-    --table-header-color: #666;
+    --table-header-color: #555;
     --docute-select-height: 38px;
     --search-icon-color: #999;
     --search-focus-border-color: #ccc;
@@ -44,6 +44,8 @@ const downcute_variables_default = `
     --datatable-odd-background: #f9f9f9;
     --datatable-even-background: #ffffff;
     --datatable-hover-background: #f6f6f6;
+    --anchor-color: #bbbbbb;
+    --toc-border-color: #aaaaaa;
 }
 `
 
@@ -58,7 +60,7 @@ const downcute_variables_dark = `
     --sidebar-width: 280px;
     --sidebar-background: var(--page-background);
     --sidebar-link-color: var(--text-color);
-    --sidebar-link-active-color: var(--text-color);
+    --sidebar-link-active-color: var(--accent-color);
     --sidebar-link-arrow-color: #999;
     --main-background: var(--page-background);
     --border-color: #3e4147;
@@ -96,12 +98,22 @@ const downcute_variables_dark = `
     --datatable-odd-background: #2f3136;
     --datatable-even-background: #333539;
     --datatable-hover-background: #35374B;
+    --anchor-color: #666666;
+    --toc-border-color: #888888;
 }
 `
 
+// CSS variables
+const head = document.head;
+const variables_style = document.createElement("style");
+variables_style.id = "downcute-css-variables";
+variables_style.innerHTML = downcute_variables_default;
+head.appendChild(variables_style);
 
 window.addEventListener("load", (event) => {
-    /*let code_el = document.querySelectorAll("pre[class] code");
+
+    // Prism highlighting
+    let code_el = document.querySelectorAll("pre[class] code");
     code_el.forEach(el => {
         const classes = el.parentNode.className.split(" ");
         classes.forEach(classe => {
@@ -109,14 +121,10 @@ window.addEventListener("load", (event) => {
                 el.classList.add('language-' + classe);
             }
         })
-    })*/
+    })
+    Prism.highlightAll();
 
-    const head = document.head;
-    const variables_style = document.createElement("style");
-    variables_style.id = "downcute-css-variables";
-    variables_style.innerHTML = downcute_variables_default;
-    head.appendChild(variables_style);
-
+    // Dark mode 
     const toggler = document.querySelector(".dark-theme-toggler .toggle");
     toggler.addEventListener("click", (event) => {
         toggler.classList.toggle("checked");
@@ -128,6 +136,9 @@ window.addEventListener("load", (event) => {
 
     })
 
+    // ScrollSpy also requires that we use a Bootstrap nav component.
+    $('#toc ul').first().addClass('nav');
+    $('body').scrollspy({target: '#toc'});
 
 })
 

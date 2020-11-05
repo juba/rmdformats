@@ -715,7 +715,7 @@ a {
     border-bottom: 1px solid var(--border-color);
     border-top: 1px solid var(--border-color) !important;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     padding: 10px
 }
 
@@ -755,7 +755,6 @@ a {
     overflow: auto;
     position: relative;
     border: none;
-    margin: 0;
     z-index: 2;
     font-family: var(--code-font);
     white-space: pre;
@@ -959,7 +958,7 @@ h1.title {
 }
 
 h1.subtitle {
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin: -0.5rem 0 1.4rem;
     font-weight: 300;
     line-height: 1.1
@@ -1219,12 +1218,12 @@ h1.subtitle {
 
 @media screen and (max-width:768px) {
     .dark-theme-toggler {
-        padding: 0 20px
+        padding: 0 40px
     }
 }
 
 [data-position="sidebar:post-end"] .dark-theme-toggler {
-    padding: 0 20px
+    padding: 0 40px
 }
 
 .toggle {
@@ -1355,7 +1354,7 @@ button.code-folding-btn {
 }
 
 .page-content a.anchor-section {
-    color: #BBB;
+    color: var(--anchor-color);
     text-decoration: none;
 }
 
@@ -1443,6 +1442,7 @@ button.code-folding-btn {
     text-align: center;
     font-style: italic;
     font-size: 90%;
+    margin-top: 0;
 }
 
 /* Table */
@@ -1492,4 +1492,67 @@ button.code-folding-btn {
 .page-content table.dataTable.display tbody th, 
 .page-content table.dataTable.display tbody td {
     border-top: 1px solid var(--border-color);
+}
+
+/* TOC and scrollspy */
+
+#toc ul.nav {
+    margin-left: 40px;
+    padding-left: 0;
+}
+
+#toc ul.nav li {
+    color: var(--sidebar-link-color);
+    font-size: .9rem;
+}
+
+#toc ul.nav li a {
+    display: block;
+    color: var(--sidebar-link-color);
+    font-size: .9rem;
+    padding-left: 0;
+}
+
+#toc ul.nav li a:hover {
+    color: var(--sidebar-link-active-color);
+    background-color: inherit;
+}
+
+#toc ul.nav > li.active > a,
+#toc ul.nav ul > li.active > a {
+    font-weight: bold;
+}
+
+#toc ul.nav li ul {
+    margin-left: 3px;
+    padding-left: 15px;
+    border-left: 1px solid var(--toc-border-color);
+}
+
+#toc ul.nav li ul li {
+    list-style: none;
+    max-height: 0px;
+    transition: max-height .4s ease-in;
+    overflow: hidden;
+}
+
+#toc ul.nav li.active ul li {
+    max-height: 26px;
+    transition: max-height .4s ease-out;
+}
+
+/* Authors */
+
+.Content p.authors,
+.Content p.date {
+    margin: 0 10px;
+}
+.Content p.authors {
+    margin-top: -.6rem;
+}
+.Content p.date span, 
+.Content p.authors span {
+    font-size: .9rem;
+    padding-right: 10px;
+    opacity: 0.4; 
 }

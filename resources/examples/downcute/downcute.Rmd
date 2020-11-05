@@ -1,15 +1,13 @@
 ---
 title: "downcute template example"
-subtitle: "With a subtitle"
+#subtitle: "With a subtitle"
 date: "`r Sys.Date()`"
-author: "juba"
 output:
   rmdformats::downcute:
     code_folding: show
     self_contained: false
     thumbnails: false
     lightbox: true
-    highlight: breezedark
 ---
 
 

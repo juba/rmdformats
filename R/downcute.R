@@ -32,7 +32,7 @@
 downcute <- function(fig_width = 8,
                        fig_height = 5,
                        fig_caption = TRUE,
-                       highlight = "breezedark",
+                       highlight = NULL,
                        lightbox = FALSE,
                        thumbnails = FALSE,
                        gallery = FALSE,
@@ -89,6 +89,5 @@ html_dependency_prism <- function() {
   htmltools::htmlDependency(name = "prism",
                  version = "1.22",
                  src = system.file("templates/prism", package = "rmdformats"),
-                 script = "prism.js",
-                 stylesheet = "prism.css")
+                 script = "prism.js")
 }

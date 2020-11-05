@@ -5,7 +5,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="generator" content="pandoc" />
 
-        <meta name="author" content="juba" />
     
         <meta name="date" content="2020-11-05" />
     
@@ -23,9 +22,7 @@
     <link href="downcute_files/downcute-0.1/downcute.css" rel="stylesheet" />
     <link href="downcute_files/downcute-0.1/downcute_fonts_embed.css" rel="stylesheet" />
     <script src="downcute_files/downcute-0.1/downcute.js"></script>
-    <link href="downcute_files/prism-1.22/prism.css" rel="stylesheet" />
     <script src="downcute_files/prism-1.22/prism.js"></script>
-    <script src="downcute_files/accessible-code-block-0.0.1/empty-anchor.js"></script>
     <link href="downcute_files/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
     <script src="downcute_files/anchor-sections-1.0/anchor-sections.js"></script>
     <script src="downcute_files/htmlwidgets-1.5.2/htmlwidgets.js"></script>
@@ -38,75 +35,6 @@
     <script src="downcute_files/crosstalk-1.1.0.1/js/crosstalk.min.js"></script>
     
     
-        <style type="text/css">code{white-space: pre;}</style>
-    <style type="text/css">
-      code.sourceCode > span { display: inline-block; line-height: 1.25; }
-      code.sourceCode > span { color: inherit; text-decoration: inherit; }
-      code.sourceCode > span:empty { height: 1.2em; }
-      .sourceCode { overflow: visible; }
-      code.sourceCode { white-space: pre; position: relative; }
-      div.sourceCode { margin: 1em 0; }
-      pre.sourceCode { margin: 0; }
-      @media screen {
-      div.sourceCode { overflow: auto; }
-      }
-      @media print {
-      code.sourceCode { white-space: pre-wrap; }
-      code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-      }
-      pre.numberSource code
-        { counter-reset: source-line 0; }
-      pre.numberSource code > span
-        { position: relative; left: -4em; counter-increment: source-line; }
-      pre.numberSource code > span > a:first-child::before
-        { content: counter(source-line);
-          position: relative; left: -1em; text-align: right; vertical-align: baseline;
-          border: none; display: inline-block;
-          -webkit-touch-callout: none; -webkit-user-select: none;
-          -khtml-user-select: none; -moz-user-select: none;
-          -ms-user-select: none; user-select: none;
-          padding: 0 4px; width: 4em;
-          background-color: #232629;
-          color: #7a7c7d;
-        }
-      pre.numberSource { margin-left: 3em; border-left: 1px solid #7a7c7d;  padding-left: 4px; }
-      div.sourceCode
-        { color: #cfcfc2; background-color: #232629; }
-      @media screen {
-      code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-      }
-      code span. { color: #cfcfc2; } /* Normal */
-      code span.al { color: #95da4c; } /* Alert */
-      code span.an { color: #3f8058; } /* Annotation */
-      code span.at { color: #2980b9; } /* Attribute */
-      code span.bn { color: #f67400; } /* BaseN */
-      code span.bu { color: #7f8c8d; } /* BuiltIn */
-      code span.cf { color: #fdbc4b; } /* ControlFlow */
-      code span.ch { color: #3daee9; } /* Char */
-      code span.cn { color: #27aeae; } /* Constant */
-      code span.co { color: #7a7c7d; } /* Comment */
-      code span.cv { color: #7f8c8d; } /* CommentVar */
-      code span.do { color: #a43340; } /* Documentation */
-      code span.dt { color: #2980b9; } /* DataType */
-      code span.dv { color: #f67400; } /* DecVal */
-      code span.er { color: #da4453; } /* Error */
-      code span.ex { color: #0099ff; } /* Extension */
-      code span.fl { color: #f67400; } /* Float */
-      code span.fu { color: #8e44ad; } /* Function */
-      code span.im { color: #27ae60; } /* Import */
-      code span.in { color: #c45b00; } /* Information */
-      code span.kw { color: #cfcfc2; } /* Keyword */
-      code span.op { color: #cfcfc2; } /* Operator */
-      code span.ot { color: #27ae60; } /* Other */
-      code span.pp { color: #27ae60; } /* Preprocessor */
-      code span.re { color: #2980b9; } /* RegionMarker */
-      code span.sc { color: #3daee9; } /* SpecialChar */
-      code span.ss { color: #da4453; } /* SpecialString */
-      code span.st { color: #f44f4f; } /* String */
-      code span.va { color: #27aeae; } /* Variable */
-      code span.vs { color: #da4453; } /* VerbatimString */
-      code span.wa { color: #da4453; } /* Warning */
-    </style>
     
     
     <!-- tabsets -->
@@ -201,7 +129,7 @@
      <div class="Page layout-narrow">
       <div class="Wrap">
         <div class="Sidebar">
-          <div class="SidebarItems">
+          <div class="SidebarItems" id="toc">
             <ul>
             <li><a href="#code-and-tables">Code and tables</a><ul>
             <li><a href="#syntax-highlighting">Syntax highlighting</a></li>
@@ -227,9 +155,10 @@
    
         
       <h1 class="title">downcute template example</h1>
-         <h1 class="subtitle">With a subtitle</h1>
-   
-   
+      
+      <p class="authors">
+         <p class="date"><span class="glyphicon glyphicon-calendar"></span> 2020-11-05</p>
+         
    
       
    
@@ -240,25 +169,25 @@
 <div id="syntax-highlighting" class="section level2">
 <h2>Syntax highlighting</h2>
 <p>Here is a sample code chunk, just to show that syntax highlighting works as expected.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">library</span>(ggplot2)</span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="kw">library</span>(dplyr)</span>
-<span id="cb1-3"><a href="#cb1-3"></a></span>
-<span id="cb1-4"><a href="#cb1-4"></a>not_null &lt;-<span class="st"> </span><span class="cf">function</span> (v) {</span>
-<span id="cb1-5"><a href="#cb1-5"></a>  <span class="cf">if</span> (<span class="op">!</span><span class="kw">is.null</span>(v)) <span class="kw">return</span>(<span class="kw">paste</span>(v, <span class="st">&quot;not null&quot;</span>))</span>
-<span id="cb1-6"><a href="#cb1-6"></a>}</span>
-<span id="cb1-7"><a href="#cb1-7"></a></span>
-<span id="cb1-8"><a href="#cb1-8"></a><span class="kw">data</span>(iris)</span>
-<span id="cb1-9"><a href="#cb1-9"></a>tab &lt;-<span class="st"> </span>iris <span class="op">%&gt;%</span></span>
-<span id="cb1-10"><a href="#cb1-10"></a><span class="st">  </span><span class="kw">group_by</span>(Species) <span class="op">%&gt;%</span></span>
-<span id="cb1-11"><a href="#cb1-11"></a><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">Sepal.Length =</span> <span class="kw">mean</span>(Sepal.Length),</span>
-<span id="cb1-12"><a href="#cb1-12"></a>            <span class="dt">Sepal.Width  =</span> <span class="kw">mean</span>(Sepal.Width),</span>
-<span id="cb1-13"><a href="#cb1-13"></a>            <span class="dt">Petal.Length =</span> <span class="kw">mean</span>(Petal.Length),</span>
-<span id="cb1-14"><a href="#cb1-14"></a>            <span class="dt">Petal.Width  =</span> <span class="kw">mean</span>(Petal.Length))</span></code></pre></div>
+<pre class="r"><code>library(ggplot2)
+library(dplyr)
+
+not_null &lt;- function (v) {
+  if (!is.null(v)) return(paste(v, &quot;not null&quot;))
+}
+
+data(iris)
+tab &lt;- iris %&gt;%
+  group_by(Species) %&gt;%
+  summarise(Sepal.Length = mean(Sepal.Length),
+            Sepal.Width  = mean(Sepal.Width),
+            Petal.Length = mean(Petal.Length),
+            Petal.Width  = mean(Petal.Length))</code></pre>
 </div>
 <div id="verbatim" class="section level2">
 <h2>Verbatim</h2>
 <p>Here is the structure of the <code>iris</code> dataset.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="kw">str</span>(iris)</span></code></pre></div>
+<pre class="r"><code>str(iris)</code></pre>
 <pre><code>&#39;data.frame&#39;:   150 obs. of  5 variables:
  $ Sepal.Length: num  5.1 4.9 4.7 4.6 5 5.4 4.6 5 4.4 4.9 ...
  $ Sepal.Width : num  3.5 3 3.2 3.1 3.6 3.9 3.4 3.4 2.9 3.1 ...
@@ -309,25 +238,25 @@
 </tbody>
 </table>
 <p>Here is a sample <code>DT:datatable</code> output.</p>
-<div id="htmlwidget-2b22f7a8eef5c68ed25f" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-2b22f7a8eef5c68ed25f">{"x":{"filter":"none","data":[["1","2","3"],["setosa","versicolor","virginica"],[5.006,5.936,6.588],[3.428,2.77,2.974],[1.462,4.26,5.552],[1.462,4.26,5.552]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Species<\/th>\n      <th>Sepal.Length<\/th>\n      <th>Sepal.Width<\/th>\n      <th>Petal.Length<\/th>\n      <th>Petal.Width<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[2,3,4,5]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-dbf248496ffe5d1b8921" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-dbf248496ffe5d1b8921">{"x":{"filter":"none","data":[["1","2","3"],["setosa","versicolor","virginica"],[5.006,5.936,6.588],[3.428,2.77,2.974],[1.462,4.26,5.552],[1.462,4.26,5.552]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Species<\/th>\n      <th>Sepal.Length<\/th>\n      <th>Sepal.Width<\/th>\n      <th>Petal.Length<\/th>\n      <th>Petal.Width<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[2,3,4,5]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 <p>Here we display a crosstab displayed in several different ways with a “pills” interface. To do this, just pass your <code>table()</code> result to the <code>pilltabs()</code> function.</p>
 <ul class="nav nav-pills nav-pilltabs">
 <li class="active">
-<a href="#dyntab-count54903507908" data-toggle="pill">Count</a>
+<a href="#dyntab-count95785092982" data-toggle="pill">Count</a>
 </li>
 <li>
-<a href="#dyntab-rows54903507908" data-toggle="pill">Rows %</a>
+<a href="#dyntab-rows95785092982" data-toggle="pill">Rows %</a>
 </li>
 <li>
-<a href="#dyntab-columns54903507908" data-toggle="pill">Columns %</a>
+<a href="#dyntab-columns95785092982" data-toggle="pill">Columns %</a>
 </li>
 <li>
-<a href="#dyntab-residuals54903507908" data-toggle="pill">Residuals</a>
+<a href="#dyntab-residuals95785092982" data-toggle="pill">Residuals</a>
 </li>
 </ul>
 <div class="tab-content">
-<div id="dyntab-count54903507908" class="tab-pane dyntab active">
+<div id="dyntab-count95785092982" class="tab-pane dyntab active">
 <table>
 <thead>
 <tr class="header">
@@ -359,7 +288,7 @@
 </tbody>
 </table>
 </div>
-<div id="dyntab-rows54903507908" class="tab-pane dyntab">
+<div id="dyntab-rows95785092982" class="tab-pane dyntab">
 <table>
 <thead>
 <tr class="header">
@@ -407,7 +336,7 @@
 </tbody>
 </table>
 </div>
-<div id="dyntab-columns54903507908" class="tab-pane dyntab">
+<div id="dyntab-columns95785092982" class="tab-pane dyntab">
 <table>
 <thead>
 <tr class="header">
@@ -457,7 +386,7 @@
 </tbody>
 </table>
 </div>
-<div id="dyntab-residuals54903507908" class="tab-pane dyntab-residuals">
+<div id="dyntab-residuals95785092982" class="tab-pane dyntab-residuals">
 <table>
 <thead>
 <tr class="header">
