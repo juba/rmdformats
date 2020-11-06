@@ -55,6 +55,11 @@ Simple template, no table of contents. CSS heavily inspired from the default one
 
 [![](tools/screenshots/html_docco.png)](https://cdn.rawgit.com/juba/rmdformats/master/resources/examples/html_docco/html_docco_sample.html)
 
+### `lockdown`
+
+`lockdown` is an exact copy of the default RMarkdown `html_document` template, with an added functionality : each you click on a link to get out, you'll see a friendly reminder to wash your hands and wear a mask. Yes, it is a (bad) attempt at a (bad) joke, sorry !
+
+[![](tools/screenshots/lockdown.png)](https://cdn.rawgit.com/juba/rmdformats/master/resources/examples/lockdown/lockdown.html)
 
 
 ## Features and helpers
@@ -73,7 +78,7 @@ Simple template, no table of contents. CSS heavily inspired from the default one
     <th>Lightbox</th>
     <th>Code folding</th>
     <th>Tabsets</th>
-    <th></th>
+    <th>Bad joke</th>
     </tr>
 </thead>
 <tbody>
@@ -142,6 +147,17 @@ Simple template, no table of contents. CSS heavily inspired from the default one
 <td>x</td>
 <td>x</td>
 <td></td>
+</tr>
+<tr>
+<td><strong>lockdown</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>x</td>
 </tr>
 </tbody>
 </table>
