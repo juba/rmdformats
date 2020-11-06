@@ -80,7 +80,7 @@ html_dependency_downcute <- function(embed_fonts = TRUE) {
   htmltools::htmlDependency(name = "downcute",
                  version = "0.1",
                  src = system.file("templates/downcute", package = "rmdformats"),
-                 script = c("downcute.js"),
+                 script = "downcute.js",
                  stylesheet = stylesheets)
 }
 
