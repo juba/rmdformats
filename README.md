@@ -13,7 +13,7 @@ with or without the RStudio IDE.
 
 The package provides several HTML output formats. You can click on an image to see a real HTML output sample.
 
-### `downcute` format
+### `downcute` 
 
 Taken from the [docute](https://docute.org) project theme and its adaptation by [John Coene](https://twitter.com/jdatap). Responsive, with a dynamic table of contents and a dark theme switcher.
 
@@ -21,27 +21,27 @@ Taken from the [docute](https://docute.org) project theme and its adaptation by 
 
 
 
-### `robobook` format
+### `robobook`
 
 Adapted from the [bookdown](https://bookdown.org/) theme, with Roboto family fonts. Fully responsive with dynamic table of contents and collapsible navigation.
 
 [![](tools/screenshots/robobook.png)](https://cdn.rawgit.com/juba/rmdformats/master/resources/examples/robobook/robobook.html)
 
 
-### `material` format
+### `material` 
 
 Format taken from the [Material design theme for Bootstrap 3](https://github.com/FezVrasta/bootstrap-material-design). Document is split into pages at each `<h1>` header, and the table of contents allows an animated navigation between these pages (you can use the `cards: false` preamble parameter to disable the splitting and display all the cards at once).
 
 [![](tools/screenshots/material.png)](https://cdn.rawgit.com/juba/rmdformats/master/resources/examples/material/material.html)
 
 
-### `readthedown` format
+### `readthedown`
 
 Adapted from the corresponding `readtheorg` theme of the [org-html-themes](https://github.com/fniessen/org-html-themes) project, fully responsive with dynamic table of contents and collapsible navigation.
 
 [![](tools/screenshots/readthedown.png)](https://cdn.rawgit.com/juba/rmdformats/master/resources/examples/readthedown/readthedown.html)
 
-### `html_clean` format
+### `html_clean` 
 
 Simple and clean template with dynamic table of contents, very similar to the one from the great [knitrBootstrap package](https://github.com/jimhester/knitrBootstrap) by Jim
 Hester.
@@ -49,7 +49,7 @@ Hester.
 [![](tools/screenshots/html_clean.png)](https://cdn.rawgit.com/juba/rmdformats/master/resources/examples/html_clean/html_clean_sample.html)
 
 
-### `html_docco` format
+### `html_docco` 
 
 Simple template, no table of contents. CSS heavily inspired from the default one of the [docco](https://jashkenas.github.io/docco/) project.
 
