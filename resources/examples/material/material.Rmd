@@ -13,7 +13,7 @@ output:
 ---
 
 
-```{r knitr_init, echo=FALSE, results="asis", cache=FALSE}
+```{r setup, include=FALSE}
 library(knitr)
 library(rmdformats)
 
