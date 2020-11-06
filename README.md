@@ -74,8 +74,7 @@ Simple template, no table of contents. CSS heavily inspired from the default one
     <th>Responsive</th>
     <th>Dynamic TOC</th>
     <th>Dark mode</th>
-    <th>Thumbnails</th>
-    <th>Lightbox</th>
+    <th>Thumbnails / Lightbox</th>
     <th>Code folding</th>
     <th>Tabsets</th>
     <th>Bad joke</th>
@@ -90,7 +89,6 @@ Simple template, no table of contents. CSS heavily inspired from the default one
 <td>x</td>
 <td>x</td>
 <td>x</td>
-<td>x</td>
 <td></td>
 </tr>
 <tr>
@@ -101,14 +99,12 @@ Simple template, no table of contents. CSS heavily inspired from the default one
 <td>x</td>
 <td>x</td>
 <td>x</td>
-<td>x</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>readthedown</strong></td>
 <td>x</td>
 <td>x</td>
-<td></td>
 <td></td>
 <td></td>
 <td>x</td>
@@ -123,7 +119,6 @@ Simple template, no table of contents. CSS heavily inspired from the default one
 <td>x</td>
 <td>x</td>
 <td>x</td>
-<td>x</td>
 <td></td>
 </tr>
 <tr>
@@ -131,7 +126,6 @@ Simple template, no table of contents. CSS heavily inspired from the default one
 <td>x</td>
 <td>x</td>
 <td></td>
-<td>x</td>
 <td>x</td>
 <td>x</td>
 <td>x</td>
@@ -145,12 +139,10 @@ Simple template, no table of contents. CSS heavily inspired from the default one
 <td>x</td>
 <td>x</td>
 <td>x</td>
-<td>x</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>lockdown</strong></td>
-<td></td>
 <td></td>
 <td></td>
 <td></td>
