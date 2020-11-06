@@ -57,7 +57,7 @@ Simple template, no table of contents. CSS heavily inspired from the default one
 
 ### `lockdown`
 
-`lockdown` is an exact copy of the default RMarkdown `html_document` template, with an added functionality : each you click on a link to get out, you'll see a friendly reminder to wash your hands and wear a mask. Yes, it is a (bad) attempt at a (bad) joke, sorry !
+`lockdown` is an exact copy of the default RMarkdown `html_document` template, with an added functionality : each time you click on a link to get out, you'll see a friendly reminder to wash your hands and wear a mask. Yes, it is a (bad) attempt at a (bad) joke, sorry !
 
 [![](tools/screenshots/lockdown.png)](https://cdn.rawgit.com/juba/rmdformats/master/resources/examples/lockdown/lockdown.html)
 
