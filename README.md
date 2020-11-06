@@ -56,14 +56,99 @@ Simple template, no table of contents. CSS heavily inspired from the default one
 [![](tools/screenshots/html_docco.png)](https://cdn.rawgit.com/juba/rmdformats/master/resources/examples/html_docco/html_docco_sample.html)
 
 
+
 ## Features and helpers
 
-Some extra features are available depending on the format :
+### Features matrix
 
-- `robobook` and `readthedown` are fully responsive, with collapsible navigation
-- `robobook`, `html_clean` and `readthedown` provide an automatic and dynamic table of contents
-- `robobook`, `html_clean` and `html_docco` provide automatic thumbnails for figures with lightbox display
-- code folding and tabsets are supported like in RStudio's HTML template
+
+<table>
+<thead>
+    <tr>
+    <th></th>
+    <th>Responsive</th>
+    <th>Dynamic TOC</th>
+    <th>Dark mode</th>
+    <th>Thumbnails</th>
+    <th>Lightbox</th>
+    <th>Code folding</th>
+    <th>Tabsets</th>
+    <th></th>
+    </tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>html_docco</strong></td>
+<td>x</td>
+<td></td>
+<td></td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>html_clean</strong></td>
+<td>x</td>
+<td>x</td>
+<td></td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>readthedown</strong></td>
+<td>x</td>
+<td>x</td>
+<td></td>
+<td></td>
+<td></td>
+<td>x</td>
+<td>x</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>material</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>robobook</strong></td>
+<td>x</td>
+<td>x</td>
+<td></td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>downcute</strong></td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+
+### Helpers
 
 The package also provides a `create.doc()` function as well as RStudio document
 templates to easily generate an empty and ready to use rmarkdown file with
