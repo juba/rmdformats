@@ -1072,3 +1072,17 @@ div.sourceCode .row div {
     color: #333;
     border-bottom: 1px solid #fcfcfc;
 }
+
+/* Leaflet styling */
+
+#main .leaflet .leaflet-control-container a {
+    background-color: #FFF;
+    color: #000;
+    background-image: none;
+    padding: 0;
+}
+  
+#main .leaflet a:hover {
+    text-decoration: none;
+}
+  
