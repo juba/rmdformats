@@ -663,7 +663,7 @@ a {
     cursor:pointer;
 }
 
-#main a {
+#main :not(.leaflet-control) > a {
     background-image: linear-gradient(180deg,#d64a70,#d64a70);
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -674,7 +674,7 @@ a {
     transition: background-position .15s, color .15s;
 }
 
-#main a:hover {
+#main :not(.leaflet-control) > a:hover {
     text-decoration: none;
     background-position: 0 0.3em;
     color: #ffffff;
@@ -1072,17 +1072,3 @@ div.sourceCode .row div {
     color: #333;
     border-bottom: 1px solid #fcfcfc;
 }
-
-/* Leaflet styling */
-
-#main .leaflet .leaflet-control-container a {
-    background-color: #FFF;
-    color: #000;
-    background-image: none;
-    padding: 0;
-}
-  
-#main .leaflet a:hover {
-    text-decoration: none;
-}
-  
