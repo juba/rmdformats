@@ -11,7 +11,7 @@ with or without the RStudio IDE.
 
 ## Formats gallery
 
-The package provides several HTML output formats. You can click on an image to see a real HTML output sample.
+The package provides several HTML output formats. Click on any image to see an HTML output sample.
 
 ### `downcute` 
 
@@ -158,11 +158,11 @@ Simple template, no table of contents. CSS heavily inspired from the default one
 
 ### Helpers
 
-The package also provides a `create.doc()` function as well as RStudio document
+The package also provides RStudio document
 templates to easily generate an empty and ready to use rmarkdown file with
 several configuration directives.
 
-Finally, it also provides the `pilltabs()` helper function, which allows to display a crosstab dynamically. See [one of the output samples](https://cdn.rawgit.com/juba/rmdformats/master/resources/examples/robobook/robobook.html#table) for a live example.
+It also provides the `pilltabs()` helper function, which allows to display a crosstab dynamically. See [one of the output samples](https://cdn.rawgit.com/juba/rmdformats/master/resources/examples/robobook/robobook.html#table) for a live example.
 
 
 ## Installation
@@ -182,53 +182,25 @@ remotes::install_github("juba/rmdformats")
 
 ## Creating a new document
 
-### Within RStudio
+Just create a new `Rmd` file and add the following in your YAML preamble :
 
-Choose `File` > `New File...` > `R Markdown...`, then select `From Template`.
-You should then be able to create a new document from one of the package
-templates.
+```
+---
+output: rmdformats::<template name>
+---
+```
 
-### Without RStudio
+Within RStudio , you can also choose `File` > `New File...` > `R Markdown...`, then select `From Template`. You should then be able to create a new document from one of the package templates.
 
-The `create.doc()` function allows you to create a new directory with a clean
-ready-to-use RMarkdown file. `create.doc()` gets two main arguments :
-
-- `dirname` is the name of the folder and RMarkdown file to be created
-- `format` is the format name (`"html_clean"` or `"html_docco"`)
-
-By default, a `Makefile` file will be created in the new folder for direct
-rendering from the command line.
 
 ## Rendering
 
-### With RStudio
+Rendering from RStudio should be quite simple : just click the `Knit` button.
 
-Rendering from within RStudio should be quite simple : just click the `Knit` button.
-
-### Rendering from R
-
-You can render your document into HTML directly from within R with the
-`render()` function from the `rmarkdown` package :
+As any other RMarkdown document, you can also render your document into HTML directly from R with the `render()` function from the `rmarkdown` package :
 
 ```r
-library(rmarkdown)
-render("mydocument.Rmd")
-```
-
-### Rendering with the Makefile
-
-If you created your `.Rmd` file with the `create.doc()` function, you can then
-generate HTML or PDF files with :
-
-```    
-make html
-make pdf
-```
-
-You can also clean out any generated files and cache with :
-
-```
-make clean
+rmarkdown::render("mydocument.Rmd")
 ```
 
 
