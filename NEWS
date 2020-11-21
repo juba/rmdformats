@@ -2,6 +2,7 @@ rmdformats 0.4.0
 ----------------
 
 * Add downcute, robobook and lockdown templates
+* The create_doc() function has been removed
 * Add embed_fonts argument to readthedown (thanks @harrelfe)
 * Set mathjax URL to mathjax.rstudio.com
 * Add support for code_download (thanks @ltrainstg)
