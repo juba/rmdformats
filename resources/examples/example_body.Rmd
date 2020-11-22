@@ -1,0 +1,117 @@
+
+
+```{r setup, include=FALSE}
+library(knitr)
+library(rmdformats)
+library(DT)
+library(ggplot2)
+library(dplyr)
+
+## Global options
+options(max.print = "75")
+opts_chunk$set(echo = FALSE,
+	             cache = FALSE,
+               prompt = FALSE,
+               tidy = FALSE,
+               comment = NA,
+               message = FALSE,
+               warning = FALSE)
+opts_knit$set(width = 75)
+```
+
+# Code and tables
+
+## Syntax highlighting
+
+Here is a sample code chunk, just to show that syntax highlighting works as expected.
+
+```{r sh, echo=TRUE, eval=TRUE}
+library(palmerpenguins)
+library(glue)
+
+say_hello <- function (name) {
+  glue("Hello, {name} !")
+}
+
+say_hello("world")
+```
+
+
+## Verbatim
+
+Here is the structure of the `penguins` dataset.
+
+```{r penguins_str, echo=TRUE}
+str(penguins)
+```
+
+## Table
+
+Sample table output.
+
+```{r table}
+tab <- penguins %>% 
+  group_by(island) %>% 
+  summarise(
+    bill_length_mean = mean(bill_length_mm, na.rm = TRUE) %>% round(2),
+    bill_depth_mean = mean(bill_depth_mm, na.rm = TRUE) %>% round(2),
+    flipper_length_mean = mean(flipper_length_mm, na.rm = TRUE) %>% round(2),
+  )
+kable(tab)
+```
+
+Sample `DT:datatable` output.
+
+```{r dt}
+DT::datatable(tab)
+```
+
+Here is a crosstab displayed in several different ways with a "pills"
+interface. To do this, just pass your `table()` result to the `pilltabs()`
+function.
+
+```{r pilltabs, results="asis"}
+tab <- table(penguins$sex, penguins$species)
+pilltabs(tab)
+
+```
+
+# Styling
+
+A simple list : 
+
+- one mississipi
+- two mississipi
+- three mississipi
+
+
+A blockquote :
+
+> Oh ! What a nice blockquote you have here. Much more wonderful than a classical Lorem Ipsum, really.
+
+And we could also [include links](https://www.r-project.org/) or simply URLs like this : https://www.r-project.org/
+
+An incredibly complex equation :
+
+$$ y = \sqrt{\frac{1}{x + \beta}} $$
+
+
+# Figures
+
+Here is an histogram.
+
+```{r hist}
+ggplot(data = penguins) +
+    geom_histogram(aes(x = body_mass_g)) +
+    facet_grid(species~.)
+
+```
+
+And a wonderful scatterplot, with a caption.
+
+```{r scatter, fig.cap="This is a scatterplot"}
+ggplot(data = penguins) + 
+  geom_point(aes(x = bill_length_mm, y = bill_depth_mm))
+```
+
+
