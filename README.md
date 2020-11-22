@@ -193,27 +193,16 @@ output: rmdformats::<template name>
 Within RStudio , you can also choose `File` > `New File...` > `R Markdown...`, then select `From Template`. You should then be able to create a new document from one of the package templates.
 
 
-## Rendering
-
-Rendering from RStudio should be quite simple : just click the `Knit` button.
-
-As any other RMarkdown document, you can also render your document into HTML directly from R with the `render()` function from the `rmarkdown` package :
-
-```r
-rmarkdown::render("mydocument.Rmd")
-```
-
 
 ## Credits
 
 - [Magnific popup](http://dimsemenov.com/plugins/magnific-popup/) lightbox plugin
 - The CSS for the `html_docco` format is heavily inspired from the default one of the [docco](https://jashkenas.github.io/docco/) project.
 - The CSS and JavaScript for `readthedown` is adapted from the corresponding `readtheorg` theme of the [org-html-themes](https://github.com/fniessen/org-html-themes) project, which is itself inspired by the [Read the docs](https://readthedocs.org/) [Sphinx](http://sphinx-doc.org/) theme.
-- The CSS and JavaScript for `material` has been taken from the [Material design theme for Bootstrap 3](https://github.com/FezVrasta/bootstrap-material-design) project and its [presentation page](https://fezvrasta.github.io/bootstrap-material-design/)
+- The CSS and JavaScript for `material` has been taken from the [Material design theme for Bootstrap 3](https://github.com/FezVrasta/bootstrap-material-design) project and its [presentation page](https://fezvrasta.github.io/bootstrap-material-design/).
 - The CSS for `robobook` is directly derived from the [bookdown](https://bookdown.org/) project template.
 - The CSS for `downcute` is directly derived from the default theme of the [docute](https://docute.org) project and its adaptation by [John Coene](https://twitter.com/jdatap) for some of its [projects documentation](https://packer.john-coene.com/).
-- JavaScript and HTML code for code folding and tabbed sections are taken from the RStudio's default `rmarkdown` HTML template
-
-The `html_clean` styling and features are very similar to the ones from the great
+- JavaScript and HTML code for code folding and tabbed sections are taken from the RStudio's default `rmarkdown` HTML template.
+- The `html_clean` styling and features are very similar to the ones from the 
 [knitrBootstrap package](https://github.com/jimhester/knitrBootstrap) by Jim
 Hester.
