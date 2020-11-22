@@ -1422,18 +1422,26 @@ button.code-folding-btn {
 
 /* TOC and scrollspy */
 
-#toc ul.nav li ul li {
+#toc > ul li ul li {
     list-style: none;
     max-height: 0px;
     transition: max-height .5s ease-in;
     overflow: hidden;
 }
 
-#toc ul.nav li.active ul li {
+#toc > ul li.active ul li {
     max-height: 40px;
     transition: max-height .5s ease-out;
 }
 
 .page-wrapper {
     height: 100%;
+}
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
 }

@@ -139,6 +139,8 @@ window.addEventListener("load", (event) => {
     // ScrollSpy also requires that we use a Bootstrap nav component.
     $('#toc ul').first().addClass('nav');
     $('body').scrollspy({target: '#toc'});
+    
+    $("body").removeClass("preload");
 
 })
 

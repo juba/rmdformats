@@ -1107,47 +1107,47 @@ button.code-folding-btn {
 
 /* TOC and scrollspy */
 
-#toc ul.nav {
+#toc > ul {
     margin-left: 40px;
     padding-left: 0;
 }
 
-#toc ul.nav li {
+#toc > ul li {
     color: var(--sidebar-link-color);
     font-size: .9rem;
 }
 
-#toc ul.nav li a {
+#toc > ul li a {
     display: block;
     color: var(--sidebar-link-color);
     font-size: .9rem;
     padding-left: 0;
 }
 
-#toc ul.nav li a:hover {
+#toc > ul li a:hover {
     color: var(--sidebar-link-active-color);
     background-color: inherit;
 }
 
-#toc ul.nav > li.active > a,
-#toc ul.nav ul > li.active > a {
+#toc > ul > li.active > a,
+#toc > ul ul > li.active > a {
     font-weight: bold;
 }
 
-#toc ul.nav li ul {
+#toc > ul li ul {
     margin-left: 3px;
     padding-left: 15px;
     border-left: 1px solid var(--toc-border-color);
 }
 
-#toc ul.nav li ul li {
+#toc > ul li ul li {
     list-style: none;
     max-height: 0px;
     transition: max-height .4s ease-in;
     overflow: hidden;
 }
 
-#toc ul.nav li.active ul li  {
+#toc > ul li.active ul li  {
     max-height: 24px;
     transition: max-height .4s ease-out;
 }
@@ -1166,4 +1166,12 @@ button.code-folding-btn {
     font-size: .9rem;
     padding-right: 10px;
     opacity: 0.4; 
+}
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
 }

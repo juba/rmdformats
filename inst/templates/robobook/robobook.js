@@ -12,4 +12,6 @@ $( document ).ready(function() {
     $('#toc ul').first().addClass('nav');
     $('.book-body').scrollspy({target: '#toc'});
 
+    $("body").removeClass("preload");
+
 });
