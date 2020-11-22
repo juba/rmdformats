@@ -28,18 +28,7 @@
   font-weight: 700;
   src: url(fonts/Roboto-Bold.ttf) format('truetype');
 }
-@font-face {
-  font-family: 'Fira Code';
-  font-style: normal;
-  font-weight: 400;
-  src: url(fonts/FiraCode-Regular.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Fira Code';
-  font-style: normal;
-  font-weight: 700;
-  src: url(fonts/FiraCode-SemiBold.ttf) format('truetype');
-}
+
 @font-face {
   font-family: 'Roboto Slab';
   font-style: normal;
