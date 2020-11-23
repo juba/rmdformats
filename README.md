@@ -51,7 +51,7 @@ Hester.
 
 ### `html_docco` 
 
-Simple template, no table of contents. CSS heavily inspired from the default one of the [docco](https://jashkenas.github.io/docco/) project.
+Simple template, no table of contents. CSS heavily inspired from the default one of the [docco](https://ashkenas.com/docco/) project.
 
 [![](tools/screenshots/html_docco.png)](https://cdn.rawgit.com/juba/rmdformats/master/resources/examples/html_docco/html_docco_sample.html)
 
