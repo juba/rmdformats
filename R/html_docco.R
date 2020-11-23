@@ -4,7 +4,7 @@
 #'
 #' @details
 #' The CSS is heavily inspired from the default one of the docco project :
-#' \url{https://jashkenas.github.io/docco/}.
+#' \url{https://ashkenas.com/docco/}.
 #'
 #' @param fig_width Default width (in inches) for figures
 #' @param fig_height Default width (in inches) for figures

@@ -55,5 +55,5 @@ Format for converting from R Markdown to an HTML document.
 }
 \details{
 The CSS is heavily inspired from the default one of the docco project :
-\url{https://jashkenas.github.io/docco/}.
+\url{https://ashkenas.com/docco/}.
 }
