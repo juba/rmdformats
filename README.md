@@ -193,11 +193,44 @@ output: rmdformats::<template name>
 Within RStudio , you can also choose `File` > `New File...` > `R Markdown...`, then select `From Template`. You should then be able to create a new document from one of the package templates.
 
 
+## Options
+
+Depending on the features provided by the template, you can add the following options to your YAML preamble. Look at the template function help page for a valid list :
+
+- `fig_width` : figures width, in inches
+- `fig_height` : figures height, in inches
+- `fig_caption` : toggle figure caption rendering
+- `highlight` : syntax highlighting
+- `thumbnails` : if TRUE, display content images as thumbnails
+- `lightbox` : if TRUE, add lightbox effect to content images
+- `gallery` : if TRUE, add navigation between images when displayed in lightbox
+- `use_bookdown` : if TRUE, will use `bookdown` instead of `rmarkdown` for HTML rendering, thus providing section numbering and [cross references](https://bookdown.org/yihui/bookdown/cross-references.html).
+- `embed_fonts` : if `TRUE` (default), use local files for fonts used in the template instead of links to Google Web fonts. This leads to bigger files but ensures that the fonts are available
+- additional aguments are passed to the base `html_document` RMarkdown template
+
+
+Example preamble :
+
+```
+---
+title: "My document"
+date: "`r Sys.Date()`"
+author: John Doe
+output:
+  rmdformats::readthedown:
+    self_contained: trueé
+    thumbnails: true
+    lightbox: true
+    gallery: false
+    highlight: tango
+---
+```
+
 
 ## Credits
 
-- [Magnific popup](http://dimsemenov.com/plugins/magnific-popup/) lightbox plugin
-- The CSS for the `html_docco` format is heavily inspired from the default one of the [docco](https://jashkenas.github.io/docco/) project.
+- [Magnific popup](https://dimsemenov.com/plugins/magnific-popup/) lightbox plugin
+- The CSS for the `html_docco` format is heavily inspired from the default one of the [docco](https://ashkenas.com/docco/) project.
 - The CSS and JavaScript for `readthedown` is adapted from the corresponding `readtheorg` theme of the [org-html-themes](https://github.com/fniessen/org-html-themes) project, which is itself inspired by the [Read the docs](https://readthedocs.org/) [Sphinx](http://sphinx-doc.org/) theme.
 - The CSS and JavaScript for `material` has been taken from the [Material design theme for Bootstrap 3](https://github.com/FezVrasta/bootstrap-material-design) project and its [presentation page](https://fezvrasta.github.io/bootstrap-material-design/).
 - The CSS for `robobook` is directly derived from the [bookdown](https://bookdown.org/) project template.
