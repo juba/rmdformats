@@ -5,3 +5,4 @@ resources
 inst/sample_file
 \.github/
 ^\.github$
+tools/
