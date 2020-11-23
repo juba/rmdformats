@@ -18,5 +18,6 @@ Imports:
 Suggests:
     questionr
 URL: https://github.com/juba/rmdformats
+BugReports: https://github.com/juba/rmdformats/issues
 RoxygenNote: 7.1.1
 VignetteBuilder: knitr
