@@ -142,6 +142,10 @@ pre > code {
     white-space: pre !important;
 }
 
+code a {
+  color: inherit;
+}
+
 /* menu */
 
 #toc .nav>li.active>a:focus,

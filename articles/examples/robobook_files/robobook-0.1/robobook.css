@@ -1238,6 +1238,13 @@ body {
     font-size: .95em;
 }
 
+.book .book-body .page-wrapper .page-inner section.normal pre a,
+.book .book-body .page-wrapper .page-inner section.normal code a,
+.book .book-body .page-wrapper .page-inner section.normal pre > code a {
+    color: inherit;
+}
+
+
 .book .book-summary code,
 .book .book-body .page-wrapper .page-inner section.normal h1 > code,
 .book .book-body .page-wrapper .page-inner section.normal h2 > code,

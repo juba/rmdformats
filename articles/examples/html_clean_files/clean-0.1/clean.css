@@ -15,6 +15,11 @@ code {
     background-color: rgba(0, 0, 0, 0.04);
 }
 
+code a {
+  color: inherit;
+}
+
+
 pre:not([class]) {
     background-color: white;
 }

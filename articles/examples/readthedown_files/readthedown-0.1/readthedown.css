@@ -440,6 +440,10 @@ code{
     white-space: pre;
 }
 
+#content #main code a {
+  color: inherit;
+  background: none;
+}
 
 #content pre {
     /* background:#f3f6f6; */
