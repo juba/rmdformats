@@ -289,6 +289,10 @@ table .panel-body {
   font-size: 80%;
 }
 
+.dataTables_wrapper {
+    overflow-x: auto;
+}
+
 /* Tables */
 .table {
     width: auto !important;
