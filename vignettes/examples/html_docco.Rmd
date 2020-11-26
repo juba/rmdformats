@@ -2,9 +2,6 @@
 title: "html_docco template example"
 output:
   rmdformats::html_docco:
-    fig_width: 6
-    fig_height: 6
-    highlight: kate
     thumbnails: true
     lightbox: true
     gallery: true
