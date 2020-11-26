@@ -1,6 +1,7 @@
 rmdformats 1.0.1
 ----------------
 
+* Fonts are now downloaded from Google Web Fonts in readthedown if embed is FALSE.
 
 
 rmdformats 1.0.0
