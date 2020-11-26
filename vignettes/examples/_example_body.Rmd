@@ -46,13 +46,7 @@ str(penguins)
 Sample table output.
 
 ```{r table}
-tab <- penguins %>% 
-  group_by(island) %>% 
-  summarise(
-    bill_length_mean = mean(bill_length_mm, na.rm = TRUE) %>% round(2),
-    bill_depth_mean = mean(bill_depth_mm, na.rm = TRUE) %>% round(2),
-    flipper_length_mean = mean(flipper_length_mm, na.rm = TRUE) %>% round(2),
-  )
+tab <- table(penguins$island, penguins$species)
 kable(tab)
 ```
 
@@ -60,7 +54,7 @@ Sample `DT:datatable` output.
 
 ```{r dt}
 library(DT)
-DT::datatable(tab)
+DT::datatable(penguins)
 ```
 
 Here is a crosstab displayed in several different ways with a "pills"
