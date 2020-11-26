@@ -81,6 +81,7 @@ pre, tt, code {
     border: 0;
     padding: 0;
     background: transparent;
+    white-space: pre;
 }
 .page code a {
   color: inherit;
@@ -211,8 +212,18 @@ img.image-lb {
 .dataTables_length,
 .dataTables_filter,
 .dataTables_info,
-.dataTables_paginate {
+.dataTables_paginate,
+.dataTable {
   font-size: 80%;
+}
+
+#content table.dataTable tbody th, 
+#content table.dataTable tbody td {
+  padding: 4px 10px;  
+}
+
+.dataTables_wrapper {
+  overflow-x: auto;
 }
 
 /* Nav pills */
