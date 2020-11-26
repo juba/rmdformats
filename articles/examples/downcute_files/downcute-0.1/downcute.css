@@ -1081,6 +1081,10 @@ button.code-folding-btn {
     color: var(--text-color);
 }
 
+.page-content .dataTables_wrapper {
+    overflow-x: auto;
+}
+
 .page-content .pagedtable-index-current {
     font-weight: bold;
 }

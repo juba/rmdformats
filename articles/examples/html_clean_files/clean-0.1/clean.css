@@ -24,6 +24,10 @@ pre:not([class]) {
     background-color: white;
 }
 
+#content pre code {
+  white-space: pre;
+}
+
 /* Titles */
 
 h1.title {
@@ -147,6 +151,9 @@ img.image-lb {
   font-size: 80%;
 }
 
+.dataTables_wrapper {
+  overflow-x: auto;
+}
 
 
 /* Nav pills */

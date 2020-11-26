@@ -483,18 +483,17 @@ table{
 td{
     vertical-align:top}
 
-table td,table th{
+table:not(.dataTable) td,table:not(.dataTable) th{
     font-size:90%;
     margin:0;
     overflow:visible;
-    padding:8px 16px;
     border:1px solid #e1e4e5;
 }
 
-table thead th{
+#main table thead th {
     font-weight:bold;
-    border-top:3px solid #e1e4e5;
-    border-bottom:1px solid #e1e4e5;
+    border-top: 1px solid #ddd;
+    border-bottom: 2px solid #ddd;
     background-color:white;
 }
 

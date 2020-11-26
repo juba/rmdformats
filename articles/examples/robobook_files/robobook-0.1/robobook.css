@@ -114,10 +114,6 @@ samp {
     font-size: 1em
 }
 
-pre {
-    white-space: pre-wrap
-}
-
 q {
     quotes: "\201C""\201D""\2018""\2019"
 }
@@ -871,6 +867,7 @@ table {
     direction: ltr;
     border: none;
     color: inherit
+    white-space: pre;
 }
 
 .book .book-body .page-wrapper .page-inner section.normal pre {
@@ -1264,6 +1261,7 @@ body {
   border-radius: 6px;
 }
 
+
 .book .book-body .page-wrapper .page-inner section.normal pre.sourceCode {
   background: #f7f7f7;
   border: 1px solid #e1e1e8;
@@ -1414,6 +1412,10 @@ button.code-folding-btn {
 
 .book .book-body .page-wrapper .page-inner section.normal .datatables {
   margin: 2em 0em;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal .dataTables_wrapper {
+  overflow-x: auto;
 }
 
 .book .book-body .page-wrapper .page-inner section.normal .dataTables_length,
