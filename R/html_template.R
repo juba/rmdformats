@@ -8,6 +8,9 @@ html_template <- function(
   ...) {
 
     args <- list(...)
+    ## For compatibility with pkgdown
+    args$template <- NULL
+    
     code_folding <- args[["code_folding"]]
     code_folding <- ifelse(is.null(code_folding), "none", code_folding)
     code_download <- args[["code_download"]]
