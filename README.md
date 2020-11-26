@@ -17,7 +17,7 @@ The package provides several HTML output formats. Click on any image to see an H
 
 Taken from the [docute](https://docute.org) project theme and its adaptation by [John Coene](https://twitter.com/jdatap). Responsive, with a dynamic table of contents and a dark theme switcher.
 
-[![](tools/screenshots/downcute.png)](https://cdn.rawgit.com/juba/rmdformats/master/resources/examples/downcute/downcute.html)
+[![](man/figures/downcute.png)](https://cdn.rawgit.com/juba/rmdformats/master/resources/examples/downcute/downcute.html)
 
 
 
@@ -25,41 +25,41 @@ Taken from the [docute](https://docute.org) project theme and its adaptation by 
 
 Adapted from the [bookdown](https://bookdown.org/) theme, with Roboto family fonts. Fully responsive with dynamic table of contents and collapsible navigation.
 
-[![](tools/screenshots/robobook.png)](https://cdn.rawgit.com/juba/rmdformats/master/resources/examples/robobook/robobook.html)
+[![](man/figures/robobook.png)](https://cdn.rawgit.com/juba/rmdformats/master/resources/examples/robobook/robobook.html)
 
 
 ### `material` 
 
 Format taken from the [Material design theme for Bootstrap 3](https://github.com/FezVrasta/bootstrap-material-design). Document is split into pages at each `<h1>` header, and the table of contents allows an animated navigation between these pages (you can use the `cards: false` preamble parameter to disable the splitting and display all the cards at once).
 
-[![](tools/screenshots/material.png)](https://cdn.rawgit.com/juba/rmdformats/master/resources/examples/material/material.html)
+[![](man/figures/material.png)](https://cdn.rawgit.com/juba/rmdformats/master/resources/examples/material/material.html)
 
 
 ### `readthedown`
 
 Adapted from the corresponding `readtheorg` theme of the [org-html-themes](https://github.com/fniessen/org-html-themes) project, fully responsive with dynamic table of contents and collapsible navigation.
 
-[![](tools/screenshots/readthedown.png)](https://cdn.rawgit.com/juba/rmdformats/master/resources/examples/readthedown/readthedown.html)
+[![](man/figures/readthedown.png)](https://cdn.rawgit.com/juba/rmdformats/master/resources/examples/readthedown/readthedown.html)
 
 ### `html_clean` 
 
 Simple and clean template with dynamic table of contents, very similar to the one from the great [knitrBootstrap package](https://github.com/jimhester/knitrBootstrap) by Jim
 Hester.
 
-[![](tools/screenshots/html_clean.png)](https://cdn.rawgit.com/juba/rmdformats/master/resources/examples/html_clean/html_clean_sample.html)
+[![](man/figures/html_clean.png)](https://cdn.rawgit.com/juba/rmdformats/master/resources/examples/html_clean/html_clean_sample.html)
 
 
 ### `html_docco` 
 
 Simple template, no table of contents. CSS heavily inspired from the default one of the [docco](https://ashkenas.com/docco/) project.
 
-[![](tools/screenshots/html_docco.png)](https://cdn.rawgit.com/juba/rmdformats/master/resources/examples/html_docco/html_docco_sample.html)
+[![](man/figures/html_docco.png)](https://cdn.rawgit.com/juba/rmdformats/master/resources/examples/html_docco/html_docco_sample.html)
 
 ### `lockdown`
 
 `lockdown` is an exact copy of the default RMarkdown `html_document` template, with an added functionality : each time you click on a link to get out, you'll see a friendly reminder to wash your hands and wear a mask. Yes, it is a (bad) attempt at a (bad) joke, sorry !
 
-[![](tools/screenshots/lockdown.png)](https://cdn.rawgit.com/juba/rmdformats/master/resources/examples/lockdown/lockdown.html)
+[![](man/figures/lockdown.png)](https://cdn.rawgit.com/juba/rmdformats/master/resources/examples/lockdown/lockdown.html)
 
 
 ## Features and helpers
