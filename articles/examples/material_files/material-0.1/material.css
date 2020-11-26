@@ -1,0 +1,302 @@
+/* Source : https://fezvrasta.github.io/bootstrap-material-design/index.css */
+
+* {
+    box-sizing: border-box;
+}
+
+.header-panel {
+    background-color: #009587;
+    min-height: 144px;
+    position: relative;
+    z-index: 3;
+}
+
+.header-panel #header {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    min-height: 144px;
+    margin-bottom: 10px;
+}
+
+.header-panel h1 {
+    color: #FFF;
+    font-size: 28px;
+    padding-left: 35px;
+}
+
+.header-panel h4 {
+    font-size: 16px;
+    color: #FFF;
+    padding-left: 35px;
+    margin: 5px 0px;
+}
+
+.header-panel h4.author {
+    font-size: 18px;
+}
+
+.header-panel h4.date {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.menu {
+    overflow: auto;
+    padding: 0;
+}
+
+.menu, .menu * {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.menu ul {
+    padding: 0;
+    margin: 7px 0;
+}
+
+.menu ul li {
+    list-style: none;
+    padding: 20px 0 20px 50px;
+    font-size: 15px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.menu ul li.active {
+    background-color: #dedede;
+    position: relative;
+}
+
+.menu ul li a {
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+}
+
+.pages {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 4;
+    padding: 0;
+    overflow: auto;
+    height: 100%;
+}
+
+.pages > div {
+    padding: 0 5px;
+    padding-top: 64px;
+    margin: 0;
+}
+
+.pages h1 {
+    color: rgb(82, 101, 162);
+    /*font-size: 24px;*/
+    /*font-weight: normal;*/
+    /*margin-top: 5px;*/
+    /*margin-bottom: 60px;*/
+    /*letter-spacing: 1.20000004768372px;*/
+}
+
+.page {
+    transform: translateY(1080px);
+    transition: transform 0 linear;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 16px;
+    margin-left: 1em;
+}
+
+.page.active {
+    transform: translateY(0px);
+    transition: all 0.3s ease-out;
+    visibility: visible;
+    opacity: 1;
+}
+
+.opensource {
+    color: rgba(0, 0, 0, 0.62);
+    position: fixed;
+    margin-top: 50px;
+    margin-left: 50px;
+    z-index: 100;
+}
+
+#source-modal h4 {
+    color: black;
+}
+
+/* Source code */
+
+div.sourceCode {
+    overflow-x: hidden !important;
+}
+
+pre.sourceCode {
+    overflow-x: auto !important;
+}
+
+pre > code {
+    white-space: pre !important;
+}
+
+/* menu */
+
+#toc .nav>li.active>a:focus,
+#toc .nav>li.active>a:hover {
+    background-color: #dedede;
+}
+
+/* pilltabs */
+
+.pages ul.nav {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.chisq-results {
+    font-size: 85%;
+    font-style: italic;
+    margin-top: -1em;
+    margin-bottom: 1em;
+}
+
+/* tabs */
+
+.pages .nav-tabs>li {
+    margin-bottom: 0px !important;
+}
+
+.pages .nav-tabs>li>a {
+    font-weight: 400 !important;
+}
+
+.pages .nav-tabs>li.active>a {
+    background-color: #00A698 !important;
+}
+
+
+/* Espacements */
+
+table {
+    margin: 2em 0 2em 0;
+}
+
+.page h1 {
+    margin-bottom: 1em;
+}
+
+h2, h3, h4 {
+    margin: 1em 0 0.5em 0;
+}
+
+/* Images */
+
+.pages img.image-lb {
+  cursor: pointer;
+  max-width: 100%;
+}
+
+.figure {
+    margin: 1em 0 2em 0;
+    display: table;
+}
+
+img.image-thumb {
+    max-width: 250px;
+}
+
+.figure .panel-footer {
+    padding: 5px 8px;
+}
+
+.figure p.caption {
+    margin: 0px;
+    padding: 0px;
+    font-size: 80%;
+    font-style: italic;
+}
+
+table .figure {
+  margin: 3px;
+}
+
+table .panel-body {
+  padding: 3px;
+}
+
+.mfp-figure {
+  min-width: 250px;
+}
+
+/* Move from top effect */
+/* Source : https://codepen.io/dimsemenov/pen/GAIkt */
+
+.mfp-move-from-top {
+  /* start state */
+  /* animate in */
+  /* animate out */
+}
+.mfp-move-from-top .mfp-content {
+  vertical-align: top;
+}
+.mfp-move-from-top .mfp-with-anim {
+  opacity: 0;
+  transition: all 0.2s;
+  transform: translateY(-100px);
+}
+.mfp-move-from-top.mfp-bg {
+  opacity: 0;
+  transition: all 0.2s;
+}
+.mfp-move-from-top.mfp-ready .mfp-with-anim {
+  opacity: 1;
+  transform: translateY(50px);
+}
+.mfp-move-from-top.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+.mfp-move-from-top.mfp-removing .mfp-with-anim {
+  transform: translateY(-50px);
+  opacity: 0;
+}
+.mfp-move-from-top.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+/* Data tables */
+
+.datatables {
+  margin: 2em 0em;
+}
+
+.datatables label {
+  color: #333;
+  font-size: 90%;
+  font-weight: 300;
+}
+
+.dataTables_length,
+.dataTables_filter,
+.dataTables_info,
+.dataTables_paginate {
+  font-size: 80%;
+}
+
+/* Tables */
+.table {
+    width: auto !important;
+    overflow-x: auto;
+}
+
+.table th,
+.table td {
+  padding: 8px 15px;
+}
+
+.pagedtable-index-current {
+  font-weight: bold;
+}
+

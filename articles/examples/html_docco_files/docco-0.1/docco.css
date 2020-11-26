@@ -1,0 +1,253 @@
+/* html_docco CSS */
+/* Inspired form the Docco project stylesheet : https://jashkenas.github.io/docco/ */
+
+/* Fonts */
+
+@import url(https://fonts.googleapis.com/css?family=Rambla);
+
+body {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    background: #f0f0f0;
+    margin: 0;
+}
+
+/* Titles */
+
+h1, h2, h3, h4, h5, h6 {
+  color: #112233;
+  font-weight: 700;
+  font-family: "Rambla";
+  text-transform: uppercase;
+  line-height: 1em;
+  margin-top: 50px;
+  font-size: 1.9em;
+}
+h1.title {
+    margin: 0 0 50px 0;
+    text-align: center;
+    font-size: 2.2em;
+
+}
+h2 {
+    font-size: 1.3em;
+}
+
+a {
+  color: #000;
+}
+
+blockquote {
+  border-left: 5px solid #ccc;
+  margin-left: 0;
+  padding: 1px 0 1px 1em;
+}
+.page blockquote p {
+    font-family: Menlo, Consolas, Monaco, monospace;
+    font-size: 14px; line-height: 19px;
+    color: #999;
+    margin: 10px 0 0;
+    white-space: pre-wrap;
+}
+
+/* Code */
+
+/* Code folding button */
+div.sourceCode .row,
+div.sourceCode .row div {
+    padding: 0;
+    margin: 0;
+    overflow-y: visible;
+}
+
+pre, tt, code {
+    font-family: Menlo, Consolas, Monaco, monospace;
+    display: inline-block;
+    border: 1px solid #EAEAEA;
+    background: #f8f8f8;
+    color: #555;
+    padding: 0 5px;
+}
+.page pre {
+    margin: 0.5em 0 0 0;
+    width: 100%;
+    padding: 1.5% 2%;
+    background: #fcfcfc;
+    -moz-box-shadow:    inset 0 0 10px rgba(0,0,0,0.1);
+    -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+    box-shadow:         inset 0 0 10px rgba(0,0,0,0.1);
+    overflow-x: auto;
+}
+.page pre code {
+    border: 0;
+    padding: 0;
+    background: transparent;
+}
+
+
+
+/* Layout */
+
+.main-container {
+    max-width: 940px;
+    margin: 0 auto;
+    background: #f0f0f0;
+    overflow: hidden;
+}
+.page {
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: #fff;
+    font-size: 17px;
+    line-height: 26px;
+    -moz-box-shadow:    0 0 10px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow:         0 0 10px rgba(0,0,0,0.1);
+}
+.page p {
+    color: #30404f;
+    margin: 26px 0;
+}
+
+
+/* Images */
+
+img {
+    max-width:100%;
+    height: auto;
+    margin: 5px auto 50px auto;
+}
+
+table img {
+  margin: 3px;
+}
+
+img.image-thumb {
+    max-width: 250px;
+    border: 1px solid #CCC;
+    padding: 2px;
+    display: table;
+}
+
+img.image-lb {
+  cursor: pointer;
+}
+
+.figure {
+    margin: 5px auto 30px auto;
+    display: table;
+}
+
+.figure img {
+    margin-bottom: 5px;
+}
+
+.page .figure p.caption {
+    text-align: center;
+    font-style: italic;
+    font-size: 80%;
+    margin: 10px 0px;
+}
+
+.mfp-figure {
+  min-width: 250px;
+}
+
+
+/* Tables */
+
+.table {
+    margin: 25px auto 35px auto;
+    width: auto !important;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #CCC;
+    /* box-shadow: 0 0 0.5em #ddd;  */
+    font-size: 80%;
+}
+
+
+.table thead>tr {
+    background: #f0f0f0;
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+}
+
+.table thead>tr>th {
+    font-weight: normal;
+    padding: 3px 15px !important;
+}
+
+.table tbody>tr>td {
+    padding: 3px 15px !important;
+}
+
+.table tbody tr.even {
+    background: #f7f7f7;
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+}
+
+.table tr.odd {
+    background: #FFF;
+}
+
+.table tbody tr:hover {
+    background: #f5f5f5;
+    transition: all 0.1s ease-in-out;
+}
+
+
+.tab-content .table {
+    margin-top: 0px;
+}
+
+/* Data tables */
+
+.datatables {
+  margin: 2em 0em;
+}
+
+.dataTables_length,
+.dataTables_filter,
+.dataTables_info,
+.dataTables_paginate {
+  font-size: 80%;
+}
+
+/* Nav pills */
+
+.nav-pills {
+    margin: 20px auto 10px auto;
+    font-size: 70%;
+    display: table;
+}
+
+.nav-pills li a {
+    padding: 3px 12px !important;
+    margin: 0px 3px !important;
+}
+
+.nav-pills li.active a,
+.nav-pills li.active a:hover,
+.nav-pills li.active a:focus
+{
+    background-color: #888;
+}
+
+.nav-pills li.active a:hover {
+    color: #FFF;
+}
+
+
+/* Chi-squared results */
+
+.page p.chisq-results {
+    margin: -20px auto 35px auto;
+    font-size: 70%;
+    font-style: italic;
+    display: table;
+}
+
+.pagedtable-index-current {
+  font-weight: bold;
+}
+

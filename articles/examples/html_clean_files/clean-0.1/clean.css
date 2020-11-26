@@ -1,0 +1,255 @@
+/* Fonts */
+
+body {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.main-container {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+code {
+    color: inherit;
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+pre:not([class]) {
+    background-color: white;
+}
+
+/* Titles */
+
+h1.title {
+    font-size: 45px;
+    margin-bottom: 40px;
+    border: none;
+}
+
+h1, h2, h3 {
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+h1 {
+    padding-bottom: 9px;
+    margin: 40px 0px 20px;
+    border-bottom: 1px solid #EEE;
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 30px;
+    margin: 30px 0px 15px 0px !important;
+}
+
+/* Images */
+
+img {
+    margin: 5px 10px 50px 10px;
+    max-width:100%;
+    height: auto;
+}
+
+table img {
+    margin: 3px;
+}
+
+img.image-thumb {
+    max-width: 250px;
+    border: 1px solid #CCC;
+    padding: 2px;
+}
+
+img.image-lb {
+  cursor: pointer;
+}
+
+.figure {
+    margin: 5px 10px 30px 0px;
+    display: table;
+}
+
+.figure img {
+    margin-bottom: 5px;
+}
+
+.figure p.caption {
+    text-align: center;
+    font-style: italic;
+    font-size: 90%;
+}
+
+.mfp-figure {
+  min-width: 250px;
+}
+
+/* Tables */
+
+.table {
+    margin: 25px 0px 35px 20px;
+    width: auto !important;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #CCC;
+    box-shadow: 0 0 0.5em #ddd;
+}
+
+
+.table thead>tr {
+    background: #eaeaea;
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+}
+
+.table thead>tr>th {
+    padding: 3px 15px !important;
+}
+
+.table tbody>tr>td {
+    padding: 3px 15px !important;
+}
+
+.table tbody tr.even {
+    background: #f5f5f5;
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+}
+
+.table tr.odd {
+    background: #FFF;
+}
+
+.table tbody tr:hover {
+    background: #e9f0fb;
+    transition: all 0.1s ease-in-out;
+}
+
+
+.tab-content .table {
+    margin-top: 0px;
+}
+
+/* Data tables */
+
+.datatables {
+  margin: 2em 0em;
+}
+
+.dataTables_length,
+.dataTables_filter,
+.dataTables_info,
+.dataTables_paginate {
+  font-size: 80%;
+}
+
+
+
+/* Nav pills */
+
+.nav-pills {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.nav-pills > li > a {
+    padding: 3px 12px !important;
+    margin-right: 5px !important;
+}
+
+/* Chi-squared results */
+
+.chisq-results {
+    margin: -20px 0px 35px 20px;
+    font-size: 90%;
+    font-style: italic;
+}
+
+
+/* Table of contents */
+/* Source : http://projects.jga.me/toc/ */
+
+#toc {
+    height: auto;
+    width: 12%;
+    position: fixed;
+    background: #FFF;
+    padding: 20px 5px 20px 5px;
+    color: #777;
+    font-size: 90%;
+}
+
+#toc ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#toc li {
+    margin: 0 0 2px 0;
+    padding: 0;
+}
+
+#toc a {
+    color: #999;
+    text-decoration: none;
+    display: block;
+    padding: 3px 5px 3px 20px;
+}
+
+#toc ul ul li a {
+    padding: 0px 5px 0px 40px;
+    font-size: 90%;
+}
+
+#toc .active > a, #toc a:hover {
+    color: #3388E0;
+    border-left: 2px solid #3388E0;
+    margin-left: -2px;
+    background-color: #FFF;
+}
+
+#toc ul.nav li ul li {
+    display: none;
+}
+
+#toc ul.nav li ul li ul li {
+    display: none;
+}
+
+#toc ul.nav li.active ul li {
+    display: inline;
+}
+
+#toc ul.nav li.active ul li ul li {
+    display: inline;
+}
+
+#toc .close {
+    margin-right: -20px;
+    display: block;
+    z-index: 1000;
+}
+
+/* Tabset */
+
+.tab-content {
+    margin-top: 1em;
+}
+
+/* Code folding buttons */
+
+div.sourceCode .row,
+div.sourceCode .row div {
+    padding: 0;
+    margin: 0;
+    overflow-y: visible;
+}
+
+.btn-group {
+    margin-top: 0.5em;
+}
+
+.pagedtable-index-current {
+  font-weight: bold;
+}
