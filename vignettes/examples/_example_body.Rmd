@@ -3,9 +3,7 @@
 ```{r setup, include=FALSE}
 library(knitr)
 library(rmdformats)
-library(DT)
-library(ggplot2)
-library(dplyr)
+
 
 ## Global options
 options(max.print = "75")
@@ -26,11 +24,8 @@ opts_knit$set(width = 75)
 Here is a sample code chunk, just to show that syntax highlighting works as expected.
 
 ```{r sh, echo=TRUE, eval=TRUE}
-library(palmerpenguins)
-library(glue)
-
 say_hello <- function (name) {
-  glue("Hello, {name} !")
+  paste("Hello,", name, "!")
 }
 
 say_hello("world")
@@ -42,6 +37,7 @@ say_hello("world")
 Here is the structure of the `penguins` dataset.
 
 ```{r penguins_str, echo=TRUE}
+library(palmerpenguins)
 str(penguins)
 ```
 
@@ -63,6 +59,7 @@ kable(tab)
 Sample `DT:datatable` output.
 
 ```{r dt}
+library(DT)
 DT::datatable(tab)
 ```
 
@@ -101,6 +98,7 @@ $$ y = \sqrt{\frac{1}{x + \beta}} $$
 Here is an histogram.
 
 ```{r hist}
+library(ggplot2)
 ggplot(data = penguins) +
     geom_histogram(aes(x = body_mass_g)) +
     facet_grid(species~.)
