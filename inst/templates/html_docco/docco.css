@@ -82,7 +82,9 @@ pre, tt, code {
     padding: 0;
     background: transparent;
 }
-
+.page code a {
+  color: inherit;
+}
 
 
 /* Layout */
