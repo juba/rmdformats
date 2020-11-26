@@ -73,7 +73,11 @@ readthedown <- function(fig_width = 8,
 # readthedown js and css
 html_dependency_readthedown <- function(embed_fonts = TRUE) {
   stylesheets <- "readthedown.css"
-  if (embed_fonts) stylesheets <- c(stylesheets, "readthedown_fonts.css")
+  if (embed_fonts) {
+    stylesheets <- c(stylesheets, "readthedown_fonts_embed.css")
+  } else {
+    stylesheets <- c(stylesheets, "readthedown_fonts_download.css")
+  }
   htmltools::htmlDependency(name = "readthedown",
                  version = "0.1",
                  src = system.file("templates/readthedown", package = "rmdformats"),
