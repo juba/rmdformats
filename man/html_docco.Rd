@@ -8,7 +8,7 @@ html_docco(
   fig_width = 6,
   fig_height = 6,
   fig_caption = TRUE,
-  highlight = "pygments",
+  highlight = "kate",
   lightbox = TRUE,
   thumbnails = TRUE,
   gallery = FALSE,
