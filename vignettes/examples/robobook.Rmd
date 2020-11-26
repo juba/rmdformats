@@ -8,7 +8,13 @@ output:
     self_contained: true
     thumbnails: false
     lightbox: true
+pkgdown:
+  as_is: true    
 ---
 
-```{r, child=c('../example_body.Rmd')}
+
+```{r, results="asis", echo=FALSE, message=FALSE, warning=FALSE}
+res <- knitr::knit_child('_example_body.Rmd', quiet = TRUE)
+cat(res, sep = '\n')
 ```
+

@@ -1,5 +1,5 @@
 ---
-title: "Sample document"
+title: "material template example"
 output:
   rmdformats::material:
     highlight: kate
@@ -10,11 +10,17 @@ output:
     fig_width: 4
     fig_height: 4
     df_print: kable
+pkgdown:
+  as_is: true    
 ---
 
 
-```{r, child=c('../example_body.Rmd')}
+
+```{r, results="asis", echo=FALSE, message=FALSE, warning=FALSE}
+res <- knitr::knit_child('_example_body.Rmd', quiet = TRUE)
+cat(res, sep = '\n')
 ```
+
 
 
 # Tabbed sections

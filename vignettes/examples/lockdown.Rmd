@@ -1,8 +1,9 @@
 ---
 title: "lockdown template example"
 date: "`r Sys.Date()`"
-output:
-  rmdformats::lockdown
+output: rmdformats::lockdown
+pkgdown:
+  as_is: true  
 ---
 
 
