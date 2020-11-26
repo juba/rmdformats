@@ -1,8 +1,11 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
-resources
 ^\.travis\.yml$
 inst/sample_file
 \.github/
 ^\.github$
 tools/
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
+vignettes/examples

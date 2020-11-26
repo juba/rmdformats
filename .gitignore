@@ -11,3 +11,5 @@
 *.Rproj
 inst/doc
 inst/sample_file/*.html
+docs
+vignettes/examples/*.html

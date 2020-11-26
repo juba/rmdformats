@@ -1,0 +1,18 @@
+url: https://juba.github.io/rmdformats/
+template:
+  params:
+    bootswatch: cosmo
+reference:
+- title: Templates
+  contents:
+  - '`html_clean`'
+  - '`html_docco`'
+  - '`readthedown`'
+  - '`material`'
+  - '`robobook`'
+  - '`downcute`'
+  - '`lockdown`'
+- title: Helpers
+  contents:
+  - '`pilltabs`'
+  - '`print.pilltabs`'
