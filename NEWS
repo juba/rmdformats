@@ -4,7 +4,9 @@ rmdformats 1.0.1
 * Fix DT display overflow
 * Fix <pre> wrapping
 * Remove link styling in <code>
-* Fonts are now downloaded from Google Web Fonts in readthedown if embed is FALSE.
+* Fonts are now downloaded from Google Web Fonts in readthedown if embed is FALSE
+* Fix subtitle in readthedown
+* Remove ellipsis in TOC in robobook
 
 
 rmdformats 1.0.0
