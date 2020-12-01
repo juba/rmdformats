@@ -91,47 +91,45 @@ h1,h2,h3,h4,h5,h6,legend{
 }
 
 h1{
-    font-size:200%;
+    font-size:2rem;
     margin-top: 1em;
     margin-bottom: 1.2em;
 }
 
 h1.title{
-  font-size: 250%;
+  font-size: 2.5rem;
   margin-top: 0px;
 }
 
-.subtitle{
-    font-size:95%; /* of h1 */
+h1.subtitle{
+    margin-top: -1em;
+    margin-bottom: 2em;
+    font-size: 1.6rem;
 }
 
 h2{
   margin-top: 1em;
   margin-bottom: 1.2em;
-  font-size:160%;
+  font-size:1.6rem;
 }
 
 h3{
   margin-top: 1em;
   margin-bottom: 1.2em;
-  font-size:125%;
+  font-size:1.25rem;
 }
 
 h4{
   margin-top: 1em;
   margin-bottom: 1.2em;
-  font-size:115%;
+  font-size:1.15rem;
 }
 
 h5{
-    font-size:110%;
+    font-size:1.1rem;
 }
 
-h6{
-    font-size:100%;
-}
-
-h4,h5,h6{
+h4,h5 {
     font-weight:300;
 }
 
