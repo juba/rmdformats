@@ -752,6 +752,8 @@ table {
     page-break-inside: avoid
 }
 
+.book .book-body .page-wrapper .page-inner section.normal table th,
+.book .book-body .page-wrapper .page-inner section.normal table td {
 .book .book-body .page-wrapper .page-inner section.normal .table th,
 .book .book-body .page-wrapper .page-inner section.normal .table td {
     padding: 6px 15px;
@@ -1108,6 +1110,7 @@ body {
 }
 
 
+.book .book-body .page-wrapper .page-inner section.normal table,
 .book .book-body .page-wrapper .page-inner section.normal .table,
 .book .book-body .page-wrapper .page-inner section.normal .pagedtable-wrapper,
 .book .book-body .page-wrapper .page-inner section.normal .dataTables_wrapper {
