@@ -97,8 +97,8 @@ h1{
 }
 
 h1.title{
-  font-size: 2.5rem;
-  margin-top: 0px;
+  font-size: 2.3rem;
+  margin-top: 1em;
 }
 
 h1.subtitle{
@@ -470,7 +470,7 @@ code{
   margin-bottom: 1.8em;
 }
 
-table{
+#main table{
     border-collapse:collapse;
     border-spacing:0;
     empty-cells:show;
@@ -478,11 +478,15 @@ table{
     border-bottom:1px solid #e1e4e5;
 }
 
-td{
-    vertical-align:top}
+#main table:not(.dataTable) {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
 
 table:not(.dataTable) td,table:not(.dataTable) th{
     font-size:90%;
+    padding: 8px;
     margin:0;
     overflow:visible;
     border:1px solid #e1e4e5;
