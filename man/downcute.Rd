@@ -8,7 +8,6 @@ downcute(
   fig_width = 8,
   fig_height = 5,
   fig_caption = TRUE,
-  highlight = NULL,
   lightbox = FALSE,
   thumbnails = FALSE,
   gallery = FALSE,
@@ -27,11 +26,6 @@ downcute(
 \item{fig_height}{Default width (in inches) for figures}
 
 \item{fig_caption}{\code{TRUE} to render figures with captions}
-
-\item{highlight}{Syntax highlighting style. Supported styles include
-"default", "tango", "pygments", "kate", "monochrome", "espresso",
-"zenburn", "haddock", and "textmate". Pass \code{NULL} to prevent syntax
-highlighting.}
 
 \item{lightbox}{if TRUE, add lightbox effect to content images}
 
@@ -60,5 +54,7 @@ R Markdown output format to pass to \code{\link[rmarkdown]{render}}
 Format for converting from R Markdown to an HTML document.
 }
 \details{
-CSS taken from the docute project and adaptations made by John Coene.
+CSS taken from the docute project and adaptations made by John Coene. Please
+note that as syntax highlighting is done with the Prism JavaScript library,
+using the `highlight` argument here will have no effect.
 }
