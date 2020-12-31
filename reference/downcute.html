@@ -151,7 +151,6 @@
   fig_width <span class='op'>=</span> <span class='fl'>8</span>,
   fig_height <span class='op'>=</span> <span class='fl'>5</span>,
   fig_caption <span class='op'>=</span> <span class='cn'>TRUE</span>,
-  highlight <span class='op'>=</span> <span class='cn'>NULL</span>,
   lightbox <span class='op'>=</span> <span class='cn'>FALSE</span>,
   thumbnails <span class='op'>=</span> <span class='cn'>FALSE</span>,
   gallery <span class='op'>=</span> <span class='cn'>FALSE</span>,
@@ -178,13 +177,6 @@
     <tr>
       <th>fig_caption</th>
       <td><p><code>TRUE</code> to render figures with captions</p></td>
-    </tr>
-    <tr>
-      <th>highlight</th>
-      <td><p>Syntax highlighting style. Supported styles include
-"default", "tango", "pygments", "kate", "monochrome", "espresso",
-"zenburn", "haddock", and "textmate". Pass <code>NULL</code> to prevent syntax
-highlighting.</p></td>
     </tr>
     <tr>
       <th>lightbox</th>
@@ -233,7 +225,9 @@ highlighting.</p></td>
     <p>R Markdown output format to pass to <code><a href='https://rdrr.io/pkg/rmarkdown/man/render.html'>render</a></code></p>
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>CSS taken from the docute project and adaptations made by John Coene.</p>
+    <p>CSS taken from the docute project and adaptations made by John Coene. Please
+note that as syntax highlighting is done with the Prism JavaScript library,
+using the `highlight` argument here will have no effect.</p>
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
