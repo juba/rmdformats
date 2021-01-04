@@ -96,15 +96,24 @@ h1{
     margin-bottom: 1.2em;
 }
 
-h1.title{
-  font-size: 2.3rem;
+h1.title {
   margin-top: 1em;
 }
+h1.title,
+h1.title p {
+  font-size: 2.3rem;
+  line-height: 2.7rem;
+}
 
-h1.subtitle{
+
+h1.subtitle {
     margin-top: -1em;
     margin-bottom: 2em;
+}
+h1.subtitle,
+h1.subtitle p {
     font-size: 1.6rem;
+    line-height: 2rem;
 }
 
 h2{
@@ -160,7 +169,7 @@ body{
     min-height:100%;
 }
 
-p{
+p {
     font-size:16px;
     line-height:24px;
     margin:0px 0px 24px 0px;
