@@ -5,12 +5,12 @@
 #' chi-squared residuals tables.
 #'
 #' @param tab a two dimensions table object
-#' @param count wether or not to the display the count table
-#' @param rows wether or not to the display the row percentages table
-#' @param cols wether or not to the display the column percentages table
-#' @param chisq wether or not to the display the table chi-squared test results
-#' @param resid wether or not to the display the chi-squared residuals table
-#' @param row.names wether or not to display the table row names
+#' @param count whether or not to display the count table
+#' @param rows whether or not to display the row percentages table
+#' @param cols whether or not to display the column percentages table
+#' @param chisq whether or not to display the table chi-squared test results
+#' @param resid whether or not to display the chi-squared residuals table
+#' @param row.names whether or not to display the table row names
 #' @details
 #' The function is intended to be called inside an rmarkdown document.
 #' @return

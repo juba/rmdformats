@@ -17,17 +17,17 @@ pilltabs(
 \arguments{
 \item{tab}{a two dimensions table object}
 
-\item{count}{wether or not to the display the count table}
+\item{count}{whether or not to display the count table}
 
-\item{rows}{wether or not to the display the row percentages table}
+\item{rows}{whether or not to display the row percentages table}
 
-\item{cols}{wether or not to the display the column percentages table}
+\item{cols}{whether or not to display the column percentages table}
 
-\item{chisq}{wether or not to the display the table chi-squared test results}
+\item{chisq}{whether or not to display the table chi-squared test results}
 
-\item{resid}{wether or not to the display the chi-squared residuals table}
+\item{resid}{whether or not to display the chi-squared residuals table}
 
-\item{row.names}{wether or not to display the table row names}
+\item{row.names}{whether or not to display the table row names}
 }
 \value{
 No value is returned.
