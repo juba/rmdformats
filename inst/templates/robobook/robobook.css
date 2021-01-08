@@ -1086,8 +1086,7 @@ body {
 }
 
 .book .book-body .page-inner section.normal h1 .header-section-number {
-  display: block;
-  font-size: 0.8em;
+  margin-right: .2em;
 }
 
 .book .book-body .page-inner section.normal h1.title {
