@@ -6,7 +6,7 @@ rmdformats 1.0.1
 * Remove link styling in <code>
 * Fonts are now downloaded from Google Web Fonts in readthedown if embed is FALSE
 * Fix subtitle in readthedown
-* Remove ellipsis in TOC in robobook
+* Remove ellipsis and add word-wrap in TOC in robobook
 * Exclude leaflet tiles from lightbox (thanks @thatchersj)
 
 
