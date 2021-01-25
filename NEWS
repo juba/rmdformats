@@ -1,6 +1,7 @@
 rmdformats 1.0.2
 ----------------
 
+* Add overflow to wide tables in robobook and downcute (thanks @octmedina)
 
 
 rmdformats 1.0.1
