@@ -506,6 +506,11 @@ a {
     margin: 15px 0
 }
 
+.page-content .table-wrapper {
+    overflow-x: auto;
+    margin-bottom: 3rem;
+}
+
 .page-content table {
     width: 100%;
     border-spacing: 0;
@@ -1059,7 +1064,7 @@ button.code-folding-btn {
 /* Table */
 
 .page-content table {
-    margin: .5rem 0 3rem;
+    margin: .5rem 0 0;
 
 }
 
@@ -1070,7 +1075,7 @@ button.code-folding-btn {
 }
 
 .page-content .datatables {
-    margin: 2em 0em;
+    margin: 2em 0 0;
 }
 
 .page-content .dataTables_wrapper .dataTables_length,

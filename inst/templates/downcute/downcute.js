@@ -136,6 +136,9 @@ window.addEventListener("load", (event) => {
 
     })
 
+    // Make tables responsive
+    $(".page-content table").wrap("<div class='table-wrapper'></div>");
+
     // ScrollSpy also requires that we use a Bootstrap nav component.
     $('#toc ul').first().addClass('nav');
     $('body').scrollspy({target: '#toc'});

@@ -8,6 +8,9 @@ $( document ).ready(function() {
       $(".book").toggleClass("with-summary");
     });
 
+    // Make tables responsive
+    $(".book-body table").wrap("<div class='table-wrapper'></div>");
+
     // ScrollSpy also requires that we use a Bootstrap nav component.
     $('#toc ul').first().addClass('nav');
     $('.book-body').scrollspy({target: '#toc'});
