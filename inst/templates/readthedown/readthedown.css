@@ -805,6 +805,12 @@ hr{
     text-decoration: none;
 }
 
+#sidebar #postamble a {
+  display: inline;
+  padding: 0 2px;
+  font-size: 100%;
+}
+
 #sidebar a:hover{
     background-color:#4e4a4a;
     cursor:pointer}
