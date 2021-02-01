@@ -175,9 +175,11 @@ p {
     margin:0px 0px 24px 0px;
 }
 
-#content ul {
+#content ul,
+#content ol {
   font-size: 16px;
 }
+
 
 #content p {
   margin-bottom: 16px;
