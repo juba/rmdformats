@@ -1,6 +1,7 @@
 rmdformats 1.0.2
 ----------------
 
+* Fix position of search and pagination in DT tables in readthedown (thanks @heseber)
 * Fix <ol> font size in readthedown (thanks @albertostefanelli)
 * Fix footnote links presentation in readthedown postamble (thanks @albertostefanelli)
 * Add overflow to wide tables in robobook and downcute (thanks @octmedina)
