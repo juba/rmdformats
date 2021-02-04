@@ -528,6 +528,11 @@ table tr:nth-child(2n) {
   overflow-x: auto;
 }
 
+.dataTables_wrapper .table-wrapper {
+  margin-top: 3em;
+}
+
+
 #main .dataTables_wrapper a {
   background-image: none;
   padding: .2em;
