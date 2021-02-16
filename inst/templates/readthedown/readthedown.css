@@ -495,7 +495,8 @@ code{
   margin-bottom: 20px;
 }
 
-table:not(.dataTable) td,table:not(.dataTable) th{
+#main table:not(.dataTable) td,
+#main table:not(.dataTable) th {
     font-size:90%;
     padding: 8px;
     margin:0;
@@ -507,6 +508,9 @@ table:not(.dataTable) td,table:not(.dataTable) th{
     font-weight:bold;
     border-top: 1px solid #ddd;
     border-bottom: 2px solid #ddd;
+}
+
+#main table:not(.dataTable) thead th {
     background-color:white;
 }
 
@@ -516,11 +520,11 @@ table caption{
     padding:1em 0;
 }
 
-table tr:nth-child(2n-1) {
+table:not(.dataTable) tr:nth-child(2n-1) {
     background-color:#f3f6f6;
 }
 
-table tr:nth-child(2n) {
+table:not(.dataTable) tr:nth-child(2n) {
     background-color:white;
 }
 
