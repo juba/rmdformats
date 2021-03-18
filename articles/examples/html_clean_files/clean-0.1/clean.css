@@ -97,8 +97,8 @@ img.image-lb {
 /* Tables */
 
 .table {
-    margin: 25px 0px 35px 20px;
-    width: auto !important;
+    margin: 25px 0px 35px 0px;
+    width: auto;
     border-collapse: collapse;
     border-spacing: 0;
     border: 1px solid #CCC;
