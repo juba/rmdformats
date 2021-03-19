@@ -1,6 +1,7 @@
 rmdformats 1.0.2
 ----------------
 
+* Fix TOC not working in robobook and downcute when dots in headings (thanks @jrothsc)
 * Fix position of search and pagination in DT tables in readthedown (thanks @heseber)
 * Fix <ol> font size in readthedown (thanks @albertostefanelli)
 * Fix footnote links presentation in readthedown postamble (thanks @albertostefanelli)
