@@ -1335,6 +1335,14 @@ button.code-folding-btn {
   font-weight: bold;
 }
 
+/* paged tables */
+
+.book .book-body .page-inner section.normal .pagedtable .table th,
+.book .book-body .page-inner section.normal .pagedtable .table td {
+  padding: 5px;
+}
+
+
 /* TOC and scrollspy */
 
 #toc > ul li ul li {

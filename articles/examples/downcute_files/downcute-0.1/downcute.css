@@ -1114,6 +1114,11 @@ button.code-folding-btn {
     border-top: 1px solid var(--border-color);
 }
 
+.pagedtable .table th,
+.pagedtable .table td {
+    padding: 5px;
+}
+
 /* TOC and scrollspy */
 
 #toc > ul {
