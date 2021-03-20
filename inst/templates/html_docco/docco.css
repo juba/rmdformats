@@ -161,7 +161,7 @@ img.image-lb {
 
 .table {
     margin: 25px auto 35px auto;
-    width: auto !important;
+    width: auto;
     border-collapse: collapse;
     border-spacing: 0;
     border: 1px solid #CCC;
@@ -175,13 +175,13 @@ img.image-lb {
     box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
 }
 
-.table thead>tr>th {
+.table th {
     font-weight: normal;
-    padding: 3px 15px !important;
+    padding: 3px 15px;
 }
 
-.table tbody>tr>td {
-    padding: 3px 15px !important;
+.table td {
+    padding: 3px 15px;
 }
 
 .table tbody tr.even {
@@ -224,6 +224,24 @@ img.image-lb {
 
 .dataTables_wrapper {
   overflow-x: auto;
+}
+
+/* Paged table */
+
+
+.pagedtable {
+  overflow: auto;
+}
+
+.pagedtable table {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+
+.pagedtable .table th,
+.pagedtable .table td {
+    padding: 5px;
 }
 
 /* Nav pills */
