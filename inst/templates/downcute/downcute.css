@@ -1048,6 +1048,7 @@ button.code-folding-btn {
 .page-content .figure {
     margin: 5px 10px 30px 0px;
     display: table;
+    text-align: center;
 }
 
 .page-content .figure img {
@@ -1055,7 +1056,6 @@ button.code-folding-btn {
 }
 
 .page-content .figure p.caption {
-    text-align: center;
     font-style: italic;
     font-size: 90%;
     margin-top: 0;

@@ -48,6 +48,7 @@ img.image-lb {
 .figure {
     margin: 5px 10px 30px 0px;
     display: table;
+    text-align: center;
 }
 
 .figure img {
@@ -55,7 +56,6 @@ img.image-lb {
 }
 
 .figure p.caption {
-    text-align: center;
     font-style: italic;
     font-size: 90%;
 }
