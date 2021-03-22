@@ -139,6 +139,7 @@ img.image-lb {
 .figure {
     margin: 5px auto 30px auto;
     display: table;
+    text-align: center;
 }
 
 .figure img {
@@ -146,10 +147,9 @@ img.image-lb {
 }
 
 .page .figure p.caption {
-    text-align: center;
+    margin: 10px 0px;
     font-style: italic;
     font-size: 80%;
-    margin: 10px 0px;
 }
 
 .mfp-figure {
