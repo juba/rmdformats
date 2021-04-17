@@ -1331,8 +1331,8 @@ button.code-folding-btn {
   font-size: 90%;
 }
 
-.book .book-body .page-inner section.normal .pagedtable-index-current {
-  font-weight: bold;
+.book .book-body .page-inner section.normal .dataTables_paginate .paginate_button:hover {
+  background-color: #000;
 }
 
 /* paged tables */
