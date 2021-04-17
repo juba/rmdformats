@@ -426,7 +426,7 @@ $endif$
 	$endif$
 	
 	$if(lightbox)$
-	$$('#content img').addClass("image-lb");
+	$$('#content img:not(.no-lightbox)').addClass("image-lb");
 	$$('#content').magnificPopup({
 	    type:'image',
 	    closeOnContentClick: false,
