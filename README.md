@@ -15,7 +15,7 @@ The package provides several HTML output formats. Click on any image to see an H
 
 ### `downcute` 
 
-Taken from the [docute](https://docute.org) project theme and its adaptation by [John Coene](https://twitter.com/jdatap). Responsive, with a dynamic table of contents and a dark theme switcher.
+Taken from the [docute](https://github.com/egoist/docute) project theme and its adaptation by [John Coene](https://twitter.com/jdatap). Responsive, with a dynamic table of contents and a dark theme switcher.
 
 [![](man/figures/downcute.png)](https://juba.github.io/rmdformats/articles/examples/downcute.html)
 
@@ -234,7 +234,7 @@ output:
 - The CSS and JavaScript for `readthedown` is adapted from the corresponding `readtheorg` theme of the [org-html-themes](https://github.com/fniessen/org-html-themes) project, which is itself inspired by the [Read the docs](https://readthedocs.org/) [Sphinx](http://sphinx-doc.org/) theme.
 - The CSS and JavaScript for `material` has been taken from the [Material design theme for Bootstrap 3](https://github.com/FezVrasta/bootstrap-material-design) project and its [presentation page](https://fezvrasta.github.io/bootstrap-material-design/).
 - The CSS for `robobook` is directly derived from the [bookdown](https://bookdown.org/) project template.
-- The CSS for `downcute` is directly derived from the default theme of the [docute](https://docute.org) project and its adaptation by [John Coene](https://twitter.com/jdatap) for some of its [projects documentation](https://packer.john-coene.com/).
+- The CSS for `downcute` is directly derived from the default theme of the [docute](https://github.com/egoist/docute) project and its adaptation by [John Coene](https://twitter.com/jdatap) for some of its [projects documentation](https://packer.john-coene.com/).
 - JavaScript and HTML code for code folding and tabbed sections are taken from the RStudio's default `rmarkdown` HTML template.
 - The `html_clean` styling and features are very similar to the ones from the 
 [knitrBootstrap package](https://github.com/jimhester/knitrBootstrap) by Jim
