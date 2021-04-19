@@ -9,3 +9,4 @@ tools/
 ^docs$
 ^pkgdown$
 vignettes/examples
+^\.vscode$
