@@ -112,18 +112,6 @@ head.appendChild(variables_style);
 
 window.addEventListener("load", (event) => {
 
-    // Prism highlighting
-    let code_el = document.querySelectorAll("pre[class] code");
-    code_el.forEach(el => {
-        const classes = el.parentNode.className.split(" ");
-        classes.forEach(classe => {
-            if (classe != 'sourceCode') {
-                el.classList.add('language-' + classe);
-            }
-        })
-    })
-    Prism.highlightAll();
-
     // Dark mode 
     const toggler = document.querySelector(".dark-theme-toggler .toggle");
     toggler.addEventListener("click", (event) => {
@@ -141,20 +129,36 @@ window.addEventListener("load", (event) => {
 
     // Fix for dots in level 1 and level 2 titles
     $('body .section.level1').each(function () {
-      $(this).attr("id", $(this).attr("id").replace(/\./g, "-"));
+        $(this).attr("id", $(this).attr("id").replace(/\./g, "-"));
     });
     $('body .section.level2').each(function () {
-      $(this).attr("id", $(this).attr("id").replace(/\./g, "-"));
+        $(this).attr("id", $(this).attr("id").replace(/\./g, "-"));
     });
     $('#toc ul li a').each(function () {
-      $(this).attr("href", $(this).attr("href").replace(/\./g, "-"));
+        $(this).attr("href", $(this).attr("href").replace(/\./g, "-"));
     });
 
     // ScrollSpy also requires that we use a Bootstrap nav component.
     $('#toc ul').first().addClass('nav');
-    $('body').scrollspy({target: '#toc'});
-    
+    $('body').scrollspy({ target: '#toc' });
+
     $("body").removeClass("preload");
+
+    // Prism highlighting
+    const prism_highlight = new Event('prism_highlight');
+    document.addEventListener('prism_highlight', (e) => Prism.highlightAll())
+
+    let code_el = document.querySelectorAll("pre[class] code");
+    code_el.forEach(el => {
+        const classes = el.parentNode.className.split(" ");
+        classes.forEach(classe => {
+            if (classe != 'sourceCode') {
+                el.classList.add('language-' + classe);
+            }
+        })
+    })
+    document.dispatchEvent(prism_highlight);
+
 
 })
 
