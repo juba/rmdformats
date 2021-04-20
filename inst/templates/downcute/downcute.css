@@ -1090,6 +1090,11 @@ button.code-folding-btn {
     overflow-x: auto;
 }
 
+.page-content .dataTables_wrapper .table-wrapper {
+    margin-top: 3em;
+}
+  
+
 .page-content .pagedtable-index-current {
     font-weight: bold;
 }
