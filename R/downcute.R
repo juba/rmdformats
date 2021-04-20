@@ -39,6 +39,7 @@ downcute <- function(fig_width = 8,
                        pandoc_args = NULL,
                        md_extensions = NULL,
                        mathjax = "rmdformats",
+                       highlight = NULL,
                        ...) {
 
     html_template(
@@ -60,6 +61,7 @@ downcute <- function(fig_width = 8,
         use_bookdown = use_bookdown,
         md_extensions = md_extensions,
         mathjax = mathjax,
+        highlight = NULL,
         ...
     )
 
