@@ -646,7 +646,7 @@ table {
 
 .book .book-body .page-inner section.normal table th {
   vertical-align: bottom;
-  border-bottom: 2px solid #ddd;
+  border-bottom: 1px solid #000;
 }
 
 .book .book-body .page-inner section.normal table td {
@@ -768,7 +768,7 @@ table {
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
     direction: ltr;
     border: none;
-    color: inherit
+    color: inherit;
     white-space: pre;
 }
 
@@ -907,8 +907,8 @@ table {
         top: auto;
         max-width: 50%;
         width: 50%;
-        display: inline-block;
-        float: left
+        display: block;
+        float: left;
     }
 
     .book .book-body .navigation.navigation-unique {
@@ -964,7 +964,6 @@ html {
 
 body {
     text-rendering: optimizeLegibility;
-    font-smoothing: antialiased;
     font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     letter-spacing: .2px;
@@ -1014,13 +1013,19 @@ body {
   margin-bottom: 1.8em;
 }
 
+.book .book-body .page-inner section.normal .dataTables_wrapper .table-wrapper {
+    overflow-x: auto;
+    margin-bottom: 0.5em;
+  }
+  
+
 .book .book-body .page-inner section.normal table,
 .book .book-body .page-inner section.normal .table,
 .book .book-body .page-inner section.normal .pagedtable-wrapper,
 .book .book-body .page-inner section.normal .dataTables_wrapper {
   font-size: 0.9em;
   margin-top: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
 }
 
 .book .book-body .page-inner section.normal table {
@@ -1336,8 +1341,8 @@ button.code-folding-btn {
 }
 
 .book .book-body .page-inner section.normal .dataTables_wrapper .table-wrapper {
-    margin-top: 3em;
-  }
+  margin-top: 3em;
+}
 
 /* paged tables */
 
