@@ -1335,6 +1335,10 @@ button.code-folding-btn {
   background-color: #000;
 }
 
+.book .book-body .page-inner section.normal .dataTables_wrapper .table-wrapper {
+    margin-top: 3em;
+  }
+
 /* paged tables */
 
 .book .book-body .page-inner section.normal .pagedtable .table th,
