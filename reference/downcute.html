@@ -160,6 +160,7 @@
   pandoc_args <span class='op'>=</span> <span class='cn'>NULL</span>,
   md_extensions <span class='op'>=</span> <span class='cn'>NULL</span>,
   mathjax <span class='op'>=</span> <span class='st'>"rmdformats"</span>,
+  highlight <span class='op'>=</span> <span class='cn'>NULL</span>,
   <span class='va'>...</span>
 <span class='op'>)</span></pre>
 
@@ -213,6 +214,10 @@
     <tr>
       <th>mathjax</th>
       <td><p>set to NULL to disable Mathjax insertion</p></td>
+    </tr>
+    <tr>
+      <th>highlight</th>
+      <td><p>syntax highlighting, forced to NULL as highlighting is done via prism.js</p></td>
     </tr>
     <tr>
       <th>...</th>
