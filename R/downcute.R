@@ -19,6 +19,7 @@
 #' @param embed_fonts if TRUE, use local files for fonts used in the template. This leads to bigger files but ensures that these fonts are available. If FALSE they are downloaded from Google Web Fonts.
 #' @param use_bookdown if TRUE, uses \code{\link[bookdown]{html_document2}} instead of \code{\link[rmarkdown]{html_document}}, thus providing numbered sections and cross references
 #' @param mathjax set to NULL to disable Mathjax insertion
+#' @param highlight syntax highlighting, forced to NULL as highlighting is done via prism.js
 #' @param ... Additional function arguments passed to R Markdown \code{\link[rmarkdown]{html_document}}
 #' @return R Markdown output format to pass to \code{\link[rmarkdown]{render}}
 #' @import rmarkdown

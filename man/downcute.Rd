@@ -17,6 +17,7 @@ downcute(
   pandoc_args = NULL,
   md_extensions = NULL,
   mathjax = "rmdformats",
+  highlight = NULL,
   ...
 )
 }
@@ -44,6 +45,8 @@ downcute(
 \item{md_extensions}{arguments passed to the md_extensions argument of rmarkdown \code{\link[rmarkdown]{html_document}}}
 
 \item{mathjax}{set to NULL to disable Mathjax insertion}
+
+\item{highlight}{syntax highlighting, forced to NULL as highlighting is done via prism.js}
 
 \item{...}{Additional function arguments passed to R Markdown \code{\link[rmarkdown]{html_document}}}
 }
