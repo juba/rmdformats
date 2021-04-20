@@ -145,6 +145,9 @@ window.addEventListener("load", (event) => {
     $("body").removeClass("preload");
 
     // Prism highlighting
+    const prism_highlight = new Event('prism_highlight');
+    document.addEventListener('prism_highlight', (e) => Prism.highlightAll())
+
     let code_el = document.querySelectorAll("pre[class] code");
     code_el.forEach(el => {
         const classes = el.parentNode.className.split(" ");
@@ -154,7 +157,8 @@ window.addEventListener("load", (event) => {
             }
         })
     })
-    Prism.highlightAll();
+    document.dispatchEvent(prism_highlight);
+
 
 })
 
