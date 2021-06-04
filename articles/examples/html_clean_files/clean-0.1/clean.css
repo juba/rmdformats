@@ -232,6 +232,12 @@ p.caption {
     font-size: 90%;
 }
 
+#toc ul ul ul li a {
+    padding: 0px 5px 0px 50px;
+    font-size: 90%;
+}
+
+
 #toc .active > a, #toc a:hover {
     color: #3388E0;
     border-left: 2px solid #3388E0;
@@ -247,11 +253,7 @@ p.caption {
     display: none;
 }
 
-#toc ul.nav li.active ul li {
-    display: inline;
-}
-
-#toc ul.nav li.active ul li ul li {
+#toc ul.nav li.active > ul > li {
     display: inline;
 }
 

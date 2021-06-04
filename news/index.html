@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Convert to an HTML document — html_clean • rmdformats</title>
+<title>Changelog • rmdformats</title>
 
 
 <!-- jquery -->
@@ -39,8 +39,7 @@
 
 
 
-<meta property="og:title" content="Convert to an HTML document — html_clean" />
-<meta property="og:description" content="Format for converting from R Markdown to an HTML document." />
+<meta property="og:title" content="Changelog" />
 
 
 
@@ -59,7 +58,7 @@
   </head>
 
   <body data-spy="scroll" data-target="#toc">
-    <div class="container template-reference-topic">
+    <div class="container template-news">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -141,111 +140,18 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Convert to an HTML document</h1>
-    <small class="dont-index">Source: <a href='https://github.com/juba/rmdformats/blob/master/R/html_clean.R'><code>R/html_clean.R</code></a></small>
-    <div class="hidden name"><code>html_clean.Rd</code></div>
+      <h1 data-toc-skip>Changelog <small></small></h1>
+      <small>Source: <a href='https://github.com/juba/rmdformats/blob/master/NEWS.md'><code>NEWS.md</code></a></small>
     </div>
-
-    <div class="ref-description">
-    <p>Format for converting from R Markdown to an HTML document.</p>
-    </div>
-
-    <pre class="usage"><span class='fu'>html_clean</span><span class='op'>(</span>
-  fig_width <span class='op'>=</span> <span class='fl'>6</span>,
-  fig_height <span class='op'>=</span> <span class='fl'>6</span>,
-  fig_caption <span class='op'>=</span> <span class='cn'>TRUE</span>,
-  highlight <span class='op'>=</span> <span class='st'>"kate"</span>,
-  lightbox <span class='op'>=</span> <span class='cn'>TRUE</span>,
-  thumbnails <span class='op'>=</span> <span class='cn'>TRUE</span>,
-  gallery <span class='op'>=</span> <span class='cn'>FALSE</span>,
-  toc <span class='op'>=</span> <span class='cn'>TRUE</span>,
-  toc_depth <span class='op'>=</span> <span class='fl'>2</span>,
-  use_bookdown <span class='op'>=</span> <span class='cn'>FALSE</span>,
-  pandoc_args <span class='op'>=</span> <span class='cn'>NULL</span>,
-  md_extensions <span class='op'>=</span> <span class='cn'>NULL</span>,
-  mathjax <span class='op'>=</span> <span class='st'>"rmdformats"</span>,
-  <span class='va'>...</span>
-<span class='op'>)</span></pre>
-
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
-    <table class="ref-arguments">
-    <colgroup><col class="name" /><col class="desc" /></colgroup>
-    <tr>
-      <th>fig_width</th>
-      <td><p>Default width (in inches) for figures</p></td>
-    </tr>
-    <tr>
-      <th>fig_height</th>
-      <td><p>Default width (in inches) for figures</p></td>
-    </tr>
-    <tr>
-      <th>fig_caption</th>
-      <td><p><code>TRUE</code> to render figures with captions</p></td>
-    </tr>
-    <tr>
-      <th>highlight</th>
-      <td><p>Syntax highlighting style. Supported styles include
-"default", "tango", "pygments", "kate", "monochrome", "espresso",
-"zenburn", "haddock", and "textmate". Pass <code>NULL</code> to prevent syntax
-highlighting.</p></td>
-    </tr>
-    <tr>
-      <th>lightbox</th>
-      <td><p>if TRUE, add lightbox effect to content images</p></td>
-    </tr>
-    <tr>
-      <th>thumbnails</th>
-      <td><p>if TRUE display content images as thumbnails</p></td>
-    </tr>
-    <tr>
-      <th>gallery</th>
-      <td><p>if TRUE and lightbox is TRUE, add a gallery navigation between images in lightbox display</p></td>
-    </tr>
-    <tr>
-      <th>toc</th>
-      <td><p>if TRUE, display a table of contents</p></td>
-    </tr>
-    <tr>
-      <th>toc_depth</th>
-      <td><p>adjust table of contents depth</p></td>
-    </tr>
-    <tr>
-      <th>use_bookdown</th>
-      <td><p>if TRUE, uses <code><a href='https://pkgs.rstudio.com/bookdown/reference/html_document2.html'>html_document2</a></code> instead of <code><a href='https://pkgs.rstudio.com/rmarkdown/reference/html_document.html'>html_document</a></code>, thus providing numbered sections and cross references</p></td>
-    </tr>
-    <tr>
-      <th>pandoc_args</th>
-      <td><p>arguments passed to the pandoc_args argument of rmarkdown <code><a href='https://pkgs.rstudio.com/rmarkdown/reference/html_document.html'>html_document</a></code></p></td>
-    </tr>
-    <tr>
-      <th>md_extensions</th>
-      <td><p>arguments passed to the md_extensions argument of rmarkdown <code><a href='https://pkgs.rstudio.com/rmarkdown/reference/html_document.html'>html_document</a></code></p></td>
-    </tr>
-    <tr>
-      <th>mathjax</th>
-      <td><p>set to NULL to disable Mathjax insertion</p></td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td><p>Additional function arguments passed to R Markdown <code><a href='https://pkgs.rstudio.com/rmarkdown/reference/html_document.html'>html_document</a></code></p></td>
-    </tr>
-    </table>
-
-    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
-
-    <p>R Markdown output format to pass to <code><a href='https://pkgs.rstudio.com/rmarkdown/reference/render.html'>render</a></code></p>
-    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
-
-    <p>Styling and features are very similar to the ones from the great
-knitrBootstrap package by Jim Hester :
-<a href='https://github.com/jimhester/knitrBootstrap'>https://github.com/jimhester/knitrBootstrap</a></p>
 
   </div>
+
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
       <h2 data-toc-skip>Contents</h2>
     </nav>
   </div>
+
 </div>
 
 
