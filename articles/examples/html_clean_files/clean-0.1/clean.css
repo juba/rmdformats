@@ -201,12 +201,19 @@ p.caption {
 
 #toc {
     height: auto;
+    max-height: 100%;
     width: 12%;
     position: fixed;
     background: #FFF;
     padding: 20px 5px 20px 5px;
     color: #777;
     font-size: 90%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#toc ul.nav {
+    margin-right: 15px;
 }
 
 #toc ul {
@@ -258,7 +265,7 @@ p.caption {
 }
 
 #toc .close {
-    margin-right: -20px;
+    margin-right: 0px;
     display: block;
     z-index: 1000;
 }
