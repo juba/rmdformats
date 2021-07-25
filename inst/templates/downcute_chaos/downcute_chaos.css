@@ -381,7 +381,7 @@ a {
 }
 
 .token.punctuation {
-    color: #c792ea
+    color: #00AEEF
 }
 
 .namespace {
@@ -401,7 +401,7 @@ a {
 .token.keyword,
 .token.operator,
 .token.tag {
-    color: #7fdbca
+    color: #FF652F
 }
 
 .token.boolean {
@@ -436,7 +436,7 @@ a {
 .token.entity,
 .token.string,
 .token.url {
-    color: #addb67
+    color: #58C554
 }
 
 .token.atrule,
