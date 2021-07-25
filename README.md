@@ -25,6 +25,7 @@ Taken from the [docute](https://github.com/egoist/docute) project theme and its 
 
 *This version is a direct copy of John Coenes, with a style modification by [Zac Garland](https://github.com/zac-garland)
 
+[![](man/figures/downcute_chaos.png)](https://juba.github.io/rmdformats/articles/examples/downcute_chaos.html)
 
 
 
@@ -141,6 +142,16 @@ Simple template, no table of contents. CSS heavily inspired from the default one
 </tr>
 <tr>
 <td><strong>downcute</strong></td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>downcute_chaos</strong></td>
 <td>x</td>
 <td>x</td>
 <td>x</td>
