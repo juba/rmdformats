@@ -19,6 +19,14 @@ Taken from the [docute](https://github.com/egoist/docute) project theme and its 
 
 [![](man/figures/downcute.png)](https://juba.github.io/rmdformats/articles/examples/downcute.html)
 
+### `downcute_chaos` 
+
+Taken from the [docute](https://github.com/egoist/docute) project theme and its adaptation by [John Coene](https://twitter.com/jdatap). Responsive, with a dynamic table of contents and a dark theme switcher.
+
+*This version is a direct copy of John Coenes, with a style modification by [Zac Garland](https://github.com/zac-garland)
+
+
+
 
 
 ### `robobook`

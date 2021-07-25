@@ -3,6 +3,7 @@
 S3method(knit_print,pilltabs)
 S3method(print,pilltabs)
 export(downcute)
+export(downcute_chaos)
 export(html_clean)
 export(html_docco)
 export(lockdown)
