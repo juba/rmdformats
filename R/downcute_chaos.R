@@ -83,10 +83,4 @@ html_dependency_downcute_chaos <- function(embed_fonts = TRUE) {
                  stylesheet = stylesheets)
 }
 
-# prism js and css
-html_dependency_prism <- function() {
-  htmltools::htmlDependency(name = "prism",
-                 version = "1.22",
-                 src = system.file("templates/prism", package = "rmdformats"),
-                 script = "prism.js")
-}
+

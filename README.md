@@ -21,9 +21,7 @@ Taken from the [docute](https://github.com/egoist/docute) project theme and its 
 
 ### `downcute_chaos` 
 
-Taken from the [docute](https://github.com/egoist/docute) project theme and its adaptation by [John Coene](https://twitter.com/jdatap). Responsive, with a dynamic table of contents and a dark theme switcher.
-
-*This version is a direct copy of John Coenes, that defaults to the dark theme, and includes various style modifications by [Zac Garland](https://github.com/zac-garland)
+This version is a direct copy of John Coenes original `downcute`, that defaults to the dark theme, and includes various style modifications by [Zac Garland](https://github.com/zac-garland)
 
 [![](man/figures/downcute_chaos.png)](https://juba.github.io/rmdformats/articles/examples/downcute_chaos.html)
 
