@@ -1,25 +1,48 @@
 ---
-title: ""
-date: "`r Sys.Date()`"
+title: "Report Title"
+author: '[Author](mailto:yourname@snapfinance.com)'
+date: "`r format(Sys.time(),'%B %d, %Y @ %I:%M%p')`"
 output:
   rmdformats::readthedown:
-    highlight: kate
+    highlight: tango
+    code_folding: hide
+    toc_depth: 3
+    use_bookdown: TRUE
 ---
-
 
 ```{r setup, include=FALSE}
 library(knitr)
 library(rmdformats)
 
+library(dplyr)
+library(snapdragon)
+library(highcharter)
+library(lubridate)
+library(pins)
+opts <- getOption("highcharter.lang")
+opts$thousandsSep <- ","
+options(highcharter.lang = opts)
+
 ## Global options
-options(max.print="75")
-opts_chunk$set(echo=FALSE,
-	             cache=TRUE,
-               prompt=FALSE,
-               tidy=TRUE,
-               comment=NA,
-               message=FALSE,
-               warning=FALSE)
-opts_knit$set(width=75)
+opts_chunk$set(
+  # eval = FALSE, # uncomment this when first publishing to add credentials
+  echo = TRUE,
+  cache = FALSE,
+  prompt = FALSE,
+  tidy = FALSE,
+  comment = NA,
+  message = FALSE,
+  warning = FALSE
+)
+opts_knit$set(width=150)
+```
+
+```{r pin}
+## add your pinKey and presto creds to the published document, then change the global option `eval` to TRUE
+
+pins::board_register_rsconnect(
+  key = Sys.getenv('pinKey'), 
+  server = "https://rstudio-connect.snapfinance.com"
+)
 ```
 
