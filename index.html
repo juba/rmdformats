@@ -59,6 +59,9 @@
       <a href="articles/examples/downcute.html">downcute template example</a>
     </li>
     <li>
+      <a href="articles/examples/downcute_chaos.html">downcute chaos template example</a>
+    </li>
+    <li>
       <a href="articles/examples/html_clean.html">html_clean template example</a>
     </li>
     <li>
@@ -115,49 +118,51 @@
 <a href="#downcute" class="anchor"></a><code>downcute</code>
 </h3>
 <p>Taken from the <a href="https://github.com/egoist/docute">docute</a> project theme and its adaptation by <a href="https://twitter.com/jdatap">John Coene</a>. Responsive, with a dynamic table of contents and a dark theme switcher.</p>
-<p><a href="https://juba.github.io/rmdformats/articles/examples/downcute.html"><img src="reference/figures/downcute.png"></a></p>
+<p><a href="https://juba.github.io/rmdformats/articles/examples/downcute.html"><img src="reference/figures/downcute.png" alt="downcute example"></a></p>
+<p><code>downcute chaos</code> is a variation created by <a href="https://github.com/zac-garland">Zac Garland</a>. It has a slightly different color theme, and defaults to dark mode. To use it, add a <code>downcute_theme: "chaos"</code> option in your YAML preamble.</p>
+<p><a href="https://juba.github.io/rmdformats/articles/examples/downcute_chaos.html"><img src="reference/figures/downcute_chaos.png" alt="downcute chaos example"></a></p>
 </div>
 <div id="robobook" class="section level3">
 <h3 class="hasAnchor">
 <a href="#robobook" class="anchor"></a><code>robobook</code>
 </h3>
 <p>Adapted from the <a href="https://bookdown.org/">bookdown</a> theme, with Roboto family fonts. Fully responsive with dynamic table of contents and collapsible navigation.</p>
-<p><a href="https://juba.github.io/rmdformats/articles/examples/robobook.html"><img src="reference/figures/robobook.png"></a></p>
+<p><a href="https://juba.github.io/rmdformats/articles/examples/robobook.html"><img src="reference/figures/robobook.png" alt="robobook example"></a></p>
 </div>
 <div id="material" class="section level3">
 <h3 class="hasAnchor">
 <a href="#material" class="anchor"></a><code>material</code>
 </h3>
 <p>Format taken from the <a href="https://github.com/FezVrasta/bootstrap-material-design">Material design theme for Bootstrap 3</a>. Document is split into pages at each <code>&lt;h1&gt;</code> header, and the table of contents allows an animated navigation between these pages (you can use the <code>cards: false</code> preamble parameter to disable the splitting and display all the cards at once).</p>
-<p><a href="https://juba.github.io/rmdformats/articles/examples/material.html"><img src="reference/figures/material.png"></a></p>
+<p><a href="https://juba.github.io/rmdformats/articles/examples/material.html"><img src="reference/figures/material.png" alt="material example"></a></p>
 </div>
 <div id="readthedown" class="section level3">
 <h3 class="hasAnchor">
 <a href="#readthedown" class="anchor"></a><code>readthedown</code>
 </h3>
 <p>Adapted from the corresponding <code>readtheorg</code> theme of the <a href="https://github.com/fniessen/org-html-themes">org-html-themes</a> project, fully responsive with dynamic table of contents and collapsible navigation.</p>
-<p><a href="https://juba.github.io/rmdformats/articles/examples/readthedown.html"><img src="reference/figures/readthedown.png"></a></p>
+<p><a href="https://juba.github.io/rmdformats/articles/examples/readthedown.html"><img src="reference/figures/readthedown.png" alt="readthedown example"></a></p>
 </div>
 <div id="html_clean" class="section level3">
 <h3 class="hasAnchor">
 <a href="#html_clean" class="anchor"></a><code>html_clean</code>
 </h3>
 <p>Simple and clean template with dynamic table of contents, very similar to the one from the great <a href="https://github.com/jimhester/knitrBootstrap">knitrBootstrap package</a> by Jim Hester.</p>
-<p><a href="https://juba.github.io/rmdformats/articles/examples/html_clean.html"><img src="reference/figures/html_clean.png"></a></p>
+<p><a href="https://juba.github.io/rmdformats/articles/examples/html_clean.html"><img src="reference/figures/html_clean.png" alt="html_clean example"></a></p>
 </div>
 <div id="html_docco" class="section level3">
 <h3 class="hasAnchor">
 <a href="#html_docco" class="anchor"></a><code>html_docco</code>
 </h3>
 <p>Simple template, no table of contents. CSS heavily inspired from the default one of the <a href="https://ashkenas.com/docco/">docco</a> project.</p>
-<p><a href="https://juba.github.io/rmdformats/articles/examples/html_docco.html"><img src="reference/figures/html_docco.png"></a></p>
+<p><a href="https://juba.github.io/rmdformats/articles/examples/html_docco.html"><img src="reference/figures/html_docco.png" alt="html_docco example"></a></p>
 </div>
 <div id="lockdown" class="section level3">
 <h3 class="hasAnchor">
 <a href="#lockdown" class="anchor"></a><code>lockdown</code>
 </h3>
 <p><code>lockdown</code> is an exact copy of the default RMarkdown <code>html_document</code> template, with an added functionality : each time you click on a link to get out, you’ll see a friendly reminder to wash your hands and wear a mask. Yes, it is a (bad) attempt at a (bad) joke, sorry !</p>
-<p><a href="https://juba.github.io/rmdformats/articles/examples/lockdown.html"><img src="reference/figures/lockdown.png"></a></p>
+<p><a href="https://juba.github.io/rmdformats/articles/examples/lockdown.html"><img src="reference/figures/lockdown.png" alt="lockdown example"></a></p>
 </div>
 </div>
 <div id="features-and-helpers" class="section level2">
@@ -379,9 +384,9 @@ x
 <h2 class="hasAnchor">
 <a href="#creating-a-new-document" class="anchor"></a>Creating a new document</h2>
 <p>Just create a new <code>Rmd</code> file and add the following in your YAML preamble :</p>
-<pre><code>---
-output: rmdformats::&lt;template name&gt;
----</code></pre>
+<div class="sourceCode" id="cb3"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1"></a><span class="pp">---</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="fu">output</span><span class="kw">:</span><span class="at"> rmdformats::&lt;template name&gt;</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="pp">---</span></span></code></pre></div>
 <p>Within RStudio , you can also choose <code>File</code> &gt; <code>New File...</code> &gt; <code>R Markdown...</code>, then select <code>From Template</code>. You should then be able to create a new document from one of the package templates.</p>
 </div>
 <div id="options" class="section level2">
@@ -410,18 +415,18 @@ output: rmdformats::&lt;template name&gt;
 <li>additional aguments are passed to the base <code>html_document</code> RMarkdown template</li>
 </ul>
 <p>Example preamble :</p>
-<pre><code>---
-title: "My document"
-date: "`r Sys.Date()`"
-author: John Doe
-output:
-  rmdformats::downcute:
-    self_contained: true
-    thumbnails: true
-    lightbox: true
-    gallery: false
-    highlight: tango
----</code></pre>
+<div class="sourceCode" id="cb4"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1"></a><span class="pp">---</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My document"</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="fu">date</span><span class="kw">:</span><span class="at"> </span><span class="st">"`r Sys.Date()`"</span></span>
+<span id="cb4-4"><a href="#cb4-4"></a><span class="fu">author</span><span class="kw">:</span><span class="at"> John Doe</span></span>
+<span id="cb4-5"><a href="#cb4-5"></a><span class="fu">output</span><span class="kw">:</span></span>
+<span id="cb4-6"><a href="#cb4-6"></a><span class="at">  rmdformats:</span><span class="fu">:downcute</span><span class="kw">:</span></span>
+<span id="cb4-7"><a href="#cb4-7"></a><span class="at">    </span><span class="fu">self_contained</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb4-8"><a href="#cb4-8"></a><span class="at">    </span><span class="fu">thumbnails</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb4-9"><a href="#cb4-9"></a><span class="at">    </span><span class="fu">lightbox</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb4-10"><a href="#cb4-10"></a><span class="at">    </span><span class="fu">gallery</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
+<span id="cb4-11"><a href="#cb4-11"></a><span class="at">    </span><span class="fu">highlight</span><span class="kw">:</span><span class="at"> tango</span></span>
+<span id="cb4-12"><a href="#cb4-12"></a><span class="pp">---</span></span></code></pre></div>
 </div>
 <div id="credits" class="section level2">
 <h2 class="hasAnchor">
@@ -434,6 +439,7 @@ output:
 <li>The CSS and JavaScript for <code>material</code> has been taken from the <a href="https://github.com/FezVrasta/bootstrap-material-design">Material design theme for Bootstrap 3</a> project and its <a href="https://fezvrasta.github.io/bootstrap-material-design/">presentation page</a>.</li>
 <li>The CSS for <code>robobook</code> is directly derived from the <a href="https://bookdown.org/">bookdown</a> project template.</li>
 <li>The CSS for <code>downcute</code> is directly derived from the default theme of the <a href="https://github.com/egoist/docute">docute</a> project and its adaptation by <a href="https://twitter.com/jdatap">John Coene</a> for some of its <a href="https://packer.john-coene.com/">projects documentation</a>.</li>
+<li>The <code>downcute chaos</code> theme has been created by <a href="https://github.com/zac-garland">Zac Garland</a>.</li>
 <li>JavaScript and HTML code for code folding and tabbed sections are taken from the RStudio’s default <code>rmarkdown</code> HTML template.</li>
 <li>The <code>html_clean</code> styling and features are very similar to the ones from the <a href="https://github.com/jimhester/knitrBootstrap">knitrBootstrap package</a> by Jim Hester.</li>
 </ul>

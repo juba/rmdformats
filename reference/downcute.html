@@ -98,6 +98,9 @@
       <a href="../articles/examples/downcute.html">downcute template example</a>
     </li>
     <li>
+      <a href="../articles/examples/downcute_chaos.html">downcute chaos template example</a>
+    </li>
+    <li>
       <a href="../articles/examples/html_clean.html">html_clean template example</a>
     </li>
     <li>
@@ -164,6 +167,8 @@
   md_extensions <span class='op'>=</span> <span class='cn'>NULL</span>,
   mathjax <span class='op'>=</span> <span class='st'>"rmdformats"</span>,
   highlight <span class='op'>=</span> <span class='cn'>NULL</span>,
+  default_style <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"light"</span>, <span class='st'>"dark"</span><span class='op'>)</span>,
+  downcute_theme <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"default"</span>, <span class='st'>"chaos"</span><span class='op'>)</span>,
   <span class='va'>...</span>
 <span class='op'>)</span></pre>
 
@@ -221,6 +226,14 @@
     <tr>
       <th>highlight</th>
       <td><p>syntax highlighting, forced to NULL as highlighting is done via prism.js</p></td>
+    </tr>
+    <tr>
+      <th>default_style</th>
+      <td><p>specify default display style, "light" or "dark"</p></td>
+    </tr>
+    <tr>
+      <th>downcute_theme</th>
+      <td><p>document template theme</p></td>
     </tr>
     <tr>
       <th>...</th>
