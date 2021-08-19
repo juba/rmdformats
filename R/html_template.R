@@ -63,6 +63,19 @@ html_template <- function(
             pandoc_args <- c(pandoc_args, "--variable", "cards:true")
         }
     }
+    ## downcute default style
+    if (!is.null(args[["default_style"]])) {
+        if (args[["default_style"]] == "dark") {
+            toggler_checked <- "checked"
+        } else {
+            toggler_checked <- ""
+        }
+        pandoc_args <- c(pandoc_args, "--variable", paste0("dark_toggler_status:", toggler_checked))
+    }
+    ## downcute theme
+    if (!is.null(args[["downcute_theme"]])) {
+        pandoc_args <- c(pandoc_args, "--variable", paste0("downcute_theme:", args[["downcute_theme"]]))
+    }
 
 
     ## Call rmarkdown::html_document

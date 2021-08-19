@@ -475,7 +475,8 @@ a {
 .page-content h5,
 .page-content h6 {
     font-weight: 300;
-    line-height: 1.2
+    line-height: 1.2;
+    color: var(--header-text-color);
 }
 
 .page-content h1 {
