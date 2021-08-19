@@ -76,6 +76,10 @@
     color: #d6deeb
 }
 
+.page-content code {
+    background-color: var(--page-content-code-background);
+}
+
 .page-content .nav-pills>li>a:hover,
 .page-content .nav-pills>li.active>a,
 .page-content .nav-pills>li.active>a:hover,
