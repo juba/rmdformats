@@ -1095,6 +1095,9 @@ button.code-folding-btn {
     margin-top: 3em;
 }
   
+.page-content .dataTables_wrapper .dataTables_paginate .paginate_button {
+    color: var(--text-color) !important;
+} 
 
 .page-content .pagedtable-index-current {
     font-weight: bold;
