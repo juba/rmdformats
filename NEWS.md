@@ -1,10 +1,11 @@
 # Changelof
 
-## rmdformats 1.0.3
+## rmdformats (development version)
 
 - Fix position of search and pagination in DT tables in robobook and downcute (thanks @Lucius-Cesar)
 - Add support for toc_depth = 3 in html_clean (thanks @megaraptor1)
 - Make TOC vertically scrollable in html_clean (thanks @megaraptor1)
+- Fix incompatibility between downcute dark mode toggler and downloadthis (thanks @baobabprince)
 
 ## rmdformats 1.0.2
 
