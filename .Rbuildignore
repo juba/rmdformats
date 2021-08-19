@@ -10,3 +10,4 @@ tools/
 ^pkgdown$
 vignettes/examples
 ^\.vscode$
+^\.lintr$
