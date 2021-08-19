@@ -18,6 +18,8 @@ downcute(
   md_extensions = NULL,
   mathjax = "rmdformats",
   highlight = NULL,
+  default_style = c("light", "dark"),
+  downcute_theme = c("default", "chaos"),
   ...
 )
 }
@@ -47,6 +49,10 @@ downcute(
 \item{mathjax}{set to NULL to disable Mathjax insertion}
 
 \item{highlight}{syntax highlighting, forced to NULL as highlighting is done via prism.js}
+
+\item{default_style}{specify default display style, "light" or "dark"}
+
+\item{downcute_theme}{document template theme}
 
 \item{...}{Additional function arguments passed to R Markdown \code{\link[rmarkdown]{html_document}}}
 }
