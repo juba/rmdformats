@@ -771,14 +771,16 @@ h1.title {
     font-size: 3rem;
     margin: 0 0 1.4rem;
     font-weight: 300;
-    line-height: 1.1
+    line-height: 1.1;
+    color: var(--header-text-color);
 }
 
 h1.subtitle {
     font-size: 1.7rem;
     margin: -0.5rem 0 1.4rem;
     font-weight: 300;
-    line-height: 1.1
+    line-height: 1.1;
+    color: var(--header-text-color);
 }
 
 
