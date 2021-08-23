@@ -8,18 +8,18 @@
 
 # rmdformats 1.0.2
 
-- Add ability to disable lightbox effect on <img> with a "no-lightbox" class (thanks @Lucius-Cesar)
+- Add ability to disable lightbox effect on `img` with a "no-lightbox" class (thanks @Lucius-Cesar)
 - Fix TOC not working in robobook and downcute when dots in headings (thanks @jrothsc)
 - Fix position of search and pagination in DT tables in readthedown (thanks @heseber)
-- Fix <ol> font size in readthedown (thanks @albertostefanelli)
+- Fix `ol` font size in readthedown (thanks @albertostefanelli)
 - Fix footnote links presentation in readthedown postamble (thanks @albertostefanelli)
 - Add overflow to wide tables in robobook and downcute (thanks @octmedina)
 
 # rmdformats 1.0.1
 
 - Fix DT display overflow
-- Fix <pre> wrapping
-- Remove link styling in <code>
+- Fix `pre` wrapping
+- Remove link styling in `code`
 - Fonts are now downloaded from Google Web Fonts in readthedown if embed is FALSE
 - Fix subtitle in readthedown
 - Remove ellipsis and add word-wrap in TOC in robobook
