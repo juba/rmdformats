@@ -7,6 +7,6 @@ output:
 ---
 ```{r setup, include=FALSE}
 ## Global options
-opts_chunk$set(cache = TRUE)
+knitr::opts_chunk$set(cache = TRUE)
 ```
 
