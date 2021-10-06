@@ -1,4 +1,4 @@
-# rmdformats (development version)
+# rmdformats 1.0.3
 
 - New `downcute chaos` theme (thanks @zac-garland)
 - Fix position of search and pagination in DT tables in robobook and downcute (thanks @Lucius-Cesar)
