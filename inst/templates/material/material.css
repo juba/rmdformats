@@ -208,7 +208,7 @@ h2, h3, h4 {
     display: table;
 }
 
-img.image-thumb {
+.pages .page img.image-thumb {
     max-width: 250px;
 }
 

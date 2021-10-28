@@ -1,5 +1,7 @@
 # rmdformats (development version)
 
+- Fix thumbnail sizing in material (#120, @DOSull)
+
 # rmdformats 1.0.3
 
 - New `downcute chaos` theme (thanks @zac-garland)
