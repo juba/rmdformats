@@ -208,58 +208,61 @@ chi-squared residuals tables.</p>
     <p>The function is intended to be called inside an rmarkdown document.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span><span class='op'>(</span><span class='va'>airquality</span><span class='op'>)</span>
-<span class='va'>tab</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span><span class='op'>(</span><span class='va'>airquality</span><span class='op'>$</span><span class='va'>Month</span>, <span class='va'>airquality</span><span class='op'>$</span><span class='va'>Ozone</span> <span class='op'>&gt;</span> <span class='fl'>25</span><span class='op'>)</span>
-<span class='fu'>pilltabs</span><span class='op'>(</span><span class='va'>tab</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; <span class='warning'>Warning: Chi-squared approximation may be incorrect</span></div><div class='output co'>#&gt; <span class='warning'>Warning: Chi-squared approximation may be incorrect</span></div><div class='output co'>#&gt; 
-#&gt; --- COUNT ---
-#&gt; 
-#&gt; |   | FALSE| TRUE|
-#&gt; |:--|-----:|----:|
-#&gt; |5  |    17|    9|
-#&gt; |6  |     5|    4|
-#&gt; |7  |     4|   22|
-#&gt; |8  |     6|   20|
-#&gt; |9  |    18|   11|
-#&gt; 
-#&gt; --- ROWS % ---
-#&gt; 
-#&gt; |    | FALSE| TRUE| Total|   n|
-#&gt; |:---|-----:|----:|-----:|---:|
-#&gt; |5   |  65.4| 34.6|   100|  26|
-#&gt; |6   |  55.6| 44.4|   100|   9|
-#&gt; |7   |  15.4| 84.6|   100|  26|
-#&gt; |8   |  23.1| 76.9|   100|  26|
-#&gt; |9   |  62.1| 37.9|   100|  29|
-#&gt; |All |  43.1| 56.9|   100| 116|
-#&gt; 
-#&gt; --- COLS % ---
-#&gt; 
-#&gt; |      | FALSE|  TRUE|   All|
-#&gt; |:-----|-----:|-----:|-----:|
-#&gt; |5     |    34|  13.6|  22.4|
-#&gt; |6     |    10|   6.1|   7.8|
-#&gt; |7     |     8|  33.3|  22.4|
-#&gt; |8     |    12|  30.3|  22.4|
-#&gt; |9     |    36|  16.7|  25.0|
-#&gt; |Total |   100| 100.0| 100.0|
-#&gt; |n     |    50|  66.0| 116.0|
-#&gt; 
-#&gt; --- CHI2 RESIDUALS ---
-#&gt; 
-#&gt; |   | FALSE|  TRUE|
-#&gt; |:--|-----:|-----:|
-#&gt; |5  |  1.73| -1.51|
-#&gt; |6  |  0.57| -0.50|
-#&gt; |7  | -2.15|  1.87|
-#&gt; |8  | -1.56|  1.35|
-#&gt; |9  |  1.56| -1.35|
-#&gt; 
-#&gt; 
-#&gt;  X-squared = 22.4831, df = 4, p = 0.0001606 
-#&gt; </div><div class='input'>
-</div></pre>
+    <pre class="examples"><span class='r-in'></span>
+<span class='r-in'><span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span><span class='op'>(</span><span class='va'>airquality</span><span class='op'>)</span></span>
+<span class='r-in'><span class='va'>tab</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span><span class='op'>(</span><span class='va'>airquality</span><span class='op'>$</span><span class='va'>Month</span>, <span class='va'>airquality</span><span class='op'>$</span><span class='va'>Ozone</span> <span class='op'>&gt;</span> <span class='fl'>25</span><span class='op'>)</span></span>
+<span class='r-in'><span class='fu'>pilltabs</span><span class='op'>(</span><span class='va'>tab</span><span class='op'>)</span></span>
+<span class='r-wrn co'><span class='r-pr'>#&gt;</span> <span class='warning'>Warning: </span>Chi-squared approximation may be incorrect</span>
+<span class='r-wrn co'><span class='r-pr'>#&gt;</span> <span class='warning'>Warning: </span>Chi-squared approximation may be incorrect</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> </span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> --- COUNT ---</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> </span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> |   | FALSE| TRUE|</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> |:--|-----:|----:|</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> |5  |    17|    9|</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> |6  |     5|    4|</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> |7  |     4|   22|</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> |8  |     6|   20|</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> |9  |    18|   11|</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> </span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> --- ROWS % ---</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> </span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> |    | FALSE| TRUE| Total|   n|</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> |:---|-----:|----:|-----:|---:|</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> |5   |  65.4| 34.6|   100|  26|</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> |6   |  55.6| 44.4|   100|   9|</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> |7   |  15.4| 84.6|   100|  26|</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> |8   |  23.1| 76.9|   100|  26|</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> |9   |  62.1| 37.9|   100|  29|</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> |All |  43.1| 56.9|   100| 116|</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> </span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> --- COLS % ---</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> </span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> |      | FALSE|  TRUE|   All|</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> |:-----|-----:|-----:|-----:|</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> |5     |    34|  13.6|  22.4|</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> |6     |    10|   6.1|   7.8|</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> |7     |     8|  33.3|  22.4|</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> |8     |    12|  30.3|  22.4|</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> |9     |    36|  16.7|  25.0|</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> |Total |   100| 100.0| 100.0|</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> |n     |    50|  66.0| 116.0|</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> </span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> --- CHI2 RESIDUALS ---</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> </span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> |   | FALSE|  TRUE|</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> |:--|-----:|-----:|</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> |5  |  1.73| -1.51|</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> |6  |  0.57| -0.50|</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> |7  | -2.15|  1.87|</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> |8  | -1.56|  1.35|</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> |9  |  1.56| -1.35|</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> </span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> </span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span>  X-squared = 22.4831, df = 4, p = 0.0001606 </span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> </span>
+<span class='r-in'></span>
+</pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
