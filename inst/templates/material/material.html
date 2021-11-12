@@ -362,7 +362,7 @@ $endif$
   
 	window.page = window.location.hash;
 	if (window.page != "") {
-	    $$(".menu").find("li[data-target=" + window.page + "]").trigger("click");
+	    $$(".menu").find("li[data-target='" + window.page + "']").trigger("click");
 	}
 	/* init material bootstrap js */
 	$$.material.init();
