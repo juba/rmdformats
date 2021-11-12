@@ -1,5 +1,6 @@
 # rmdformats (development version)
 
+- Fix JS error in material
 - Fix thumbnail sizing in material (#120, @DOSull)
 
 # rmdformats 1.0.3
