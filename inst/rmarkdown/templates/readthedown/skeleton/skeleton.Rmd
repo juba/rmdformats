@@ -34,15 +34,10 @@ opts_chunk$set(
   message = FALSE,
   warning = FALSE
 )
-opts_knit$set(width=150)
+
+snapdragon::sd_board_register(environ = "dev") # don't forget to update your vars via connectapi pkg
 ```
 
-```{r pin}
-## add your pinKey and presto creds to the published document, then change the global option `eval` to TRUE
+```{r}
 
-pins::board_register_rsconnect(
-  key = Sys.getenv('pinKey'), 
-  server = "https://rstudio-connect.snapfinance.com"
-)
 ```
-
