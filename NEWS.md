@@ -1,5 +1,6 @@
 # rmdformats (development version)
 
+- Fix scrolling behavior for tabs in material (#122, @bersbersbers)
 - Fix JS error in material
 - Fix thumbnail sizing in material (#120, @DOSull)
 
