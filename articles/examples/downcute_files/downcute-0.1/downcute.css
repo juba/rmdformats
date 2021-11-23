@@ -1207,3 +1207,9 @@ button.code-folding-btn {
   -o-transition: none !important;
   transition: none !important;
 }
+
+/* obsplot */
+
+body .plot {
+    color: black;
+}
