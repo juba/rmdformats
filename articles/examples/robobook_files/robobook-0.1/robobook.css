@@ -1361,6 +1361,10 @@ button.code-folding-btn {
     overflow: hidden;
 }
 
+#toc > ul li ul li ul {
+    display: none;
+}
+
 #toc > ul li.active ul li {
     max-height: 40px;
     transition: max-height .5s ease-out;
