@@ -3,6 +3,7 @@
 - Fix scrolling behavior for tabs in material (#122, @bersbersbers)
 - Fix JS error in material
 - Fix thumbnail sizing in material (#120, @DOSull)
+- Fix TOC display in robobook when toc_depth > 2 (#126, @chamaoskurumi)
 
 # rmdformats 1.0.3
 
