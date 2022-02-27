@@ -5,7 +5,7 @@
 - Fix thumbnail sizing in material (#120, @DOSull)
 - Fix TOC display in robobook when toc_depth > 2 (#126, @chamaoskurumi)
 - Fix unreadable hover tab text color in readthedown (#127, @sciatro)
-
+- Don't add magnific_popup dependency if lightbox is false (#128, @sciatro)
 
 # rmdformats 1.0.3
 

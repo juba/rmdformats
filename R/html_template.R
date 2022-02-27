@@ -18,19 +18,19 @@ html_template <- function(
     code_menu <- !identical(code_folding, "none") || code_download
 
     ## js and css dependencies
-    extra_dependencies <- c(
-        list(
-            rmarkdown::html_dependency_jquery(),
-            rmarkdown::html_dependency_jqueryui(),
-            html_dependency_navigation(
-                code_menu = code_menu,
-                source_embed = code_download
-            ),
-            html_dependency_bootstrap("bootstrap"),
-            html_dependency_magnific_popup()
+    extra_dependencies <- list(
+        rmarkdown::html_dependency_jquery(),
+        rmarkdown::html_dependency_jqueryui(),
+        html_dependency_navigation(
+            code_menu = code_menu,
+            source_embed = code_download
         ),
-        template_dependencies
+        html_dependency_bootstrap("bootstrap")
     )
+    if (args[["lightbox"]]) {
+        extra_dependencies <- c(extra_dependencies, list(html_dependency_magnific_popup()))
+    }
+    extra_dependencies <- c(extra_dependencies, template_dependencies)
     ## Merge "extra_dependencies"
     if ("extra_dependencies" %in% names(args)) {
         extra_dependencies <- append(extra_dependencies, args[["extra_dependencies"]])
