@@ -1091,12 +1091,17 @@ div.sourceCode .row div {
 
 /* Tabsets tabs */
 
-#main .nav-tabs a {
+#main .nav-tabs li a {
     padding: 10px 15px;
     background: none;
     transition: none;
     color: #888;
 }
+
+#main .nav-tabs li a:hover {
+    color: #333;
+}
+
 
 #main .nav-tabs li.active a {
     color: #333;
