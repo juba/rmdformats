@@ -20,7 +20,6 @@ html_template <- function(
     ## js and css dependencies
     extra_dependencies <- list(
         rmarkdown::html_dependency_jquery(),
-        rmarkdown::html_dependency_jqueryui(),
         html_dependency_navigation(
             code_menu = code_menu,
             source_embed = code_download
