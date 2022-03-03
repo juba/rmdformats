@@ -777,10 +777,9 @@ hr{
     padding:0.4045em 1.618em;
     position:relative;
     /* background:#fcfcfc; */
-    border:none;
+    border:none;}
     /* border-bottom:solid 1px #c9c9c9; */
     /* border-top:solid 1px #c9c9c9; */
-    padding-left:1.618em -4px}
 
 #toc li.on a:hover,#toc li.current>a:hover{
     background:#fcfcfc}
