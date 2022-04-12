@@ -786,7 +786,7 @@ hr{
     font-weight:normal}
 
 #sidebar a{
-    display:inline-block;
+    display:block;
     line-height:18px;
     padding:0.4045em 1.618em;
     position:relative;
