@@ -250,17 +250,16 @@
    $endif$
 
    $if(downcute)$
-   <p class="authors">
    $for(author)$
+   <p class="authors">
    $if(author.name)$
      <span class="glyphicon glyphicon-user"></span> $author.name$
      $if(author.affiliation)$
-      - $author.affiliation$
+     <br> <span class="glyphicon glyphicon-home"></span> $author.affiliation$
      $endif$
      $if(author.email)$
-      - $author.email$<
+     <br> <span class="glyphicon glyphicon-envelope"></span> $author.email$
      $endif$
-     <br>
    $else$
      <span class="glyphicon glyphicon-user"></span> $author$
    $endif$
