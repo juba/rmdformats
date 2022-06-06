@@ -19,6 +19,7 @@
 #' @param embed_fonts if TRUE, use local files for fonts used in the template. This leads to bigger files but ensures that these fonts are available. If FALSE they are downloaded from Google Web Fonts.
 #' @param use_bookdown if TRUE, uses \code{\link[bookdown]{html_document2}} instead of \code{\link[rmarkdown]{html_document}}, thus providing numbered sections and cross references
 #' @param default_style specify default display style, "light" or "dark"
+#' @param style_switcher if TRUE (default), display a toggle button to switch between light and dark styles
 #' @param downcute_theme document template theme
 #' @param mathjax set to NULL to disable Mathjax insertion
 #' @param highlight syntax highlighting, forced to NULL as highlighting is done via prism.js
@@ -45,6 +46,7 @@ downcute <- function(fig_width = 8,
                        highlight = NULL,
                        default_style = c("light", "dark"),
                        downcute_theme = c("default", "chaos"),
+                       style_switcher = TRUE,
                        ...) {
 
     downcute_theme <- match.arg(downcute_theme)
@@ -75,6 +77,7 @@ downcute <- function(fig_width = 8,
         mathjax = mathjax,
         highlight = NULL,
         default_style = default_style,
+        style_switcher = style_switcher,
         downcute_theme = downcute_theme,
         ...
     )

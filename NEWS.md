@@ -1,5 +1,6 @@
 # rmdformats (development version)
 
+- Add `style_switcher` argument to `downcute` to choose if the style switcher toggle should be displayed or not.
 
 # rmdformats 1.0.4
 

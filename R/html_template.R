@@ -75,6 +75,13 @@ html_template <- function(
     if (!is.null(args[["downcute_theme"]])) {
         pandoc_args <- c(pandoc_args, "--variable", paste0("downcute_theme:", args[["downcute_theme"]]))
     }
+    ## downcute style switcher
+    if (!is.null(args[["style_switcher"]])) {
+        if (args[["style_switcher"]]) {
+            pandoc_args <- c(pandoc_args, "--variable", "style_switcher:true")
+        }
+    }
+
 
 
     ## Call rmarkdown::html_document

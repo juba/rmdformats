@@ -20,6 +20,7 @@ downcute(
   highlight = NULL,
   default_style = c("light", "dark"),
   downcute_theme = c("default", "chaos"),
+  style_switcher = TRUE,
   ...
 )
 }
@@ -53,6 +54,8 @@ downcute(
 \item{default_style}{specify default display style, "light" or "dark"}
 
 \item{downcute_theme}{document template theme}
+
+\item{style_switcher}{if TRUE (default), display a toggle button to switch between light and dark styles}
 
 \item{...}{Additional function arguments passed to R Markdown \code{\link[rmarkdown]{html_document}}}
 }
