@@ -88,37 +88,52 @@ chi-squared residuals tables.</p>
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">pilltabs</span><span class="op">(</span>
-  <span class="va">tab</span>,
-  count <span class="op">=</span> <span class="cn">TRUE</span>,
-  rows <span class="op">=</span> <span class="cn">TRUE</span>,
-  cols <span class="op">=</span> <span class="cn">TRUE</span>,
-  chisq <span class="op">=</span> <span class="cn">TRUE</span>,
-  resid <span class="op">=</span> <span class="cn">TRUE</span>,
-  row.names <span class="op">=</span> <span class="cn">TRUE</span>
-<span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">pilltabs</span><span class="op">(</span></span>
+<span>  <span class="va">tab</span>,</span>
+<span>  count <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span>  rows <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span>  cols <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span>  chisq <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span>  resid <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span>  row.names <span class="op">=</span> <span class="cn">TRUE</span></span>
+<span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
     <h2>Arguments</h2>
     <dl><dt>tab</dt>
 <dd><p>a two dimensions table object</p></dd>
+
+
 <dt>count</dt>
 <dd><p>whether or not to display the count table</p></dd>
+
+
 <dt>rows</dt>
 <dd><p>whether or not to display the row percentages table</p></dd>
+
+
 <dt>cols</dt>
 <dd><p>whether or not to display the column percentages table</p></dd>
+
+
 <dt>chisq</dt>
 <dd><p>whether or not to display the table chi-squared test results</p></dd>
+
+
 <dt>resid</dt>
 <dd><p>whether or not to display the chi-squared residuals table</p></dd>
+
+
 <dt>row.names</dt>
 <dd><p>whether or not to display the table row names</p></dd>
+
 </dl></div>
     <div id="value">
     <h2>Value</h2>
-    <p>No value is returned.</p>
+    
+
+<p>No value is returned.</p>
     </div>
     <div id="details">
     <h2>Details</h2>
@@ -127,10 +142,10 @@ chi-squared residuals tables.</p>
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">airquality</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">tab</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/table.html" class="external-link">table</a></span><span class="op">(</span><span class="va">airquality</span><span class="op">$</span><span class="va">Month</span>, <span class="va">airquality</span><span class="op">$</span><span class="va">Ozone</span> <span class="op">&gt;</span> <span class="fl">25</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu">pilltabs</span><span class="op">(</span><span class="va">tab</span><span class="op">)</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">airquality</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">tab</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/table.html" class="external-link">table</a></span><span class="op">(</span><span class="va">airquality</span><span class="op">$</span><span class="va">Month</span>, <span class="va">airquality</span><span class="op">$</span><span class="va">Ozone</span> <span class="op">&gt;</span> <span class="fl">25</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu">pilltabs</span><span class="op">(</span><span class="va">tab</span><span class="op">)</span></span></span>
 <span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Chi-squared approximation may be incorrect</span>
 <span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Chi-squared approximation may be incorrect</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -180,7 +195,7 @@ chi-squared residuals tables.</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  X-squared = 22.4831, df = 4, p = 0.0001606 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
+<span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
   </div>
@@ -195,7 +210,7 @@ chi-squared residuals tables.</p>
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.3.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.5.</p>
 </div>
 
       </footer></div>

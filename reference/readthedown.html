@@ -84,61 +84,92 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">readthedown</span><span class="op">(</span>
-  fig_width <span class="op">=</span> <span class="fl">8</span>,
-  fig_height <span class="op">=</span> <span class="fl">5</span>,
-  fig_caption <span class="op">=</span> <span class="cn">TRUE</span>,
-  highlight <span class="op">=</span> <span class="st">"kate"</span>,
-  lightbox <span class="op">=</span> <span class="cn">FALSE</span>,
-  thumbnails <span class="op">=</span> <span class="cn">FALSE</span>,
-  gallery <span class="op">=</span> <span class="cn">FALSE</span>,
-  toc_depth <span class="op">=</span> <span class="fl">2</span>,
-  embed_fonts <span class="op">=</span> <span class="cn">TRUE</span>,
-  use_bookdown <span class="op">=</span> <span class="cn">FALSE</span>,
-  pandoc_args <span class="op">=</span> <span class="cn">NULL</span>,
-  md_extensions <span class="op">=</span> <span class="cn">NULL</span>,
-  mathjax <span class="op">=</span> <span class="st">"rmdformats"</span>,
-  <span class="va">...</span>
-<span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">readthedown</span><span class="op">(</span></span>
+<span>  fig_width <span class="op">=</span> <span class="fl">8</span>,</span>
+<span>  fig_height <span class="op">=</span> <span class="fl">5</span>,</span>
+<span>  fig_caption <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span>  highlight <span class="op">=</span> <span class="st">"kate"</span>,</span>
+<span>  lightbox <span class="op">=</span> <span class="cn">FALSE</span>,</span>
+<span>  thumbnails <span class="op">=</span> <span class="cn">FALSE</span>,</span>
+<span>  gallery <span class="op">=</span> <span class="cn">FALSE</span>,</span>
+<span>  toc_depth <span class="op">=</span> <span class="fl">2</span>,</span>
+<span>  embed_fonts <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span>  use_bookdown <span class="op">=</span> <span class="cn">FALSE</span>,</span>
+<span>  pandoc_args <span class="op">=</span> <span class="cn">NULL</span>,</span>
+<span>  md_extensions <span class="op">=</span> <span class="cn">NULL</span>,</span>
+<span>  mathjax <span class="op">=</span> <span class="st">"rmdformats"</span>,</span>
+<span>  <span class="va">...</span></span>
+<span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
     <h2>Arguments</h2>
     <dl><dt>fig_width</dt>
 <dd><p>Default width (in inches) for figures</p></dd>
+
+
 <dt>fig_height</dt>
 <dd><p>Default width (in inches) for figures</p></dd>
+
+
 <dt>fig_caption</dt>
 <dd><p><code>TRUE</code> to render figures with captions</p></dd>
+
+
 <dt>highlight</dt>
 <dd><p>Syntax highlighting style. Supported styles include
 "default", "tango", "pygments", "kate", "monochrome", "espresso",
 "zenburn", "haddock", and "textmate". Pass <code>NULL</code> to prevent syntax
 highlighting.</p></dd>
+
+
 <dt>lightbox</dt>
 <dd><p>if TRUE, add lightbox effect to content images</p></dd>
+
+
 <dt>thumbnails</dt>
 <dd><p>if TRUE display content images as thumbnails</p></dd>
+
+
 <dt>gallery</dt>
 <dd><p>if TRUE and lightbox is TRUE, add a gallery navigation between images in lightbox display</p></dd>
+
+
 <dt>toc_depth</dt>
 <dd><p>adjust table of contents depth</p></dd>
+
+
 <dt>embed_fonts</dt>
 <dd><p>if TRUE, use local files for fonts used in the template. This leads to bigger files but ensures that these fonts are available. If FALSE they are downloaded from Google Web Fonts.</p></dd>
+
+
 <dt>use_bookdown</dt>
 <dd><p>if TRUE, uses <code><a href="https://pkgs.rstudio.com/bookdown/reference/html_document2.html" class="external-link">html_document2</a></code> instead of <code><a href="https://pkgs.rstudio.com/rmarkdown/reference/html_document.html" class="external-link">html_document</a></code>, thus providing numbered sections and cross references</p></dd>
+
+
 <dt>pandoc_args</dt>
 <dd><p>arguments passed to the pandoc_args argument of rmarkdown <code><a href="https://pkgs.rstudio.com/rmarkdown/reference/html_document.html" class="external-link">html_document</a></code></p></dd>
+
+
 <dt>md_extensions</dt>
 <dd><p>arguments passed to the md_extensions argument of rmarkdown <code><a href="https://pkgs.rstudio.com/rmarkdown/reference/html_document.html" class="external-link">html_document</a></code></p></dd>
+
+
 <dt>mathjax</dt>
 <dd><p>set to NULL to disable Mathjax insertion</p></dd>
+
+
 <dt>...</dt>
 <dd><p>Additional function arguments passed to R Markdown <code><a href="https://pkgs.rstudio.com/rmarkdown/reference/html_document.html" class="external-link">html_document</a></code></p></dd>
+
 </dl></div>
     <div id="value">
     <h2>Value</h2>
-    <p>R Markdown output format to pass to <code><a href="https://pkgs.rstudio.com/rmarkdown/reference/render.html" class="external-link">render</a></code></p>
+    
+
+<p>R Markdown output format to pass to <code><a href="https://pkgs.rstudio.com/rmarkdown/reference/render.html" class="external-link">render</a></code></p>
+
+
     </div>
     <div id="details">
     <h2>Details</h2>
@@ -159,7 +190,7 @@ the Read the docs theme : <a href="https://readthedocs.org/" class="external-lin
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.3.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.5.</p>
 </div>
 
       </footer></div>
