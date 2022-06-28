@@ -30,7 +30,7 @@ Adapted from the [bookdown](https://bookdown.org/) theme, with Roboto family fon
 
 ### `material`
 
-Format taken from the [Material design theme for Bootstrap 3](https://github.com/FezVrasta/bootstrap-material-design). Document is split into pages at each `<h1>` header, and the table of contents allows an animated navigation between these pages (you can use the `cards: false` preamble parameter to disable the splitting and display all the cards at once).
+Format taken from the [Material design theme for Bootstrap 3](https://mdbootstrap.com/). Document is split into pages at each `<h1>` header, and the table of contents allows an animated navigation between these pages (you can use the `cards: false` preamble parameter to disable the splitting and display all the cards at once).
 
 [![material example](man/figures/material.png)](https://juba.github.io/rmdformats/articles/examples/material.html)
 
