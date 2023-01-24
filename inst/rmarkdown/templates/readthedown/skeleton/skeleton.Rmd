@@ -35,8 +35,6 @@ opts_chunk$set(
   message = FALSE,
   warning = FALSE
 )
-
-snapdragon::sd_board_register(environ = "dev") # don't forget to update your vars via connectapi pkg
 ```
 
 ```{r}
