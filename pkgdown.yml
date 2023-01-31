@@ -1,5 +1,5 @@
-pandoc: 2.7.3
-pkgdown: 2.0.5
+pandoc: 2.19.2
+pkgdown: 2.0.7
 pkgdown_sha: ~
 articles:
   downcute: examples/downcute.html
@@ -10,7 +10,7 @@ articles:
   material: examples/material.html
   readthedown: examples/readthedown.html
   robobook: examples/robobook.html
-last_built: 2022-06-28T12:12Z
+last_built: 2023-01-31T12:50Z
 urls:
   reference: https://juba.github.io/rmdformats/reference
   article: https://juba.github.io/rmdformats/articles
