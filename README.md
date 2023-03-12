@@ -4,6 +4,10 @@
 ![CRAN Downloads](https://cranlogs.r-pkg.org/badges/last-month/rmdformats)
 [![R build status](https://github.com/juba/rmdformats/workflows/R-CMD-check/badge.svg)](https://github.com/juba/rmdformats/actions?query=workflow%3AR-CMD-check)
 
+
+**Quarto users : ** these templates are only suitable for RMarkdown documents. I published one quarto custom format called [bookup](https://github.com/juba/bookup-html) which is a porting of the `robobook` template.
+
+
 This R package provides ready-to-use HTML output formats and templates for
 RMarkdown documents. The goal is to produce clean documents "out of the box",
 with or without the RStudio IDE.
