@@ -1,6 +1,7 @@
 # rmdformats (development version)
 
 - Add `style_switcher` argument to `downcute` to choose if the style switcher toggle should be displayed or not.
+- Fix missing max-width for images in `material` (#155, @sam-israel)
 
 # rmdformats 1.0.4
 
