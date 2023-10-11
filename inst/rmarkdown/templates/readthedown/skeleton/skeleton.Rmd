@@ -15,11 +15,14 @@ library(knitr)
 library(rmdformats)
 
 library(dplyr)
-library(snapdragon)
-library(highcharter)
-library(lubridate)
 library(pins)
 library(reactable)
+library(lubridate)
+library(magrittr)
+library(snapdragon)
+library(tidyr)
+
+library(highcharter)
 opts <- getOption("highcharter.lang")
 opts$thousandsSep <- ","
 options(highcharter.lang = opts)
