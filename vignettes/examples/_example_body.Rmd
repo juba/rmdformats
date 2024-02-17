@@ -68,9 +68,9 @@ pilltabs(tab)
 
 A simple list : 
 
-- one mississipi
-- two mississipi
-- three mississipi
+- one mississippi
+- two mississippi
+- three mississippi
 
 
 A blockquote :
