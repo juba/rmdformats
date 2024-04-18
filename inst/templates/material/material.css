@@ -198,6 +198,10 @@ h2, h3, h4 {
 
 /* Images */
 
+.pages img {
+  max-width: 100%;
+}
+
 .pages img.image-lb {
   cursor: pointer;
   max-width: 100%;
@@ -208,7 +212,7 @@ h2, h3, h4 {
     display: table;
 }
 
-img.image-thumb {
+.pages .page img.image-thumb {
     max-width: 250px;
 }
 

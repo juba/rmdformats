@@ -18,19 +18,18 @@ html_template <- function(
     code_menu <- !identical(code_folding, "none") || code_download
 
     ## js and css dependencies
-    extra_dependencies <- c(
-        list(
-            rmarkdown::html_dependency_jquery(),
-            rmarkdown::html_dependency_jqueryui(),
-            html_dependency_navigation(
-                code_menu = code_menu,
-                source_embed = code_download
-            ),
-            html_dependency_bootstrap("bootstrap"),
-            html_dependency_magnific_popup()
+    extra_dependencies <- list(
+        rmarkdown::html_dependency_jquery(),
+        html_dependency_navigation(
+            code_menu = code_menu,
+            source_embed = code_download
         ),
-        template_dependencies
+        html_dependency_bootstrap("bootstrap")
     )
+    if (args[["lightbox"]]) {
+        extra_dependencies <- c(extra_dependencies, list(html_dependency_magnific_popup()))
+    }
+    extra_dependencies <- c(extra_dependencies, template_dependencies)
     ## Merge "extra_dependencies"
     if ("extra_dependencies" %in% names(args)) {
         extra_dependencies <- append(extra_dependencies, args[["extra_dependencies"]])
@@ -63,6 +62,26 @@ html_template <- function(
             pandoc_args <- c(pandoc_args, "--variable", "cards:true")
         }
     }
+    ## downcute default style
+    if (!is.null(args[["default_style"]])) {
+        if (args[["default_style"]] == "dark") {
+            toggler_checked <- "checked"
+        } else {
+            toggler_checked <- ""
+        }
+        pandoc_args <- c(pandoc_args, "--variable", paste0("dark_toggler_status:", toggler_checked))
+    }
+    ## downcute theme
+    if (!is.null(args[["downcute_theme"]])) {
+        pandoc_args <- c(pandoc_args, "--variable", paste0("downcute_theme:", args[["downcute_theme"]]))
+    }
+    ## downcute style switcher
+    if (!is.null(args[["style_switcher"]])) {
+        if (args[["style_switcher"]]) {
+            pandoc_args <- c(pandoc_args, "--variable", "style_switcher:true")
+        }
+    }
+
 
 
     ## Call rmarkdown::html_document

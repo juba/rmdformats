@@ -306,15 +306,15 @@ $endif$
 	$$('body .section.level1').first().addClass("active");
 	$$('body .section.level1').not('.active').hide();
 	
-	$$('#toc a[href*="#"], a[href^="#"]').click(function() {
+	$$('#toc a[href*="#"], a[href^="#"]').not('.nav a[href^="#"]').click(function() {
 	    var id = $$(this).attr("href");
 	    if (id === "#") return;
 	    if (id.substring(0, 8) === "#dyntab-") return;
 	    // Menu
 	    var menu_entry = $$(".menu li[data-target='"+id+"']");
 	    if (menu_entry.length == 0) {
-		window.location.hash = id;
-		return;
+			window.location.hash = id;
+			return;
 	    }
 	    menu_entry.addClass("active");
 	    $$(".menu li").not(menu_entry).removeClass("active"); 
@@ -334,10 +334,10 @@ $endif$
 	    }, 10);
 
 	    setTimeout(function () {
-		page.addClass("active");
-		setTimeout(function () {
-		    clearInterval(totop);
-		}, 1000);
+			page.addClass("active");
+			setTimeout(function () {
+		    	clearInterval(totop);
+			}, 1000);
 	    }, 100);
 	    
 	    window.dispatchEvent(new Event('resize'));
@@ -362,7 +362,7 @@ $endif$
   
 	window.page = window.location.hash;
 	if (window.page != "") {
-	    $$(".menu").find("li[data-target=" + window.page + "]").trigger("click");
+	    $$(".menu").find("li[data-target='" + window.page + "']").trigger("click");
 	}
 	/* init material bootstrap js */
 	$$.material.init();

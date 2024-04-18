@@ -194,7 +194,6 @@ blockquote{
     font-style:italic;
     line-height:24px;
     margin:0px 0px 24px 0px;
-    /* margin-left:24px; */
     padding: 6px 20px;
 }
 #content blockquote > p,
@@ -205,7 +204,6 @@ blockquote{
 ul,ol,dl{
     line-height:24px;
     list-style-image:none;
-    /* list-style:none; */
     margin:0px 0px 24px 0px;
     padding:0;
 }
@@ -433,7 +431,6 @@ dl dd{
 code{
     background:#fff;
     border:solid 1px #e1e4e5;
-    /* color:#000;  for clickable code */
     font-size:85%;
     max-width:100%;
     overflow-x:auto;
@@ -455,9 +452,7 @@ code{
 }
 
 #content pre {
-    /* background:#f3f6f6; */
     border:1px solid #e1e4e5;
-    /* color:#404040; */
     line-height: 1.5;
     margin-bottom:24px;
     overflow:auto;
@@ -468,7 +463,6 @@ code{
 }
 
 #content pre.sourceCode{
-    /* background-color: #FFF; */
     margin:1px 0px 12px 0px;
 }
 
@@ -621,16 +615,12 @@ legend{
     padding:12px;
     line-height:24px;
     margin-bottom:24px;
-    /* background:#e7f2fa; */
 }
 
 .wy-alert-title,#content .admonition-title{
     color:#fff;
     font-weight:bold;
     display:block;
-    color:#fff;
-    /* background:#6ab0de; */
-    /* margin:-12px; */
     padding:6px 12px;
     margin-bottom:0px}
 
@@ -746,7 +736,6 @@ hr{
     display:inline-block;
     line-height:32px;
     padding:0 1.618em;
-    display:block;
     font-weight:bold;
     text-transform:uppercase;
     font-size:80%;
@@ -774,20 +763,14 @@ hr{
     background:#d6d6d6}
 
 #toc li a{
-    /* color:#404040; */
     padding:0.4045em 1.618em;
     position:relative;
-    /* background:#fcfcfc; */
-    border:none;
-    /* border-bottom:solid 1px #c9c9c9; */
-    /* border-top:solid 1px #c9c9c9; */
-    padding-left:1.618em -4px}
+    border:none;}
 
 #toc li.on a:hover,#toc li.current>a:hover{
     background:#fcfcfc}
 
 #toc li ul li a{
-    /* background:#c9c9c9; */
     padding:0.4045em 2.427em}
 
 #toc li ul li ul li a{
@@ -805,10 +788,9 @@ hr{
     font-weight:normal}
 
 #sidebar a{
-    display:inline-block;
+    display:block;
     line-height:18px;
     padding:0.4045em 1.618em;
-    display:block;
     position:relative;
     font-size:90%;
     color:#e7ebf5;
@@ -913,14 +895,9 @@ hr{
     display: none !important;
 }
 
-/* ul.nav li ul li ul li { */
-/*     display: none !important; /\* as long as nav is on multiple levels of ul *\/ */
-/*     /\* display: none; /\* as long as nav is on multiple levels of ul *\\/ *\/ */
-/* } */
 
 #toc ul.nav li ul li ul li ul li {
     display: none !important; /* as long as nav is on multiple levels of ul */
-    /* display: none; /* as long as nav is on multiple levels of ul *\/ */
 }
 
 #toc ul.nav li.active > a {
@@ -1078,7 +1055,6 @@ h2.footnotes{
     padding-right: 16px;
     padding-top: 8px;
     line-height: 1.25em;
-    /* display: inline; */
 }
 
 /* Code folding buttons */
@@ -1092,12 +1068,17 @@ div.sourceCode .row div {
 
 /* Tabsets tabs */
 
-#main .nav-tabs a {
+#main .nav-tabs li a {
     padding: 10px 15px;
     background: none;
     transition: none;
     color: #888;
 }
+
+#main .nav-tabs li a:hover {
+    color: #333;
+}
+
 
 #main .nav-tabs li.active a {
     color: #333;

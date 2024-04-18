@@ -33,8 +33,8 @@ pilltabs(
 No value is returned.
 }
 \description{
-Given a two dimensions contingency tables, this function outputs HTML code to display,
-within a dynamic tabbed interface, the count, line row percentages, column percentages and
+Given a two dimensions contingency table, this function outputs HTML code to display,
+within a dynamic tabbed interface, the count, row percentages, column percentages and
 chi-squared residuals tables.
 }
 \details{

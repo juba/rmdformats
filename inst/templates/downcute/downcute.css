@@ -475,7 +475,8 @@ a {
 .page-content h5,
 .page-content h6 {
     font-weight: 300;
-    line-height: 1.2
+    line-height: 1.2;
+    color: var(--header-text-color);
 }
 
 .page-content h1 {
@@ -770,16 +771,19 @@ h1.title {
     font-size: 3rem;
     margin: 0 0 1.4rem;
     font-weight: 300;
-    line-height: 1.1
+    line-height: 1.1;
 }
 
 h1.subtitle {
     font-size: 1.7rem;
     margin: -0.5rem 0 1.4rem;
     font-weight: 300;
-    line-height: 1.1
+    line-height: 1.1;
 }
 
+#content h1 {
+    color: var(--header-text-color);
+}
 
 .ImageZoom {
     display: inline-block;
@@ -1094,6 +1098,15 @@ button.code-folding-btn {
     margin-top: 3em;
 }
   
+.page-content .dataTables_wrapper .dataTables_paginate .paginate_button {
+    color: var(--text-color) !important;
+} 
+
+.page-content .dataTables_wrapper input[type='search'] {
+    border-color: var(--border-color);
+    background: var(--page-background);
+    color: var(--text-color);
+}
 
 .page-content .pagedtable-index-current {
     font-weight: bold;
@@ -1193,4 +1206,10 @@ button.code-folding-btn {
   -ms-transition: none !important;
   -o-transition: none !important;
   transition: none !important;
+}
+
+/* obsplot */
+
+body .plot {
+    color: black;
 }
