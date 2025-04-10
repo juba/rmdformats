@@ -1,17 +1,16 @@
-pandoc: 2.19.2
-pkgdown: 2.0.7
+pandoc: 3.1.11
+pkgdown: 2.1.1
 pkgdown_sha: ~
 articles:
-  downcute: examples/downcute.html
-  downcute_chaos: examples/downcute_chaos.html
-  html_clean: examples/html_clean.html
-  html_docco: examples/html_docco.html
-  lockdown: examples/lockdown.html
-  material: examples/material.html
-  readthedown: examples/readthedown.html
-  robobook: examples/robobook.html
-last_built: 2024-02-17T16:42Z
+  examples/downcute_chaos: examples/downcute_chaos.html
+  examples/downcute: examples/downcute.html
+  examples/html_clean: examples/html_clean.html
+  examples/html_docco: examples/html_docco.html
+  examples/lockdown: examples/lockdown.html
+  examples/material: examples/material.html
+  examples/readthedown: examples/readthedown.html
+  examples/robobook: examples/robobook.html
+last_built: 2025-04-10T08:58Z
 urls:
   reference: https://juba.github.io/rmdformats/reference
   article: https://juba.github.io/rmdformats/articles
-
